@@ -1,7 +1,7 @@
 window.APARTMENTS_DATA = [
   {
-    "id": "topaz-city",
     "address": "39 Cao Lỗ, Phường 4, Quận 8",
+    "id": "topaz-city",
     "km_q1": 6.5,
     "crawl_config": {
       "keyword": "Topaz City",
@@ -50,8 +50,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "viva-riverside",
     "address": "1472 Võ Văn Kiệt, Phường 3, Quận 6",
+    "id": "viva-riverside",
     "km_q1": 6.5,
     "crawl_config": {
       "keyword": "Viva Riverside",
@@ -99,8 +99,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "topaz-elite",
     "address": "129 Cao Lỗ, Phường 4, Quận 8",
+    "id": "topaz-elite",
     "km_q1": 6.5,
     "crawl_config": {
       "keyword": "Topaz Elite",
@@ -150,8 +150,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "tara-residence",
     "address": "1A Tạ Quang Bửu, Phường 6, Quận 8",
+    "id": "tara-residence",
     "km_q1": 6.8,
     "crawl_config": {
       "keyword": "Tara Residence",
@@ -200,8 +200,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "felisa-riverside",
     "address": "99 Bến Bình Đông, Phường 11, Quận 8",
+    "id": "felisa-riverside",
     "km_q1": 7.0,
     "crawl_config": {
       "keyword": "Felisa",
@@ -250,8 +250,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "starlight-riverside",
     "address": "241/42 Nguyễn Văn Luông, Phường 11, Quận 6",
+    "id": "starlight-riverside",
     "km_q1": 7.0,
     "crawl_config": {
       "keyword": "Starlight",
@@ -301,8 +301,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "green-river",
     "address": "2225 Phạm Thế Hiển, Phường 6, Quận 8",
+    "id": "green-river",
     "km_q1": 8.0,
     "crawl_config": {
       "keyword": "Green River quan 8",
@@ -351,8 +351,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "diamond-riverside",
     "address": "1646A Võ Văn Kiệt, Phường 16, Quận 8",
+    "id": "diamond-riverside",
     "km_q1": 8.5,
     "crawl_config": {
       "keyword": "Diamond Riverside",
@@ -407,8 +407,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "city-gate-towers",
     "address": "Võ Văn Kiệt, Phường 16, Quận 8",
+    "id": "city-gate-towers",
     "km_q1": 8.5,
     "crawl_config": {
       "keyword": "City Gate",
@@ -457,8 +457,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "carina-plaza",
     "address": "1648 Võ Văn Kiệt, Phường 16, Quận 8",
+    "id": "carina-plaza",
     "km_q1": 8.5,
     "crawl_config": {
       "keyword": "Carina Plaza",
@@ -506,8 +506,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "lucky-palace",
     "address": "50 Phan Văn Khỏe, Phường 2, Quận 6",
+    "id": "lucky-palace",
     "km_q1": 6.0,
     "crawl_config": {
       "keyword": "Lucky Palace",
@@ -555,8 +555,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "the-pegasuite-1",
     "address": "1002 Tạ Quang Bửu, Phường 6, Quận 8",
+    "id": "the-pegasuite-1",
     "km_q1": 6.8,
     "crawl_config": {
       "keyword": "Pegasuite",
@@ -604,8 +604,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "diamond-lotus-riverside",
     "address": "49C Lê Quang Kim, Phường 8, Quận 8",
+    "id": "diamond-lotus-riverside",
     "km_q1": 3.0,
     "crawl_config": {
       "keyword": "Diamond Lotus Riverside",
@@ -658,8 +658,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "the-pegasuite-2",
     "address": "1079 Tạ Quang Bửu, Phường 6, Quận 8",
+    "id": "the-pegasuite-2",
     "km_q1": 6.8,
     "crawl_config": {
       "keyword": "Pegasuite",
@@ -711,8 +711,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "sunrise-city-south",
     "address": "23 Nguyễn Hữu Thọ, Phường Tân Hưng, Quận 7",
+    "id": "sunrise-city-south",
     "km_q1": 4.5,
     "crawl_config": {
       "keyword": "Sunrise City - South Towers",
@@ -759,8 +759,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "sunrise-city-central",
     "address": "25 Nguyễn Hữu Thọ, Phường Tân Hưng, Quận 7",
+    "id": "sunrise-city-central",
     "km_q1": 4.7,
     "crawl_config": {
       "keyword": "Sunrise City - Central Towers",
@@ -807,8 +807,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "sunrise-city-north",
     "address": "27 Nguyễn Hữu Thọ, Phường Tân Hưng, Quận 7",
+    "id": "sunrise-city-north",
     "km_q1": 5.0,
     "crawl_config": {
       "keyword": "Sunrise City - North Towers",
@@ -855,8 +855,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "sunrise-cityview",
     "address": "33 Nguyễn Hữu Thọ, Phường Tân Hưng, Quận 7",
+    "id": "sunrise-cityview",
     "km_q1": 4.2,
     "crawl_config": {
       "keyword": "Sunrise Cityview",
@@ -903,8 +903,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "hoang-anh-thanh-binh",
     "address": "Đường D4, Phường Tân Hưng, Quận 7",
+    "id": "hoang-anh-thanh-binh",
     "km_q1": 4.0,
     "crawl_config": {
       "keyword": "Hoàng Anh Thanh Bình",
@@ -951,8 +951,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "him-lam-riverside",
     "address": "Đường D1, Phường Tân Hưng, Quận 7",
+    "id": "him-lam-riverside",
     "km_q1": 4.3,
     "crawl_config": {
       "keyword": "Him Lam Riverside",
@@ -999,8 +999,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "m-one-nam-sai-gon",
     "address": "35/12 Bế Văn Cấm, Phường Tân Hưng, Quận 7",
+    "id": "m-one-nam-sai-gon",
     "km_q1": 5.2,
     "crawl_config": {
       "keyword": "M-One Nam Sài Gòn",
@@ -1047,8 +1047,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "hoang-anh-gia-lai-2",
     "address": "783 Trần Xuân Soạn, Phường Tân Hưng, Quận 7",
+    "id": "hoang-anh-gia-lai-2",
     "km_q1": 4.1,
     "crawl_config": {
       "keyword": "Hoàng Anh Gia Lai 2",
@@ -1092,8 +1092,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "lavida-plus",
     "address": "Nguyễn Văn Linh & Nguyễn Hữu Thọ, Phường Tân Phong, Quận 7",
+    "id": "lavida-plus",
     "km_q1": 5.5,
     "crawl_config": {
       "keyword": "Lavida Plus",
@@ -1140,8 +1140,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "hung-phat-silver-star",
     "address": "156A Nguyễn Hữu Thọ, Phường Tân Phong, Quận 7",
+    "id": "hung-phat-silver-star",
     "km_q1": 6.5,
     "crawl_config": {
       "keyword": "Hưng Phát Silver Star",
@@ -1188,8 +1188,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "sky-garden-1",
     "address": "Đường Nguyễn Văn Linh, Phường Tân Phong, Quận 7",
+    "id": "sky-garden-1",
     "km_q1": 5.8,
     "crawl_config": {
       "keyword": "Sky Garden 1",
@@ -1236,8 +1236,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "sky-garden-2",
     "address": "Đường Nguyễn Văn Linh, Phường Tân Phong, Quận 7",
+    "id": "sky-garden-2",
     "km_q1": 5.9,
     "crawl_config": {
       "keyword": "Sky Garden 2",
@@ -1284,8 +1284,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "sky-garden-3",
     "address": "Đường Nguyễn Văn Linh, Phường Tân Phong, Quận 7",
+    "id": "sky-garden-3",
     "km_q1": 6.1,
     "crawl_config": {
       "keyword": "Sky Garden 3",
@@ -1332,8 +1332,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "happy-valley",
     "address": "Đường Nguyễn Văn Linh, Phường Tân Phong, Quận 7",
+    "id": "happy-valley",
     "km_q1": 6.0,
     "crawl_config": {
       "keyword": "Happy Valley",
@@ -1380,8 +1380,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "scenic-valley-2",
     "address": "Đường Nguyễn Văn Linh, Phường Tân Phong, Quận 7",
+    "id": "scenic-valley-2",
     "km_q1": 6.3,
     "crawl_config": {
       "keyword": "Scenic Valley 2",
@@ -1428,8 +1428,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "green-valley",
     "address": "Đường Nguyễn Văn Linh, Phường Tân Phong, Quận 7",
+    "id": "green-valley",
     "km_q1": 6.2,
     "crawl_config": {
       "keyword": "Green Valley",
@@ -1476,8 +1476,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "urban-hill",
     "address": "Đường Nguyễn Văn Linh, Phường Tân Phong, Quận 7",
+    "id": "urban-hill",
     "km_q1": 5.9,
     "crawl_config": {
       "keyword": "Urban Hill",
@@ -1524,8 +1524,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "grand-view-1",
     "address": "Đường Nguyễn Đức Cảnh, Phường Tân Phong, Quận 7",
+    "id": "grand-view-1",
     "km_q1": 5.7,
     "crawl_config": {
       "keyword": "Grand View 1",
@@ -1572,8 +1572,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "grand-view-2",
     "address": "Đường Nguyễn Đức Cảnh, Phường Tân Phong, Quận 7",
+    "id": "grand-view-2",
     "km_q1": 5.8,
     "crawl_config": {
       "keyword": "Grand View 2",
@@ -1620,8 +1620,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "the-panorama-1",
     "address": "Đường Tôn Dật Tiên, Phường Tân Phong, Quận 7",
+    "id": "the-panorama-1",
     "km_q1": 6.2,
     "crawl_config": {
       "keyword": "The Panorama 1",
@@ -1668,8 +1668,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "riverpark-residence",
     "address": "Đường Tôn Dật Tiên, Phường Tân Phong, Quận 7",
+    "id": "riverpark-residence",
     "km_q1": 5.9,
     "crawl_config": {
       "keyword": "Riverpark Residence",
@@ -1716,8 +1716,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "riverpark-premier",
     "address": "Đường Nguyễn Đức Cảnh, Phường Tân Phong, Quận 7",
+    "id": "riverpark-premier",
     "km_q1": 5.8,
     "crawl_config": {
       "keyword": "Riverpark Premier",
@@ -1764,8 +1764,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "garden-plaza-2",
     "address": "Đường Tôn Dật Tiên, Phường Tân Phong, Quận 7",
+    "id": "garden-plaza-2",
     "km_q1": 6.1,
     "crawl_config": {
       "keyword": "Garden Plaza 2",
@@ -1812,8 +1812,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "garden-court-1",
     "address": "Đường Tôn Dật Tiên, Phường Tân Phong, Quận 7",
+    "id": "garden-court-1",
     "km_q1": 6.0,
     "crawl_config": {
       "keyword": "Garden Court 1",
@@ -1860,8 +1860,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "garden-court-2",
     "address": "Đường Tôn Dật Tiên, Phường Tân Phong, Quận 7",
+    "id": "garden-court-2",
     "km_q1": 6.1,
     "crawl_config": {
       "keyword": "Garden Court 2",
@@ -1908,8 +1908,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "my-khanh-1",
     "address": "Đường Nguyễn Đức Cảnh, Phường Tân Phong, Quận 7",
+    "id": "my-khanh-1",
     "km_q1": 5.6,
     "crawl_config": {
       "keyword": "Mỹ Khánh 1",
@@ -1956,8 +1956,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "my-khanh-2",
     "address": "Đường Nguyễn Đức Cảnh, Phường Tân Phong, Quận 7",
+    "id": "my-khanh-2",
     "km_q1": 5.7,
     "crawl_config": {
       "keyword": "Mỹ Khánh 2",
@@ -2004,8 +2004,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "my-khanh-3",
     "address": "Đường Nguyễn Đức Cảnh, Phường Tân Phong, Quận 7",
+    "id": "my-khanh-3",
     "km_q1": 5.8,
     "crawl_config": {
       "keyword": "Mỹ Khánh 3",
@@ -2052,8 +2052,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "my-khanh-4",
     "address": "Đường Nguyễn Đức Cảnh, Phường Tân Phong, Quận 7",
+    "id": "my-khanh-4",
     "km_q1": 5.9,
     "crawl_config": {
       "keyword": "Mỹ Khánh 4",
@@ -2100,8 +2100,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "my-phuoc",
     "address": "Đường Phạm Thái Bường, Phường Tân Phong, Quận 7",
+    "id": "my-phuoc",
     "km_q1": 5.8,
     "crawl_config": {
       "keyword": "Mỹ Phước",
@@ -2148,8 +2148,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "my-canh",
     "address": "Đường Nguyễn Đức Cảnh, Phường Tân Phong, Quận 7",
+    "id": "my-canh",
     "km_q1": 5.5,
     "crawl_config": {
       "keyword": "Mỹ Cảnh",
@@ -2193,8 +2193,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "my-an",
     "address": "Đường Nguyễn Đức Cảnh, Phường Tân Phong, Quận 7",
+    "id": "my-an",
     "km_q1": 5.5,
     "crawl_config": {
       "keyword": "Mỹ An",
@@ -2238,8 +2238,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "my-phuc",
     "address": "Đường Nguyễn Đức Cảnh, Phường Tân Phong, Quận 7",
+    "id": "my-phuc",
     "km_q1": 5.6,
     "crawl_config": {
       "keyword": "Mỹ Phúc",
@@ -2286,8 +2286,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "hung-vuong-1",
     "address": "Đường số 6, Phường Tân Phong, Quận 7",
+    "id": "hung-vuong-1",
     "km_q1": 5.4,
     "crawl_config": {
       "keyword": "Hưng Vượng 1",
@@ -2333,8 +2333,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "hung-vuong-2",
     "address": "Đường số 6, Phường Tân Phong, Quận 7",
+    "id": "hung-vuong-2",
     "km_q1": 5.5,
     "crawl_config": {
       "keyword": "Hưng Vượng 2",
@@ -2380,8 +2380,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "hung-vuong-3",
     "address": "Đường số 6, Phường Tân Phong, Quận 7",
+    "id": "hung-vuong-3",
     "km_q1": 5.6,
     "crawl_config": {
       "keyword": "Hưng Vượng 3",
@@ -2427,8 +2427,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "my-giang-1",
     "address": "Đường Tôn Dật Tiên, Phường Tân Phong, Quận 7",
+    "id": "my-giang-1",
     "km_q1": 6.3,
     "crawl_config": {
       "keyword": "Mỹ Giang 1",
@@ -2475,8 +2475,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "my-giang-2",
     "address": "Đường Tôn Dật Tiên, Phường Tân Phong, Quận 7",
+    "id": "my-giang-2",
     "km_q1": 6.4,
     "crawl_config": {
       "keyword": "Mỹ Giang 2",
@@ -2523,8 +2523,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "my-hoang",
     "address": "Đường Nguyễn Đức Cảnh, Phường Tân Phong, Quận 7",
+    "id": "my-hoang",
     "km_q1": 5.4,
     "crawl_config": {
       "keyword": "Mỹ Hoàng",
@@ -2568,8 +2568,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "my-hung",
     "address": "Đường Nguyễn Đức Cảnh, Phường Tân Phong, Quận 7",
+    "id": "my-hung",
     "km_q1": 5.5,
     "crawl_config": {
       "keyword": "Mỹ Hưng",
@@ -2613,8 +2613,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "my-phat",
     "address": "Đường Nguyễn Đức Cảnh, Phường Tân Phong, Quận 7",
+    "id": "my-phat",
     "km_q1": 5.6,
     "crawl_config": {
       "keyword": "Mỹ Phát",
@@ -2661,8 +2661,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "hung-gia-1",
     "address": "Đường Bùi Bằng Đoàn, Phường Tân Phong, Quận 7",
+    "id": "hung-gia-1",
     "km_q1": 5.8,
     "crawl_config": {
       "keyword": "Hưng Gia 1",
@@ -2706,8 +2706,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "hung-gia-2",
     "address": "Đường Bùi Bằng Đoàn, Phường Tân Phong, Quận 7",
+    "id": "hung-gia-2",
     "km_q1": 5.9,
     "crawl_config": {
       "keyword": "Hưng Gia 2",
@@ -2751,8 +2751,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "hung-gia-3",
     "address": "Đường Bùi Bằng Đoàn, Phường Tân Phong, Quận 7",
+    "id": "hung-gia-3",
     "km_q1": 6.0,
     "crawl_config": {
       "keyword": "Hưng Gia 3",
@@ -2796,8 +2796,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "hung-gia-4",
     "address": "Đường Bùi Bằng Đoàn, Phường Tân Phong, Quận 7",
+    "id": "hung-gia-4",
     "km_q1": 6.1,
     "crawl_config": {
       "keyword": "Hưng Gia 4",
@@ -2841,8 +2841,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "hung-gia-5",
     "address": "Đường Bùi Bằng Đoàn, Phường Tân Phong, Quận 7",
+    "id": "hung-gia-5",
     "km_q1": 6.2,
     "crawl_config": {
       "keyword": "Hưng Gia 5",
@@ -2886,8 +2886,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "hung-phuoc-1",
     "address": "Đường Phan Khiêm Ích, Phường Tân Phong, Quận 7",
+    "id": "hung-phuoc-1",
     "km_q1": 5.8,
     "crawl_config": {
       "keyword": "Hưng Phước 1",
@@ -2931,8 +2931,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "hung-phuoc-2",
     "address": "Đường Phan Khiêm Ích, Phường Tân Phong, Quận 7",
+    "id": "hung-phuoc-2",
     "km_q1": 5.9,
     "crawl_config": {
       "keyword": "Hưng Phước 2",
@@ -2976,8 +2976,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "hung-phuoc-3",
     "address": "Đường Phan Khiêm Ích, Phường Tân Phong, Quận 7",
+    "id": "hung-phuoc-3",
     "km_q1": 6.0,
     "crawl_config": {
       "keyword": "Hưng Phước 3",
@@ -3021,8 +3021,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "hung-phuoc-4",
     "address": "Đường Phan Khiêm Ích, Phường Tân Phong, Quận 7",
+    "id": "hung-phuoc-4",
     "km_q1": 6.1,
     "crawl_config": {
       "keyword": "Hưng Phước 4",
@@ -3066,8 +3066,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "hung-phuoc-5",
     "address": "Đường Phan Khiêm Ích, Phường Tân Phong, Quận 7",
+    "id": "hung-phuoc-5",
     "km_q1": 6.2,
     "crawl_config": {
       "keyword": "Hưng Phước 5",
@@ -3111,8 +3111,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "hung-phat-1",
     "address": "928 Lê Văn Lương, Phường Tân Phong, Quận 7",
+    "id": "hung-phat-1",
     "km_q1": 7.0,
     "crawl_config": {
       "keyword": "Hưng Phát 1",
@@ -3159,8 +3159,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "hoang-anh-gia-lai-1",
     "address": "357 Lê Văn Lương, Phường Tân Phong, Quận 7",
+    "id": "hoang-anh-gia-lai-1",
     "km_q1": 5.0,
     "crawl_config": {
       "keyword": "Hoàng Anh Gia Lai 1",
@@ -3204,8 +3204,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "oakwood-residence-saigon",
     "address": "1056 Nguyễn Văn Linh, Phường Tân Phong, Quận 7",
+    "id": "oakwood-residence-saigon",
     "km_q1": 6.0,
     "crawl_config": {
       "keyword": "Oakwood Residence Saigon",
@@ -3252,8 +3252,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "richlane-residences",
     "address": "1056 Nguyễn Văn Linh, Phường Tân Phong, Quận 7",
+    "id": "richlane-residences",
     "km_q1": 6.0,
     "crawl_config": {
       "keyword": "RichLane Residences",
@@ -3300,8 +3300,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "scenic-valley-1",
     "address": "Đường Nguyễn Văn Linh, Phường Tân Phong, Quận 7",
+    "id": "scenic-valley-1",
     "km_q1": 6.2,
     "crawl_config": {
       "keyword": "Scenic Valley 1",
@@ -3348,8 +3348,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "eco-green-saigon",
     "address": "107 Nguyễn Văn Linh, Phường Tân Thuận Tây, Quận 7",
+    "id": "eco-green-saigon",
     "km_q1": 6.5,
     "crawl_config": {
       "keyword": "Eco Green Sài Gòn",
@@ -3396,8 +3396,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "cosmo-city",
     "address": "Đường Nguyễn Thị Thập, Phường Tân Phong, Quận 7",
+    "id": "cosmo-city",
     "km_q1": 6.2,
     "crawl_config": {
       "keyword": "Cosmo City",
@@ -3446,8 +3446,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "the-antonia",
     "address": "Đường Nguyễn Lương Bằng, Phường Tân Phú, Quận 7",
+    "id": "the-antonia",
     "km_q1": 7.0,
     "crawl_config": {
       "keyword": "The Antonia",
@@ -3494,8 +3494,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "the-ascentia",
     "address": "Đường Nguyễn Lương Bằng, Phường Tân Phú, Quận 7",
+    "id": "the-ascentia",
     "km_q1": 7.2,
     "crawl_config": {
       "keyword": "The Ascentia",
@@ -3542,8 +3542,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "sunshine-city-saigon",
     "address": "Đường Phú Thuận, Phường Tân Phú, Quận 7",
+    "id": "sunshine-city-saigon",
     "km_q1": 6.8,
     "crawl_config": {
       "keyword": "Sunshine City Sài Gòn",
@@ -3590,8 +3590,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "hung-phuc-premier",
     "address": "Đường Nguyễn Lương Bằng, Phường Tân Phú, Quận 7",
+    "id": "hung-phuc-premier",
     "km_q1": 7.1,
     "crawl_config": {
       "keyword": "Hưng Phúc Premier",
@@ -3638,8 +3638,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "riverside-residence",
     "address": "Đường Nguyễn Lương Bằng, Phường Tân Phú, Quận 7",
+    "id": "riverside-residence",
     "km_q1": 7.5,
     "crawl_config": {
       "keyword": "Riverside Residence",
@@ -3686,8 +3686,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "star-hill",
     "address": "Đường Nguyễn Lương Bằng, Phường Tân Phú, Quận 7",
+    "id": "star-hill",
     "km_q1": 6.8,
     "crawl_config": {
       "keyword": "Star Hill",
@@ -3734,8 +3734,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "cardinal-court",
     "address": "Đường Raymondienne, Phường Tân Phú, Quận 7",
+    "id": "cardinal-court",
     "km_q1": 6.7,
     "crawl_config": {
       "keyword": "Cardinal Court",
@@ -3782,8 +3782,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "midtown-the-peak",
     "address": "Đường Nguyễn Lương Bằng, Phường Tân Phú, Quận 7",
+    "id": "midtown-the-peak",
     "km_q1": 7.3,
     "crawl_config": {
       "keyword": "The Peak - Midtown",
@@ -3830,8 +3830,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "midtown-the-signature",
     "address": "Đường Nguyễn Lương Bằng, Phường Tân Phú, Quận 7",
+    "id": "midtown-the-signature",
     "km_q1": 7.2,
     "crawl_config": {
       "keyword": "The Signature - Midtown",
@@ -3878,8 +3878,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "midtown-the-symphony",
     "address": "Đường Nguyễn Lương Bằng, Phường Tân Phú, Quận 7",
+    "id": "midtown-the-symphony",
     "km_q1": 7.1,
     "crawl_config": {
       "keyword": "The Symphony - Midtown",
@@ -3926,8 +3926,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "midtown-the-grande",
     "address": "Đường Nguyễn Lương Bằng, Phường Tân Phú, Quận 7",
+    "id": "midtown-the-grande",
     "km_q1": 7.0,
     "crawl_config": {
       "keyword": "The Grande - Midtown",
@@ -3974,8 +3974,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "canh-vien-1",
     "address": "Đường C, Phường Tân Phú, Quận 7",
+    "id": "canh-vien-1",
     "km_q1": 7.4,
     "crawl_config": {
       "keyword": "Cảnh Viên 1",
@@ -4024,8 +4024,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "canh-vien-2",
     "address": "Đường C, Phường Tân Phú, Quận 7",
+    "id": "canh-vien-2",
     "km_q1": 7.5,
     "crawl_config": {
       "keyword": "Cảnh Viên 2",
@@ -4074,8 +4074,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "canh-vien-3",
     "address": "Đường C, Phường Tân Phú, Quận 7",
+    "id": "canh-vien-3",
     "km_q1": 7.6,
     "crawl_config": {
       "keyword": "Cảnh Viên 3",
@@ -4124,8 +4124,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "nam-phuc-le-jardin",
     "address": "Đường Nguyễn Lương Bằng, Phường Tân Phú, Quận 7",
+    "id": "nam-phuc-le-jardin",
     "km_q1": 7.4,
     "crawl_config": {
       "keyword": "Nam Phúc Le Jardin",
@@ -4172,8 +4172,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "my-vien",
     "address": "Đường Nguyễn Lương Bằng, Phường Tân Phú, Quận 7",
+    "id": "my-vien",
     "km_q1": 7.1,
     "crawl_config": {
       "keyword": "Mỹ Viên",
@@ -4217,8 +4217,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "my-toan-1",
     "address": "Đường Nguyễn Lương Bằng, Phường Tân Phú, Quận 7",
+    "id": "my-toan-1",
     "km_q1": 6.9,
     "crawl_config": {
       "keyword": "Mỹ Toàn 1",
@@ -4262,8 +4262,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "my-toan-2",
     "address": "Đường Nguyễn Lương Bằng, Phường Tân Phú, Quận 7",
+    "id": "my-toan-2",
     "km_q1": 7.0,
     "crawl_config": {
       "keyword": "Mỹ Toàn 2",
@@ -4307,8 +4307,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "my-thai-1",
     "address": "Đường Nguyễn Lương Bằng, Phường Tân Phú, Quận 7",
+    "id": "my-thai-1",
     "km_q1": 7.2,
     "crawl_config": {
       "keyword": "Mỹ Thái 1",
@@ -4354,8 +4354,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "my-thai-2",
     "address": "Đường Nguyễn Lương Bằng, Phường Tân Phú, Quận 7",
+    "id": "my-thai-2",
     "km_q1": 7.3,
     "crawl_config": {
       "keyword": "Mỹ Thái 2",
@@ -4401,8 +4401,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "my-thai-3",
     "address": "Đường Nguyễn Lương Bằng, Phường Tân Phú, Quận 7",
+    "id": "my-thai-3",
     "km_q1": 7.4,
     "crawl_config": {
       "keyword": "Mỹ Thái 3",
@@ -4448,8 +4448,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "my-gia-1",
     "address": "Đường Nguyễn Lương Bằng, Phường Tân Phú, Quận 7",
+    "id": "my-gia-1",
     "km_q1": 7.2,
     "crawl_config": {
       "keyword": "Mỹ Gia 1",
@@ -4493,8 +4493,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "my-gia-2",
     "address": "Đường Nguyễn Lương Bằng, Phường Tân Phú, Quận 7",
+    "id": "my-gia-2",
     "km_q1": 7.3,
     "crawl_config": {
       "keyword": "Mỹ Gia 2",
@@ -4538,8 +4538,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "golden-king",
     "address": "15 Nguyễn Lương Bằng, Phường Tân Phú, Quận 7",
+    "id": "golden-king",
     "km_q1": 6.6,
     "crawl_config": {
       "keyword": "Golden King",
@@ -4586,8 +4586,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "docklands-saigon",
     "address": "99 Nguyễn Thị Thập, Phường Tân Phú, Quận 7",
+    "id": "docklands-saigon",
     "km_q1": 6.1,
     "crawl_config": {
       "keyword": "Docklands Sài Gòn",
@@ -4634,8 +4634,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "cosmo-city-2",
     "address": "Đường Nguyễn Thị Thập, Phường Tân Phong, Quận 7",
+    "id": "cosmo-city-2",
     "km_q1": 6.3,
     "crawl_config": {
       "keyword": "Cosmo City 2",
@@ -4684,8 +4684,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "riviera-point",
     "address": "Đường Nguyễn Văn Tưởng, Phường Tân Phú, Quận 7",
+    "id": "riviera-point",
     "km_q1": 6.5,
     "crawl_config": {
       "keyword": "Riviera Point",
@@ -4734,8 +4734,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "the-view-riviera-point",
     "address": "Đường Nguyễn Văn Tưởng, Phường Tân Phú, Quận 7",
+    "id": "the-view-riviera-point",
     "km_q1": 6.6,
     "crawl_config": {
       "keyword": "The View - Riviera Point",
@@ -4784,8 +4784,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "the-infiniti-riviera-point",
     "address": "Đường Nguyễn Văn Tưởng, Phường Tân Phú, Quận 7",
+    "id": "the-infiniti-riviera-point",
     "km_q1": 6.7,
     "crawl_config": {
       "keyword": "The Infiniti - Riviera Point",
@@ -4834,8 +4834,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "the-loft-riviera-point",
     "address": "Đường Nguyễn Văn Tưởng, Phường Tân Phú, Quận 7",
+    "id": "the-loft-riviera-point",
     "km_q1": 6.8,
     "crawl_config": {
       "keyword": "The Loft - Riviera Point",
@@ -4884,8 +4884,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "chung-cu-tan-my",
     "address": "Đường số 9, Phường Tân Phú, Quận 7",
+    "id": "chung-cu-tan-my",
     "km_q1": 6.5,
     "crawl_config": {
       "keyword": "Chung cư Tân Mỹ",
@@ -4931,8 +4931,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "q7-saigon-riverside",
     "address": "Đường Đào Trí, Phường Phú Thuận, Quận 7",
+    "id": "q7-saigon-riverside",
     "km_q1": 8.0,
     "crawl_config": {
       "keyword": "Q7 Saigon Riverside",
@@ -4981,8 +4981,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "jamona-heights",
     "address": "Đường Bùi Văn Ba, Phường Tân Thuận Đông, Quận 7",
+    "id": "jamona-heights",
     "km_q1": 8.0,
     "crawl_config": {
       "keyword": "Jamona Heights",
@@ -5031,8 +5031,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "d-vela",
     "address": "1177 Huỳnh Tấn Phát, Phường Phú Thuận, Quận 7",
+    "id": "d-vela",
     "km_q1": 7.0,
     "crawl_config": {
       "keyword": "D-Vela",
@@ -5079,8 +5079,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "sky-89",
     "address": "89 Hoàng Quốc Việt, Phường Phú Thuận, Quận 7",
+    "id": "sky-89",
     "km_q1": 7.5,
     "crawl_config": {
       "keyword": "Sky 89",
@@ -5127,8 +5127,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "luxcity",
     "address": "528 Huỳnh Tấn Phát, Phường Phú Thuận, Quận 7",
+    "id": "luxcity",
     "km_q1": 7.0,
     "crawl_config": {
       "keyword": "LuxCity",
@@ -5175,8 +5175,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "sunshine-diamond-river",
     "address": "Đường Đào Trí, Phường Phú Thuận, Quận 7",
+    "id": "sunshine-diamond-river",
     "km_q1": 8.5,
     "crawl_config": {
       "keyword": "Sunshine Diamond River",
@@ -5225,8 +5225,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "an-gia-riverside",
     "address": "Đường Đào Trí, Phường Phú Thuận, Quận 7",
+    "id": "an-gia-riverside",
     "km_q1": 7.4,
     "crawl_config": {
       "keyword": "An Gia Riverside",
@@ -5275,8 +5275,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "an-gia-skyline",
     "address": "Đường Đào Trí, Phường Phú Thuận, Quận 7",
+    "id": "an-gia-skyline",
     "km_q1": 7.4,
     "crawl_config": {
       "keyword": "An Gia Skyline",
@@ -5325,8 +5325,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "river-panorama",
     "address": "Đường Đào Trí, Phường Phú Thuận, Quận 7",
+    "id": "river-panorama",
     "km_q1": 7.5,
     "crawl_config": {
       "keyword": "River Panorama",
@@ -5375,8 +5375,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "jamona-city",
     "address": "Đường Đào Trí, Phường Phú Thuận, Quận 7",
+    "id": "jamona-city",
     "km_q1": 8.2,
     "crawl_config": {
       "keyword": "Jamona City",
@@ -5425,8 +5425,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "chung-cu-ngoc-lan",
     "address": "Đường Phú Thuận, Phường Phú Thuận, Quận 7",
+    "id": "chung-cu-ngoc-lan",
     "km_q1": 7.3,
     "crawl_config": {
       "keyword": "Chung cư Ngọc Lan",
@@ -5472,8 +5472,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "chung-cu-v-star",
     "address": "Đường Gò Ô Môi, Phường Phú Thuận, Quận 7",
+    "id": "chung-cu-v-star",
     "km_q1": 7.8,
     "crawl_config": {
       "keyword": "Chung cư V-Star",
@@ -5519,8 +5519,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "belleza-apartment",
     "address": "Đường Phạm Hữu Lầu, Phường Phú Mỹ, Quận 7",
+    "id": "belleza-apartment",
     "km_q1": 9.0,
     "crawl_config": {
       "keyword": "Belleza Apartment",
@@ -5566,8 +5566,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "era-town-duc-khai",
     "address": "Đường 15B Nguyễn Lương Bằng, Phường Phú Mỹ, Quận 7",
+    "id": "era-town-duc-khai",
     "km_q1": 9.5,
     "crawl_config": {
       "keyword": "Era Town (Đức Khải)",
@@ -5613,8 +5613,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "q7-boulevard",
     "address": "Đường Nguyễn Lương Bằng, Phường Phú Mỹ, Quận 7",
+    "id": "q7-boulevard",
     "km_q1": 8.0,
     "crawl_config": {
       "keyword": "Q7 Boulevard",
@@ -5663,8 +5663,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "viva-plaza",
     "address": "Đường Nguyễn Lương Bằng, Phường Phú Mỹ, Quận 7",
+    "id": "viva-plaza",
     "km_q1": 8.2,
     "crawl_config": {
       "keyword": "Viva Plaza",
@@ -5713,8 +5713,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "chung-cu-phu-my",
     "address": "Đường số 2, Phường Phú Mỹ, Quận 7",
+    "id": "chung-cu-phu-my",
     "km_q1": 7.6,
     "crawl_config": {
       "keyword": "Chung cư Phú Mỹ",
@@ -5763,8 +5763,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "chung-cu-tulip",
     "address": "Đường Hoàng Quốc Việc, Phường Phú Mỹ, Quận 7",
+    "id": "chung-cu-tulip",
     "km_q1": 7.7,
     "crawl_config": {
       "keyword": "Chung cư Tulip",
@@ -5810,8 +5810,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "chung-cu-lacasa",
     "address": "Đường Hoàng Quốc Việt, Phường Phú Mỹ, Quận 7",
+    "id": "chung-cu-lacasa",
     "km_q1": 7.5,
     "crawl_config": {
       "keyword": "Chung cư Lacasa",
@@ -5860,8 +5860,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "chung-cu-res-3",
     "address": "Đường số 10, KDC Chợ Lớn, Phường Phú Mỹ, Quận 7",
+    "id": "chung-cu-res-3",
     "km_q1": 8.0,
     "crawl_config": {
       "keyword": "Chung cư Res III",
@@ -5905,8 +5905,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "chung-cu-hoang-quoc-viet",
     "address": "Đường Hoàng Quốc Việt, Phường Phú Mỹ, Quận 7",
+    "id": "chung-cu-hoang-quoc-viet",
     "km_q1": 7.6,
     "crawl_config": {
       "keyword": "Chung cư Hoàng Quốc Việt",
@@ -5952,8 +5952,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "green-star-sky-garden",
     "address": "Đường Phạm Hữu Lầu, Phường Phú Mỹ, Quận 7",
+    "id": "green-star-sky-garden",
     "km_q1": 8.8,
     "crawl_config": {
       "keyword": "Green Star Sky Garden",
@@ -6002,8 +6002,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "lux-garden",
     "address": "Đường Nguyễn Văn Quỳ, Phường Phú Thuận, Quận 7",
+    "id": "lux-garden",
     "km_q1": 7.0,
     "crawl_config": {
       "keyword": "Lux Garden",
@@ -6052,8 +6052,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "bridgeview-ehome-5",
     "address": "Đường Trần Trọng Cung, Phường Tân Thuận Đông, Quận 7",
+    "id": "bridgeview-ehome-5",
     "km_q1": 6.8,
     "crawl_config": {
       "keyword": "Bridgeview (Ehome 5)",
@@ -6102,8 +6102,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "nam-long-tran-trong-cung",
     "address": "Đường Trần Trọng Cung, Phường Tân Thuận Đông, Quận 7",
+    "id": "nam-long-tran-trong-cung",
     "km_q1": 6.7,
     "crawl_config": {
       "keyword": "Nam Long Trần Trọng Cung",
@@ -6149,8 +6149,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "ascent-garden-homes",
     "address": "Đường Bến Nghé, Phường Tân Thuận Đông, Quận 7",
+    "id": "ascent-garden-homes",
     "km_q1": 5.0,
     "crawl_config": {
       "keyword": "Ascent Garden Homes",
@@ -6199,8 +6199,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "ascent-lakeside",
     "address": "Đường Nguyễn Văn Linh, Phường Tân Thuận Tây, Quận 7",
+    "id": "ascent-lakeside",
     "km_q1": 5.5,
     "crawl_config": {
       "keyword": "Ascent Lakeside",
@@ -6249,8 +6249,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "the-golden-star",
     "address": "Đường Nguyễn Thị Thập, Phường Bình Thuận, Quận 7",
+    "id": "the-golden-star",
     "km_q1": 5.8,
     "crawl_config": {
       "keyword": "The Golden Star",
@@ -6299,8 +6299,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "the-blue-star",
     "address": "Đường Nguyễn Văn Linh, Phường Bình Thuận, Quận 7",
+    "id": "the-blue-star",
     "km_q1": 6.0,
     "crawl_config": {
       "keyword": "The Blue Star",
@@ -6349,8 +6349,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "florita",
     "address": "Đường D4, Khu đô thị Him Lam, Phường Tân Hưng, Quận 7",
+    "id": "florita",
     "km_q1": 7.0,
     "crawl_config": {
       "keyword": "Florita",
@@ -6397,8 +6397,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "my-thai-block-b",
     "address": "Đường Nguyễn Lương Bằng, Phường Tân Phú, Quận 7",
+    "id": "my-thai-block-b",
     "km_q1": 6.5,
     "crawl_config": {
       "keyword": "Chung cư Mỹ Thái Block B",
@@ -6444,8 +6444,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "my-thai-block-c",
     "address": "Đường Nguyễn Lương Bằng, Phường Tân Phú, Quận 7",
+    "id": "my-thai-block-c",
     "km_q1": 6.5,
     "crawl_config": {
       "keyword": "Chung cư Mỹ Thái Block C",
@@ -6491,8 +6491,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "my-thai-block-d",
     "address": "Đường Nguyễn Lương Bằng, Phường Tân Phú, Quận 7",
+    "id": "my-thai-block-d",
     "km_q1": 6.5,
     "crawl_config": {
       "keyword": "Chung cư Mỹ Thái Block D",
@@ -6538,8 +6538,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "my-thai-block-e",
     "address": "Đường Nguyễn Lương Bằng, Phường Tân Phú, Quận 7",
+    "id": "my-thai-block-e",
     "km_q1": 6.5,
     "crawl_config": {
       "keyword": "Chung cư Mỹ Thái Block E",
@@ -6585,8 +6585,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "my-thai-block-f",
     "address": "Đường Nguyễn Lương Bằng, Phường Tân Phú, Quận 7",
+    "id": "my-thai-block-f",
     "km_q1": 6.5,
     "crawl_config": {
       "keyword": "Chung cư Mỹ Thái Block F",
@@ -6632,8 +6632,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "my-thai-block-a",
     "address": "Đường Nguyễn Lương Bằng, Phường Tân Phú, Quận 7",
+    "id": "my-thai-block-a",
     "km_q1": 6.5,
     "crawl_config": {
       "keyword": "Chung cư Mỹ Thái Block A",
@@ -6679,8 +6679,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "hung-vuong-block-a",
     "address": "Đường số 6, Phường Tân Phong, Quận 7",
+    "id": "hung-vuong-block-a",
     "km_q1": 6.5,
     "crawl_config": {
       "keyword": "Chung cư Hưng Vượng Block A",
@@ -6726,8 +6726,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "hung-vuong-block-b",
     "address": "Đường số 6, Phường Tân Phong, Quận 7",
+    "id": "hung-vuong-block-b",
     "km_q1": 6.5,
     "crawl_config": {
       "keyword": "Chung cư Hưng Vượng Block B",
@@ -6773,8 +6773,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "hung-vuong-block-c",
     "address": "Đường số 6, Phường Tân Phong, Quận 7",
+    "id": "hung-vuong-block-c",
     "km_q1": 6.5,
     "crawl_config": {
       "keyword": "Chung cư Hưng Vượng Block C",
@@ -6820,8 +6820,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "hung-vuong-block-d",
     "address": "Đường số 6, Phường Tân Phong, Quận 7",
+    "id": "hung-vuong-block-d",
     "km_q1": 6.5,
     "crawl_config": {
       "keyword": "Chung cư Hưng Vượng Block D",
@@ -6867,8 +6867,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "hung-vuong-block-e",
     "address": "Đường số 6, Phường Tân Phong, Quận 7",
+    "id": "hung-vuong-block-e",
     "km_q1": 6.5,
     "crawl_config": {
       "keyword": "Chung cư Hưng Vượng Block E",
@@ -6914,8 +6914,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "hung-vuong-block-f",
     "address": "Đường số 6, Phường Tân Phong, Quận 7",
+    "id": "hung-vuong-block-f",
     "km_q1": 6.5,
     "crawl_config": {
       "keyword": "Chung cư Hưng Vượng Block F",
@@ -6961,8 +6961,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "hung-vuong-block-g",
     "address": "Đường số 6, Phường Tân Phong, Quận 7",
+    "id": "hung-vuong-block-g",
     "km_q1": 6.5,
     "crawl_config": {
       "keyword": "Chung cư Hưng Vượng Block G",
@@ -7008,8 +7008,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "hung-vuong-block-h",
     "address": "Đường số 6, Phường Tân Phong, Quận 7",
+    "id": "hung-vuong-block-h",
     "km_q1": 6.5,
     "crawl_config": {
       "keyword": "Chung cư Hưng Vượng Block H",
@@ -7055,8 +7055,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "canh-vien-block-d",
     "address": "Đường C, Phường Tân Phú, Quận 7",
+    "id": "canh-vien-block-d",
     "km_q1": 6.5,
     "crawl_config": {
       "keyword": "Chung cư Cảnh Viên Block D",
@@ -7102,8 +7102,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "canh-vien-block-a",
     "address": "Đường C, Phường Tân Phú, Quận 7",
+    "id": "canh-vien-block-a",
     "km_q1": 6.5,
     "crawl_config": {
       "keyword": "Chung cư Cảnh Viên Block A",
@@ -7149,8 +7149,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "canh-vien-block-b",
     "address": "Đường C, Phường Tân Phú, Quận 7",
+    "id": "canh-vien-block-b",
     "km_q1": 6.5,
     "crawl_config": {
       "keyword": "Chung cư Cảnh Viên Block B",
@@ -7196,8 +7196,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "canh-vien-block-c",
     "address": "Đường C, Phường Tân Phú, Quận 7",
+    "id": "canh-vien-block-c",
     "km_q1": 6.5,
     "crawl_config": {
       "keyword": "Chung cư Cảnh Viên Block C",
@@ -7243,8 +7243,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "samland-giai-viet",
     "address": "Tạ Quang Bửu, Phường 5, Quận 8",
+    "id": "samland-giai-viet",
     "km_q1": 6.2,
     "crawl_config": {
       "keyword": "Samland Giai Việt",
@@ -7294,8 +7294,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "heaven-cityview",
     "address": "Phạm Đức Sơn, Phường 16, Quận 8",
+    "id": "heaven-cityview",
     "km_q1": 7.9,
     "crawl_config": {
       "keyword": "Heaven Cityview",
@@ -7345,8 +7345,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "the-avila",
     "address": "Trương Đình Hội, Phường 16, Quận 8",
+    "id": "the-avila",
     "km_q1": 8.7,
     "crawl_config": {
       "keyword": "The Avila",
@@ -7396,8 +7396,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "dream-home-palace",
     "address": "Trịnh Quang Nghị, Phường 7, Quận 8",
+    "id": "dream-home-palace",
     "km_q1": 6.6,
     "crawl_config": {
       "keyword": "Dream Home Palace",
@@ -7446,8 +7446,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "central-premium",
     "address": "Tạ Quang Bửu, Phường 5, Quận 8",
+    "id": "central-premium",
     "km_q1": 7.1,
     "crawl_config": {
       "keyword": "Central Premium",
@@ -7501,8 +7501,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "khang-gia-chanh-hung",
     "address": "Tạ Quang Bửu, Phường 5, Quận 8",
+    "id": "khang-gia-chanh-hung",
     "km_q1": 7.0,
     "crawl_config": {
       "keyword": "Khang Gia Chánh Hưng",
@@ -7549,8 +7549,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "conic-riverside",
     "address": "Tạ Quang Bửu, Phường 7, Quận 8",
+    "id": "conic-riverside",
     "km_q1": 7.5,
     "crawl_config": {
       "keyword": "Conic Riverside",
@@ -7599,8 +7599,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "him-lam-nam-khanh",
     "address": "Hoàng Diệu, Phường 8, Quận 8",
+    "id": "him-lam-nam-khanh",
     "km_q1": 8.1,
     "crawl_config": {
       "keyword": "Him Lam Nam Khánh",
@@ -7649,8 +7649,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "him-lam-riverfront",
     "address": "Phường 8, Quận 8",
+    "id": "him-lam-riverfront",
     "km_q1": 6.0,
     "crawl_config": {
       "keyword": "Him Lam Riverfront",
@@ -7699,8 +7699,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "saigon-skyview",
     "address": "Phạm Thế Hiển, Phường 6, Quận 8",
+    "id": "saigon-skyview",
     "km_q1": 6.6,
     "crawl_config": {
       "keyword": "Saigon Skyview",
@@ -7750,8 +7750,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "aurora-quan-8",
     "address": "Phường 16, Quận 8",
+    "id": "aurora-quan-8",
     "km_q1": 7.7,
     "crawl_config": {
       "keyword": "Aurora Quận 8",
@@ -7798,8 +7798,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "bong-sao",
     "address": "Phường 5, Quận 8",
+    "id": "bong-sao",
     "km_q1": 7.7,
     "crawl_config": {
       "keyword": "Bông Sao",
@@ -7846,8 +7846,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "investco-dong-dieu",
     "address": "Cao Lỗ, Phường 4, Quận 8",
+    "id": "investco-dong-dieu",
     "km_q1": 6.2,
     "crawl_config": {
       "keyword": "Investco Đồng Diều",
@@ -7894,8 +7894,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "dong-dieu-hqc",
     "address": "Phường 4, Quận 8",
+    "id": "dong-dieu-hqc",
     "km_q1": 6.7,
     "crawl_config": {
       "keyword": "Đồng Diều (HQC)",
@@ -7942,8 +7942,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "phu-loi",
     "address": "Phường 7, Quận 8",
+    "id": "phu-loi",
     "km_q1": 6.1,
     "crawl_config": {
       "keyword": "Phú Lợi",
@@ -7990,8 +7990,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "dream-home-riverside",
     "address": "Nguyễn Văn Linh, Phường 7, Quận 8",
+    "id": "dream-home-riverside",
     "km_q1": 5.7,
     "crawl_config": {
       "keyword": "Dream Home Riverside",
@@ -8040,8 +8040,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "d-aqua",
     "address": "301 Bến Bình Đông, Phường 14, Quận 8",
+    "id": "d-aqua",
     "km_q1": 7.3,
     "crawl_config": {
       "keyword": "D-Aqua",
@@ -8090,8 +8090,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "high-intela",
     "address": "Võ Văn Kiệt, Phường 16, Quận 8",
+    "id": "high-intela",
     "km_q1": 7.1,
     "crawl_config": {
       "keyword": "High Intela",
@@ -8140,8 +8140,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "west-intela",
     "address": "An Dương Vương, Phường 16, Quận 8",
+    "id": "west-intela",
     "km_q1": 7.6,
     "crawl_config": {
       "keyword": "West Intela",
@@ -8190,8 +8190,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "city-gate-3",
     "address": "Hoàng Ngân, Phường 16, Quận 8",
+    "id": "city-gate-3",
     "km_q1": 5.6,
     "crawl_config": {
       "keyword": "City Gate 3",
@@ -8241,8 +8241,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "hado-green-lane",
     "address": "Phạm Thế Hiển, Phường 7, Quận 8",
+    "id": "hado-green-lane",
     "km_q1": 7.5,
     "crawl_config": {
       "keyword": "Hado Green Lane",
@@ -8296,8 +8296,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "royal-park-riverside",
     "address": "Tạ Quang Bửu, Phường 5, Quận 8",
+    "id": "royal-park-riverside",
     "km_q1": 7.4,
     "crawl_config": {
       "keyword": "Royal Park Riverside",
@@ -8351,8 +8351,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "sunshine-avenue",
     "address": "Phường 16, Quận 8",
+    "id": "sunshine-avenue",
     "km_q1": 7.0,
     "crawl_config": {
       "keyword": "Sunshine Avenue",
@@ -8406,8 +8406,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "saigon-intela",
     "address": "Võ Văn Kiệt, Phường 16, Quận 8",
+    "id": "saigon-intela",
     "km_q1": 5.7,
     "crawl_config": {
       "keyword": "Saigon Intela",
@@ -8457,8 +8457,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "jasari",
     "address": "Phường 16, Quận 8",
+    "id": "jasari",
     "km_q1": 8.1,
     "crawl_config": {
       "keyword": "Jasari",
@@ -8509,8 +8509,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "phu-dinh-riverside",
     "address": "Phường 16, Quận 8",
+    "id": "phu-dinh-riverside",
     "km_q1": 6.2,
     "crawl_config": {
       "keyword": "Phú Định Riverside",
@@ -8560,8 +8560,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "him-lam-ba-to",
     "address": "Ba Tơ, Phường 7, Quận 8",
+    "id": "him-lam-ba-to",
     "km_q1": 6.0,
     "crawl_config": {
       "keyword": "Him Lam Ba Tơ",
@@ -8612,8 +8612,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "sunrise-city-view-quan-8",
     "address": "Phường 6, Quận 8",
+    "id": "sunrise-city-view-quan-8",
     "km_q1": 7.7,
     "crawl_config": {
       "keyword": "Sunrise City View Quận 8",
@@ -8667,8 +8667,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "lakeside-residence",
     "address": "Cao Lỗ, Phường 4, Quận 8",
+    "id": "lakeside-residence",
     "km_q1": 8.5,
     "crawl_config": {
       "keyword": "Lakeside Residence",
@@ -8719,8 +8719,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "hoang-anh-gia-lai-quan-8",
     "address": "Phường 8, Quận 8",
+    "id": "hoang-anh-gia-lai-quan-8",
     "km_q1": 6.0,
     "crawl_config": {
       "keyword": "Hoàng Anh Gia Lai Quận 8",
@@ -8770,8 +8770,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "ngc-phuong-nam",
     "address": "Phường 8, Quận 8, TP HCM",
+    "id": "ngc-phuong-nam",
     "km_q1": 6.8,
     "crawl_config": {
       "keyword": "Ngọc Phương Nam",
@@ -8818,8 +8818,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "chung-cu-bui-minh-truc",
     "address": "Bùi Minh Trực, Phường 5, Quận 8, TP HCM",
+    "id": "chung-cu-bui-minh-truc",
     "km_q1": 7.0,
     "crawl_config": {
       "keyword": "Chung cư Bùi Minh Trực",
@@ -8866,8 +8866,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "chung-cu-my-thuan",
     "address": "Phường 7, Quận 8, TP HCM",
+    "id": "chung-cu-my-thuan",
     "km_q1": 5.9,
     "crawl_config": {
       "keyword": "Chung cư Mỹ Thuận",
@@ -8914,8 +8914,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "chung-cu-thanh-nhut",
     "address": "Phường 6, Quận 8, TP HCM",
+    "id": "chung-cu-thanh-nhut",
     "km_q1": 7.8,
     "crawl_config": {
       "keyword": "Chung cư Thanh Nhựt",
@@ -8962,8 +8962,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "chung-cu-khiem-khi",
     "address": "Phường 6, Quận 8, TP HCM",
+    "id": "chung-cu-khiem-khi",
     "km_q1": 6.2,
     "crawl_config": {
       "keyword": "Chung cư Khiêm Khải",
@@ -9010,8 +9010,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "can-ho-the-grand-manhattan-quan-1",
     "address": "Quận 1, TP Hồ Chí Minh",
+    "id": "can-ho-the-grand-manhattan-quan-1",
     "km_q1": 1.6,
     "crawl_config": {
       "keyword": "Căn Hộ The Grand Manhattan Quận 1",
@@ -9065,8 +9065,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "can-ho-soho-quan-1-tun-soho-apartment",
     "address": "Quận 1, TP Hồ Chí Minh",
+    "id": "can-ho-soho-quan-1-tun-soho-apartment",
     "km_q1": 1.0,
     "crawl_config": {
       "keyword": "Căn hộ Soho Quận 1 | Tun Soho Apartment",
@@ -9115,8 +9115,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "chung-cu-nguyen-thai-binh-quan-1",
     "address": "Quận 1, TP Hồ Chí Minh",
+    "id": "chung-cu-nguyen-thai-binh-quan-1",
     "km_q1": 2.2,
     "crawl_config": {
       "keyword": "Chung cư Nguyễn Thái Bình Quận 1",
@@ -9166,8 +9166,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "lancaster-legacy-nguyen-trai",
     "address": "Quận 1, TP Hồ Chí Minh",
+    "id": "lancaster-legacy-nguyen-trai",
     "km_q1": 1.1,
     "crawl_config": {
       "keyword": "Lancaster Legacy Nguyễn Trãi",
@@ -9216,8 +9216,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "avalon",
     "address": "Quận 1, TP Hồ Chí Minh",
+    "id": "avalon",
     "km_q1": 2.5,
     "crawl_config": {
       "keyword": "Avalon",
@@ -9268,8 +9268,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "can-ho-40m2-quan-1",
     "address": "Quận 1, TP Hồ Chí Minh",
+    "id": "can-ho-40m2-quan-1",
     "km_q1": 1.0,
     "crawl_config": {
       "keyword": "CĂN HỘ 40M2 QUẬN 1",
@@ -9320,8 +9320,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "chung-cu-the-he-moi",
     "address": "Quận 1, TP Hồ Chí Minh",
+    "id": "chung-cu-the-he-moi",
     "km_q1": 1.2,
     "crawl_config": {
       "keyword": "Chung cư Thế Hệ Mới",
@@ -9371,8 +9371,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "grand-marina-saigon",
     "address": "Quận 1, TP Hồ Chí Minh",
+    "id": "grand-marina-saigon",
     "km_q1": 1.6,
     "crawl_config": {
       "keyword": "Grand Marina Saigon",
@@ -9426,8 +9426,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "chung-cu-1a1b-nguyen-dinh-chieu",
     "address": "Quận 1, TP Hồ Chí Minh",
+    "id": "chung-cu-1a1b-nguyen-dinh-chieu",
     "km_q1": 0.6,
     "crawl_config": {
       "keyword": "Chung cư 1A1B Nguyễn Đình Chiểu",
@@ -9476,8 +9476,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "d1mension",
     "address": "Quận 1, TP Hồ Chí Minh",
+    "id": "d1mension",
     "km_q1": 1.2,
     "crawl_config": {
       "keyword": "D1Mension",
@@ -9526,8 +9526,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "chung-cu-47-57-nguyen-thai-binh-phuong-nguyen-thai-binh-quan-1-ho-chi-minh",
     "address": "Quận 1, TP Hồ Chí Minh",
+    "id": "chung-cu-47-57-nguyen-thai-binh-phuong-nguyen-thai-binh-quan-1-ho-chi-minh",
     "km_q1": 0.8,
     "crawl_config": {
       "keyword": "Chung cư 47-57 Nguyễn Thái Bình, phường Nguyễn Thái Bình, Quận 1, Hồ Chí Minh",
@@ -9576,8 +9576,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "the-marq-quan-1",
     "address": "Quận 1, TP Hồ Chí Minh",
+    "id": "the-marq-quan-1",
     "km_q1": 1.1,
     "crawl_config": {
       "keyword": "The Marq Quận 1",
@@ -9628,8 +9628,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "nha-oi-apartments",
     "address": "Quận 1, TP Hồ Chí Minh",
+    "id": "nha-oi-apartments",
     "km_q1": 1.2,
     "crawl_config": {
       "keyword": "Nhà Ơi! apartments",
@@ -9678,8 +9678,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "kims-apartment",
     "address": "Quận 1, TP Hồ Chí Minh",
+    "id": "kims-apartment",
     "km_q1": 1.3,
     "crawl_config": {
       "keyword": "Kim's Apartment",
@@ -9729,8 +9729,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "chung-cu-203-nguyen-trai",
     "address": "Quận 1, TP Hồ Chí Minh",
+    "id": "chung-cu-203-nguyen-trai",
     "km_q1": 0.7,
     "crawl_config": {
       "keyword": "Chung cư 203 Nguyễn Trãi",
@@ -9781,8 +9781,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "saigon-manhattan-khu-tai-dinh-cu-chung-cu-co-giang",
     "address": "Quận 1, TP Hồ Chí Minh",
+    "id": "saigon-manhattan-khu-tai-dinh-cu-chung-cu-co-giang",
     "km_q1": 0.7,
     "crawl_config": {
       "keyword": "Saigon Manhattan - Khu Tái định cư Chung cư Cô Giang",
@@ -9833,8 +9833,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "cho-thue-can-ho-theo-ngay-tai-tphcm",
     "address": "Quận 1, TP Hồ Chí Minh",
+    "id": "cho-thue-can-ho-theo-ngay-tai-tphcm",
     "km_q1": 2.4,
     "crawl_config": {
       "keyword": "Cho thuê căn hộ theo ngày tại TP.HCM",
@@ -9885,8 +9885,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "chung-cu-khanh-hoi-1",
     "address": "Quận 1, TP Hồ Chí Minh",
+    "id": "chung-cu-khanh-hoi-1",
     "km_q1": 1.8,
     "crawl_config": {
       "keyword": "Chung cư Khánh Hội 1",
@@ -9936,8 +9936,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "terra-royal-xuan-hoa",
     "address": "Quận 3, TP Hồ Chí Minh",
+    "id": "terra-royal-xuan-hoa",
     "km_q1": 3.8,
     "crawl_config": {
       "keyword": "Terra Royal - Xuân Hoà",
@@ -9991,8 +9991,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "chung-cu-h3-hoang-dieu",
     "address": "Quận 3, TP Hồ Chí Minh",
+    "id": "chung-cu-h3-hoang-dieu",
     "km_q1": 4.0,
     "crawl_config": {
       "keyword": "Chung cư H3 Hoàng Diệu",
@@ -10042,8 +10042,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "chung-cu-1ab-cao-thang",
     "address": "Quận 3, TP Hồ Chí Minh",
+    "id": "chung-cu-1ab-cao-thang",
     "km_q1": 3.5,
     "crawl_config": {
       "keyword": "Chung Cư 1Ab Cao Thắng",
@@ -10093,8 +10093,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "chung-cu-green-building",
     "address": "Quận 3, TP Hồ Chí Minh",
+    "id": "chung-cu-green-building",
     "km_q1": 3.9,
     "crawl_config": {
       "keyword": "Chung cư Green Building",
@@ -10144,8 +10144,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "chung-cu-169-ky-dong",
     "address": "Quận 3, TP Hồ Chí Minh",
+    "id": "chung-cu-169-ky-dong",
     "km_q1": 2.8,
     "crawl_config": {
       "keyword": "Chung cư 16/9 Kỳ Đồng",
@@ -10195,8 +10195,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "chung-cu-lo-b2-590-cmt8",
     "address": "Quận 3, TP Hồ Chí Minh",
+    "id": "chung-cu-lo-b2-590-cmt8",
     "km_q1": 3.6,
     "crawl_config": {
       "keyword": "Chung cư Lô B2 590 CMT8",
@@ -10246,8 +10246,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "song-da-tower-office-saigon",
     "address": "Quận 3, TP Hồ Chí Minh",
+    "id": "song-da-tower-office-saigon",
     "km_q1": 3.2,
     "crawl_config": {
       "keyword": "Sông Đà Tower - Office Saigon",
@@ -10296,8 +10296,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "toa-nha-leman-luxury-building-office-saigon",
     "address": "Quận 3, TP Hồ Chí Minh",
+    "id": "toa-nha-leman-luxury-building-office-saigon",
     "km_q1": 3.8,
     "crawl_config": {
       "keyword": "Tòa nhà Léman Luxury building - Office Saigon",
@@ -10351,8 +10351,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "chung-cu-an-hoa-3",
     "address": "Quận 3, TP Hồ Chí Minh",
+    "id": "chung-cu-an-hoa-3",
     "km_q1": 4.9,
     "crawl_config": {
       "keyword": "Chung cư An Hoà 3",
@@ -10403,8 +10403,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "masteri-thao-dien-t3",
     "address": "Quận 3, TP Hồ Chí Minh",
+    "id": "masteri-thao-dien-t3",
     "km_q1": 4.9,
     "crawl_config": {
       "keyword": "Masteri Thảo Điền - T3",
@@ -10454,8 +10454,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "chung-cu-thai-an-3",
     "address": "Quận 3, TP Hồ Chí Minh",
+    "id": "chung-cu-thai-an-3",
     "km_q1": 4.4,
     "crawl_config": {
       "keyword": "Chung cư Thái An 3",
@@ -10504,8 +10504,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "can-ho-riva-park",
     "address": "Quận 3, TP Hồ Chí Minh",
+    "id": "can-ho-riva-park",
     "km_q1": 4.4,
     "crawl_config": {
       "keyword": "Căn hộ Riva Park",
@@ -10554,8 +10554,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "toa-nha-screc",
     "address": "Quận 3, TP Hồ Chí Minh",
+    "id": "toa-nha-screc",
     "km_q1": 3.3,
     "crawl_config": {
       "keyword": "Tòa Nhà Screc",
@@ -10606,8 +10606,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "chung-cu-jamona-heights",
     "address": "Quận 3, TP Hồ Chí Minh",
+    "id": "chung-cu-jamona-heights",
     "km_q1": 3.9,
     "crawl_config": {
       "keyword": "Chung cư Jamona Heights",
@@ -10657,8 +10657,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "chung-cu-sadora-thap-a",
     "address": "Quận 3, TP Hồ Chí Minh",
+    "id": "chung-cu-sadora-thap-a",
     "km_q1": 4.8,
     "crawl_config": {
       "keyword": "Chung cư Sadora - Tháp A",
@@ -10707,8 +10707,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "chung-cu-parkland",
     "address": "Quận 3, TP Hồ Chí Minh",
+    "id": "chung-cu-parkland",
     "km_q1": 4.9,
     "crawl_config": {
       "keyword": "Chung cư Parkland",
@@ -10759,8 +10759,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "chung-cu-eco-green-saigon",
     "address": "Quận 3, TP Hồ Chí Minh",
+    "id": "chung-cu-eco-green-saigon",
     "km_q1": 4.9,
     "crawl_config": {
       "keyword": "CHUNG CƯ ECO GREEN SAIGON",
@@ -10811,8 +10811,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "chung-cu-carillon-3",
     "address": "Quận 3, TP Hồ Chí Minh",
+    "id": "chung-cu-carillon-3",
     "km_q1": 2.7,
     "crawl_config": {
       "keyword": "Chung cư Carillon 3",
@@ -10862,8 +10862,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "chung-cu-res-3-1",
     "address": "Quận 3, TP Hồ Chí Minh",
+    "id": "chung-cu-res-3-1",
     "km_q1": 3.2,
     "crawl_config": {
       "keyword": "Chung cư RES 3",
@@ -10914,8 +10914,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "chung-cu-canh-vien-3",
     "address": "Quận 3, TP Hồ Chí Minh",
+    "id": "chung-cu-canh-vien-3",
     "km_q1": 3.8,
     "crawl_config": {
       "keyword": "Chung cư Cảnh Viên 3",
@@ -10966,8 +10966,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "kdc-everrich-3",
     "address": "Quận 3, TP Hồ Chí Minh",
+    "id": "kdc-everrich-3",
     "km_q1": 3.1,
     "crawl_config": {
       "keyword": "KDC EverRich 3",
@@ -11018,8 +11018,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "can-ho-cao-cap-my-vinh",
     "address": "Quận 3, TP Hồ Chí Minh",
+    "id": "can-ho-cao-cap-my-vinh",
     "km_q1": 3.5,
     "crawl_config": {
       "keyword": "Căn Hộ Cao Cấp Mỹ Vinh",
@@ -11068,8 +11068,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "can-ho-cao-cap-dao-kim-cuong-quan-2",
     "address": "Quận 3, TP Hồ Chí Minh",
+    "id": "can-ho-cao-cap-dao-kim-cuong-quan-2",
     "km_q1": 4.0,
     "crawl_config": {
       "keyword": "Căn hộ cao cấp Đảo Kim Cương Quận 2",
@@ -11119,8 +11119,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "can-ho-cao-cap-sarica-condominium",
     "address": "Quận 3, TP Hồ Chí Minh",
+    "id": "can-ho-cao-cap-sarica-condominium",
     "km_q1": 3.5,
     "crawl_config": {
       "keyword": "Căn hộ cao cấp Sarica Condominium",
@@ -11170,8 +11170,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "chung-cu-450",
     "address": "Quận 3, TP Hồ Chí Minh",
+    "id": "chung-cu-450",
     "km_q1": 4.6,
     "crawl_config": {
       "keyword": "Chung cư 450",
@@ -11220,8 +11220,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "chung-cu-tan-vinh",
     "address": "Quận 4, TP Hồ Chí Minh",
+    "id": "chung-cu-tan-vinh",
     "km_q1": 3.1,
     "crawl_config": {
       "keyword": "Chung cư Tân Vĩnh",
@@ -11270,8 +11270,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "toa-nha-chung-cu-saigon-royal",
     "address": "Quận 4, TP Hồ Chí Minh",
+    "id": "toa-nha-chung-cu-saigon-royal",
     "km_q1": 4.5,
     "crawl_config": {
       "keyword": "Toà Nhà Chung Cư Saigon Royal",
@@ -11325,8 +11325,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "chung-cu-tresor",
     "address": "Quận 4, TP Hồ Chí Minh",
+    "id": "chung-cu-tresor",
     "km_q1": 4.8,
     "crawl_config": {
       "keyword": "Chung Cư Tresor",
@@ -11377,8 +11377,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "icon-56-building",
     "address": "Quận 4, TP Hồ Chí Minh",
+    "id": "icon-56-building",
     "km_q1": 2.9,
     "crawl_config": {
       "keyword": "Icon 56 Building",
@@ -11427,8 +11427,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "lo-y-chung-cu-hoang-dieu",
     "address": "Quận 4, TP Hồ Chí Minh",
+    "id": "lo-y-chung-cu-hoang-dieu",
     "km_q1": 4.2,
     "crawl_config": {
       "keyword": "Lô Y, Chung cư Hoàng Diệu",
@@ -11477,8 +11477,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "chung-cu-vinh-hoi",
     "address": "Quận 4, TP Hồ Chí Minh",
+    "id": "chung-cu-vinh-hoi",
     "km_q1": 3.3,
     "crawl_config": {
       "keyword": "Chung cư Vĩnh Hội",
@@ -11527,8 +11527,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "rubyone-apart-ments",
     "address": "Quận 4, TP Hồ Chí Minh",
+    "id": "rubyone-apart-ments",
     "km_q1": 4.0,
     "crawl_config": {
       "keyword": "Rubyone apart ments",
@@ -11579,8 +11579,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "can-ho-charmington-irish-quan-4",
     "address": "Quận 4, TP Hồ Chí Minh",
+    "id": "can-ho-charmington-irish-quan-4",
     "km_q1": 3.8,
     "crawl_config": {
       "keyword": "Căn hộ Charmington Irish Quận 4",
@@ -11631,8 +11631,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "orient-apartment",
     "address": "Quận 4, TP Hồ Chí Minh",
+    "id": "orient-apartment",
     "km_q1": 3.2,
     "crawl_config": {
       "keyword": "Orient Apartment",
@@ -11681,8 +11681,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "ban-cho-thue-can-ho-quan-4-quan-7-quan-binh-thanh-bds-danh-land",
     "address": "Quận 4, TP Hồ Chí Minh",
+    "id": "ban-cho-thue-can-ho-quan-4-quan-7-quan-binh-thanh-bds-danh-land",
     "km_q1": 3.6,
     "crawl_config": {
       "keyword": "Bán - cho thuê căn hộ quận 4, quận 7 , quận Bình Thạnh - BĐS Danh Land",
@@ -11733,8 +11733,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "chung-cu-so-1-ton-that-thuyet",
     "address": "Quận 4, TP Hồ Chí Minh",
+    "id": "chung-cu-so-1-ton-that-thuyet",
     "km_q1": 2.7,
     "crawl_config": {
       "keyword": "Chung Cư số 1 Tôn Thất Thuyết",
@@ -11784,8 +11784,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "chung-cu-276",
     "address": "Quận 4, TP Hồ Chí Minh",
+    "id": "chung-cu-276",
     "km_q1": 3.0,
     "crawl_config": {
       "keyword": "Chung cư 276",
@@ -11835,8 +11835,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "chung-cu-ton-that-thuyet",
     "address": "Quận 4, TP Hồ Chí Minh",
+    "id": "chung-cu-ton-that-thuyet",
     "km_q1": 4.0,
     "crawl_config": {
       "keyword": "Chung cư Tôn Thất Thuyết",
@@ -11885,8 +11885,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "chung-cu-miulennium-132-ben-van-don-phuong-6-quan-4-tp-hcm",
     "address": "Quận 4, TP Hồ Chí Minh",
+    "id": "chung-cu-miulennium-132-ben-van-don-phuong-6-quan-4-tp-hcm",
     "km_q1": 4.8,
     "crawl_config": {
       "keyword": "Chung cu Miulennium, 132 ben Van đon, phuong 6, quan 4, tp hcm",
@@ -11936,8 +11936,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "chung-cu-millennium",
     "address": "Quận 4, TP Hồ Chí Minh",
+    "id": "chung-cu-millennium",
     "km_q1": 4.1,
     "crawl_config": {
       "keyword": "Chung cư Millennium",
@@ -11988,8 +11988,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "chung-cu-khanh-hoi-2",
     "address": "Quận 4, TP Hồ Chí Minh",
+    "id": "chung-cu-khanh-hoi-2",
     "km_q1": 4.3,
     "crawl_config": {
       "keyword": "Chung cư Khánh Hội 2",
@@ -12040,8 +12040,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "galaxy-9",
     "address": "Quận 4, TP Hồ Chí Minh",
+    "id": "galaxy-9",
     "km_q1": 4.9,
     "crawl_config": {
       "keyword": "Galaxy 9",
@@ -12090,8 +12090,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "chung-cu-de-la-sol",
     "address": "Quận 4, TP Hồ Chí Minh",
+    "id": "chung-cu-de-la-sol",
     "km_q1": 3.6,
     "crawl_config": {
       "keyword": "Chung cư De La Sol",
@@ -12142,8 +12142,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "chung-cu-duc-khai-r7",
     "address": "Quận 4, TP Hồ Chí Minh",
+    "id": "chung-cu-duc-khai-r7",
     "km_q1": 3.0,
     "crawl_config": {
       "keyword": "Chung Cư Đức Khải R7",
@@ -12194,8 +12194,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "chung-cu-ngo-quyen-q5",
     "address": "Quận 5, TP Hồ Chí Minh",
+    "id": "chung-cu-ngo-quyen-q5",
     "km_q1": 3.0,
     "crawl_config": {
       "keyword": "Chung cư Ngô Quyền Q5",
@@ -12246,8 +12246,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "chung-cu-phuc-thinh",
     "address": "Quận 5, TP Hồ Chí Minh",
+    "id": "chung-cu-phuc-thinh",
     "km_q1": 3.8,
     "crawl_config": {
       "keyword": "Chung Cư Phúc Thịnh",
@@ -12298,8 +12298,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "chung-cu-su-van-hanh",
     "address": "Quận 5, TP Hồ Chí Minh",
+    "id": "chung-cu-su-van-hanh",
     "km_q1": 2.8,
     "crawl_config": {
       "keyword": "Chung cư Sư Vạn Hạnh",
@@ -12350,8 +12350,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "chung-cu-phan-van-tri",
     "address": "Quận 5, TP Hồ Chí Minh",
+    "id": "chung-cu-phan-van-tri",
     "km_q1": 3.8,
     "crawl_config": {
       "keyword": "Chung Cư Phan Văn Trị",
@@ -12402,8 +12402,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "the-berkley-thao-dien",
     "address": "Quận 5, TP Hồ Chí Minh",
+    "id": "the-berkley-thao-dien",
     "km_q1": 3.1,
     "crawl_config": {
       "keyword": "The Berkley Thảo Điền",
@@ -12452,8 +12452,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "chung-cu-nguyen-an",
     "address": "Quận 5, TP Hồ Chí Minh",
+    "id": "chung-cu-nguyen-an",
     "km_q1": 3.5,
     "crawl_config": {
       "keyword": "Chung Cư Nguyễn Án",
@@ -12503,8 +12503,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "khu-can-ho-cao-cap-the-everrich-infinity",
     "address": "Quận 5, TP Hồ Chí Minh",
+    "id": "khu-can-ho-cao-cap-the-everrich-infinity",
     "km_q1": 4.8,
     "crawl_config": {
       "keyword": "Khu Căn Hộ Cao Cấp THE EVERRICH INFINITY",
@@ -12553,8 +12553,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "tan-da-court-apartment",
     "address": "Quận 5, TP Hồ Chí Minh",
+    "id": "tan-da-court-apartment",
     "km_q1": 4.8,
     "crawl_config": {
       "keyword": "Tản Đà Court Apartment",
@@ -12605,8 +12605,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "chung-cu-le-hong-phong",
     "address": "Quận 5, TP Hồ Chí Minh",
+    "id": "chung-cu-le-hong-phong",
     "km_q1": 2.8,
     "crawl_config": {
       "keyword": "Chung cư Lê Hồng Phong",
@@ -12657,8 +12657,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "chung-cu-vien-dong",
     "address": "Quận 5, TP Hồ Chí Minh",
+    "id": "chung-cu-vien-dong",
     "km_q1": 3.3,
     "crawl_config": {
       "keyword": "Chung cư Viễn Đông",
@@ -12709,8 +12709,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "chung-cu-hung-vuong",
     "address": "Quận 5, TP Hồ Chí Minh",
+    "id": "chung-cu-hung-vuong",
     "km_q1": 3.6,
     "crawl_config": {
       "keyword": "Chung cư Hùng Vương",
@@ -12759,8 +12759,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "ventosa-luxury",
     "address": "Quận 5, TP Hồ Chí Minh",
+    "id": "ventosa-luxury",
     "km_q1": 3.3,
     "crawl_config": {
       "keyword": "Ventosa Luxury",
@@ -12814,8 +12814,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "vinhomes-central-park-park-5",
     "address": "Quận 5, TP Hồ Chí Minh",
+    "id": "vinhomes-central-park-park-5",
     "km_q1": 4.8,
     "crawl_config": {
       "keyword": "Vinhomes Central Park – Park 5",
@@ -12865,8 +12865,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "neway-home-cho-thue-can-ho-quan-7",
     "address": "Quận 5, TP Hồ Chí Minh",
+    "id": "neway-home-cho-thue-can-ho-quan-7",
     "km_q1": 4.8,
     "crawl_config": {
       "keyword": "Neway Home - Cho Thuê Căn Hộ Quận 7",
@@ -12915,8 +12915,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "cao-oc-sao-mai",
     "address": "Quận 5, TP Hồ Chí Minh",
+    "id": "cao-oc-sao-mai",
     "km_q1": 4.5,
     "crawl_config": {
       "keyword": "Cao Ốc Sao Mai",
@@ -12966,8 +12966,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "basilico-italian-restaurant",
     "address": "Quận 6, TP Hồ Chí Minh",
+    "id": "basilico-italian-restaurant",
     "km_q1": 6.2,
     "crawl_config": {
       "keyword": "Basilico - Italian Restaurant",
@@ -13018,8 +13018,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "chung-cu-the-western-capital",
     "address": "Quận 6, TP Hồ Chí Minh",
+    "id": "chung-cu-the-western-capital",
     "km_q1": 6.9,
     "crawl_config": {
       "keyword": "Chung cư The Western Capital",
@@ -13068,8 +13068,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "cho-thue-can-ho-chung-cu-quan-6",
     "address": "Quận 6, TP Hồ Chí Minh",
+    "id": "cho-thue-can-ho-chung-cu-quan-6",
     "km_q1": 6.1,
     "crawl_config": {
       "keyword": "Cho thuê căn hộ chung cư quận 6",
@@ -13119,8 +13119,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "chung-cu-an-phu",
     "address": "Quận 6, TP Hồ Chí Minh",
+    "id": "chung-cu-an-phu",
     "km_q1": 7.2,
     "crawl_config": {
       "keyword": "Chung cư An Phú",
@@ -13171,8 +13171,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "chung-cu-summer-square",
     "address": "Quận 6, TP Hồ Chí Minh",
+    "id": "chung-cu-summer-square",
     "km_q1": 8.5,
     "crawl_config": {
       "keyword": "Chung Cư Summer Square",
@@ -13221,8 +13221,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "chung-cu-saigon-asiana",
     "address": "Quận 6, TP Hồ Chí Minh",
+    "id": "chung-cu-saigon-asiana",
     "km_q1": 5.9,
     "crawl_config": {
       "keyword": "Chung cư Saigon Asiana",
@@ -13271,8 +13271,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "chung-cu-starlight-riverside",
     "address": "Quận 6, TP Hồ Chí Minh",
+    "id": "chung-cu-starlight-riverside",
     "km_q1": 8.5,
     "crawl_config": {
       "keyword": "Chung cư Starlight Riverside",
@@ -13323,8 +13323,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "chung-cu-d-homme",
     "address": "Quận 6, TP Hồ Chí Minh",
+    "id": "chung-cu-d-homme",
     "km_q1": 7.3,
     "crawl_config": {
       "keyword": "Chung cư D-Homme",
@@ -13374,8 +13374,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "toa-nha-asiana-capella",
     "address": "Quận 6, TP Hồ Chí Minh",
+    "id": "toa-nha-asiana-capella",
     "km_q1": 6.3,
     "crawl_config": {
       "keyword": "tòa nhà Asiana Capella",
@@ -13424,8 +13424,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "tan-thinh-loi-group-chung-cu",
     "address": "Quận 6, TP Hồ Chí Minh",
+    "id": "tan-thinh-loi-group-chung-cu",
     "km_q1": 6.3,
     "crawl_config": {
       "keyword": "Tân Thịnh Lợi Group - Chung Cư",
@@ -13476,8 +13476,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "lucky-palace-cung-dien-may-man",
     "address": "Quận 6, TP Hồ Chí Minh",
+    "id": "lucky-palace-cung-dien-may-man",
     "km_q1": 8.2,
     "crawl_config": {
       "keyword": "Lucky Palace (Cung Điện May Mắn)",
@@ -13527,8 +13527,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "chung-cu-viva-riverside",
     "address": "Quận 6, TP Hồ Chí Minh",
+    "id": "chung-cu-viva-riverside",
     "km_q1": 7.3,
     "crawl_config": {
       "keyword": "Chung cư Viva Riverside",
@@ -13577,8 +13577,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "khu-can-ho-an-hoa",
     "address": "Quận 6, TP Hồ Chí Minh",
+    "id": "khu-can-ho-an-hoa",
     "km_q1": 7.3,
     "crawl_config": {
       "keyword": "Khu căn hộ An Hoà",
@@ -13629,8 +13629,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "chung-cu-gia-dinh-quan-doi",
     "address": "Quận 6, TP Hồ Chí Minh",
+    "id": "chung-cu-gia-dinh-quan-doi",
     "km_q1": 7.3,
     "crawl_config": {
       "keyword": "Chung cư gia đình Quân Đội",
@@ -13680,8 +13680,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "chung-cu-tan-hoa-dong-243-tan-hoa-dong-phuong-14-quan-6-tp-hcm",
     "address": "Quận 6, TP Hồ Chí Minh",
+    "id": "chung-cu-tan-hoa-dong-243-tan-hoa-dong-phuong-14-quan-6-tp-hcm",
     "km_q1": 6.3,
     "crawl_config": {
       "keyword": "Chung cư Tân Hòa Đông 243 Tân Hòa Đông Phường 14 Quận 6 TP HCM",
@@ -13731,8 +13731,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "blue-sapphire-apartment",
     "address": "Quận 6, TP Hồ Chí Minh",
+    "id": "blue-sapphire-apartment",
     "km_q1": 8.0,
     "crawl_config": {
       "keyword": "Blue Sapphire Apartment",
@@ -13781,8 +13781,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "chung-cu-gotec-land",
     "address": "Quận 6, TP Hồ Chí Minh",
+    "id": "chung-cu-gotec-land",
     "km_q1": 5.9,
     "crawl_config": {
       "keyword": "Chung Cư GoTec Land",
@@ -13833,8 +13833,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "chung-cu-kien-thanh",
     "address": "Quận 6, TP Hồ Chí Minh",
+    "id": "chung-cu-kien-thanh",
     "km_q1": 5.9,
     "crawl_config": {
       "keyword": "Chung Cư Kiến Thành",
@@ -13884,8 +13884,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "chung-cu-binh-phu-1",
     "address": "Quận 6, TP Hồ Chí Minh",
+    "id": "chung-cu-binh-phu-1",
     "km_q1": 7.7,
     "crawl_config": {
       "keyword": "Chung Cư Bình Phú 1",
@@ -13935,8 +13935,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "chung-cu-xi-grand-cua-b",
     "address": "Quận 10, TP Hồ Chí Minh",
+    "id": "chung-cu-xi-grand-cua-b",
     "km_q1": 4.7,
     "crawl_config": {
       "keyword": "Chung cư Xi Grand - Cửa B",
@@ -13990,8 +13990,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "chung-cu-dao-duy-tu",
     "address": "Quận 10, TP Hồ Chí Minh",
+    "id": "chung-cu-dao-duy-tu",
     "km_q1": 2.7,
     "crawl_config": {
       "keyword": "Chung Cư Đào Duy Từ",
@@ -14040,8 +14040,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "chung-cu-lo-x-ngo-gia-tu",
     "address": "Quận 10, TP Hồ Chí Minh",
+    "id": "chung-cu-lo-x-ngo-gia-tu",
     "km_q1": 4.2,
     "crawl_config": {
       "keyword": "Chung Cư Lô X, Ngô Gia Tự",
@@ -14092,8 +14092,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "chung-cu-kingdom-101",
     "address": "Quận 10, TP Hồ Chí Minh",
+    "id": "chung-cu-kingdom-101",
     "km_q1": 3.6,
     "crawl_config": {
       "keyword": "Chung cư Kingdom 101",
@@ -14143,8 +14143,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "chung-cu-tran-van-kieu",
     "address": "Quận 10, TP Hồ Chí Minh",
+    "id": "chung-cu-tran-van-kieu",
     "km_q1": 4.0,
     "crawl_config": {
       "keyword": "Chung Cư Trần Văn Kiểu",
@@ -14194,8 +14194,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "iris-3-ha-do-centrosa",
     "address": "Quận 10, TP Hồ Chí Minh",
+    "id": "iris-3-ha-do-centrosa",
     "km_q1": 3.6,
     "crawl_config": {
       "keyword": "IRIS 3 - Hà Đô Centrosa",
@@ -14244,8 +14244,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "chung-cu-nguyen-kim-khu-b",
     "address": "Quận 10, TP Hồ Chí Minh",
+    "id": "chung-cu-nguyen-kim-khu-b",
     "km_q1": 4.6,
     "crawl_config": {
       "keyword": "Chung cư Nguyễn kim khu B",
@@ -14295,8 +14295,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "hado-centrosa",
     "address": "Quận 10, TP Hồ Chí Minh",
+    "id": "hado-centrosa",
     "km_q1": 3.2,
     "crawl_config": {
       "keyword": "HaDo Centrosa",
@@ -14346,8 +14346,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "chung-cu-thien-nam",
     "address": "Quận 10, TP Hồ Chí Minh",
+    "id": "chung-cu-thien-nam",
     "km_q1": 3.1,
     "crawl_config": {
       "keyword": "Chung cư Thiên Nam",
@@ -14398,8 +14398,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "phu-tho-dmc-ly-thuong-kiet-quan-10",
     "address": "Quận 10, TP Hồ Chí Minh",
+    "id": "phu-tho-dmc-ly-thuong-kiet-quan-10",
     "km_q1": 3.6,
     "crawl_config": {
       "keyword": "Phú Thọ DMC - Lý Thường Kiệt Quận 10",
@@ -14449,8 +14449,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "sunshine-continental",
     "address": "Quận 10, TP Hồ Chí Minh",
+    "id": "sunshine-continental",
     "km_q1": 3.8,
     "crawl_config": {
       "keyword": "Sunshine Continental",
@@ -14504,8 +14504,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "ha-do-orchid-2",
     "address": "Quận 10, TP Hồ Chí Minh",
+    "id": "ha-do-orchid-2",
     "km_q1": 3.2,
     "crawl_config": {
       "keyword": "Hà Đô Orchid 2",
@@ -14556,8 +14556,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "can-ho-rivera-park-sai-gon",
     "address": "Quận 10, TP Hồ Chí Minh",
+    "id": "can-ho-rivera-park-sai-gon",
     "km_q1": 4.1,
     "crawl_config": {
       "keyword": "Căn Hộ Rivera Park Sài Gòn",
@@ -14606,8 +14606,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "cao-oc-xi-grand-court",
     "address": "Quận 10, TP Hồ Chí Minh",
+    "id": "cao-oc-xi-grand-court",
     "km_q1": 4.2,
     "crawl_config": {
       "keyword": "Cao Ốc Xi Grand Court",
@@ -14661,8 +14661,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "toa-nha-charmington-la-pointe",
     "address": "Quận 10, TP Hồ Chí Minh",
+    "id": "toa-nha-charmington-la-pointe",
     "km_q1": 2.9,
     "crawl_config": {
       "keyword": "Tòa Nhà Charmington La Pointe",
@@ -14711,8 +14711,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "kingdom-101-block-c",
     "address": "Quận 10, TP Hồ Chí Minh",
+    "id": "kingdom-101-block-c",
     "km_q1": 3.8,
     "crawl_config": {
       "keyword": "Kingdom 101 Block C",
@@ -14763,8 +14763,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "huong-hanh-phuc-can-ho-gac-lung-full-noi-that",
     "address": "Quận 10, TP Hồ Chí Minh",
+    "id": "huong-hanh-phuc-can-ho-gac-lung-full-noi-that",
     "km_q1": 4.9,
     "crawl_config": {
       "keyword": "Hưởng Hạnh Phúc: Căn Hộ Gác Lửng - Full Nội Thất",
@@ -14814,8 +14814,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "cubicity-fa-house",
     "address": "Quận 10, TP Hồ Chí Minh",
+    "id": "cubicity-fa-house",
     "km_q1": 2.9,
     "crawl_config": {
       "keyword": "Cubicity FA House",
@@ -14864,8 +14864,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "chung-cu-res-11",
     "address": "Quận 11, TP Hồ Chí Minh",
+    "id": "chung-cu-res-11",
     "km_q1": 7.7,
     "crawl_config": {
       "keyword": "Chung cư Res 11",
@@ -14914,8 +14914,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "chung-cu-phuc-hung-golden",
     "address": "Quận 11, TP Hồ Chí Minh",
+    "id": "chung-cu-phuc-hung-golden",
     "km_q1": 7.5,
     "crawl_config": {
       "keyword": "Chung cư Phúc Hưng Golden",
@@ -14969,8 +14969,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "chung-cu-quan-su",
     "address": "Quận 11, TP Hồ Chí Minh",
+    "id": "chung-cu-quan-su",
     "km_q1": 8.7,
     "crawl_config": {
       "keyword": "Chung cư Quân sự",
@@ -15021,8 +15021,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "chung-cu-acb-ong-ich-khiem",
     "address": "Quận 11, TP Hồ Chí Minh",
+    "id": "chung-cu-acb-ong-ich-khiem",
     "km_q1": 8.5,
     "crawl_config": {
       "keyword": "Chung cư ACB Ông Ích Khiêm",
@@ -15071,8 +15071,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "tan-phuoc-plaza",
     "address": "Quận 11, TP Hồ Chí Minh",
+    "id": "tan-phuoc-plaza",
     "km_q1": 7.6,
     "crawl_config": {
       "keyword": "Tân Phước Plaza",
@@ -15121,8 +15121,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "chung-cu-cay-mai",
     "address": "Quận 11, TP Hồ Chí Minh",
+    "id": "chung-cu-cay-mai",
     "km_q1": 5.8,
     "crawl_config": {
       "keyword": "Chung cư cây mai",
@@ -15172,8 +15172,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "cao-oc-phu-tho-thuan-viet",
     "address": "Quận 11, TP Hồ Chí Minh",
+    "id": "cao-oc-phu-tho-thuan-viet",
     "km_q1": 8.3,
     "crawl_config": {
       "keyword": "Cao ốc Phú Thọ - Thuận Việt",
@@ -15223,8 +15223,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "chung-cu-hoa-sen",
     "address": "Quận 11, TP Hồ Chí Minh",
+    "id": "chung-cu-hoa-sen",
     "km_q1": 7.0,
     "crawl_config": {
       "keyword": "Chung Cư Hoa Sen",
@@ -15273,8 +15273,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "flemington-apartments",
     "address": "Quận 11, TP Hồ Chí Minh",
+    "id": "flemington-apartments",
     "km_q1": 5.7,
     "crawl_config": {
       "keyword": "Flemington Apartments",
@@ -15324,8 +15324,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "can-ho-the-park-avenue-novaland",
     "address": "Quận 11, TP Hồ Chí Minh",
+    "id": "can-ho-the-park-avenue-novaland",
     "km_q1": 7.4,
     "crawl_config": {
       "keyword": "Căn hộ The Park Avenue - Novaland",
@@ -15375,8 +15375,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "toa-nha-lu-gia-plaza-office-saigon",
     "address": "Quận 11, TP Hồ Chí Minh",
+    "id": "toa-nha-lu-gia-plaza-office-saigon",
     "km_q1": 7.5,
     "crawl_config": {
       "keyword": "Tòa nhà Lữ Gia Plaza - Office Saigon",
@@ -15426,8 +15426,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "chung-cu-hausneo",
     "address": "Quận 11, TP Hồ Chí Minh",
+    "id": "chung-cu-hausneo",
     "km_q1": 8.3,
     "crawl_config": {
       "keyword": "Chung Cư Hausneo",
@@ -15476,8 +15476,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "lotte-mart-quan-11",
     "address": "Quận 11, TP Hồ Chí Minh",
+    "id": "lotte-mart-quan-11",
     "km_q1": 8.9,
     "crawl_config": {
       "keyword": "LOTTE Mart Quận 11",
@@ -15527,8 +15527,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "chung-cu-tan-phuoc-lo-a",
     "address": "Quận 11, TP Hồ Chí Minh",
+    "id": "chung-cu-tan-phuoc-lo-a",
     "km_q1": 5.7,
     "crawl_config": {
       "keyword": "Chung cư Tân Phước Lô A",
@@ -15578,8 +15578,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "can-ho-cao-cap-cho-thue-duong-69-tan-quy-quan-7",
     "address": "Quận 11, TP Hồ Chí Minh",
+    "id": "can-ho-cao-cap-cho-thue-duong-69-tan-quy-quan-7",
     "km_q1": 6.2,
     "crawl_config": {
       "keyword": "Căn hộ cao cấp cho thuê - đường 69, Tân Quy, quận 7",
@@ -15630,8 +15630,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "chung-cu-au-co",
     "address": "Quận 11, TP Hồ Chí Minh",
+    "id": "chung-cu-au-co",
     "km_q1": 8.2,
     "crawl_config": {
       "keyword": "Chung cư Âu Cơ",
@@ -15681,8 +15681,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "chung-cu-tan-phuoc-lo-c",
     "address": "Quận 11, TP Hồ Chí Minh",
+    "id": "chung-cu-tan-phuoc-lo-c",
     "km_q1": 7.5,
     "crawl_config": {
       "keyword": "Chung cư Tân Phước Lô C",
@@ -15732,8 +15732,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "ap-home-an-phu-serviced-apartment",
     "address": "Quận 11, TP Hồ Chí Minh",
+    "id": "ap-home-an-phu-serviced-apartment",
     "km_q1": 6.5,
     "crawl_config": {
       "keyword": "AP Home - An Phu Serviced Apartment",
@@ -15784,8 +15784,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "chung-cu-phu-tho",
     "address": "Quận 11, TP Hồ Chí Minh",
+    "id": "chung-cu-phu-tho",
     "km_q1": 6.1,
     "crawl_config": {
       "keyword": "Chung Cư Phú Thọ",
@@ -15836,8 +15836,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "the-everrich-1",
     "address": "Quận 11, TP Hồ Chí Minh",
+    "id": "the-everrich-1",
     "km_q1": 7.2,
     "crawl_config": {
       "keyword": "THE EVERRICH 1",
@@ -15886,8 +15886,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "chung-cu-12-view-tin-phong",
     "address": "Quận 12, TP Hồ Chí Minh",
+    "id": "chung-cu-12-view-tin-phong",
     "km_q1": 12.4,
     "crawl_config": {
       "keyword": "Chung cư 12 View Tín Phong",
@@ -15936,8 +15936,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "chung-cu-prosper-plaza",
     "address": "Quận 12, TP Hồ Chí Minh",
+    "id": "chung-cu-prosper-plaza",
     "km_q1": 14.3,
     "crawl_config": {
       "keyword": "Chung cư Prosper Plaza",
@@ -15987,8 +15987,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "chung-cu-hiep-thanh-city",
     "address": "Quận 12, TP Hồ Chí Minh",
+    "id": "chung-cu-hiep-thanh-city",
     "km_q1": 10.9,
     "crawl_config": {
       "keyword": "Chung Cư Hiệp Thành City",
@@ -16037,8 +16037,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "chung-cu-the-park-land-quan-12",
     "address": "Quận 12, TP Hồ Chí Minh",
+    "id": "chung-cu-the-park-land-quan-12",
     "km_q1": 13.5,
     "crawl_config": {
       "keyword": "Chung cư The Park Land Quận 12",
@@ -16089,8 +16089,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "chung-cu-hiep-thanh-buildings",
     "address": "Quận 12, TP Hồ Chí Minh",
+    "id": "chung-cu-hiep-thanh-buildings",
     "km_q1": 14.9,
     "crawl_config": {
       "keyword": "Chung cư Hiệp Thành Building's",
@@ -16141,8 +16141,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "chung-cu-zen-tower",
     "address": "Quận 12, TP Hồ Chí Minh",
+    "id": "chung-cu-zen-tower",
     "km_q1": 12.3,
     "crawl_config": {
       "keyword": "Chung cư Zen Tower",
@@ -16192,8 +16192,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "chung-cu-an-phu-dong-vuon-lai",
     "address": "Quận 12, TP Hồ Chí Minh",
+    "id": "chung-cu-an-phu-dong-vuon-lai",
     "km_q1": 11.7,
     "crawl_config": {
       "keyword": "Chung Cư An Phú Đông Vườn Lài",
@@ -16244,8 +16244,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "chung-cu-quan-khu-7",
     "address": "Quận 12, TP Hồ Chí Minh",
+    "id": "chung-cu-quan-khu-7",
     "km_q1": 12.2,
     "crawl_config": {
       "keyword": "Chung cư Quân Khu 7",
@@ -16294,8 +16294,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "chung-cu-thai-an-2",
     "address": "Quận 12, TP Hồ Chí Minh",
+    "id": "chung-cu-thai-an-2",
     "km_q1": 9.6,
     "crawl_config": {
       "keyword": "Chung Cư Thái An 2",
@@ -16344,8 +16344,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "chung-cu-vo-dinh-apartment",
     "address": "Quận 12, TP Hồ Chí Minh",
+    "id": "chung-cu-vo-dinh-apartment",
     "km_q1": 12.5,
     "crawl_config": {
       "keyword": "Chung cư Võ Đình Apartment",
@@ -16396,8 +16396,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "chung-cu-picity-thanh-xuan-13-quan-12",
     "address": "Quận 12, TP Hồ Chí Minh",
+    "id": "chung-cu-picity-thanh-xuan-13-quan-12",
     "km_q1": 12.8,
     "crawl_config": {
       "keyword": "Chung Cư Picity Thạnh Xuân 13 Quận 12",
@@ -16446,8 +16446,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "chung-cu-to-ky-tower",
     "address": "Quận 12, TP Hồ Chí Minh",
+    "id": "chung-cu-to-ky-tower",
     "km_q1": 10.1,
     "crawl_config": {
       "keyword": "Chung cư Tô Ký Tower",
@@ -16496,8 +16496,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "erum-vietnam",
     "address": "Quận 12, TP Hồ Chí Minh",
+    "id": "erum-vietnam",
     "km_q1": 13.2,
     "crawl_config": {
       "keyword": "ERUM VIETNAM",
@@ -16547,8 +16547,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "moscow-tower",
     "address": "Quận 12, TP Hồ Chí Minh",
+    "id": "moscow-tower",
     "km_q1": 11.1,
     "crawl_config": {
       "keyword": "Moscow Tower",
@@ -16599,8 +16599,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "chung-cu-dong-hung-1",
     "address": "Quận 12, TP Hồ Chí Minh",
+    "id": "chung-cu-dong-hung-1",
     "km_q1": 11.2,
     "crawl_config": {
       "keyword": "Chung cư Đông Hưng 1",
@@ -16649,8 +16649,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "chung-cu-tecco-green-nest",
     "address": "Quận 12, TP Hồ Chí Minh",
+    "id": "chung-cu-tecco-green-nest",
     "km_q1": 9.8,
     "crawl_config": {
       "keyword": "Chung cư Tecco Green Nest",
@@ -16699,8 +16699,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "picity-high-park-c5",
     "address": "Quận 12, TP Hồ Chí Minh",
+    "id": "picity-high-park-c5",
     "km_q1": 10.8,
     "crawl_config": {
       "keyword": "Picity High Park C5",
@@ -16750,8 +16750,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "chung-cu-hoa-phuong",
     "address": "Quận 12, TP Hồ Chí Minh",
+    "id": "chung-cu-hoa-phuong",
     "km_q1": 10.3,
     "crawl_config": {
       "keyword": "Chung cư Hoa Phượng",
@@ -16802,8 +16802,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "hung-ngan-garden",
     "address": "Quận 12, TP Hồ Chí Minh",
+    "id": "hung-ngan-garden",
     "km_q1": 14.2,
     "crawl_config": {
       "keyword": "Hưng Ngân Garden",
@@ -16853,8 +16853,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "chung-cu-dong-hai",
     "address": "Quận 12, TP Hồ Chí Minh",
+    "id": "chung-cu-dong-hai",
     "km_q1": 13.9,
     "crawl_config": {
       "keyword": "Chung Cư Đông Hải",
@@ -16905,8 +16905,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "triton-crown-ho-ban-nguyet-phu-my-hung",
     "address": "Quận 12, TP Hồ Chí Minh",
+    "id": "triton-crown-ho-ban-nguyet-phu-my-hung",
     "km_q1": 10.3,
     "crawl_config": {
       "keyword": "Triton Crown Hồ Bán Nguyệt - Phú Mỹ Hưng",
@@ -16957,8 +16957,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "can-ho-an-suong-ipark",
     "address": "Quận 12, TP Hồ Chí Minh",
+    "id": "can-ho-an-suong-ipark",
     "km_q1": 14.9,
     "crawl_config": {
       "keyword": "Căn hộ An Sương Ipark",
@@ -17007,8 +17007,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "can-ho-sleepbox-ktx-green-house-quan-12",
     "address": "Quận 12, TP Hồ Chí Minh",
+    "id": "can-ho-sleepbox-ktx-green-house-quan-12",
     "km_q1": 14.4,
     "crawl_config": {
       "keyword": "Căn Hộ .SleepBox . KTX Green House Quận 12",
@@ -17058,8 +17058,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "can-ho-quan-binh-tan-saigonhomes",
     "address": "Quận Bình Tân, TP Hồ Chí Minh",
+    "id": "can-ho-quan-binh-tan-saigonhomes",
     "km_q1": 10.6,
     "crawl_config": {
       "keyword": "Căn Hộ Quận Bình Tân Saigonhomes",
@@ -17109,8 +17109,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "chung-cu-tecco-town-quan-binh-tan",
     "address": "Quận Bình Tân, TP Hồ Chí Minh",
+    "id": "chung-cu-tecco-town-quan-binh-tan",
     "km_q1": 13.5,
     "crawl_config": {
       "keyword": "Chung Cư TECCO TOWN Quận Bình Tân",
@@ -17160,8 +17160,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "can-ho-moonlight-boulevard",
     "address": "Quận Bình Tân, TP Hồ Chí Minh",
+    "id": "can-ho-moonlight-boulevard",
     "km_q1": 10.5,
     "crawl_config": {
       "keyword": "Căn hộ Moonlight Boulevard",
@@ -17212,8 +17212,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "can-ho-cho-thue",
     "address": "Quận Bình Tân, TP Hồ Chí Minh",
+    "id": "can-ho-cho-thue",
     "km_q1": 10.4,
     "crawl_config": {
       "keyword": "Căn hộ cho thuê",
@@ -17263,8 +17263,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "khu-chung-cu-ehome-3-tay-sai-gon",
     "address": "Quận Bình Tân, TP Hồ Chí Minh",
+    "id": "khu-chung-cu-ehome-3-tay-sai-gon",
     "km_q1": 14.9,
     "crawl_config": {
       "keyword": "Khu chung cư Ehome 3 - Tây Sài Gòn",
@@ -17311,8 +17311,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "chung-cu-hoang-anh-thanh-binh",
     "address": "Quận Bình Tân, TP Hồ Chí Minh",
+    "id": "chung-cu-hoang-anh-thanh-binh",
     "km_q1": 9.8,
     "crawl_config": {
       "keyword": "Chung cư Hoàng Anh Thanh Bình",
@@ -17363,8 +17363,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "chung-cu-moonlight-park-view",
     "address": "Quận Bình Tân, TP Hồ Chí Minh",
+    "id": "chung-cu-moonlight-park-view",
     "km_q1": 12.1,
     "crawl_config": {
       "keyword": "Chung cư Moonlight Park View",
@@ -17413,8 +17413,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "chung-cu-imperial-place",
     "address": "Quận Bình Tân, TP Hồ Chí Minh",
+    "id": "chung-cu-imperial-place",
     "km_q1": 13.1,
     "crawl_config": {
       "keyword": "Chung cư Imperial Place,",
@@ -17463,8 +17463,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "chung-cu-binh-tri-dong-b",
     "address": "Quận Bình Tân, TP Hồ Chí Minh",
+    "id": "chung-cu-binh-tri-dong-b",
     "km_q1": 13.2,
     "crawl_config": {
       "keyword": "Chung Cư Bình Trị Đông B",
@@ -17513,8 +17513,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "chung-cu-da-sa",
     "address": "Quận Bình Tân, TP Hồ Chí Minh",
+    "id": "chung-cu-da-sa",
     "km_q1": 10.0,
     "crawl_config": {
       "keyword": "Chung Cư Da Sà",
@@ -17563,8 +17563,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "khu-do-thi-akari-city-nam-long-group",
     "address": "Quận Bình Tân, TP Hồ Chí Minh",
+    "id": "khu-do-thi-akari-city-nam-long-group",
     "km_q1": 11.6,
     "crawl_config": {
       "keyword": "Khu đô thị Akari City - Nam Long Group",
@@ -17614,8 +17614,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "green-town-binh-tan",
     "address": "Quận Bình Tân, TP Hồ Chí Minh",
+    "id": "green-town-binh-tan",
     "km_q1": 9.5,
     "crawl_config": {
       "keyword": "Green Town Bình Tân",
@@ -17664,8 +17664,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "chung-cu-hoang-kim-the-gia",
     "address": "Quận Bình Tân, TP Hồ Chí Minh",
+    "id": "chung-cu-hoang-kim-the-gia",
     "km_q1": 13.6,
     "crawl_config": {
       "keyword": "Chung Cư Hoàng Kim Thế Gia",
@@ -17714,8 +17714,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "chung-cu-fullhouse",
     "address": "Quận Bình Tân, TP Hồ Chí Minh",
+    "id": "chung-cu-fullhouse",
     "km_q1": 13.8,
     "crawl_config": {
       "keyword": "Chung Cư Fullhouse",
@@ -17764,8 +17764,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "chung-cu-vision-1-binh-tan",
     "address": "Quận Bình Tân, TP Hồ Chí Minh",
+    "id": "chung-cu-vision-1-binh-tan",
     "km_q1": 11.7,
     "crawl_config": {
       "keyword": "Chung cư Vision 1 Bình Tân",
@@ -17815,8 +17815,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "quan-binh-tan",
     "address": "Quận Bình Tân, TP Hồ Chí Minh",
+    "id": "quan-binh-tan",
     "km_q1": 13.1,
     "crawl_config": {
       "keyword": "Quận Bình Tân",
@@ -17865,8 +17865,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "chung-cu-le-thanh-ma-lo",
     "address": "Quận Bình Tân, TP Hồ Chí Minh",
+    "id": "chung-cu-le-thanh-ma-lo",
     "km_q1": 13.1,
     "crawl_config": {
       "keyword": "Chung cư Lê Thành Mã Lò",
@@ -17917,8 +17917,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "chung-cu-thai-son",
     "address": "Quận Bình Tân, TP Hồ Chí Minh",
+    "id": "chung-cu-thai-son",
     "km_q1": 15.0,
     "crawl_config": {
       "keyword": "Chung cư Thái Sơn",
@@ -17967,8 +17967,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "chung-cu",
     "address": "Quận Bình Tân, TP Hồ Chí Minh",
+    "id": "chung-cu",
     "km_q1": 13.2,
     "crawl_config": {
       "keyword": "Chung cư",
@@ -18019,8 +18019,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "can-ho-quan-binh-thanh",
     "address": "Quận Bình Thạnh, TP Hồ Chí Minh",
+    "id": "can-ho-quan-binh-thanh",
     "km_q1": 2.8,
     "crawl_config": {
       "keyword": "Căn hộ quận Bình Thạnh",
@@ -18069,8 +18069,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "chung-cu-osimi-tower",
     "address": "Quận Gò Vấp, TP Hồ Chí Minh",
+    "id": "chung-cu-osimi-tower",
     "km_q1": 21.7,
     "crawl_config": {
       "keyword": "Chung cư Osimi Tower",
@@ -18120,8 +18120,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "chung-cu-ha-kieu",
     "address": "Quận Gò Vấp, TP Hồ Chí Minh",
+    "id": "chung-cu-ha-kieu",
     "km_q1": 25.5,
     "crawl_config": {
       "keyword": "Chung cư Hà Kiều",
@@ -18172,8 +18172,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "chung-cu-cityland-park-hills-ch1",
     "address": "Quận Gò Vấp, TP Hồ Chí Minh",
+    "id": "chung-cu-cityland-park-hills-ch1",
     "km_q1": 42.7,
     "crawl_config": {
       "keyword": "Chung Cư Cityland Park Hills CH1",
@@ -18224,8 +18224,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "lo-b-chung-cu-quan-doi",
     "address": "Quận Gò Vấp, TP Hồ Chí Minh",
+    "id": "lo-b-chung-cu-quan-doi",
     "km_q1": 25.7,
     "crawl_config": {
       "keyword": "Lô B CHUNG CƯ QUÂN ĐỘI",
@@ -18275,8 +18275,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "chung-cu-phu-gia-hung",
     "address": "Quận Gò Vấp, TP Hồ Chí Minh",
+    "id": "chung-cu-phu-gia-hung",
     "km_q1": 21.8,
     "crawl_config": {
       "keyword": "Chung Cư Phú Gia Hưng",
@@ -18326,8 +18326,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "chung-cu-gia-phat",
     "address": "Quận Gò Vấp, TP Hồ Chí Minh",
+    "id": "chung-cu-gia-phat",
     "km_q1": 21.2,
     "crawl_config": {
       "keyword": "Chung cư Gia Phát",
@@ -18376,8 +18376,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "ct-plaza-nguyen-hong",
     "address": "Quận Gò Vấp, TP Hồ Chí Minh",
+    "id": "ct-plaza-nguyen-hong",
     "km_q1": 40.2,
     "crawl_config": {
       "keyword": "CT Plaza Nguyên Hồng",
@@ -18428,8 +18428,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "chung-cu-khang-gia",
     "address": "Quận Gò Vấp, TP Hồ Chí Minh",
+    "id": "chung-cu-khang-gia",
     "km_q1": 27.9,
     "crawl_config": {
       "keyword": "Chung cư Khang Gia",
@@ -18476,8 +18476,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "p1-cityland-park-hills",
     "address": "Quận Gò Vấp, TP Hồ Chí Minh",
+    "id": "p1-cityland-park-hills",
     "km_q1": 42.5,
     "crawl_config": {
       "keyword": "P1 Cityland Park Hills",
@@ -18527,8 +18527,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "sunny-plaza",
     "address": "Quận Gò Vấp, TP Hồ Chí Minh",
+    "id": "sunny-plaza",
     "km_q1": 31.0,
     "crawl_config": {
       "keyword": "Sunny Plaza",
@@ -18579,8 +18579,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "chung-cu-i-home-pham-van-chieu",
     "address": "Quận Gò Vấp, TP Hồ Chí Minh",
+    "id": "chung-cu-i-home-pham-van-chieu",
     "km_q1": 40.8,
     "crawl_config": {
       "keyword": "Chung cư I-Home Phạm Văn Chiêu",
@@ -18630,8 +18630,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "m-one-gia-dinh",
     "address": "Quận Gò Vấp, TP Hồ Chí Minh",
+    "id": "m-one-gia-dinh",
     "km_q1": 38.7,
     "crawl_config": {
       "keyword": "M-One Gia Định",
@@ -18681,8 +18681,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "kdc-cityland-park-hills",
     "address": "Quận Gò Vấp, TP Hồ Chí Minh",
+    "id": "kdc-cityland-park-hills",
     "km_q1": 22.9,
     "crawl_config": {
       "keyword": "KDC Cityland Park Hills",
@@ -18732,8 +18732,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "cityland-go-vap",
     "address": "Quận Gò Vấp, TP Hồ Chí Minh",
+    "id": "cityland-go-vap",
     "km_q1": 19.3,
     "crawl_config": {
       "keyword": "Cityland Gò Vấp",
@@ -18784,8 +18784,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "cityland-center-hills",
     "address": "Quận Gò Vấp, TP Hồ Chí Minh",
+    "id": "cityland-center-hills",
     "km_q1": 31.1,
     "crawl_config": {
       "keyword": "Cityland Center Hills",
@@ -18836,8 +18836,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "nice-coffee-city-land-parkhills",
     "address": "Quận Gò Vấp, TP Hồ Chí Minh",
+    "id": "nice-coffee-city-land-parkhills",
     "km_q1": 19.1,
     "crawl_config": {
       "keyword": "NICE COFFEE CITY LAND PARKHILLS",
@@ -18887,8 +18887,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "ho-boi-chung-cu-cityland-park-hills",
     "address": "Quận Gò Vấp, TP Hồ Chí Minh",
+    "id": "ho-boi-chung-cu-cityland-park-hills",
     "km_q1": 38.9,
     "crawl_config": {
       "keyword": "Hồ Bơi chung cư Cityland Park Hills",
@@ -18937,8 +18937,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "chung-cu-felix-homes",
     "address": "Quận Gò Vấp, TP Hồ Chí Minh",
+    "id": "chung-cu-felix-homes",
     "km_q1": 21.1,
     "crawl_config": {
       "keyword": "Chung cư Felix Homes",
@@ -18988,8 +18988,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "cong-vien-van-hoa-go-vap",
     "address": "Quận Gò Vấp, TP Hồ Chí Minh",
+    "id": "cong-vien-van-hoa-go-vap",
     "km_q1": 41.5,
     "crawl_config": {
       "keyword": "Công Viên Văn Hóa Gò Vấp",
@@ -19039,8 +19039,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "cong-vien-lang-hoa-go-vap",
     "address": "Quận Gò Vấp, TP Hồ Chí Minh",
+    "id": "cong-vien-lang-hoa-go-vap",
     "km_q1": 23.3,
     "crawl_config": {
       "keyword": "Công viên Làng hoa Gò Vấp",
@@ -19089,8 +19089,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "chung-cu-ba-son",
     "address": "Quận Gò Vấp, TP Hồ Chí Minh",
+    "id": "chung-cu-ba-son",
     "km_q1": 40.5,
     "crawl_config": {
       "keyword": "Chung Cư Ba Son",
@@ -19139,8 +19139,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "chung-cu-ha-do-z751",
     "address": "Quận Gò Vấp, TP Hồ Chí Minh",
+    "id": "chung-cu-ha-do-z751",
     "km_q1": 31.1,
     "crawl_config": {
       "keyword": "Chung cư Hà Đô Z751",
@@ -19191,8 +19191,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "the-splendor-apartments",
     "address": "Quận Gò Vấp, TP Hồ Chí Minh",
+    "id": "the-splendor-apartments",
     "km_q1": 20.6,
     "crawl_config": {
       "keyword": "The Splendor apartments",
@@ -19242,8 +19242,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "lighthouse-nguyen-van-luong",
     "address": "Quận Gò Vấp, TP Hồ Chí Minh",
+    "id": "lighthouse-nguyen-van-luong",
     "km_q1": 20.5,
     "crawl_config": {
       "keyword": "LIGHTHOUSE NGUYỄN VĂN LƯỢNG",
@@ -19292,8 +19292,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "chung-cu-40-can-le-duc-tho",
     "address": "Quận Gò Vấp, TP Hồ Chí Minh",
+    "id": "chung-cu-40-can-le-duc-tho",
     "km_q1": 31.5,
     "crawl_config": {
       "keyword": "Chung cư 40 căn Lê Đức Thọ",
@@ -19343,8 +19343,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "lo-d-chung-cu-an-loc",
     "address": "Quận Gò Vấp, TP Hồ Chí Minh",
+    "id": "lo-d-chung-cu-an-loc",
     "km_q1": 35.4,
     "crawl_config": {
       "keyword": "Lô D Chung cư An Lộc",
@@ -19394,8 +19394,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "cityland-park-hills-ch2-tang-4",
     "address": "Quận Gò Vấp, TP Hồ Chí Minh",
+    "id": "cityland-park-hills-ch2-tang-4",
     "km_q1": 39.2,
     "crawl_config": {
       "keyword": "Cityland Park Hills CH2 tầng 4",
@@ -19446,8 +19446,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "can-ho-hoa-binh",
     "address": "Quận Gò Vấp, TP Hồ Chí Minh",
+    "id": "can-ho-hoa-binh",
     "km_q1": 31.6,
     "crawl_config": {
       "keyword": "Căn hộ Hoà Bình",
@@ -19497,8 +19497,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "can-ho-cho-thue-tran-quang-hung",
     "address": "Quận Gò Vấp, TP Hồ Chí Minh",
+    "id": "can-ho-cho-thue-tran-quang-hung",
     "km_q1": 26.6,
     "crawl_config": {
       "keyword": "Căn hộ cho thuê : Trần Quang Hưng",
@@ -19549,8 +19549,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "chung-cu-novaland",
     "address": "Quận Phú Nhuận, TP Hồ Chí Minh",
+    "id": "chung-cu-novaland",
     "km_q1": 4.3,
     "crawl_config": {
       "keyword": "Chung cư Novaland",
@@ -19599,8 +19599,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "chung-cu-garden-gate-novaland",
     "address": "Quận Phú Nhuận, TP Hồ Chí Minh",
+    "id": "chung-cu-garden-gate-novaland",
     "km_q1": 2.6,
     "crawl_config": {
       "keyword": "Chung cư Garden Gate Novaland",
@@ -19649,8 +19649,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "chung-cu-a2-phan-xich-long-phu-nhuan",
     "address": "Quận Phú Nhuận, TP Hồ Chí Minh",
+    "id": "chung-cu-a2-phan-xich-long-phu-nhuan",
     "km_q1": 2.7,
     "crawl_config": {
       "keyword": "Chung cư A2 Phan Xích Long, Phú Nhuận",
@@ -19700,8 +19700,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "can-ho-kingston-residence",
     "address": "Quận Phú Nhuận, TP Hồ Chí Minh",
+    "id": "can-ho-kingston-residence",
     "km_q1": 4.0,
     "crawl_config": {
       "keyword": "Căn hộ Kingston Residence",
@@ -19751,8 +19751,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "newton-residence-apartment",
     "address": "Quận Phú Nhuận, TP Hồ Chí Minh",
+    "id": "newton-residence-apartment",
     "km_q1": 2.9,
     "crawl_config": {
       "keyword": "Newton Residence Apartment",
@@ -19803,8 +19803,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "chung-cu-orchard-parkview",
     "address": "Quận Phú Nhuận, TP Hồ Chí Minh",
+    "id": "chung-cu-orchard-parkview",
     "km_q1": 4.6,
     "crawl_config": {
       "keyword": "Chung cư Orchard Parkview",
@@ -19854,8 +19854,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "toa-nha-the-prince-residence-office-saigon",
     "address": "Quận Phú Nhuận, TP Hồ Chí Minh",
+    "id": "toa-nha-the-prince-residence-office-saigon",
     "km_q1": 3.3,
     "crawl_config": {
       "keyword": "Tòa nhà The Prince Residence - Office Saigon",
@@ -19904,8 +19904,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "toa-nha-cao-oc-phu-nhuan-office-saigon",
     "address": "Quận Phú Nhuận, TP Hồ Chí Minh",
+    "id": "toa-nha-cao-oc-phu-nhuan-office-saigon",
     "km_q1": 3.9,
     "crawl_config": {
       "keyword": "Tòa nhà cao ốc Phú Nhuận - Office Saigon",
@@ -19956,8 +19956,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "chung-cu-43-ho-van-hue",
     "address": "Quận Phú Nhuận, TP Hồ Chí Minh",
+    "id": "chung-cu-43-ho-van-hue",
     "km_q1": 3.6,
     "crawl_config": {
       "keyword": "Chung cư 43 Hồ Văn Huê",
@@ -20006,8 +20006,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "golden-mansion",
     "address": "Quận Phú Nhuận, TP Hồ Chí Minh",
+    "id": "golden-mansion",
     "km_q1": 2.9,
     "crawl_config": {
       "keyword": "Golden Mansion",
@@ -20061,8 +20061,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "cu-xa-nhieu-tu",
     "address": "Quận Phú Nhuận, TP Hồ Chí Minh",
+    "id": "cu-xa-nhieu-tu",
     "km_q1": 4.6,
     "crawl_config": {
       "keyword": "Cư Xá Nhiêu Tứ",
@@ -20113,8 +20113,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "botanic-towers",
     "address": "Quận Phú Nhuận, TP Hồ Chí Minh",
+    "id": "botanic-towers",
     "km_q1": 4.2,
     "crawl_config": {
       "keyword": "Botanic Towers",
@@ -20163,8 +20163,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "cao-oc-dang-van-ngu",
     "address": "Quận Phú Nhuận, TP Hồ Chí Minh",
+    "id": "cao-oc-dang-van-ngu",
     "km_q1": 3.2,
     "crawl_config": {
       "keyword": "Cao Ốc Đặng Văn Ngữ",
@@ -20215,8 +20215,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "chung-cu-mieu-noi-18-tang",
     "address": "Quận Phú Nhuận, TP Hồ Chí Minh",
+    "id": "chung-cu-mieu-noi-18-tang",
     "km_q1": 4.9,
     "crawl_config": {
       "keyword": "Chung cư Miếu Nổi 18 tầng",
@@ -20267,8 +20267,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "chung-cu-pntechcons",
     "address": "Quận Phú Nhuận, TP Hồ Chí Minh",
+    "id": "chung-cu-pntechcons",
     "km_q1": 2.6,
     "crawl_config": {
       "keyword": "Chung cư PNTechcons",
@@ -20317,8 +20317,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "cho-thue-can-ho-novaland",
     "address": "Quận Phú Nhuận, TP Hồ Chí Minh",
+    "id": "cho-thue-can-ho-novaland",
     "km_q1": 3.5,
     "crawl_config": {
       "keyword": "Cho Thuê Căn Hộ Novaland",
@@ -20369,8 +20369,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "cao-oc-botanic",
     "address": "Quận Phú Nhuận, TP Hồ Chí Minh",
+    "id": "cao-oc-botanic",
     "km_q1": 3.4,
     "crawl_config": {
       "keyword": "Cao ốc Botanic",
@@ -20421,8 +20421,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "toa-nha-orchard-garden-building-office-saigon",
     "address": "Quận Phú Nhuận, TP Hồ Chí Minh",
+    "id": "toa-nha-orchard-garden-building-office-saigon",
     "km_q1": 4.2,
     "crawl_config": {
       "keyword": "Tòa nhà Orchard Garden building - Office Saigon",
@@ -20471,8 +20471,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "had-apartment",
     "address": "Quận Phú Nhuận, TP Hồ Chí Minh",
+    "id": "had-apartment",
     "km_q1": 2.9,
     "crawl_config": {
       "keyword": "HAD Apartment",
@@ -20521,8 +20521,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "cho-thue-can-ho-chung-cu-quan-phu-nhuan",
     "address": "Quận Phú Nhuận, TP Hồ Chí Minh",
+    "id": "cho-thue-can-ho-chung-cu-quan-phu-nhuan",
     "km_q1": 2.9,
     "crawl_config": {
       "keyword": "Cho Thuê Căn Hộ Chung Cư - Quận Phú Nhuận",
@@ -20573,8 +20573,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "chung-cu-675-nguyen-kiem-phuong-duc-nhuan",
     "address": "Quận Phú Nhuận, TP Hồ Chí Minh",
+    "id": "chung-cu-675-nguyen-kiem-phuong-duc-nhuan",
     "km_q1": 4.3,
     "crawl_config": {
       "keyword": "Chung cư 675. Nguyễn Kiệm, Phường Đức Nhuận",
@@ -20625,8 +20625,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "chung-cu-151-nguyen-dinh-chinh",
     "address": "Quận Phú Nhuận, TP Hồ Chí Minh",
+    "id": "chung-cu-151-nguyen-dinh-chinh",
     "km_q1": 2.9,
     "crawl_config": {
       "keyword": "Chung cư 151 Nguyễn Đình Chính",
@@ -20675,8 +20675,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "cityhouse-emerald-apartment",
     "address": "Quận Phú Nhuận, TP Hồ Chí Minh",
+    "id": "cityhouse-emerald-apartment",
     "km_q1": 2.7,
     "crawl_config": {
       "keyword": "CityHouse - Emerald Apartment",
@@ -20726,8 +20726,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "can-ho-mini-trung-tam-quan-tan-phu",
     "address": "Quận Phú Nhuận, TP Hồ Chí Minh",
+    "id": "can-ho-mini-trung-tam-quan-tan-phu",
     "km_q1": 4.1,
     "crawl_config": {
       "keyword": "Căn Hộ mini trung tâm quận Tân Phú",
@@ -20777,8 +20777,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "chung-cu-tran-khac-chan",
     "address": "Quận Phú Nhuận, TP Hồ Chí Minh",
+    "id": "chung-cu-tran-khac-chan",
     "km_q1": 3.0,
     "crawl_config": {
       "keyword": "Chung cư Trần Khắc Chân",
@@ -20829,8 +20829,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "chung-cu-thanh-nien-tan-binh",
     "address": "Quận Tân Bình, TP Hồ Chí Minh",
+    "id": "chung-cu-thanh-nien-tan-binh",
     "km_q1": 7.4,
     "crawl_config": {
       "keyword": "CHUNG CƯ THANH NIÊN TÂN BÌNH",
@@ -20879,8 +20879,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "chung-cu-tan-tru",
     "address": "Quận Tân Bình, TP Hồ Chí Minh",
+    "id": "chung-cu-tan-tru",
     "km_q1": 6.0,
     "crawl_config": {
       "keyword": "Chung cư Tân Trụ",
@@ -20929,8 +20929,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "cong-hoa-plaza",
     "address": "Quận Tân Bình, TP Hồ Chí Minh",
+    "id": "cong-hoa-plaza",
     "km_q1": 7.5,
     "crawl_config": {
       "keyword": "Cộng Hòa Plaza",
@@ -20980,8 +20980,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "chung-cu-the-harmona",
     "address": "Quận Tân Bình, TP Hồ Chí Minh",
+    "id": "chung-cu-the-harmona",
     "km_q1": 5.7,
     "crawl_config": {
       "keyword": "Chung cư The Harmona",
@@ -21031,8 +21031,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "chung-cu-cach-mang-thang-tam",
     "address": "Quận Tân Bình, TP Hồ Chí Minh",
+    "id": "chung-cu-cach-mang-thang-tam",
     "km_q1": 7.3,
     "crawl_config": {
       "keyword": "Chung Cư Cách Mạng Tháng Tám",
@@ -21081,8 +21081,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "chung-cu-k300",
     "address": "Quận Tân Bình, TP Hồ Chí Minh",
+    "id": "chung-cu-k300",
     "km_q1": 9.0,
     "crawl_config": {
       "keyword": "Chung cư K300",
@@ -21131,8 +21131,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "tan-binh-apartment",
     "address": "Quận Tân Bình, TP Hồ Chí Minh",
+    "id": "tan-binh-apartment",
     "km_q1": 8.2,
     "crawl_config": {
       "keyword": "Tân Bình Apartment",
@@ -21182,8 +21182,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "chung-cu-ruby-garden",
     "address": "Quận Tân Bình, TP Hồ Chí Minh",
+    "id": "chung-cu-ruby-garden",
     "km_q1": 8.8,
     "crawl_config": {
       "keyword": "Chung cư Ruby Garden",
@@ -21233,8 +21233,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "chung-cu-central-plaza",
     "address": "Quận Tân Bình, TP Hồ Chí Minh",
+    "id": "chung-cu-central-plaza",
     "km_q1": 7.5,
     "crawl_config": {
       "keyword": "Chung cư Central Plaza",
@@ -21284,8 +21284,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "bay-hien-tower",
     "address": "Quận Tân Bình, TP Hồ Chí Minh",
+    "id": "bay-hien-tower",
     "km_q1": 8.0,
     "crawl_config": {
       "keyword": "Bảy Hiền Tower",
@@ -21335,8 +21335,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "the-botanica",
     "address": "Quận Tân Bình, TP Hồ Chí Minh",
+    "id": "the-botanica",
     "km_q1": 8.9,
     "crawl_config": {
       "keyword": "The Botanica",
@@ -21385,8 +21385,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "chung-cu-valeo-dam-sen-tan-phu",
     "address": "Quận Tân Bình, TP Hồ Chí Minh",
+    "id": "chung-cu-valeo-dam-sen-tan-phu",
     "km_q1": 7.1,
     "crawl_config": {
       "keyword": "Chung Cư Valéo Đầm Sen ,Tân Phú",
@@ -21435,8 +21435,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "tan-binh-apartment-for-rent",
     "address": "Quận Tân Bình, TP Hồ Chí Minh",
+    "id": "tan-binh-apartment-for-rent",
     "km_q1": 7.1,
     "crawl_config": {
       "keyword": "Tân Bình Apartment For Rent",
@@ -21487,8 +21487,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "chung-cu-phuc-yen-2",
     "address": "Quận Tân Bình, TP Hồ Chí Minh",
+    "id": "chung-cu-phuc-yen-2",
     "km_q1": 7.1,
     "crawl_config": {
       "keyword": "Chung Cư Phúc Yên 2",
@@ -21539,8 +21539,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "chung-cu-melody-residences",
     "address": "Quận Tân Bình, TP Hồ Chí Minh",
+    "id": "chung-cu-melody-residences",
     "km_q1": 8.9,
     "crawl_config": {
       "keyword": "Chung Cư Melody Residences",
@@ -21591,8 +21591,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "chung-cu-khang-gia-tan-huong-phuong-tan-quy-quan-tan-phu",
     "address": "Quận Tân Bình, TP Hồ Chí Minh",
+    "id": "chung-cu-khang-gia-tan-huong-phuong-tan-quy-quan-tan-phu",
     "km_q1": 7.2,
     "crawl_config": {
       "keyword": "Chung Cư Khang Gia - Tân Hương Phường Tân Quy, Quận Tân Phú",
@@ -21639,8 +21639,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "chung-cu-tan-son-nhi-2",
     "address": "Quận Tân Bình, TP Hồ Chí Minh",
+    "id": "chung-cu-tan-son-nhi-2",
     "km_q1": 5.7,
     "crawl_config": {
       "keyword": "Chung Cư Tân Sơn Nhì 2",
@@ -21689,8 +21689,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "haya-can-ho-mini-cho-thue-quan-tan-binh",
     "address": "Quận Tân Bình, TP Hồ Chí Minh",
+    "id": "haya-can-ho-mini-cho-thue-quan-tan-binh",
     "km_q1": 5.7,
     "crawl_config": {
       "keyword": "HAYA Căn Hộ Mini cho thuê Quận Tân Bình",
@@ -21741,8 +21741,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "chung-cu-the-garden-an-gia-garden",
     "address": "Quận Tân Bình, TP Hồ Chí Minh",
+    "id": "chung-cu-the-garden-an-gia-garden",
     "km_q1": 7.9,
     "crawl_config": {
       "keyword": "Chung cư THE GARDEN - An Gia Garden",
@@ -21793,8 +21793,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "can-ho-31-tan-hai",
     "address": "Quận Tân Bình, TP Hồ Chí Minh",
+    "id": "can-ho-31-tan-hai",
     "km_q1": 5.9,
     "crawl_config": {
       "keyword": "Căn Hộ 31 Tân Hải",
@@ -21843,8 +21843,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "cao-oc-an-binh",
     "address": "Quận Tân Bình, TP Hồ Chí Minh",
+    "id": "cao-oc-an-binh",
     "km_q1": 7.1,
     "crawl_config": {
       "keyword": "Cao Ốc An Bình",
@@ -21894,8 +21894,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "sky-center",
     "address": "Quận Tân Bình, TP Hồ Chí Minh",
+    "id": "sky-center",
     "km_q1": 7.0,
     "crawl_config": {
       "keyword": "Sky Center",
@@ -21945,8 +21945,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "can-ho-diyas-sky-nha-rieng",
     "address": "Quận Tân Bình, TP Hồ Chí Minh",
+    "id": "can-ho-diyas-sky-nha-rieng",
     "km_q1": 8.6,
     "crawl_config": {
       "keyword": "Căn hộ Diyas Sky - Nhà Riêng",
@@ -21995,8 +21995,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "chung-cu-phu-ninh",
     "address": "Quận Tân Phú, TP Hồ Chí Minh",
+    "id": "chung-cu-phu-ninh",
     "km_q1": 5.8,
     "crawl_config": {
       "keyword": "Chung cư Phú Ninh",
@@ -22047,8 +22047,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "chung-cu-khuong-viet",
     "address": "Quận Tân Phú, TP Hồ Chí Minh",
+    "id": "chung-cu-khuong-viet",
     "km_q1": 8.1,
     "crawl_config": {
       "keyword": "Chung cư Khuông Việt",
@@ -22098,8 +22098,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "chung-cu-saigon-town",
     "address": "Quận Tân Phú, TP Hồ Chí Minh",
+    "id": "chung-cu-saigon-town",
     "km_q1": 6.4,
     "crawl_config": {
       "keyword": "Chung Cư Saigon Town",
@@ -22150,8 +22150,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "idico-tan-phu",
     "address": "Quận Tân Phú, TP Hồ Chí Minh",
+    "id": "idico-tan-phu",
     "km_q1": 6.0,
     "crawl_config": {
       "keyword": "IDICO Tân Phú",
@@ -22200,8 +22200,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "chung-cu-dai-thanh",
     "address": "Quận Tân Phú, TP Hồ Chí Minh",
+    "id": "chung-cu-dai-thanh",
     "km_q1": 7.8,
     "crawl_config": {
       "keyword": "Chung cư Đại Thành",
@@ -22252,8 +22252,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "chung-cu-ruby-celadon-tan-phu",
     "address": "Quận Tân Phú, TP Hồ Chí Minh",
+    "id": "chung-cu-ruby-celadon-tan-phu",
     "km_q1": 8.3,
     "crawl_config": {
       "keyword": "Chung cư Ruby Celadon Tân Phú",
@@ -22303,8 +22303,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "oriental-plaza",
     "address": "Quận Tân Phú, TP Hồ Chí Minh",
+    "id": "oriental-plaza",
     "km_q1": 8.0,
     "crawl_config": {
       "keyword": "Oriental Plaza",
@@ -22355,8 +22355,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "chung-cu-son-ky-1",
     "address": "Quận Tân Phú, TP Hồ Chí Minh",
+    "id": "chung-cu-son-ky-1",
     "km_q1": 7.7,
     "crawl_config": {
       "keyword": "Chung cư Sơn Kỳ 1",
@@ -22407,8 +22407,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "chung-cu-kim-hong-fortuna",
     "address": "Quận Tân Phú, TP Hồ Chí Minh",
+    "id": "chung-cu-kim-hong-fortuna",
     "km_q1": 6.4,
     "crawl_config": {
       "keyword": "Chung cư Kim Hồng - Fortuna",
@@ -22457,8 +22457,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "chung-cu-topaz-garden-center",
     "address": "Quận Tân Phú, TP Hồ Chí Minh",
+    "id": "chung-cu-topaz-garden-center",
     "km_q1": 8.1,
     "crawl_config": {
       "keyword": "Chung cư Topaz Garden & Center",
@@ -22509,8 +22509,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "chung-cu-au-co-chung-cu-thien-hoa",
     "address": "Quận Tân Phú, TP Hồ Chí Minh",
+    "id": "chung-cu-au-co-chung-cu-thien-hoa",
     "km_q1": 9.0,
     "crawl_config": {
       "keyword": "Chung Cư Âu Cơ (Chung Cư Thiên Hoà)",
@@ -22561,8 +22561,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "chung-cu-8x-dam-sen",
     "address": "Quận Tân Phú, TP Hồ Chí Minh",
+    "id": "chung-cu-8x-dam-sen",
     "km_q1": 7.6,
     "crawl_config": {
       "keyword": "Chung Cư 8X Đầm Sen",
@@ -22611,8 +22611,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "cho-thue-can-ho-chung-cu-celadon-tan-phu",
     "address": "Quận Tân Phú, TP Hồ Chí Minh",
+    "id": "cho-thue-can-ho-chung-cu-celadon-tan-phu",
     "km_q1": 9.0,
     "crawl_config": {
       "keyword": "Cho Thuê Căn Hộ Chung Cư Celadon Tân Phú",
@@ -22663,8 +22663,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "chung-cu-carillon-5",
     "address": "Quận Tân Phú, TP Hồ Chí Minh",
+    "id": "chung-cu-carillon-5",
     "km_q1": 7.4,
     "crawl_config": {
       "keyword": "Chung cư Carillon 5",
@@ -22715,8 +22715,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "can-ho-investco-babylon",
     "address": "Quận Tân Phú, TP Hồ Chí Minh",
+    "id": "can-ho-investco-babylon",
     "km_q1": 9.0,
     "crawl_config": {
       "keyword": "Căn Hộ Investco Babylon",
@@ -22767,8 +22767,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "chung-cu-emerald-block-c-celadon-city-tan-phu",
     "address": "Quận Tân Phú, TP Hồ Chí Minh",
+    "id": "chung-cu-emerald-block-c-celadon-city-tan-phu",
     "km_q1": 5.8,
     "crawl_config": {
       "keyword": "Chung cư Emerald - Block C - Celadon City Tân Phú",
@@ -22817,8 +22817,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "chung-cu-carillon-7",
     "address": "Quận Tân Phú, TP Hồ Chí Minh",
+    "id": "chung-cu-carillon-7",
     "km_q1": 6.3,
     "crawl_config": {
       "keyword": "Chung cư Carillon 7",
@@ -22867,8 +22867,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "can-ho-chung-cu-quang-thai",
     "address": "Quận Tân Phú, TP Hồ Chí Minh",
+    "id": "can-ho-chung-cu-quang-thai",
     "km_q1": 6.8,
     "crawl_config": {
       "keyword": "Căn hộ Chung cư Quang Thái",
@@ -22918,8 +22918,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "cc-khang-phu",
     "address": "Quận Tân Phú, TP Hồ Chí Minh",
+    "id": "cc-khang-phu",
     "km_q1": 7.7,
     "crawl_config": {
       "keyword": "CC Khang Phú",
@@ -22970,8 +22970,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "khu-can-ho-cao-tang-584",
     "address": "Quận Tân Phú, TP Hồ Chí Minh",
+    "id": "khu-can-ho-cao-tang-584",
     "km_q1": 6.1,
     "crawl_config": {
       "keyword": "Khu căn hộ cao tầng 584",
@@ -23021,8 +23021,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "quan-tan-phu",
     "address": "Quận Tân Phú, TP Hồ Chí Minh",
+    "id": "quan-tan-phu",
     "km_q1": 7.9,
     "crawl_config": {
       "keyword": "Quận Tân Phú",
@@ -23071,8 +23071,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "thue-can-ho-celadon-city",
     "address": "Quận Tân Phú, TP Hồ Chí Minh",
+    "id": "thue-can-ho-celadon-city",
     "km_q1": 6.8,
     "crawl_config": {
       "keyword": "Thuê Căn Hộ Celadon City",
@@ -23121,8 +23121,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "chung-cu-moonlight-residences",
     "address": "TP. Thủ Đức, TP Hồ Chí Minh",
+    "id": "chung-cu-moonlight-residences",
     "km_q1": 11.7,
     "crawl_config": {
       "keyword": "Chung cư Moonlight Residences",
@@ -23173,8 +23173,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "urban-green",
     "address": "TP. Thủ Đức, TP Hồ Chí Minh",
+    "id": "urban-green",
     "km_q1": 13.9,
     "crawl_config": {
       "keyword": "Urban Green",
@@ -23223,8 +23223,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "lavita-charm",
     "address": "TP. Thủ Đức, TP Hồ Chí Minh",
+    "id": "lavita-charm",
     "km_q1": 13.8,
     "crawl_config": {
       "keyword": "Lavita Charm",
@@ -23275,8 +23275,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "can-ho-thu-duc",
     "address": "TP. Thủ Đức, TP Hồ Chí Minh",
+    "id": "can-ho-thu-duc",
     "km_q1": 13.0,
     "crawl_config": {
       "keyword": "Căn hộ thủ đức",
@@ -23327,8 +23327,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "can-ho-chung-cu-opal-garden",
     "address": "TP. Thủ Đức, TP Hồ Chí Minh",
+    "id": "can-ho-chung-cu-opal-garden",
     "km_q1": 10.7,
     "crawl_config": {
       "keyword": "Căn hộ Chung cư Opal Garden",
@@ -23379,8 +23379,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "chung-cu-gia-phuc",
     "address": "TP. Thủ Đức, TP Hồ Chí Minh",
+    "id": "chung-cu-gia-phuc",
     "km_q1": 11.8,
     "crawl_config": {
       "keyword": "Chung Cư Gia Phúc",
@@ -23429,8 +23429,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "can-ho-stown-thu-duc",
     "address": "TP. Thủ Đức, TP Hồ Chí Minh",
+    "id": "can-ho-stown-thu-duc",
     "km_q1": 10.7,
     "crawl_config": {
       "keyword": "Căn Hộ STown Thủ Đức",
@@ -23479,8 +23479,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "chung-cu-chuong-duong-home",
     "address": "TP. Thủ Đức, TP Hồ Chí Minh",
+    "id": "chung-cu-chuong-duong-home",
     "km_q1": 12.5,
     "crawl_config": {
       "keyword": "Chung Cư Chương Dương Home",
@@ -23530,8 +23530,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "sai-gon-stay-hi-tech-park-collection",
     "address": "TP. Thủ Đức, TP Hồ Chí Minh",
+    "id": "sai-gon-stay-hi-tech-park-collection",
     "km_q1": 14.2,
     "crawl_config": {
       "keyword": "Sai Gon Stay - Hi-Tech Park Collection",
@@ -23581,8 +23581,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "tecco-tower-linh-dong",
     "address": "TP. Thủ Đức, TP Hồ Chí Minh",
+    "id": "tecco-tower-linh-dong",
     "km_q1": 13.7,
     "crawl_config": {
       "keyword": "TECCO TOWER LINH ĐÔNG",
@@ -23633,8 +23633,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "lavita-garden",
     "address": "TP. Thủ Đức, TP Hồ Chí Minh",
+    "id": "lavita-garden",
     "km_q1": 14.7,
     "crawl_config": {
       "keyword": "Lavita Garden",
@@ -23685,8 +23685,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "chung-cu-sai-gon-avenue-phuong-tam-binh-tp-thu-duc",
     "address": "TP. Thủ Đức, TP Hồ Chí Minh",
+    "id": "chung-cu-sai-gon-avenue-phuong-tam-binh-tp-thu-duc",
     "km_q1": 11.9,
     "crawl_config": {
       "keyword": "Chung cư Sài Gòn Avenue, phường Tam Bình, TP Thủ Đức",
@@ -23737,8 +23737,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "chung-cu-hiep-binh-chanh",
     "address": "TP. Thủ Đức, TP Hồ Chí Minh",
+    "id": "chung-cu-hiep-binh-chanh",
     "km_q1": 13.5,
     "crawl_config": {
       "keyword": "Chung Cư Hiệp Bình Chánh",
@@ -23789,8 +23789,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "chung-cu-linh-tay-tower",
     "address": "TP. Thủ Đức, TP Hồ Chí Minh",
+    "id": "chung-cu-linh-tay-tower",
     "km_q1": 11.8,
     "crawl_config": {
       "keyword": "Chung Cư Linh Tây Tower",
@@ -23840,8 +23840,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "chung-cu-lavita-garden-lo-b",
     "address": "TP. Thủ Đức, TP Hồ Chí Minh",
+    "id": "chung-cu-lavita-garden-lo-b",
     "km_q1": 11.3,
     "crawl_config": {
       "keyword": "Chung cư Lavita Garden lô B",
@@ -23892,8 +23892,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "chung-cu-tam-phu",
     "address": "TP. Thủ Đức, TP Hồ Chí Minh",
+    "id": "chung-cu-tam-phu",
     "km_q1": 11.8,
     "crawl_config": {
       "keyword": "Chung cư Tam Phú",
@@ -23943,8 +23943,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "saigon-gateway",
     "address": "TP. Thủ Đức, TP Hồ Chí Minh",
+    "id": "saigon-gateway",
     "km_q1": 12.3,
     "crawl_config": {
       "keyword": "Saigon Gateway",
@@ -23994,8 +23994,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "chung-cu-4s-linh-dong",
     "address": "TP. Thủ Đức, TP Hồ Chí Minh",
+    "id": "chung-cu-4s-linh-dong",
     "km_q1": 10.0,
     "crawl_config": {
       "keyword": "Chung cư 4S Linh Đông",
@@ -24046,8 +24046,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "chung-cu-navita-phuong-tam-binh-thu-duc-tp-ho-chi-minh",
     "address": "TP. Thủ Đức, TP Hồ Chí Minh",
+    "id": "chung-cu-navita-phuong-tam-binh-thu-duc-tp-ho-chi-minh",
     "km_q1": 12.5,
     "crawl_config": {
       "keyword": "Chung cư Navita Phường Tam Bình , Thủ Đức, Tp Hồ Chí Minh",
@@ -24098,8 +24098,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "quan-1-tp-hcm",
     "address": "TP. Thủ Đức, TP Hồ Chí Minh",
+    "id": "quan-1-tp-hcm",
     "km_q1": 14.2,
     "crawl_config": {
       "keyword": "quận 1 TP HCM",
@@ -24150,8 +24150,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "sunview-town",
     "address": "TP. Thủ Đức, TP Hồ Chí Minh",
+    "id": "sunview-town",
     "km_q1": 13.8,
     "crawl_config": {
       "keyword": "Sunview Town",
@@ -24200,8 +24200,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "chung-cu-the-easter-city",
     "address": "Huyện Bình Chánh, TP Hồ Chí Minh",
+    "id": "chung-cu-the-easter-city",
     "km_q1": 11.0,
     "crawl_config": {
       "keyword": "Chung cư The Easter City",
@@ -24251,8 +24251,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "chung-cu-westgate-an-gia-binh-chanh",
     "address": "Huyện Bình Chánh, TP Hồ Chí Minh",
+    "id": "chung-cu-westgate-an-gia-binh-chanh",
     "km_q1": 14.9,
     "crawl_config": {
       "keyword": "Chung cư WestGate An Gia Bình Chánh",
@@ -24301,8 +24301,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "chung-cu-saigon-intela",
     "address": "Huyện Bình Chánh, TP Hồ Chí Minh",
+    "id": "chung-cu-saigon-intela",
     "km_q1": 10.4,
     "crawl_config": {
       "keyword": "Chung cư Saigon Intela",
@@ -24351,8 +24351,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "khu-dan-cu-conic",
     "address": "Huyện Bình Chánh, TP Hồ Chí Minh",
+    "id": "khu-dan-cu-conic",
     "km_q1": 10.3,
     "crawl_config": {
       "keyword": "Khu dân cư Conic",
@@ -24403,8 +24403,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "chung-cu-sinh-loi",
     "address": "Huyện Bình Chánh, TP Hồ Chí Minh",
+    "id": "chung-cu-sinh-loi",
     "km_q1": 11.8,
     "crawl_config": {
       "keyword": "Chung Cư Sinh Lợi",
@@ -24455,8 +24455,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "toa-nha-chung-cu-hong-linh",
     "address": "Huyện Bình Chánh, TP Hồ Chí Minh",
+    "id": "toa-nha-chung-cu-hong-linh",
     "km_q1": 9.5,
     "crawl_config": {
       "keyword": "TOÀ NHÀ CHUNG CƯ HỒNG LĨNH",
@@ -24505,8 +24505,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "chung-cu-terra-mia",
     "address": "Huyện Bình Chánh, TP Hồ Chí Minh",
+    "id": "chung-cu-terra-mia",
     "km_q1": 14.9,
     "crawl_config": {
       "keyword": "Chung cư Terra Mia",
@@ -24557,8 +24557,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "conic-garden",
     "address": "Huyện Bình Chánh, TP Hồ Chí Minh",
+    "id": "conic-garden",
     "km_q1": 14.0,
     "crawl_config": {
       "keyword": "Conic Garden",
@@ -24609,8 +24609,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "chung-cu-hong-linh-lo-i",
     "address": "Huyện Bình Chánh, TP Hồ Chí Minh",
+    "id": "chung-cu-hong-linh-lo-i",
     "km_q1": 13.3,
     "crawl_config": {
       "keyword": "CHUNG CƯ HỒNG LĨNH - LÔ I",
@@ -24660,8 +24660,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "chung-cu-hoang-thap",
     "address": "Huyện Bình Chánh, TP Hồ Chí Minh",
+    "id": "chung-cu-hoang-thap",
     "km_q1": 14.9,
     "crawl_config": {
       "keyword": "Chung cư Hoàng Tháp",
@@ -24710,8 +24710,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "chung-cu-the-mansion",
     "address": "Huyện Bình Chánh, TP Hồ Chí Minh",
+    "id": "chung-cu-the-mansion",
     "km_q1": 13.6,
     "crawl_config": {
       "keyword": "Chung cư The Mansion",
@@ -24761,8 +24761,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "khu-dan-cu-trung-son",
     "address": "Huyện Bình Chánh, TP Hồ Chí Minh",
+    "id": "khu-dan-cu-trung-son",
     "km_q1": 12.1,
     "crawl_config": {
       "keyword": "Khu dân cư Trung Sơn",
@@ -24812,8 +24812,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "can-ho-citizents",
     "address": "Huyện Bình Chánh, TP Hồ Chí Minh",
+    "id": "can-ho-citizents",
     "km_q1": 9.9,
     "crawl_config": {
       "keyword": "Căn Hộ CITIZEN.TS",
@@ -24863,8 +24863,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "chung-cu-calla-garden",
     "address": "Huyện Bình Chánh, TP Hồ Chí Minh",
+    "id": "chung-cu-calla-garden",
     "km_q1": 11.0,
     "crawl_config": {
       "keyword": "Chung cư Calla Garden",
@@ -24914,8 +24914,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "chung-cu-hqc-plaza-chung-cu-hoang-quan",
     "address": "Huyện Bình Chánh, TP Hồ Chí Minh",
+    "id": "chung-cu-hqc-plaza-chung-cu-hoang-quan",
     "km_q1": 10.3,
     "crawl_config": {
       "keyword": "Chung cư HQC Plaza ( Chung cư Hoàng Quân)",
@@ -24962,8 +24962,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "conic-boulevard",
     "address": "Huyện Bình Chánh, TP Hồ Chí Minh",
+    "id": "conic-boulevard",
     "km_q1": 11.2,
     "crawl_config": {
       "keyword": "Conic Boulevard",
@@ -25013,8 +25013,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "can-ho-mizuki-park-binh-chanh",
     "address": "Huyện Bình Chánh, TP Hồ Chí Minh",
+    "id": "can-ho-mizuki-park-binh-chanh",
     "km_q1": 9.7,
     "crawl_config": {
       "keyword": "Căn hộ Mizuki Park Bình Chánh",
@@ -25065,8 +25065,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "chung-cu-vinh-loc-a",
     "address": "Huyện Bình Chánh, TP Hồ Chí Minh",
+    "id": "chung-cu-vinh-loc-a",
     "km_q1": 11.7,
     "crawl_config": {
       "keyword": "Chung cư Vĩnh Lộc A",
@@ -25115,8 +25115,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "the-meadow-binh-chanh",
     "address": "Huyện Bình Chánh, TP Hồ Chí Minh",
+    "id": "the-meadow-binh-chanh",
     "km_q1": 12.6,
     "crawl_config": {
       "keyword": "The Meadow Bình Chánh",
@@ -25165,8 +25165,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "c921-ap53-xa-tan-nhut-huyen-binh-chanh-tpho-chi-minh",
     "address": "Huyện Bình Chánh, TP Hồ Chí Minh",
+    "id": "c921-ap53-xa-tan-nhut-huyen-binh-chanh-tpho-chi-minh",
     "km_q1": 10.1,
     "crawl_config": {
       "keyword": "C9/21 ấp53 xã Tân Nhựt Huyện Bình Chánh Tp.Hồ Chí Minh",
@@ -25216,8 +25216,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "khu-6b-binh-hung-binh-chanh",
     "address": "Huyện Bình Chánh, TP Hồ Chí Minh",
+    "id": "khu-6b-binh-hung-binh-chanh",
     "km_q1": 14.9,
     "crawl_config": {
       "keyword": "Khu 6B-Bình Hưng Bình Chánh",
@@ -25267,8 +25267,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "chung-cu-hqc-hoc-mon-block-b",
     "address": "Huyện Hóc Môn, TP Hồ Chí Minh",
+    "id": "chung-cu-hqc-hoc-mon-block-b",
     "km_q1": 31.9,
     "crawl_config": {
       "keyword": "Chung cư HQC Hóc Môn - Block B",
@@ -25315,8 +25315,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "can-ho-9x-an-suong",
     "address": "Huyện Hóc Môn, TP Hồ Chí Minh",
+    "id": "can-ho-9x-an-suong",
     "km_q1": 22.7,
     "crawl_config": {
       "keyword": "Căn hộ 9X An Sương",
@@ -25367,8 +25367,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "504-trung-my-tay-1-trung-chanh-hoc-mon",
     "address": "Huyện Hóc Môn, TP Hồ Chí Minh",
+    "id": "504-trung-my-tay-1-trung-chanh-hoc-mon",
     "km_q1": 33.1,
     "crawl_config": {
       "keyword": "50/4 Trung Mỹ Tây 1 ,trung Chánh , Hóc môn",
@@ -25419,8 +25419,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "dat-gia-garden-khu-dan-cu-dat-gia",
     "address": "Huyện Hóc Môn, TP Hồ Chí Minh",
+    "id": "dat-gia-garden-khu-dan-cu-dat-gia",
     "km_q1": 44.7,
     "crawl_config": {
       "keyword": "Đạt Gia Garden (Khu dân cư Đạt gia)",
@@ -25469,8 +25469,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "khue-nhien",
     "address": "Huyện Hóc Môn, TP Hồ Chí Minh",
+    "id": "khue-nhien",
     "km_q1": 29.0,
     "crawl_config": {
       "keyword": "KHUÊ NHIÊN",
@@ -25519,8 +25519,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "ban-nha-hoc-mon",
     "address": "Huyện Hóc Môn, TP Hồ Chí Minh",
+    "id": "ban-nha-hoc-mon",
     "km_q1": 16.4,
     "crawl_config": {
       "keyword": "Bán nhà Hóc Môn",
@@ -25570,8 +25570,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "chung-cu-phu-gia-xa-phu-xuan-nha-be",
     "address": "Huyện Nhà Bè, TP Hồ Chí Minh",
+    "id": "chung-cu-phu-gia-xa-phu-xuan-nha-be",
     "km_q1": 10.4,
     "crawl_config": {
       "keyword": "Chung Cư Phú Gia xã Phú Xuân Nhà Bè",
@@ -25621,8 +25621,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "chung-cu-phu-gia-orchid-park",
     "address": "Huyện Nhà Bè, TP Hồ Chí Minh",
+    "id": "chung-cu-phu-gia-orchid-park",
     "km_q1": 12.7,
     "crawl_config": {
       "keyword": "Chung cư Phú Gia (Orchid Park)",
@@ -25673,8 +25673,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "chung-cu-sunrise-riverside-block-i",
     "address": "Huyện Nhà Bè, TP Hồ Chí Minh",
+    "id": "chung-cu-sunrise-riverside-block-i",
     "km_q1": 10.2,
     "crawl_config": {
       "keyword": "Chung Cư Sunrise Riverside Block I",
@@ -25723,8 +25723,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "chung-cu-sunrise-riverside-block-h",
     "address": "Huyện Nhà Bè, TP Hồ Chí Minh",
+    "id": "chung-cu-sunrise-riverside-block-h",
     "km_q1": 11.7,
     "crawl_config": {
       "keyword": "Chung Cư Sunrise Riverside Block H",
@@ -25773,8 +25773,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "khu-can-ho-new-saigon",
     "address": "Huyện Nhà Bè, TP Hồ Chí Minh",
+    "id": "khu-can-ho-new-saigon",
     "km_q1": 13.7,
     "crawl_config": {
       "keyword": "Khu căn hộ New Saigon",
@@ -25825,8 +25825,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "chung-cu-saigon-south-residences",
     "address": "Huyện Nhà Bè, TP Hồ Chí Minh",
+    "id": "chung-cu-saigon-south-residences",
     "km_q1": 14.5,
     "crawl_config": {
       "keyword": "Chung cư Saigon South Residences",
@@ -25875,8 +25875,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "sunrise-riverside-block-a",
     "address": "Huyện Nhà Bè, TP Hồ Chí Minh",
+    "id": "sunrise-riverside-block-a",
     "km_q1": 14.3,
     "crawl_config": {
       "keyword": "Sunrise Riverside, Block A",
@@ -25927,8 +25927,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "chung-cu-hoang-anh-gold-house",
     "address": "Huyện Nhà Bè, TP Hồ Chí Minh",
+    "id": "chung-cu-hoang-anh-gold-house",
     "km_q1": 11.5,
     "crawl_config": {
       "keyword": "Chung cư Hoàng Anh Gold House",
@@ -25982,8 +25982,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "chung-cu-phu-my-thuan",
     "address": "Huyện Nhà Bè, TP Hồ Chí Minh",
+    "id": "chung-cu-phu-my-thuan",
     "km_q1": 14.9,
     "crawl_config": {
       "keyword": "Chung cư Phú Mỹ Thuận",
@@ -26032,8 +26032,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "goldora-plaza",
     "address": "Huyện Nhà Bè, TP Hồ Chí Minh",
+    "id": "goldora-plaza",
     "km_q1": 10.8,
     "crawl_config": {
       "keyword": "GOLDORA PLAZA",
@@ -26087,8 +26087,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "celesta-rise-apartment",
     "address": "Huyện Nhà Bè, TP Hồ Chí Minh",
+    "id": "celesta-rise-apartment",
     "km_q1": 10.3,
     "crawl_config": {
       "keyword": "Celesta Rise Apartment",
@@ -26139,8 +26139,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "chung-cu-hung-phat-2-silver-star",
     "address": "Huyện Nhà Bè, TP Hồ Chí Minh",
+    "id": "chung-cu-hung-phat-2-silver-star",
     "km_q1": 14.8,
     "crawl_config": {
       "keyword": "Chung Cư Hưng Phát 2 - Silver Star",
@@ -26191,8 +26191,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "cao-oc-hung-phat",
     "address": "Huyện Nhà Bè, TP Hồ Chí Minh",
+    "id": "cao-oc-hung-phat",
     "km_q1": 13.8,
     "crawl_config": {
       "keyword": "Cao ốc Hưng Phát",
@@ -26242,8 +26242,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "dragon-hill-1",
     "address": "Huyện Nhà Bè, TP Hồ Chí Minh",
+    "id": "dragon-hill-1",
     "km_q1": 13.0,
     "crawl_config": {
       "keyword": "Dragon Hill 1",
@@ -26292,8 +26292,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "khu-dinh-cu-phuoc-kien-sadeco",
     "address": "Huyện Nhà Bè, TP Hồ Chí Minh",
+    "id": "khu-dinh-cu-phuoc-kien-sadeco",
     "km_q1": 11.1,
     "crawl_config": {
       "keyword": "Khu định cư Phước Kiển (SADECO)",
@@ -26343,8 +26343,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "kdc-sai-gon-south-village",
     "address": "Huyện Nhà Bè, TP Hồ Chí Minh",
+    "id": "kdc-sai-gon-south-village",
     "km_q1": 13.9,
     "crawl_config": {
       "keyword": "KDC Sài Gòn South Village",
@@ -26393,8 +26393,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "khu-dan-cu-nhon-duc",
     "address": "Huyện Nhà Bè, TP Hồ Chí Minh",
+    "id": "khu-dan-cu-nhon-duc",
     "km_q1": 10.3,
     "crawl_config": {
       "keyword": "Khu dân cư Nhơn Đức",
@@ -26443,8 +26443,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "khu-dan-cu-gia-long-riverside",
     "address": "Huyện Nhà Bè, TP Hồ Chí Minh",
+    "id": "khu-dan-cu-gia-long-riverside",
     "km_q1": 10.5,
     "crawl_config": {
       "keyword": "Khu Dân Cư Gia Long Riverside",
@@ -26495,8 +26495,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "cong-vao-chung-cu-saigon-south-residences",
     "address": "Huyện Nhà Bè, TP Hồ Chí Minh",
+    "id": "cong-vao-chung-cu-saigon-south-residences",
     "km_q1": 12.1,
     "crawl_config": {
       "keyword": "Cổng vào - Chung cư Saigon South Residences",
@@ -26547,8 +26547,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "nha-tro-thu-van-91592-le-van-luongxa-phuoc-kienghuyen-nha-be",
     "address": "Huyện Nhà Bè, TP Hồ Chí Minh",
+    "id": "nha-tro-thu-van-91592-le-van-luongxa-phuoc-kienghuyen-nha-be",
     "km_q1": 12.3,
     "crawl_config": {
       "keyword": "Nhà Trọ Thu Vân 915/92 Lê Văn Lương,xã Phước Kiểng,Huyện Nhà Bè",
@@ -26597,8 +26597,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "sunrise-riverside-block-c",
     "address": "Huyện Nhà Bè, TP Hồ Chí Minh",
+    "id": "sunrise-riverside-block-c",
     "km_q1": 10.4,
     "crawl_config": {
       "keyword": "Sunrise Riverside Block C",
@@ -26647,8 +26647,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "the-sun-residence",
     "address": "Huyện Nhà Bè, TP Hồ Chí Minh",
+    "id": "the-sun-residence",
     "km_q1": 9.6,
     "crawl_config": {
       "keyword": "The Sun Residence",
@@ -26698,8 +26698,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "sunrise-riverside-block-k",
     "address": "Huyện Nhà Bè, TP Hồ Chí Minh",
+    "id": "sunrise-riverside-block-k",
     "km_q1": 10.4,
     "crawl_config": {
       "keyword": "SUNRISE RIVERSIDE Block K",
@@ -26748,8 +26748,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "the-park-residence-b5",
     "address": "Huyện Nhà Bè, TP Hồ Chí Minh",
+    "id": "the-park-residence-b5",
     "km_q1": 14.2,
     "crawl_config": {
       "keyword": "The park Residence B5",
@@ -26799,8 +26799,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "169775-le-van-luong-cau-gach-tom-xa-nhon-duc-huyen-nha-be",
     "address": "Huyện Nhà Bè, TP Hồ Chí Minh",
+    "id": "169775-le-van-luong-cau-gach-tom-xa-nhon-duc-huyen-nha-be",
     "km_q1": 13.7,
     "crawl_config": {
       "keyword": "1697/75 Lê Văn Lương cầu gạch tôm , xã nhơn đức , huyện Nhà Bè",
@@ -26850,8 +26850,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "dat-cu-chi",
     "address": "Huyện Củ Chi, TP Hồ Chí Minh",
+    "id": "dat-cu-chi",
     "km_q1": 29.2,
     "crawl_config": {
       "keyword": "Đất củ chi",
@@ -26901,8 +26901,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "nha-dat-cu-chi-bat-dong-san-hoang-viet",
     "address": "Huyện Củ Chi, TP Hồ Chí Minh",
+    "id": "nha-dat-cu-chi-bat-dong-san-hoang-viet",
     "km_q1": 28.6,
     "crawl_config": {
       "keyword": "Nhà Đất Củ Chi - Bất Động Sản Hoàng Việt",
@@ -26952,8 +26952,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "ho-chi-minh",
     "address": "Huyện Củ Chi, TP Hồ Chí Minh",
+    "id": "ho-chi-minh",
     "km_q1": 27.4,
     "crawl_config": {
       "keyword": "HỒ CHÍ MINH",
@@ -27004,8 +27004,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "centre-mall-cu-chi-satra-cu-chi",
     "address": "Huyện Củ Chi, TP Hồ Chí Minh",
+    "id": "centre-mall-cu-chi-satra-cu-chi",
     "km_q1": 31.5,
     "crawl_config": {
       "keyword": "Centre Mall Củ Chi (Satra Củ Chi)",
@@ -27055,8 +27055,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "khu-dan-cu-tan-phu-trung",
     "address": "Huyện Củ Chi, TP Hồ Chí Minh",
+    "id": "khu-dan-cu-tan-phu-trung",
     "km_q1": 25.6,
     "crawl_config": {
       "keyword": "Khu Dân Cư Tân Phú Trung",
@@ -27107,8 +27107,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "chung-cu-nam-an",
     "address": "Huyện Củ Chi, TP Hồ Chí Minh",
+    "id": "chung-cu-nam-an",
     "km_q1": 18.1,
     "crawl_config": {
       "keyword": "Chung cư Nam An",
@@ -27158,8 +27158,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "chung-cu-canh-vien-1a",
     "address": "Huyện Củ Chi, TP Hồ Chí Minh",
+    "id": "chung-cu-canh-vien-1a",
     "km_q1": 28.8,
     "crawl_config": {
       "keyword": "Chung cư Cảnh Viên 1A",
@@ -27210,8 +27210,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "chung-cu-midtown-phu-my-hung-quan-7",
     "address": "Huyện Củ Chi, TP Hồ Chí Minh",
+    "id": "chung-cu-midtown-phu-my-hung-quan-7",
     "km_q1": 38.8,
     "crawl_config": {
       "keyword": "Chung cư Midtown Phú Mỹ Hưng Quận 7",
@@ -27262,8 +27262,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "coopmart-cu-chi",
     "address": "Huyện Củ Chi, TP Hồ Chí Minh",
+    "id": "coopmart-cu-chi",
     "km_q1": 27.4,
     "crawl_config": {
       "keyword": "Co.opmart Củ Chi",
@@ -27313,8 +27313,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "nha-van-hoa-lao-dong-huyen-cu-chi",
     "address": "Huyện Củ Chi, TP Hồ Chí Minh",
+    "id": "nha-van-hoa-lao-dong-huyen-cu-chi",
     "km_q1": 21.4,
     "crawl_config": {
       "keyword": "Nhà Văn Hóa Lao Động Huyện Củ Chi",
@@ -27365,8 +27365,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "nha-dat-cu-chi",
     "address": "Huyện Củ Chi, TP Hồ Chí Minh",
+    "id": "nha-dat-cu-chi",
     "km_q1": 44.1,
     "crawl_config": {
       "keyword": "Nhà Đất CỦ CHI",
@@ -27415,8 +27415,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "vinhomes-green-paradise-can-gio",
     "address": "Huyện Cần Giờ, TP Hồ Chí Minh",
+    "id": "vinhomes-green-paradise-can-gio",
     "km_q1": 44.7,
     "crawl_config": {
       "keyword": "Vinhomes Green Paradise Cần Giờ",
@@ -27467,8 +27467,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "khu-can-cu-vam-sat-dao-khi",
     "address": "Huyện Cần Giờ, TP Hồ Chí Minh",
+    "id": "khu-can-cu-vam-sat-dao-khi",
     "km_q1": 26.3,
     "crawl_config": {
       "keyword": "Khu căn cứ Vàm Sát Đảo Khỉ",
@@ -27519,8 +27519,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "bai-bien-can-gio",
     "address": "Huyện Cần Giờ, TP Hồ Chí Minh",
+    "id": "bai-bien-can-gio",
     "km_q1": 25.1,
     "crawl_config": {
       "keyword": "Bãi biển Cần Giờ",
@@ -27570,8 +27570,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "nha-dat-can-gio",
     "address": "Huyện Cần Giờ, TP Hồ Chí Minh",
+    "id": "nha-dat-can-gio",
     "km_q1": 44.1,
     "crawl_config": {
       "keyword": "Nhà đất Cần Giờ",
@@ -27620,8 +27620,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "khu-du-lich-30-thang-4",
     "address": "Huyện Cần Giờ, TP Hồ Chí Minh",
+    "id": "khu-du-lich-30-thang-4",
     "km_q1": 39.2,
     "crawl_config": {
       "keyword": "Khu du lịch 30 tháng 4",
@@ -27671,8 +27671,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "ubnd-huyen-can-gio",
     "address": "Huyện Cần Giờ, TP Hồ Chí Minh",
+    "id": "ubnd-huyen-can-gio",
     "km_q1": 22.5,
     "crawl_config": {
       "keyword": "UBND Huyện Cần Giờ",
@@ -27722,8 +27722,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "du-lich-rung-sac-can-gio",
     "address": "Huyện Cần Giờ, TP Hồ Chí Minh",
+    "id": "du-lich-rung-sac-can-gio",
     "km_q1": 33.8,
     "crawl_config": {
       "keyword": "Du lịch Rừng Sác - Cần Giờ",
@@ -27773,8 +27773,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "chi-cuc-thue-huyen-can-gio",
     "address": "Huyện Cần Giờ, TP Hồ Chí Minh",
+    "id": "chi-cuc-thue-huyen-can-gio",
     "km_q1": 20.4,
     "crawl_config": {
       "keyword": "Chi cục thuế huyện Cần Giờ",
@@ -27825,8 +27825,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "chung-cu-sai-gon-moi",
     "address": "Huyện Cần Giờ, TP Hồ Chí Minh",
+    "id": "chung-cu-sai-gon-moi",
     "km_q1": 29.7,
     "crawl_config": {
       "keyword": "Chung cư Sài Gòn Mới",
@@ -27875,8 +27875,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "sai-gon-can-gio-saigontourist-group",
     "address": "Huyện Cần Giờ, TP Hồ Chí Minh",
+    "id": "sai-gon-can-gio-saigontourist-group",
     "km_q1": 26.9,
     "crawl_config": {
       "keyword": "Sài Gòn - Cần Giờ (Saigontourist Group)",
@@ -27925,8 +27925,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "phuong-nam-can-gio-resort",
     "address": "Huyện Cần Giờ, TP Hồ Chí Minh",
+    "id": "phuong-nam-can-gio-resort",
     "km_q1": 31.6,
     "crawl_config": {
       "keyword": "Phương Nam Cần Giờ Resort",
@@ -27975,8 +27975,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "vinhomes-golden-river",
     "address": "Huyện Cần Giờ, TP Hồ Chí Minh",
+    "id": "vinhomes-golden-river",
     "km_q1": 41.3,
     "crawl_config": {
       "keyword": "Vinhomes Golden River",
@@ -28030,8 +28030,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "coop-mart-can-gio",
     "address": "Huyện Cần Giờ, TP Hồ Chí Minh",
+    "id": "coop-mart-can-gio",
     "km_q1": 29.2,
     "crawl_config": {
       "keyword": "Co.op Mart Cần Giờ",
@@ -28081,8 +28081,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "can-ho-the-regency-ho-ban-nguyet-phu-my-hung",
     "address": "Huyện Cần Giờ, TP Hồ Chí Minh",
+    "id": "can-ho-the-regency-ho-ban-nguyet-phu-my-hung",
     "km_q1": 26.3,
     "crawl_config": {
       "keyword": "Căn hộ The Regency Hồ Bán Nguyệt - Phú Mỹ Hưng",
@@ -28136,8 +28136,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "celesta-avenue",
     "address": "Huyện Cần Giờ, TP Hồ Chí Minh",
+    "id": "celesta-avenue",
     "km_q1": 41.7,
     "crawl_config": {
       "keyword": "CELESTA AVENUE",
@@ -28186,8 +28186,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "thi-tran-can-thanh-can-gio-tp-hcm",
     "address": "Huyện Cần Giờ, TP Hồ Chí Minh",
+    "id": "thi-tran-can-thanh-can-gio-tp-hcm",
     "km_q1": 23.0,
     "crawl_config": {
       "keyword": "Thị trấn Cần Thạnh- Cần Giờ- tp hcm",
@@ -28237,8 +28237,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "ban-quan-ly-rung-phong-ho-can-gio",
     "address": "Huyện Cần Giờ, TP Hồ Chí Minh",
+    "id": "ban-quan-ly-rung-phong-ho-can-gio",
     "km_q1": 42.4,
     "crawl_config": {
       "keyword": "Ban quản lý rừng phòng hộ Cần Giờ",
@@ -28288,8 +28288,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "cau-dan-xay",
     "address": "Huyện Cần Giờ, TP Hồ Chí Minh",
+    "id": "cau-dan-xay",
     "km_q1": 35.2,
     "crawl_config": {
       "keyword": "Cầu Dần Xây",
@@ -28339,8 +28339,8 @@ window.APARTMENTS_DATA = [
     }
   },
   {
-    "id": "tan-thai-duong-motel",
     "address": "Huyện Cần Giờ, TP Hồ Chí Minh",
+    "id": "tan-thai-duong-motel",
     "km_q1": 21.2,
     "crawl_config": {
       "keyword": "Tân Thái Dương Motel",

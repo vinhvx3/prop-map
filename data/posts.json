@@ -24,6 +24,42 @@
     "image": null
   },
   {
+    "apartment_id": "cardinal-court",
+    "source": "nhatot.com",
+    "price": "26 triệu/tháng",
+    "area": "80 m²",
+    "furnished": null,
+    "date": "1 tuần trước",
+    "title": "Cần cho thuê gấp căn hộ cao cấp Cardinal Court, nhà đẹp lung linh",
+    "bedrooms": null,
+    "link": "https://www.nhatot.com/thue-can-ho-chung-cu-quan-7-tp-ho-chi-minh/131229091.htm",
+    "image": null
+  },
+  {
+    "apartment_id": "cardinal-court",
+    "source": "nhatot.com",
+    "price": "25 triệu/tháng",
+    "area": "76 m²",
+    "furnished": null,
+    "date": "1 tuần trước",
+    "title": "CHO THUÊ CH CARDINAL COURT - 76M2 - VIEW HỒ BƠI - GIÁ CHỈ 25 TRIỆU/TH",
+    "bedrooms": null,
+    "link": "https://www.nhatot.com/thue-can-ho-chung-cu-quan-7-tp-ho-chi-minh/132461046.htm",
+    "image": null
+  },
+  {
+    "apartment_id": "cardinal-court",
+    "source": "nhatot.com",
+    "price": "25 triệu/tháng",
+    "area": "76 m²",
+    "furnished": null,
+    "date": "hôm qua",
+    "title": "CHO THUÊ CĂN HỘ CARDINAL COURT- NHÀ ĐẸP NHƯ HÌNH. 76M2- GIÁ 25 TRIỆU",
+    "bedrooms": null,
+    "link": "https://www.nhatot.com/thue-can-ho-chung-cu-quan-7-tp-ho-chi-minh/132633746.htm",
+    "image": null
+  },
+  {
     "apartment_id": "carina-plaza",
     "source": "nhatot.com",
     "price": "9,5 triệu/tháng",
@@ -720,6 +756,18 @@
     "image": null
   },
   {
+    "apartment_id": "kims-apartment",
+    "source": "mogi.vn",
+    "price": "7 triệu 500 nghìn",
+    "area": "57 m2",
+    "furnished": null,
+    "date": "20/05/2026",
+    "title": "C/c Kim Tâm Hải ,Trường Chinh cho thuê căn 2p ngủ giá 7,5tr",
+    "bedrooms": null,
+    "link": "https://mogi.vn/quan-12/thue-can-ho-chung-cu/c-c-kim-tam-hai-truong-chinh-cho-thue-can-2p-ngu-gia-7-5tr-id22738966",
+    "image": null
+  },
+  {
     "apartment_id": "lavida-plus",
     "source": "batdongsan.com.vn",
     "price": "14,5 triệu/tháng",
@@ -1285,6 +1333,18 @@
   },
   {
     "apartment_id": "river-panorama",
+    "source": "mogi.vn",
+    "price": "11 triệu 500 nghìn",
+    "area": "55 m2",
+    "furnished": null,
+    "date": "28/05/2026",
+    "title": "Cho thuê căn hộ River Panorama view sông đủ nội thất giá 11tr5/tháng .",
+    "bedrooms": null,
+    "link": "https://mogi.vn/quan-7/thue-can-ho-chung-cu/cho-thue-can-ho-river-panorama-view-song-du-noi-that-gia-11tr5-thang-id22707884",
+    "image": null
+  },
+  {
+    "apartment_id": "river-panorama",
     "source": "nhatot.com",
     "price": "6 triệu/tháng",
     "area": "55 m²",
@@ -1305,6 +1365,114 @@
     "title": "CHO THUÊ RIVER PANORAMA, KHU PHỨC HỢP LACASA QUẬN 7",
     "bedrooms": null,
     "link": "https://www.nhatot.com/thue-can-ho-chung-cu-quan-7-tp-ho-chi-minh/132563066.htm",
+    "image": null
+  },
+  {
+    "apartment_id": "riviera-point",
+    "source": "batdongsan.com.vn",
+    "price": "25 triệu/tháng",
+    "area": "98 m²",
+    "furnished": null,
+    "date": "Đăng 3 ngày trước",
+    "title": "Giỏ hàng căn cho thuê The Infinity Q7, free PQL, full nội thất (1PN - 14tr)(2PN - 18tr)(3PN - 15tr)",
+    "bedrooms": null,
+    "link": "https://batdongsan.com.vn/cho-thue-can-ho-chung-cu-duong-huynh-tan-phat-phuong-tan-phu-19-the-infiniti-riviera-point/gio-hang-100-cho-infinity-q7-free-pql-full-noi-that-1pn-14tr-2pn-18tr-3pn-15tr-pr45633786",
+    "image": null
+  },
+  {
+    "apartment_id": "riviera-point",
+    "source": "mogi.vn",
+    "price": "19 triệu",
+    "area": "99 m2",
+    "furnished": null,
+    "date": "21/05/2026",
+    "title": "Cho thuê căn hộ cao cấp Riviera Point, view thoáng, nhà mới đẹp",
+    "bedrooms": null,
+    "link": "https://mogi.vn/quan-7/thue-can-ho-chung-cu/cho-thue-can-ho-cao-cap-riviera-point-view-thoang-nha-moi-dep-id22607432",
+    "image": null
+  },
+  {
+    "apartment_id": "riviera-point",
+    "source": "mogi.vn",
+    "price": "20 triệu",
+    "area": "91 m2",
+    "furnished": null,
+    "date": "21/05/2026",
+    "title": "Cho thuê căn hộ The view Rivierapoint, nhà đẹp, trống sẳn ở ngay",
+    "bedrooms": null,
+    "link": "https://mogi.vn/quan-7/thue-can-ho-chung-cu/cho-thue-can-ho-the-view-rivierapoint-nha-dep-trong-san-o-ngay-id22609164",
+    "image": null
+  },
+  {
+    "apartment_id": "riviera-point",
+    "source": "mogi.vn",
+    "price": "18 triệu",
+    "area": "91 m2",
+    "furnished": null,
+    "date": "21/05/2026",
+    "title": "Cho thuê căn hộ The view Rivierapoint, nhà đẹp, trống sẳn ở ngay",
+    "bedrooms": null,
+    "link": "https://mogi.vn/quan-7/thue-can-ho-chung-cu/cho-thue-can-ho-the-view-rivierapoint-nha-dep-trong-san-o-ngay-id22607390",
+    "image": null
+  },
+  {
+    "apartment_id": "sky-garden-2",
+    "source": "nhatot.com",
+    "price": "11 triệu/tháng",
+    "area": "71 m²",
+    "furnished": null,
+    "date": "3 tuần trước",
+    "title": "Cho thuê nhiều căn hộ Sky Garden 2pn~3pn, giá chỉ từ 11tr-12tr/tháng",
+    "bedrooms": null,
+    "link": "https://www.nhatot.com/thue-can-ho-chung-cu-quan-7-tp-ho-chi-minh/123538997.htm",
+    "image": null
+  },
+  {
+    "apartment_id": "sky-garden-3",
+    "source": "nhatot.com",
+    "price": "16 triệu/tháng",
+    "area": "70 m²",
+    "furnished": null,
+    "date": "3 tuần trước",
+    "title": "Cho thuê căn hộ sky garden 3 phú mỹ hưng, 2pn 2wc nhà mới sạch đẹp ở n",
+    "bedrooms": null,
+    "link": "https://www.nhatot.com/thue-can-ho-chung-cu-quan-7-tp-ho-chi-minh/131710097.htm",
+    "image": null
+  },
+  {
+    "apartment_id": "star-hill",
+    "source": "mogi.vn",
+    "price": "21 triệu",
+    "area": "94 m2",
+    "furnished": null,
+    "date": "28/05/2026",
+    "title": "Cần cho thuê nhanh căn hộ Star Hill, PMH, Q7 nhà đẹp, giá rẻ.",
+    "bedrooms": null,
+    "link": "https://mogi.vn/quan-7/thue-can-ho-chung-cu/can-cho-thue-nhanh-can-ho-star-hill-pmh-q7-nha-dep-gia-re-id22731062",
+    "image": null
+  },
+  {
+    "apartment_id": "star-hill",
+    "source": "mogi.vn",
+    "price": "20 triệu",
+    "area": "95 m2",
+    "furnished": null,
+    "date": "28/05/2026",
+    "title": "Cho thuê CH Star Hill, 95m2, 2 phòng ngủ, 20 triệu, Phú Mỹ Hưng HCMC",
+    "bedrooms": null,
+    "link": "https://mogi.vn/quan-7/thue-can-ho-chung-cu/cho-thue-ch-star-hill-95m2-2-phong-ngu-20-trieu-phu-my-hung-hcmc-id22723234",
+    "image": null
+  },
+  {
+    "apartment_id": "star-hill",
+    "source": "mogi.vn",
+    "price": "24 triệu",
+    "area": "112 m2",
+    "furnished": null,
+    "date": "28/05/2026",
+    "title": "Hiếm Có: Căn Hộ Star Hill 3PN, View Đẹp, Nội Thất Cao Cấp, Giá Tốt",
+    "bedrooms": null,
+    "link": "https://mogi.vn/quan-7/thue-can-ho-chung-cu/hiem-co-can-ho-star-hill-3pn-view-dep-noi-that-cao-cap-gia-tot-id22708573",
     "image": null
   },
   {

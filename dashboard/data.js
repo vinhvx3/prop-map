@@ -1,7 +1,7 @@
 window.CRAWL_DATA = [
   {
-    "source": "nhatot.com",
     "apartment_id": "155-nguyen-chi-thanh",
+    "source": "nhatot.com",
     "title": "Cho thuê căn hộ chung cư 155 Nguyễn chí Thanh, quận 5 ,hcm",
     "area": "60 m²",
     "furnished": null,
@@ -13,8 +13,8 @@ window.CRAWL_DATA = [
     "apartment_name": "155-nguyen-chi-thanh"
   },
   {
-    "source": "nhatot.com",
     "apartment_id": "155-nguyen-chi-thanh",
+    "source": "nhatot.com",
     "title": "Cần cho thuê căn hộ 155 Nguyễn Chí Thanh P9. Q5",
     "area": "61 m²",
     "furnished": null,
@@ -26,8 +26,8 @@ window.CRAWL_DATA = [
     "apartment_name": "155-nguyen-chi-thanh"
   },
   {
-    "source": "nhatot.com",
     "apartment_id": "carina-plaza",
+    "source": "nhatot.com",
     "title": "Cho thuê căn góc Lô C, 2 phòng ngủ, 2WC, 99m2 tại 1648, Carina Plaza.",
     "area": "99 m²",
     "furnished": null,
@@ -43,8 +43,8 @@ window.CRAWL_DATA = [
     "address": "1648 Võ Văn Kiệt, Phường 16, Quận 8"
   },
   {
-    "source": "nhatot.com",
     "apartment_id": "central-premium",
+    "source": "nhatot.com",
     "title": "Chính chủ cho thuê căn hộ Central Premium 1 phòng ngủ full giá 9.3tr",
     "area": "30 m²",
     "furnished": null,
@@ -60,8 +60,8 @@ window.CRAWL_DATA = [
     "address": "Tạ Quang Bửu, Phường 5, Quận 8"
   },
   {
-    "source": "batdongsan.com.vn",
     "apartment_id": "city-gate-towers",
+    "source": "batdongsan.com.vn",
     "title": "Có nhiều CH City Gate cho thuê, căn 2 và 3 phòng ngủ giá 7.5 triệu/tháng, có nội thất 9 triệu/tháng",
     "area": "73 m²",
     "furnished": null,
@@ -77,8 +77,8 @@ window.CRAWL_DATA = [
     "address": "Võ Văn Kiệt, Phường 16, Quận 8"
   },
   {
-    "source": "mogi.vn",
     "apartment_id": "city-gate-towers",
+    "source": "mogi.vn",
     "title": "Căn hộ City Gate mặt tiền Võ Văn Kiệt, 2pn, 2wc full nội thất giá 9 tr",
     "area": "73 m2",
     "furnished": null,
@@ -94,8 +94,8 @@ window.CRAWL_DATA = [
     "address": "Võ Văn Kiệt, Phường 16, Quận 8"
   },
   {
-    "source": "mogi.vn",
     "apartment_id": "city-gate-towers",
+    "source": "mogi.vn",
     "title": "Cho thuê căn hộ City Gate 79m, 2pn, 2wc nhà full nội thất giá 9tr",
     "area": "74 m2",
     "furnished": null,
@@ -111,8 +111,8 @@ window.CRAWL_DATA = [
     "address": "Võ Văn Kiệt, Phường 16, Quận 8"
   },
   {
-    "source": "nhatot.com",
     "apartment_id": "city-gate-towers",
+    "source": "nhatot.com",
     "title": "Chuyên cho thuê Căn hộ City Gate giá từ 7.5tr đến 9tr tuỳ nội thất",
     "area": "73 m²",
     "furnished": null,
@@ -128,8 +128,8 @@ window.CRAWL_DATA = [
     "address": "Võ Văn Kiệt, Phường 16, Quận 8"
   },
   {
-    "source": "nhatot.com",
     "apartment_id": "city-gate-towers",
+    "source": "nhatot.com",
     "title": "Cho thuê căn hộ City gate 2pn, 2wc, full nội thất giá thuê 9 triệu",
     "area": "74 m²",
     "furnished": null,
@@ -145,8 +145,8 @@ window.CRAWL_DATA = [
     "address": "Võ Văn Kiệt, Phường 16, Quận 8"
   },
   {
-    "source": "nhatot.com",
     "apartment_id": "conic-riverside",
+    "source": "nhatot.com",
     "title": "CHO THUÊ CONIC RIVERSIDE 2 PHÒNG NGỦ 2 TOILET",
     "area": "73 m²",
     "furnished": null,
@@ -162,8 +162,8 @@ window.CRAWL_DATA = [
     "address": "Tạ Quang Bửu, Phường 7, Quận 8"
   },
   {
-    "source": "nhatot.com",
     "apartment_id": "conic-riverside",
+    "source": "nhatot.com",
     "title": "Cho thuê căn hộ Conic Riverside 1pn -2pn full NT",
     "area": "65 m²",
     "furnished": null,
@@ -179,8 +179,8 @@ window.CRAWL_DATA = [
     "address": "Tạ Quang Bửu, Phường 7, Quận 8"
   },
   {
-    "source": "nhatot.com",
     "apartment_id": "conic-riverside",
+    "source": "nhatot.com",
     "title": "CHO THUÊ CĂN HỘ CONIC RIVERSIDE. DT : 65m2. Giá thuê: 8.5 triệu/tháng",
     "area": "66 m²",
     "furnished": null,
@@ -196,8 +196,8 @@ window.CRAWL_DATA = [
     "address": "Tạ Quang Bửu, Phường 7, Quận 8"
   },
   {
-    "source": "nhatot.com",
     "apartment_id": "conic-riverside",
+    "source": "nhatot.com",
     "title": "RỖ HÀNG CHO THUÊ CONIC RIVERSIDE Q8 MỚI ĐA DẠNG CĂN- Ở NGAY",
     "area": "65 m²",
     "furnished": null,
@@ -213,8 +213,8 @@ window.CRAWL_DATA = [
     "address": "Tạ Quang Bửu, Phường 7, Quận 8"
   },
   {
-    "source": "nhatot.com",
     "apartment_id": "conic-riverside",
+    "source": "nhatot.com",
     "title": "Giỏ hàng cho thuê căn hộ Conic Riverside Tháng 3",
     "area": "65 m²",
     "furnished": null,
@@ -230,8 +230,8 @@ window.CRAWL_DATA = [
     "address": "Tạ Quang Bửu, Phường 7, Quận 8"
   },
   {
-    "source": "nhatot.com",
     "apartment_id": "conic-riverside",
+    "source": "nhatot.com",
     "title": "Cho thuê căn hộ Conic Riverside, Quận 8",
     "area": "66 m²",
     "furnished": null,
@@ -247,8 +247,8 @@ window.CRAWL_DATA = [
     "address": "Tạ Quang Bửu, Phường 7, Quận 8"
   },
   {
-    "source": "nhatot.com",
     "apartment_id": "d-vela",
+    "source": "nhatot.com",
     "title": "🌹🌹🌹 CẦN CHO THUÊ CC D-Vela 2Pn 1Wc - TRỐnG Ở Liền 🌹🌹🌹",
     "area": "52 m²",
     "furnished": null,
@@ -264,8 +264,8 @@ window.CRAWL_DATA = [
     "address": "1177 Huỳnh Tấn Phát, Phường Phú Thuận, Quận 7"
   },
   {
-    "source": "batdongsan.com.vn",
     "apartment_id": "diamond-riverside",
+    "source": "batdongsan.com.vn",
     "title": "Chuyên cho thuê chung cư Diamond Riverside Quận 8 giá 8 triệu - 10 triệu xem nhà 24/7",
     "area": "74 m²",
     "furnished": null,
@@ -281,8 +281,8 @@ window.CRAWL_DATA = [
     "address": "1646A Võ Văn Kiệt, Phường 16, Quận 8"
   },
   {
-    "source": "batdongsan.com.vn",
     "apartment_id": "diamond-riverside",
+    "source": "batdongsan.com.vn",
     "title": "Chuyên cho thuê CH Diamond căn 2 và 3 phòng ngủ giá 8 đến 8.5 triệu, có nội thất giá 9 đến 10 triệu",
     "area": "73 m²",
     "furnished": null,
@@ -298,8 +298,8 @@ window.CRAWL_DATA = [
     "address": "1646A Võ Văn Kiệt, Phường 16, Quận 8"
   },
   {
-    "source": "mogi.vn",
     "apartment_id": "diamond-riverside",
+    "source": "mogi.vn",
     "title": "Cho thuê Diamond Riverside có nhà liền giá 8 triệu",
     "area": "73 m2",
     "furnished": null,
@@ -315,8 +315,8 @@ window.CRAWL_DATA = [
     "address": "1646A Võ Văn Kiệt, Phường 16, Quận 8"
   },
   {
-    "source": "mogi.vn",
     "apartment_id": "diamond-riverside",
+    "source": "mogi.vn",
     "title": "Cho thuê căn hộ Diamond Riverside, 2pn, 2wc full nội thất cao cấp",
     "area": "74 m2",
     "furnished": null,
@@ -332,8 +332,8 @@ window.CRAWL_DATA = [
     "address": "1646A Võ Văn Kiệt, Phường 16, Quận 8"
   },
   {
-    "source": "mogi.vn",
     "apartment_id": "diamond-riverside",
+    "source": "mogi.vn",
     "title": "Chuyên cho thuê CH Võ Văn Kiệt loại 2pn,3pn nhà trống và nội thất.",
     "area": "73 m2",
     "furnished": null,
@@ -349,8 +349,8 @@ window.CRAWL_DATA = [
     "address": "1646A Võ Văn Kiệt, Phường 16, Quận 8"
   },
   {
-    "source": "mogi.vn",
     "apartment_id": "diamond-riverside",
+    "source": "mogi.vn",
     "title": "Cho thuê chung cư Phường 16, quận 8, full nội thất giá 8 triệu",
     "area": "74 m2",
     "furnished": null,
@@ -366,8 +366,8 @@ window.CRAWL_DATA = [
     "address": "1646A Võ Văn Kiệt, Phường 16, Quận 8"
   },
   {
-    "source": "nhatot.com",
     "apartment_id": "diamond-riverside",
+    "source": "nhatot.com",
     "title": "🔥 Còn 1 căn 🔥căn hộ Diamond Riverside 2 phòng ngủ",
     "area": "72 m²",
     "furnished": null,
@@ -383,8 +383,8 @@ window.CRAWL_DATA = [
     "address": "1646A Võ Văn Kiệt, Phường 16, Quận 8"
   },
   {
-    "source": "nhatot.com",
     "apartment_id": "diamond-riverside",
+    "source": "nhatot.com",
     "title": "Cho thuê căn hộ cao cấp Diamond RiverSide P16 Q8",
     "area": "72 m²",
     "furnished": null,
@@ -400,8 +400,8 @@ window.CRAWL_DATA = [
     "address": "1646A Võ Văn Kiệt, Phường 16, Quận 8"
   },
   {
-    "source": "nhatot.com",
     "apartment_id": "diamond-riverside",
+    "source": "nhatot.com",
     "title": "Cho thuê CC Diamond Riverside 2 phòng ngủ,2WC có 2 máy lạnh",
     "area": "72 m²",
     "furnished": null,
@@ -417,8 +417,8 @@ window.CRAWL_DATA = [
     "address": "1646A Võ Văn Kiệt, Phường 16, Quận 8"
   },
   {
-    "source": "nhatot.com",
     "apartment_id": "diamond-riverside",
+    "source": "nhatot.com",
     "title": "Cho thuê căn hộ Diamond Riverside 2pn giá 9.5tr/tháng",
     "area": "74 m²",
     "furnished": null,
@@ -434,8 +434,8 @@ window.CRAWL_DATA = [
     "address": "1646A Võ Văn Kiệt, Phường 16, Quận 8"
   },
   {
-    "source": "batdongsan.com.vn",
     "apartment_id": "eco-green-saigon",
+    "source": "batdongsan.com.vn",
     "title": "CHO THUÊ CĂN HỘ ECO GREEN SAIGON QUẬN 7 2PN - 3PN GIÁ TỐT, VÀO Ở NGAY",
     "area": "52 m²",
     "furnished": null,
@@ -451,8 +451,8 @@ window.CRAWL_DATA = [
     "address": "107 Nguyễn Văn Linh, Phường Tân Thuận Tây, Quận 7"
   },
   {
-    "source": "nhatot.com",
     "apartment_id": "felisa-riverside",
+    "source": "nhatot.com",
     "title": "Cho thuê căn 2 phòng cc Felisa Riversise (ngay cầu Nguyễn Tri Phương)",
     "area": "48 m²",
     "furnished": null,
@@ -468,8 +468,8 @@ window.CRAWL_DATA = [
     "address": "99 Bến Bình Đông, Phường 11, Quận 8"
   },
   {
-    "source": "mogi.vn",
     "apartment_id": "florita",
+    "source": "mogi.vn",
     "title": "Mình cần cho thuê căn hộ Florita Quận 7, 80m, 2pn, căn góc, NTCB",
     "area": "80 m2",
     "furnished": null,
@@ -485,8 +485,8 @@ window.CRAWL_DATA = [
     "address": "Đường D4, Khu đô thị Him Lam, Phường Tân Hưng, Quận 7"
   },
   {
-    "source": "mogi.vn",
     "apartment_id": "florita",
+    "source": "mogi.vn",
     "title": "Mình cần cho thuê căn hộ Florita Quận, 74m, 2pn, view Quận 1, 15 triệu",
     "area": "74 m2",
     "furnished": null,
@@ -502,8 +502,8 @@ window.CRAWL_DATA = [
     "address": "Đường D4, Khu đô thị Him Lam, Phường Tân Hưng, Quận 7"
   },
   {
-    "source": "mogi.vn",
     "apartment_id": "florita",
+    "source": "mogi.vn",
     "title": "Mình cần cho thuê căn hộ Florita Quận, 60m, 2pn, nội thất cơ bản, 13tr",
     "area": "60 m2",
     "furnished": null,
@@ -519,8 +519,8 @@ window.CRAWL_DATA = [
     "address": "Đường D4, Khu đô thị Him Lam, Phường Tân Hưng, Quận 7"
   },
   {
-    "source": "nhatot.com",
     "apartment_id": "florita",
+    "source": "nhatot.com",
     "title": "Cho thuê căn hộ 2 phòng ngủ Florita 13 triệu",
     "area": "57 m²",
     "furnished": null,
@@ -536,8 +536,8 @@ window.CRAWL_DATA = [
     "address": "Đường D4, Khu đô thị Him Lam, Phường Tân Hưng, Quận 7"
   },
   {
-    "source": "nhatot.com",
     "apartment_id": "florita",
+    "source": "nhatot.com",
     "title": ". Mình cần cho thuê căn hộ Florita Quận 7, 80m, 2pn, căn góc, NTCB",
     "area": "80 m²",
     "furnished": null,
@@ -553,8 +553,8 @@ window.CRAWL_DATA = [
     "address": "Đường D4, Khu đô thị Him Lam, Phường Tân Hưng, Quận 7"
   },
   {
-    "source": "nhatot.com",
     "apartment_id": "florita",
+    "source": "nhatot.com",
     "title": "Sang nhượng căn hộ Florita Quận 7",
     "area": "72 m²",
     "furnished": null,
@@ -570,8 +570,8 @@ window.CRAWL_DATA = [
     "address": "Đường D4, Khu đô thị Him Lam, Phường Tân Hưng, Quận 7"
   },
   {
-    "source": "nhatot.com",
     "apartment_id": "florita",
+    "source": "nhatot.com",
     "title": "Cho thuê căn hộ Florita - Tân Hưng - Quận 7",
     "area": "80 m²",
     "furnished": null,
@@ -587,8 +587,8 @@ window.CRAWL_DATA = [
     "address": "Đường D4, Khu đô thị Him Lam, Phường Tân Hưng, Quận 7"
   },
   {
-    "source": "nhatot.com",
     "apartment_id": "florita",
+    "source": "nhatot.com",
     "title": ". Cho thuê Căn hộ Florita Quận 7 , 2pn, 2wc, đầy đủ nội thất",
     "area": "70 m²",
     "furnished": null,
@@ -604,8 +604,8 @@ window.CRAWL_DATA = [
     "address": "Đường D4, Khu đô thị Him Lam, Phường Tân Hưng, Quận 7"
   },
   {
-    "source": "nhatot.com",
     "apartment_id": "florita",
+    "source": "nhatot.com",
     "title": "Mình cần cho thuê căn hộ Florita Quận, 74m, 2pn, 2wc,full đồ, 15 triệu",
     "area": "74 m²",
     "furnished": null,
@@ -621,8 +621,8 @@ window.CRAWL_DATA = [
     "address": "Đường D4, Khu đô thị Him Lam, Phường Tân Hưng, Quận 7"
   },
   {
-    "source": "nhatot.com",
     "apartment_id": "florita",
+    "source": "nhatot.com",
     "title": "Căn hộ Florita, đường D1, P.Tân Hưng, Q.7, 80m2, 15tr",
     "area": "80 m²",
     "furnished": null,
@@ -638,8 +638,8 @@ window.CRAWL_DATA = [
     "address": "Đường D4, Khu đô thị Him Lam, Phường Tân Hưng, Quận 7"
   },
   {
-    "source": "batdongsan.com.vn",
     "apartment_id": "green-river",
+    "source": "batdongsan.com.vn",
     "title": "Cho thuê CH Green River 2PN 2WC Dt65m2 giá 10,5tr đầy đủ nội thất, ở liền dc, quận 8",
     "area": "Cho thuê CH Green River 2PN 2WC Dt65m2 giá 10,5tr đầy đủ nội thất, ở liền dc, quận 8",
     "furnished": null,
@@ -655,8 +655,8 @@ window.CRAWL_DATA = [
     "address": "2225 Phạm Thế Hiển, Phường 6, Quận 8"
   },
   {
-    "source": "batdongsan.com.vn",
     "apartment_id": "green-river",
+    "source": "batdongsan.com.vn",
     "title": "CHO THUÊ CĂN HỘ 2PN 2WC - 9TR5 TẠI GREEN RIVER QUẬN 8",
     "area": "65 m²",
     "furnished": null,
@@ -672,8 +672,8 @@ window.CRAWL_DATA = [
     "address": "2225 Phạm Thế Hiển, Phường 6, Quận 8"
   },
   {
-    "source": "nhatot.com",
     "apartment_id": "green-river",
+    "source": "nhatot.com",
     "title": "Cần cho thuê căn hộ Green River Quận 8 DT 75m2, 3pn, 2WC,Giá 10 tr",
     "area": "75 m²",
     "furnished": null,
@@ -689,8 +689,8 @@ window.CRAWL_DATA = [
     "address": "2225 Phạm Thế Hiển, Phường 6, Quận 8"
   },
   {
-    "source": "nhatot.com",
     "apartment_id": "green-river",
+    "source": "nhatot.com",
     "title": "Cho thuê chung cư green river quận 8,2 phòng ngủ 2wc giá 8tr5 nhà mới.",
     "area": "70 m²",
     "furnished": null,
@@ -706,8 +706,8 @@ window.CRAWL_DATA = [
     "address": "2225 Phạm Thế Hiển, Phường 6, Quận 8"
   },
   {
-    "source": "nhatot.com",
     "apartment_id": "green-river",
+    "source": "nhatot.com",
     "title": "Cần cho thuê căn hộ Green River Quận 8",
     "area": "65 m²",
     "furnished": null,
@@ -723,8 +723,8 @@ window.CRAWL_DATA = [
     "address": "2225 Phạm Thế Hiển, Phường 6, Quận 8"
   },
   {
-    "source": "nhatot.com",
     "apartment_id": "green-river",
+    "source": "nhatot.com",
     "title": "căn 2 phòng ngủ đầy đủ nội thất CC Green River Quận 8",
     "area": "65 m²",
     "furnished": null,
@@ -740,8 +740,8 @@ window.CRAWL_DATA = [
     "address": "2225 Phạm Thế Hiển, Phường 6, Quận 8"
   },
   {
-    "source": "nhatot.com",
     "apartment_id": "green-river",
+    "source": "nhatot.com",
     "title": "căn hộ đầy đủ nội thất 2 phòng ngủ chung cư Green River Quận 8",
     "area": "65 m²",
     "furnished": null,
@@ -757,8 +757,8 @@ window.CRAWL_DATA = [
     "address": "2225 Phạm Thế Hiển, Phường 6, Quận 8"
   },
   {
-    "source": "nhatot.com",
     "apartment_id": "green-river",
+    "source": "nhatot.com",
     "title": "Cần cho thuê căn hộ Green River Quận 8",
     "area": "61 m²",
     "furnished": null,
@@ -774,8 +774,8 @@ window.CRAWL_DATA = [
     "address": "2225 Phạm Thế Hiển, Phường 6, Quận 8"
   },
   {
-    "source": "mogi.vn",
     "apartment_id": "him-lam-riverside",
+    "source": "mogi.vn",
     "title": "Cho thuê căn hộ Him Lam Riverside Q7, 100m, 2pn, nội thất full, 15tr",
     "area": "100 m2",
     "furnished": null,
@@ -791,8 +791,8 @@ window.CRAWL_DATA = [
     "address": "Đường D1, Phường Tân Hưng, Quận 7"
   },
   {
-    "source": "mogi.vn",
     "apartment_id": "him-lam-riverside",
+    "source": "mogi.vn",
     "title": "Cho thuê căn hộ Him Lam Riverside Q7, 77m, 2pn, đủ nội thất, 14 triệu",
     "area": "77 m2",
     "furnished": null,
@@ -808,8 +808,8 @@ window.CRAWL_DATA = [
     "address": "Đường D1, Phường Tân Hưng, Quận 7"
   },
   {
-    "source": "mogi.vn",
     "apartment_id": "him-lam-riverside",
+    "source": "mogi.vn",
     "title": "Cho thuê căn hộ Him Lam Riverside Q7, 77m, 2pn, 2wc, nội thất cơ bản",
     "area": "77 m2",
     "furnished": null,
@@ -825,8 +825,8 @@ window.CRAWL_DATA = [
     "address": "Đường D1, Phường Tân Hưng, Quận 7"
   },
   {
-    "source": "mogi.vn",
     "apartment_id": "him-lam-riverside",
+    "source": "mogi.vn",
     "title": "Cho thuê căn hộ Him Lam Riverside Quận 7, 100m, 2pn, nội thất đầy đủ",
     "area": "100 m2",
     "furnished": null,
@@ -842,8 +842,8 @@ window.CRAWL_DATA = [
     "address": "Đường D1, Phường Tân Hưng, Quận 7"
   },
   {
-    "source": "mogi.vn",
     "apartment_id": "him-lam-riverside",
+    "source": "mogi.vn",
     "title": "Cho thuê căn hộ Him Lam Riverside Quận 7, 78m, 2pn, 2wc, full nội thất",
     "area": "78 m2",
     "furnished": null,
@@ -859,8 +859,8 @@ window.CRAWL_DATA = [
     "address": "Đường D1, Phường Tân Hưng, Quận 7"
   },
   {
-    "source": "mogi.vn",
     "apartment_id": "him-lam-riverside",
+    "source": "mogi.vn",
     "title": "cho thuê căn hộ himlam Riverside Quận 7 dt 78m2 có 2PN full NT 13 tr",
     "area": "78 m2",
     "furnished": null,
@@ -876,8 +876,8 @@ window.CRAWL_DATA = [
     "address": "Đường D1, Phường Tân Hưng, Quận 7"
   },
   {
-    "source": "nhatot.com",
     "apartment_id": "hung-phat-silver-star",
+    "source": "nhatot.com",
     "title": "CHO THUÊ CHUNG CƯ HƯNG PHÁT SILVER STAR 2pn2wc FULL NỘI THẤT 11.5tr",
     "area": "75 m²",
     "furnished": null,
@@ -893,8 +893,8 @@ window.CRAWL_DATA = [
     "address": "156A Nguyễn Hữu Thọ, Phường Tân Phong, Quận 7"
   },
   {
-    "source": "batdongsan.com.vn",
     "apartment_id": "lavida-plus",
+    "source": "batdongsan.com.vn",
     "title": "Cho thuê căn hộ Lavida Plus Quận 7: Căn góc 65m2, thiết kế 2PN 2PN, full nội thất - trống sẵn",
     "area": "Cho thuê căn hộ Lavida Plus Quận 7: Căn góc 65m2, thiết kế 2PN 2PN, full nội thất - trống sẵn",
     "furnished": null,
@@ -910,8 +910,8 @@ window.CRAWL_DATA = [
     "address": "Nguyễn Văn Linh & Nguyễn Hữu Thọ, Phường Tân Phong, Quận 7"
   },
   {
-    "source": "batdongsan.com.vn",
     "apartment_id": "lavida-plus",
+    "source": "batdongsan.com.vn",
     "title": "(Cho thuê) Căn hộ Lavida Plus: 2PN2PN, 74m2, full nội thất gần RMIT, TDTU - LH 0772 605 *** gặp Phụng",
     "area": "(Cho thuê) Căn hộ Lavida Plus: 2PN2PN, 74m2, full nội thất gần RMIT, TDTU - LH 0772 605 *** gặp Phụng",
     "furnished": null,
@@ -927,8 +927,8 @@ window.CRAWL_DATA = [
     "address": "Nguyễn Văn Linh & Nguyễn Hữu Thọ, Phường Tân Phong, Quận 7"
   },
   {
-    "source": "nhatot.com",
     "apartment_id": "lavida-plus",
+    "source": "nhatot.com",
     "title": "Căn hộ Lavida plus",
     "area": "74 m²",
     "furnished": null,
@@ -944,8 +944,8 @@ window.CRAWL_DATA = [
     "address": "Nguyễn Văn Linh & Nguyễn Hữu Thọ, Phường Tân Phong, Quận 7"
   },
   {
-    "source": "batdongsan.com.vn",
     "apartment_id": "lucky-palace",
+    "source": "batdongsan.com.vn",
     "title": "Cho thuê căn hộ chung cư Lucky Palace, Quận 6. DT: 80m2, 2PN, 2WC. Giá 13tr/th LH 0941 943 *** Thảo",
     "area": "Cho thuê căn hộ chung cư Lucky Palace, Quận 6. DT: 80m2, 2PN, 2WC. Giá 13tr/th LH 0941 943 *** Thảo",
     "furnished": null,
@@ -961,8 +961,8 @@ window.CRAWL_DATA = [
     "address": "50 Phan Văn Khỏe, Phường 2, Quận 6"
   },
   {
-    "source": "batdongsan.com.vn",
     "apartment_id": "lucky-palace",
+    "source": "batdongsan.com.vn",
     "title": "Cho Thuê Căn Hộ Chung Cư Lucky Palace 84m2, 2PN, Q.6, Giá: 12 tr/tháng, LH: 0903 077 ***. Được",
     "area": "Cho Thuê Căn Hộ Chung Cư Lucky Palace 84m2, 2PN, Q.6, Giá: 12 tr/tháng, LH: 0903 077 ***. Được",
     "furnished": null,
@@ -978,8 +978,8 @@ window.CRAWL_DATA = [
     "address": "50 Phan Văn Khỏe, Phường 2, Quận 6"
   },
   {
-    "source": "batdongsan.com.vn",
     "apartment_id": "lucky-palace",
+    "source": "batdongsan.com.vn",
     "title": "Cho thuê CHCC Lucky Palace, Quận 6, DT 82m2 - 2PN 2WC, nhà mới 100%, giá 12tr LH: 0899 552 ***",
     "area": "Cho thuê CHCC Lucky Palace, Quận 6, DT 82m2 - 2PN 2WC, nhà mới 100%, giá 12tr LH: 0899 552 ***",
     "furnished": null,
@@ -995,8 +995,8 @@ window.CRAWL_DATA = [
     "address": "50 Phan Văn Khỏe, Phường 2, Quận 6"
   },
   {
-    "source": "batdongsan.com.vn",
     "apartment_id": "lucky-palace",
+    "source": "batdongsan.com.vn",
     "title": "Cho thuê CHCC Lucky Palace, Quận 6, DT: 86m2, 2PN 2WC, giá: 12tr/tháng. LH: 0773 694 *** (Nhà đẹp)",
     "area": "Cho thuê CHCC Lucky Palace, Quận 6, DT: 86m2, 2PN 2WC, giá: 12tr/tháng. LH: 0773 694 *** (Nhà đẹp)",
     "furnished": null,
@@ -1012,8 +1012,8 @@ window.CRAWL_DATA = [
     "address": "50 Phan Văn Khỏe, Phường 2, Quận 6"
   },
   {
-    "source": "batdongsan.com.vn",
     "apartment_id": "lucky-palace",
+    "source": "batdongsan.com.vn",
     "title": "Cho thuê CHCC Lucky Palace, Quận 6, DT 85m2-2PN 2WC, giá 12tr. LH: 0932 874 ***-Hoà",
     "area": "Cho thuê CHCC Lucky Palace, Quận 6, DT 85m2-2PN 2WC, giá 12tr. LH: 0932 874 ***-Hoà",
     "furnished": null,
@@ -1029,8 +1029,8 @@ window.CRAWL_DATA = [
     "address": "50 Phan Văn Khỏe, Phường 2, Quận 6"
   },
   {
-    "source": "batdongsan.com.vn",
     "apartment_id": "lucky-palace",
+    "source": "batdongsan.com.vn",
     "title": "Cho thuê CC Lucky Palace, 80m2 2pn 2wc full nội thất giá 13tr/tháng",
     "area": "Cho thuê CC Lucky Palace, 80m2 2pn 2wc full nội thất giá 13tr/tháng",
     "furnished": null,
@@ -1046,8 +1046,8 @@ window.CRAWL_DATA = [
     "address": "50 Phan Văn Khỏe, Phường 2, Quận 6"
   },
   {
-    "source": "batdongsan.com.vn",
     "apartment_id": "lucky-palace",
+    "source": "batdongsan.com.vn",
     "title": "Cho thuê căn hộ chung cư Lucky Palace, Quận 6. DT: 80m2, 2PN, 2WC. Giá 13tr/th LH 0941 943 *** Thảo",
     "area": "Cho thuê căn hộ chung cư Lucky Palace, Quận 6. DT: 80m2, 2PN, 2WC. Giá 13tr/th LH 0941 943 *** Thảo",
     "furnished": null,
@@ -1063,8 +1063,8 @@ window.CRAWL_DATA = [
     "address": "50 Phan Văn Khỏe, Phường 2, Quận 6"
   },
   {
-    "source": "batdongsan.com.vn",
     "apartment_id": "lucky-palace",
+    "source": "batdongsan.com.vn",
     "title": "Cho thuê căn hộ Lucky Palace, Quận 6, 85m2, 2pn,2wc, full nội thất, giá 15tr/th, LH 0976 028 ***",
     "area": "Cho thuê căn hộ Lucky Palace, Quận 6, 85m2, 2pn,2wc, full nội thất, giá 15tr/th, LH 0976 028 ***",
     "furnished": null,
@@ -1080,8 +1080,8 @@ window.CRAWL_DATA = [
     "address": "50 Phan Văn Khỏe, Phường 2, Quận 6"
   },
   {
-    "source": "batdongsan.com.vn",
     "apartment_id": "lucky-palace",
+    "source": "batdongsan.com.vn",
     "title": "Cho thuê CC Lucky Palace 2PN, 14 triệu, 88m2, view đẹp ở Quận 6, TP.HCM",
     "area": "Cho thuê CC Lucky Palace 2PN, 14 triệu, 88m2, view đẹp ở Quận 6, TP.HCM",
     "furnished": null,
@@ -1097,8 +1097,8 @@ window.CRAWL_DATA = [
     "address": "50 Phan Văn Khỏe, Phường 2, Quận 6"
   },
   {
-    "source": "mogi.vn",
     "apartment_id": "lucky-palace",
+    "source": "mogi.vn",
     "title": "Cho thuê Chung cư Lucky Palace, Q.6 - Căn diện tích 88m² – 2PN, 2WC",
     "area": "88 m2",
     "furnished": null,
@@ -1114,8 +1114,8 @@ window.CRAWL_DATA = [
     "address": "50 Phan Văn Khỏe, Phường 2, Quận 6"
   },
   {
-    "source": "mogi.vn",
     "apartment_id": "lucky-palace",
+    "source": "mogi.vn",
     "title": "Cho thuê Chung cư Lucky Palace, Q.6 - 2pn 2wc - đầy đủ nội thất",
     "area": "88 m2",
     "furnished": null,
@@ -1131,8 +1131,8 @@ window.CRAWL_DATA = [
     "address": "50 Phan Văn Khỏe, Phường 2, Quận 6"
   },
   {
-    "source": "nhatot.com",
     "apartment_id": "luxcity",
+    "source": "nhatot.com",
     "title": "Cho thuê căn hộ 70m 2pn 2wc chung cư Luxcity quận 7 giá 11tr",
     "area": "73 m²",
     "furnished": null,
@@ -1148,8 +1148,8 @@ window.CRAWL_DATA = [
     "address": "528 Huỳnh Tấn Phát, Phường Phú Thuận, Quận 7"
   },
   {
-    "source": "nhatot.com",
     "apartment_id": "luxcity",
+    "source": "nhatot.com",
     "title": "Cho thuê chung cư Luxcity nhà trống 73m2 Quận 7",
     "area": "73 m²",
     "furnished": null,
@@ -1165,8 +1165,8 @@ window.CRAWL_DATA = [
     "address": "528 Huỳnh Tấn Phát, Phường Phú Thuận, Quận 7"
   },
   {
-    "source": "batdongsan.com.vn",
     "apartment_id": "q7-saigon-riverside",
+    "source": "batdongsan.com.vn",
     "title": "Tổng hợp Q7 Riverside thiết kế 2pn-2wc máy lạnh rèm giá 9tr ,full nội thất 11tr , 0911 850 ***",
     "area": "68 m²",
     "furnished": null,
@@ -1182,8 +1182,8 @@ window.CRAWL_DATA = [
     "address": "Đường Đào Trí, Phường Phú Thuận, Quận 7"
   },
   {
-    "source": "batdongsan.com.vn",
     "apartment_id": "q7-saigon-riverside",
+    "source": "batdongsan.com.vn",
     "title": "GIỎ HÀNG CHO THUÊ GIÁ CỰC RẺ GIỮA NĂM Ở Q7 RIVER SIDE 1PN-2PN-3PN GIÁ CHỈ 8TR/THÁNG LIÊN HỆ EM THU",
     "area": "55 m²",
     "furnished": null,
@@ -1199,8 +1199,8 @@ window.CRAWL_DATA = [
     "address": "Đường Đào Trí, Phường Phú Thuận, Quận 7"
   },
   {
-    "source": "batdongsan.com.vn",
     "apartment_id": "q7-saigon-riverside",
+    "source": "batdongsan.com.vn",
     "title": "Thuê Q7 Riverside 1PN1WC, 2PN2WC, 3PN3WC NTCB và full đẹp chi tiết 0932 139 ***",
     "area": "53 m²",
     "furnished": null,
@@ -1216,8 +1216,8 @@ window.CRAWL_DATA = [
     "address": "Đường Đào Trí, Phường Phú Thuận, Quận 7"
   },
   {
-    "source": "batdongsan.com.vn",
     "apartment_id": "q7-saigon-riverside",
+    "source": "batdongsan.com.vn",
     "title": "Gọi trước 5p xem liền: Q7 Riverside 1PN 8-10tr, 2PN 8.8-11tr, nội thất CB hoặc full LH 0939 720 ***",
     "area": "68 m²",
     "furnished": null,
@@ -1233,8 +1233,8 @@ window.CRAWL_DATA = [
     "address": "Đường Đào Trí, Phường Phú Thuận, Quận 7"
   },
   {
-    "source": "mogi.vn",
     "apartment_id": "q7-saigon-riverside",
+    "source": "mogi.vn",
     "title": "FTT Land độc quyền cho thuê nhiều căn hộ Q7 SG Riverside .",
     "area": "69 m2",
     "furnished": null,
@@ -1250,8 +1250,8 @@ window.CRAWL_DATA = [
     "address": "Đường Đào Trí, Phường Phú Thuận, Quận 7"
   },
   {
-    "source": "mogi.vn",
     "apartment_id": "q7-saigon-riverside",
+    "source": "mogi.vn",
     "title": "Mình chuyên cho thuê căn hộ Q7 Saigon Riverside đường Đào Trí .",
     "area": "66 m2",
     "furnished": null,
@@ -1267,8 +1267,8 @@ window.CRAWL_DATA = [
     "address": "Đường Đào Trí, Phường Phú Thuận, Quận 7"
   },
   {
-    "source": "mogi.vn",
     "apartment_id": "q7-saigon-riverside",
+    "source": "mogi.vn",
     "title": "Q7 Saigon Riverside cho thuê có nội thất, đúng hình đăng- đúng giá.",
     "area": "67 m2",
     "furnished": null,
@@ -1284,8 +1284,8 @@ window.CRAWL_DATA = [
     "address": "Đường Đào Trí, Phường Phú Thuận, Quận 7"
   },
   {
-    "source": "mogi.vn",
     "apartment_id": "q7-saigon-riverside",
+    "source": "mogi.vn",
     "title": "Nắm nhiều căn Q7 SG riverside cho thuê, mới hoàn thiện nội thất đẹp.",
     "area": "73 m2",
     "furnished": null,
@@ -1301,8 +1301,8 @@ window.CRAWL_DATA = [
     "address": "Đường Đào Trí, Phường Phú Thuận, Quận 7"
   },
   {
-    "source": "mogi.vn",
     "apartment_id": "q7-saigon-riverside",
+    "source": "mogi.vn",
     "title": "Mình có căn Q7 Saigon Riverside 2pn hoàn thiện cơ bản cần cho thuê.",
     "area": "67 m2",
     "furnished": null,
@@ -1318,8 +1318,8 @@ window.CRAWL_DATA = [
     "address": "Đường Đào Trí, Phường Phú Thuận, Quận 7"
   },
   {
-    "source": "mogi.vn",
     "apartment_id": "q7-saigon-riverside",
+    "source": "mogi.vn",
     "title": "Mình cần cho thuê Q7 Saigon Riverside, nhiều căn để quý khách lựa chọn",
     "area": "66 m2",
     "furnished": null,
@@ -1335,8 +1335,8 @@ window.CRAWL_DATA = [
     "address": "Đường Đào Trí, Phường Phú Thuận, Quận 7"
   },
   {
-    "source": "mogi.vn",
     "apartment_id": "q7-saigon-riverside",
+    "source": "mogi.vn",
     "title": "Q7 Riverside căn 2pn góc 3 mặt đủ nội thất đẹp giá 12tr/tháng .",
     "area": "73 m2",
     "furnished": null,
@@ -1352,8 +1352,8 @@ window.CRAWL_DATA = [
     "address": "Đường Đào Trí, Phường Phú Thuận, Quận 7"
   },
   {
-    "source": "mogi.vn",
     "apartment_id": "q7-saigon-riverside",
+    "source": "mogi.vn",
     "title": "Q7 Saigon Riverside 2pn view sông giá 9TR",
     "area": "66 m2",
     "furnished": null,
@@ -1369,8 +1369,8 @@ window.CRAWL_DATA = [
     "address": "Đường Đào Trí, Phường Phú Thuận, Quận 7"
   },
   {
-    "source": "mogi.vn",
     "apartment_id": "q7-saigon-riverside",
+    "source": "mogi.vn",
     "title": "Q7 SAIGON RIVERSIDE sẵn các căn 1-2-3pn vào ở được ngay .",
     "area": "64 m2",
     "furnished": null,
@@ -1386,8 +1386,8 @@ window.CRAWL_DATA = [
     "address": "Đường Đào Trí, Phường Phú Thuận, Quận 7"
   },
   {
-    "source": "mogi.vn",
     "apartment_id": "q7-saigon-riverside",
+    "source": "mogi.vn",
     "title": "Chính chủ cho thuê căn 2pn có nội thất nhà mới 100% .",
     "area": "66 m2",
     "furnished": null,
@@ -1403,8 +1403,8 @@ window.CRAWL_DATA = [
     "address": "Đường Đào Trí, Phường Phú Thuận, Quận 7"
   },
   {
-    "source": "nhatot.com",
     "apartment_id": "q7-saigon-riverside",
+    "source": "nhatot.com",
     "title": "Cho thuê 2pn2wc 67m2 Q7 Saigon Riverside - Giá thuê: 9.3 triệu",
     "area": "67 m²",
     "furnished": null,
@@ -1420,8 +1420,8 @@ window.CRAWL_DATA = [
     "address": "Đường Đào Trí, Phường Phú Thuận, Quận 7"
   },
   {
-    "source": "nhatot.com",
     "apartment_id": "q7-saigon-riverside",
+    "source": "nhatot.com",
     "title": "🔥 CẬP NHẬT GIỎ HÀNG CHO THUÊ MỚI NHẤT- GIÁ TỐT - Q7 SAIGON RIVERSIDE C",
     "area": "70 m²",
     "furnished": null,
@@ -1437,8 +1437,8 @@ window.CRAWL_DATA = [
     "address": "Đường Đào Trí, Phường Phú Thuận, Quận 7"
   },
   {
-    "source": "nhatot.com",
     "apartment_id": "q7-saigon-riverside",
+    "source": "nhatot.com",
     "title": "🔥 CẬP NHẬT GIỎ HÀNG CHO THUÊ MỚI NHẤT- GIÁ TỐT - Q7 SAIGON RIVERSIDE C",
     "area": "75 m²",
     "furnished": null,
@@ -1454,8 +1454,8 @@ window.CRAWL_DATA = [
     "address": "Đường Đào Trí, Phường Phú Thuận, Quận 7"
   },
   {
-    "source": "nhatot.com",
     "apartment_id": "remax-plaza",
+    "source": "nhatot.com",
     "title": "🔥Cho thuê căn hộ 2pn 2wc remax plaza quận 6",
     "area": "94 m²",
     "furnished": null,
@@ -1467,8 +1467,8 @@ window.CRAWL_DATA = [
     "apartment_name": "remax-plaza"
   },
   {
-    "source": "nhatot.com",
     "apartment_id": "starlight-riverside",
+    "source": "nhatot.com",
     "title": "10TR! CHO THUÊ CH STARLIGHT 72M2 FULL NT",
     "area": "72 m²",
     "furnished": null,
@@ -1484,8 +1484,8 @@ window.CRAWL_DATA = [
     "address": "241/42 Nguyễn Văn Luông, Phường 11, Quận 6"
   },
   {
-    "source": "nhatot.com",
     "apartment_id": "tara-residence",
+    "source": "nhatot.com",
     "title": "Cho thuê chung cư Tara Residence",
     "area": "85 m²",
     "furnished": null,
@@ -1501,8 +1501,8 @@ window.CRAWL_DATA = [
     "address": "1A Tạ Quang Bửu, Phường 6, Quận 8"
   },
   {
-    "source": "nhatot.com",
     "apartment_id": "tara-residence",
+    "source": "nhatot.com",
     "title": "CHO THUÊ CĂN HỘ TARA RESIDENCE Q8",
     "area": "75 m²",
     "furnished": null,
@@ -1518,8 +1518,8 @@ window.CRAWL_DATA = [
     "address": "1A Tạ Quang Bửu, Phường 6, Quận 8"
   },
   {
-    "source": "nhatot.com",
     "apartment_id": "tara-residence",
+    "source": "nhatot.com",
     "title": "Căn hộ 2Pn có máy lạnh, rèm, cc Tara Residence",
     "area": "81 m²",
     "furnished": null,
@@ -1535,8 +1535,8 @@ window.CRAWL_DATA = [
     "address": "1A Tạ Quang Bửu, Phường 6, Quận 8"
   },
   {
-    "source": "nhatot.com",
     "apartment_id": "tara-residence",
+    "source": "nhatot.com",
     "title": "Cho thuê căn hộ Tara Residence Q8 ✅ DT 78m2,2 phòng ngủ ,2wc ✅ Nhà có",
     "area": "78 m²",
     "furnished": null,
@@ -1552,8 +1552,8 @@ window.CRAWL_DATA = [
     "address": "1A Tạ Quang Bửu, Phường 6, Quận 8"
   },
   {
-    "source": "batdongsan.com.vn",
     "apartment_id": "the-pegasuite-1",
+    "source": "batdongsan.com.vn",
     "title": "DUPLEX 2PN, 2WC, 85m2 tại The Pegasuite 2, 16 triệu VND, Hot!",
     "area": "DUPLEX 2PN, 2WC, 85m2 tại The Pegasuite 2, 16 triệu VND, Hot!",
     "furnished": null,
@@ -1569,8 +1569,8 @@ window.CRAWL_DATA = [
     "address": "1002 Tạ Quang Bửu, Phường 6, Quận 8"
   },
   {
-    "source": "nhatot.com",
     "apartment_id": "the-pegasuite-1",
+    "source": "nhatot.com",
     "title": "Chính chủ cho thuê CH The Pegasuite - Tạ Quang Bửu Q8, full nội thất",
     "area": "75 m²",
     "furnished": null,
@@ -1586,8 +1586,8 @@ window.CRAWL_DATA = [
     "address": "1002 Tạ Quang Bửu, Phường 6, Quận 8"
   },
   {
-    "source": "nhatot.com",
     "apartment_id": "the-pegasuite-1",
+    "source": "nhatot.com",
     "title": "Cho thuê The Pegasuite Quận 8",
     "area": "68 m²",
     "furnished": null,
@@ -1603,8 +1603,8 @@ window.CRAWL_DATA = [
     "address": "1002 Tạ Quang Bửu, Phường 6, Quận 8"
   },
   {
-    "source": "nhatot.com",
     "apartment_id": "the-pegasuite-1",
+    "source": "nhatot.com",
     "title": "CHO THUÊ THE PEGASUITE FULL NT ĐẦY ĐỦ",
     "area": "68 m²",
     "furnished": null,
@@ -1620,8 +1620,8 @@ window.CRAWL_DATA = [
     "address": "1002 Tạ Quang Bửu, Phường 6, Quận 8"
   },
   {
-    "source": "nhatot.com",
     "apartment_id": "topaz-city",
+    "source": "nhatot.com",
     "title": "Giá RẺ cho thuê Topaz City 73m2 2Phòng 2WC đầy đủ nội thất 11Tr500",
     "area": "73 m²",
     "furnished": null,
@@ -1637,8 +1637,8 @@ window.CRAWL_DATA = [
     "address": "39 Cao Lỗ, Phường 4, Quận 8"
   },
   {
-    "source": "nhatot.com",
     "apartment_id": "topaz-city",
+    "source": "nhatot.com",
     "title": "Giá Tốt cho thuê chung cư Topaz City 70m2 2Phòng Đầy Đủ Nội Thất 11Tr5",
     "area": "73 m²",
     "furnished": null,
@@ -1654,8 +1654,8 @@ window.CRAWL_DATA = [
     "address": "39 Cao Lỗ, Phường 4, Quận 8"
   },
   {
-    "source": "nhatot.com",
     "apartment_id": "topaz-city",
+    "source": "nhatot.com",
     "title": "Căn hộ Topaz City Q.8 70m2 2pn 2wc",
     "area": "70 m²",
     "furnished": null,
@@ -1671,8 +1671,8 @@ window.CRAWL_DATA = [
     "address": "39 Cao Lỗ, Phường 4, Quận 8"
   },
   {
-    "source": "nhatot.com",
     "apartment_id": "topaz-city",
+    "source": "nhatot.com",
     "title": "Cho thuê gấp căn hộ cao cấp Topaz city 2 phòng nhà trống 10tr",
     "area": "70 m²",
     "furnished": null,
@@ -1688,8 +1688,8 @@ window.CRAWL_DATA = [
     "address": "39 Cao Lỗ, Phường 4, Quận 8"
   },
   {
-    "source": "nhatot.com",
     "apartment_id": "topaz-city",
+    "source": "nhatot.com",
     "title": "Chính chủ cần cho thuê chcc Topaz city 2 phòng nhà trống 10tr",
     "area": "70 m²",
     "furnished": null,
@@ -1705,8 +1705,8 @@ window.CRAWL_DATA = [
     "address": "39 Cao Lỗ, Phường 4, Quận 8"
   },
   {
-    "source": "nhatot.com",
     "apartment_id": "topaz-city",
+    "source": "nhatot.com",
     "title": "Topaz City Q8 : căn 2pn trống 9,5tr/th - Full Nt 12tr/th xem nhà được",
     "area": "70 m²",
     "furnished": null,
@@ -1722,8 +1722,8 @@ window.CRAWL_DATA = [
     "address": "39 Cao Lỗ, Phường 4, Quận 8"
   },
   {
-    "source": "nhatot.com",
     "apartment_id": "topaz-city",
+    "source": "nhatot.com",
     "title": "Giá rẻ cho thuê Topaz City 70m2 2Phòng 2WC đầy đủ nội thất 11Tr500",
     "area": "70 m²",
     "furnished": null,
@@ -1739,8 +1739,8 @@ window.CRAWL_DATA = [
     "address": "39 Cao Lỗ, Phường 4, Quận 8"
   },
   {
-    "source": "nhatot.com",
     "apartment_id": "topaz-city",
+    "source": "nhatot.com",
     "title": "Cho thuê nhà trống chung cư Topaz City - Giá thuê 9,5 triệu",
     "area": "73 m²",
     "furnished": null,
@@ -1756,8 +1756,8 @@ window.CRAWL_DATA = [
     "address": "39 Cao Lỗ, Phường 4, Quận 8"
   },
   {
-    "source": "nhatot.com",
     "apartment_id": "topaz-city",
+    "source": "nhatot.com",
     "title": "Giá Rẻ cho thuê căn hộ Topaz City 70m2 2Phòng Đầy Đủ Nội Thất 11Tr500",
     "area": "70 m²",
     "furnished": null,
@@ -1773,8 +1773,8 @@ window.CRAWL_DATA = [
     "address": "39 Cao Lỗ, Phường 4, Quận 8"
   },
   {
-    "source": "batdongsan.com.vn",
     "apartment_id": "topaz-elite",
+    "source": "batdongsan.com.vn",
     "title": "Cho thuê CC Topaz Elite, 11 triệu VND, 79 m2, view đẹp, giá cực chất tại Cao Lỗ, Q8, HCM",
     "area": "Cho thuê CC Topaz Elite, 11 triệu VND, 79 m2, view đẹp, giá cực chất tại Cao Lỗ, Q8, HCM",
     "furnished": null,
@@ -1790,8 +1790,8 @@ window.CRAWL_DATA = [
     "address": "129 Cao Lỗ, Phường 4, Quận 8"
   },
   {
-    "source": "nhatot.com",
     "apartment_id": "topaz-elite",
+    "source": "nhatot.com",
     "title": "CHÍNH CHỦ CHO THUÊ CĂN TOPAZ ELITE FULL NT",
     "area": "70 m²",
     "furnished": null,
@@ -1807,8 +1807,8 @@ window.CRAWL_DATA = [
     "address": "129 Cao Lỗ, Phường 4, Quận 8"
   },
   {
-    "source": "nhatot.com",
     "apartment_id": "topaz-elite",
+    "source": "nhatot.com",
     "title": "Cho thuê căn hộ Topaz Elite 2pn2wc",
     "area": "78 m²",
     "furnished": null,
@@ -1824,8 +1824,8 @@ window.CRAWL_DATA = [
     "address": "129 Cao Lỗ, Phường 4, Quận 8"
   },
   {
-    "source": "nhatot.com",
     "apartment_id": "topaz-elite",
+    "source": "nhatot.com",
     "title": "CHÍNH CHỦ CẦN CHO THUÊ CĂN TOPAZ ELITE FULL NT",
     "area": "70 m²",
     "furnished": null,
@@ -1841,8 +1841,8 @@ window.CRAWL_DATA = [
     "address": "129 Cao Lỗ, Phường 4, Quận 8"
   },
   {
-    "source": "nhatot.com",
     "apartment_id": "topaz-elite",
+    "source": "nhatot.com",
     "title": "Cho thuê căn hộ Topaz Elite- nhà trống.Giá: 10.5 triệu/ tháng",
     "area": "73 m²",
     "furnished": null,
@@ -1858,8 +1858,8 @@ window.CRAWL_DATA = [
     "address": "129 Cao Lỗ, Phường 4, Quận 8"
   },
   {
-    "source": "batdongsan.com.vn",
     "apartment_id": "viva-riverside",
+    "source": "batdongsan.com.vn",
     "title": "Cho thuê CC 2PN, 2WC, 70m2 tại Viva Riverside, giá tốt, Võ Văn Kiệt, Quận 6, HCM",
     "area": "Cho thuê CC 2PN, 2WC, 70m2 tại Viva Riverside, giá tốt, Võ Văn Kiệt, Quận 6, HCM",
     "furnished": null,
@@ -1875,8 +1875,8 @@ window.CRAWL_DATA = [
     "address": "1472 Võ Văn Kiệt, Phường 3, Quận 6"
   },
   {
-    "source": "batdongsan.com.vn",
     "apartment_id": "viva-riverside",
+    "source": "batdongsan.com.vn",
     "title": "CHO THUÊ SIÊU RẺ CĂN HỘ 77M2 VIVA RIVERSIDE CHỈ 11 TRIỆU",
     "area": "77 m²",
     "furnished": null,
@@ -1892,8 +1892,8 @@ window.CRAWL_DATA = [
     "address": "1472 Võ Văn Kiệt, Phường 3, Quận 6"
   },
   {
-    "source": "batdongsan.com.vn",
     "apartment_id": "viva-riverside",
+    "source": "batdongsan.com.vn",
     "title": "Căn hộ Viva Riverside, 3 MT Võ V Kiệt, Minh Phụng, Gia Phú, P3, Q6, 70m2, 2pn, 11tr.Linh 0902 505 ***",
     "area": "Căn hộ Viva Riverside, 3 MT Võ V Kiệt, Minh Phụng, Gia Phú, P3, Q6, 70m2, 2pn, 11tr.Linh 0902 505 ***",
     "furnished": null,
@@ -1909,8 +1909,8 @@ window.CRAWL_DATA = [
     "address": "1472 Võ Văn Kiệt, Phường 3, Quận 6"
   },
   {
-    "source": "batdongsan.com.vn",
     "apartment_id": "viva-riverside",
+    "source": "batdongsan.com.vn",
     "title": "Chủ cho thuê căn hộ Viva Riverside, Q. 6 - 80m2, 2PN, 2WC, giá: 12 triệu/th, LH: 0932 874 *** - Hoà",
     "area": "Chủ cho thuê căn hộ Viva Riverside, Q. 6 - 80m2, 2PN, 2WC, giá: 12 triệu/th, LH: 0932 874 *** - Hoà",
     "furnished": null,
@@ -1926,8 +1926,8 @@ window.CRAWL_DATA = [
     "address": "1472 Võ Văn Kiệt, Phường 3, Quận 6"
   },
   {
-    "source": "batdongsan.com.vn",
     "apartment_id": "viva-riverside",
+    "source": "batdongsan.com.vn",
     "title": "Cho thuê căn hộ Viva Riverside, Võ Văn Kiệt, Q.6, 75m2, 2PN, 2WC, Giá: 11tr/th, Lh: 0899 552 ***",
     "area": "Cho thuê căn hộ Viva Riverside, Võ Văn Kiệt, Q.6, 75m2, 2PN, 2WC, Giá: 11tr/th, Lh: 0899 552 ***",
     "furnished": null,
@@ -1943,8 +1943,8 @@ window.CRAWL_DATA = [
     "address": "1472 Võ Văn Kiệt, Phường 3, Quận 6"
   },
   {
-    "source": "batdongsan.com.vn",
     "apartment_id": "viva-riverside",
+    "source": "batdongsan.com.vn",
     "title": "Cho thuê chung cư Viva Riverside Quận 6, DT 80m2, 2PN. 2WC giá tốt: 12 triệu, LH: 0779 757 ***, Quyền",
     "area": "Cho thuê chung cư Viva Riverside Quận 6, DT 80m2, 2PN. 2WC giá tốt: 12 triệu, LH: 0779 757 ***, Quyền",
     "furnished": null,
@@ -1960,8 +1960,8 @@ window.CRAWL_DATA = [
     "address": "1472 Võ Văn Kiệt, Phường 3, Quận 6"
   },
   {
-    "source": "nhatot.com",
     "apartment_id": "viva-riverside",
+    "source": "nhatot.com",
     "title": "Cho thuê căn hộ Viva Riverside, Q.6, 12tr/tháng",
     "area": "65 m²",
     "furnished": null,
@@ -1977,8 +1977,8 @@ window.CRAWL_DATA = [
     "address": "1472 Võ Văn Kiệt, Phường 3, Quận 6"
   },
   {
-    "source": "nhatot.com",
     "apartment_id": "viva-riverside",
+    "source": "nhatot.com",
     "title": "Cho thuê căn hộ chung cư Viva riverside Q6",
     "area": "87 m²",
     "furnished": null,
@@ -1994,8 +1994,8 @@ window.CRAWL_DATA = [
     "address": "1472 Võ Văn Kiệt, Phường 3, Quận 6"
   },
   {
-    "source": "nhatot.com",
     "apartment_id": "viva-riverside",
+    "source": "nhatot.com",
     "title": "cho thuê chung cư ViVa Riverside",
     "area": "69 m²",
     "furnished": null,
@@ -2011,8 +2011,8 @@ window.CRAWL_DATA = [
     "address": "1472 Võ Văn Kiệt, Phường 3, Quận 6"
   },
   {
-    "source": "nhatot.com",
     "apartment_id": "viva-riverside",
+    "source": "nhatot.com",
     "title": "Căn hộ Viva Riverside Võ Văn Kiệt, 2 phòng ngủ, 12.5tr/tháng",
     "area": "70 m²",
     "furnished": null,
@@ -2028,8 +2028,8 @@ window.CRAWL_DATA = [
     "address": "1472 Võ Văn Kiệt, Phường 3, Quận 6"
   },
   {
-    "source": "nhatot.com",
     "apartment_id": "viva-riverside",
+    "source": "nhatot.com",
     "title": "Căn Hộ Viva Riverside MT Võ Văn Kiệt quận 6 ( 75m2 / 2pn - 2wc )",
     "area": "75 m²",
     "furnished": null,
@@ -2045,8 +2045,8 @@ window.CRAWL_DATA = [
     "address": "1472 Võ Văn Kiệt, Phường 3, Quận 6"
   },
   {
-    "source": "nhatot.com",
     "apartment_id": "viva-riverside",
+    "source": "nhatot.com",
     "title": "căn hộ 2pn 2wc full nội thất Viva riverside q6",
     "area": "80 m²",
     "furnished": null,
@@ -2062,8 +2062,8 @@ window.CRAWL_DATA = [
     "address": "1472 Võ Văn Kiệt, Phường 3, Quận 6"
   },
   {
-    "source": "nhatot.com",
     "apartment_id": "viva-riverside",
+    "source": "nhatot.com",
     "title": "Cho thuê căn hộ Viva Riverside, Q6, 70m2, 11tr",
     "area": "70 m²",
     "furnished": null,
@@ -2079,8 +2079,8 @@ window.CRAWL_DATA = [
     "address": "1472 Võ Văn Kiệt, Phường 3, Quận 6"
   },
   {
-    "source": "nhatot.com",
     "apartment_id": "viva-riverside",
+    "source": "nhatot.com",
     "title": "📢Giỏ hàng Viva Riverside Võ Văn Kiệt quận 6",
     "area": "30 m²",
     "furnished": null,
@@ -2096,8 +2096,8 @@ window.CRAWL_DATA = [
     "address": "1472 Võ Văn Kiệt, Phường 3, Quận 6"
   },
   {
-    "source": "nhatot.com",
     "apartment_id": "green-river",
+    "source": "nhatot.com",
     "title": "Cần cho thuê căn hộ Green River Quận 8",
     "area": "72 m²",
     "furnished": null,
@@ -2113,8 +2113,8 @@ window.CRAWL_DATA = [
     "address": "2225 Phạm Thế Hiển, Phường 6, Quận 8"
   },
   {
-    "source": "nhatot.com",
     "apartment_id": "green-river",
+    "source": "nhatot.com",
     "title": "nhà trống ở liền được giá thuê 8tr2 mới 100% green river quận 8",
     "area": "65 m²",
     "furnished": null,
@@ -2130,8 +2130,8 @@ window.CRAWL_DATA = [
     "address": "2225 Phạm Thế Hiển, Phường 6, Quận 8"
   },
   {
-    "source": "batdongsan.com.vn",
     "apartment_id": "green-river",
+    "source": "batdongsan.com.vn",
     "title": "Cho thuê Căn 2PN nhận nhà mới, Giá tốt, cc Green River, quận 8",
     "area": "65 m²",
     "furnished": null,
@@ -2147,8 +2147,8 @@ window.CRAWL_DATA = [
     "address": "2225 Phạm Thế Hiển, Phường 6, Quận 8"
   },
   {
-    "source": "nhatot.com",
     "apartment_id": "river-panorama",
+    "source": "nhatot.com",
     "title": "Quận 7- Cho thuê CC River Panorama- đầy đủ nội thất",
     "area": "55 m²",
     "furnished": null,
@@ -2164,8 +2164,8 @@ window.CRAWL_DATA = [
     "address": "Đường Đào Trí, Phường Phú Thuận, Quận 7"
   },
   {
-    "source": "nhatot.com",
     "apartment_id": "river-panorama",
+    "source": "nhatot.com",
     "title": "CHO THUÊ RIVER PANORAMA, KHU PHỨC HỢP LACASA QUẬN 7",
     "area": "57 m²",
     "furnished": null,
@@ -2181,8 +2181,8 @@ window.CRAWL_DATA = [
     "address": "Đường Đào Trí, Phường Phú Thuận, Quận 7"
   },
   {
-    "source": "mogi.vn",
     "apartment_id": "q7-saigon-riverside",
+    "source": "mogi.vn",
     "title": "Mình cần cho thuê Q7 Riverside vừa hoàn thiện nội thất mới giá 12tr.",
     "area": "66 m2",
     "furnished": null,
@@ -2198,8 +2198,8 @@ window.CRAWL_DATA = [
     "address": "Đường Đào Trí, Phường Phú Thuận, Quận 7"
   },
   {
-    "source": "mogi.vn",
     "apartment_id": "q7-saigon-riverside",
+    "source": "mogi.vn",
     "title": "Giỏ hàng Q7 SG Riverside phong phú 1-2-3pn,tl giá tốt nhất .",
     "area": "85 m2",
     "furnished": null,
@@ -2215,8 +2215,8 @@ window.CRAWL_DATA = [
     "address": "Đường Đào Trí, Phường Phú Thuận, Quận 7"
   },
   {
-    "source": "mogi.vn",
     "apartment_id": "q7-saigon-riverside",
+    "source": "mogi.vn",
     "title": "Mình cần cho thuê Q7 SG Riverside 67m2 nhà mới 100%",
     "area": "67 m2",
     "furnished": null,
@@ -2232,8 +2232,8 @@ window.CRAWL_DATA = [
     "address": "Đường Đào Trí, Phường Phú Thuận, Quận 7"
   },
   {
-    "source": "mogi.vn",
     "apartment_id": "q7-saigon-riverside",
+    "source": "mogi.vn",
     "title": "Cập nhật giỏ hàng cho thuê căn hộ Q7 Saigon Riverside đường Đào Trí.",
     "area": "67 m2",
     "furnished": null,
@@ -2249,8 +2249,8 @@ window.CRAWL_DATA = [
     "address": "Đường Đào Trí, Phường Phú Thuận, Quận 7"
   },
   {
-    "source": "mogi.vn",
     "apartment_id": "q7-saigon-riverside",
+    "source": "mogi.vn",
     "title": "Mình chính chủ cho thuê Q7 SG Riverside 2pn view sông .",
     "area": "66 m2",
     "furnished": null,
@@ -2266,8 +2266,8 @@ window.CRAWL_DATA = [
     "address": "Đường Đào Trí, Phường Phú Thuận, Quận 7"
   },
   {
-    "source": "mogi.vn",
     "apartment_id": "q7-saigon-riverside",
+    "source": "mogi.vn",
     "title": "Mình cho thuê nhiều căn Q7 Saigon Riverside nhiều diện tích lựa chọn",
     "area": "66 m2",
     "furnished": null,
@@ -2283,8 +2283,8 @@ window.CRAWL_DATA = [
     "address": "Đường Đào Trí, Phường Phú Thuận, Quận 7"
   },
   {
-    "source": "mogi.vn",
     "apartment_id": "q7-saigon-riverside",
+    "source": "mogi.vn",
     "title": "Giỏ hàng phong phú Q7 Saigon Riverside, 1-2-3pn giá tốt nhất .",
     "area": "66 m2",
     "furnished": null,
@@ -2300,8 +2300,8 @@ window.CRAWL_DATA = [
     "address": "Đường Đào Trí, Phường Phú Thuận, Quận 7"
   },
   {
-    "source": "mogi.vn",
     "apartment_id": "q7-saigon-riverside",
+    "source": "mogi.vn",
     "title": "Căn hộ Q7 Saigon Riverside nhiều vị trí để lựa chọn .",
     "area": "66 m2",
     "furnished": null,
@@ -2317,8 +2317,8 @@ window.CRAWL_DATA = [
     "address": "Đường Đào Trí, Phường Phú Thuận, Quận 7"
   },
   {
-    "source": "mogi.vn",
     "apartment_id": "q7-saigon-riverside",
+    "source": "mogi.vn",
     "title": "Chuyên cho thuê căn hộ Q7 Saigon Riverside nhiều tiện ích .",
     "area": "66 m2",
     "furnished": null,
@@ -2334,8 +2334,8 @@ window.CRAWL_DATA = [
     "address": "Đường Đào Trí, Phường Phú Thuận, Quận 7"
   },
   {
-    "source": "mogi.vn",
     "apartment_id": "q7-saigon-riverside",
+    "source": "mogi.vn",
     "title": "Chuyên giỏ hàng cho thuê căn hộ Q7 SG Riverside , cập nhật giá mới.",
     "area": "66 m2",
     "furnished": null,
@@ -2351,8 +2351,8 @@ window.CRAWL_DATA = [
     "address": "Đường Đào Trí, Phường Phú Thuận, Quận 7"
   },
   {
-    "source": "mogi.vn",
     "apartment_id": "q7-saigon-riverside",
+    "source": "mogi.vn",
     "title": "Giữ khóa nhiều căn Q7 SG RIVERISIDE, xem nhà sau 10p liên hệ .",
     "area": "66 m2",
     "furnished": null,
@@ -2368,8 +2368,8 @@ window.CRAWL_DATA = [
     "address": "Đường Đào Trí, Phường Phú Thuận, Quận 7"
   },
   {
-    "source": "mogi.vn",
     "apartment_id": "q7-saigon-riverside",
+    "source": "mogi.vn",
     "title": "Mình cho thuê căn S2.18.11 Q7 SG RIVERSIDE căn góc, nội thất đẹp .",
     "area": "73 m2",
     "furnished": null,
@@ -2385,8 +2385,8 @@ window.CRAWL_DATA = [
     "address": "Đường Đào Trí, Phường Phú Thuận, Quận 7"
   },
   {
-    "source": "mogi.vn",
     "apartment_id": "q7-saigon-riverside",
+    "source": "mogi.vn",
     "title": "Mình cần cho thuê Q7 Saigon Riverside đủ nội thất chỉ vào ở .",
     "area": "53 m2",
     "furnished": null,
@@ -2402,8 +2402,8 @@ window.CRAWL_DATA = [
     "address": "Đường Đào Trí, Phường Phú Thuận, Quận 7"
   },
   {
-    "source": "nhatot.com",
     "apartment_id": "sunshine-diamond-river",
+    "source": "nhatot.com",
     "title": "CHO THUÊ PHÒNG NGỦ RIÊNG - SUNSHINE DIAMOND RIVER, QUẬN 7",
     "area": "115 m²",
     "furnished": null,
@@ -2419,8 +2419,8 @@ window.CRAWL_DATA = [
     "address": "Đường Đào Trí, Phường Phú Thuận, Quận 7"
   },
   {
-    "source": "nhatot.com",
     "apartment_id": "jamona-city",
+    "source": "nhatot.com",
     "title": "Cho thuê căn hộ Jamona City 80m 2pn 2wc 10tr/t",
     "area": "80 m²",
     "furnished": null,
@@ -2436,8 +2436,8 @@ window.CRAWL_DATA = [
     "address": "Đường Đào Trí, Phường Phú Thuận, Quận 7"
   },
   {
-    "source": "nhatot.com",
     "apartment_id": "jamona-city",
+    "source": "nhatot.com",
     "title": "Căn hộ Jamona City, Đào Trí, Q.7, 80m2, 10tr",
     "area": "80 m²",
     "furnished": null,
@@ -2453,8 +2453,8 @@ window.CRAWL_DATA = [
     "address": "Đường Đào Trí, Phường Phú Thuận, Quận 7"
   },
   {
-    "source": "nhatot.com",
     "apartment_id": "chung-cu-ngoc-lan",
+    "source": "nhatot.com",
     "title": "Cho thuê chung cư Ngọc Lan đường Phú Thuận Phường Phú Thuận Quận 7",
     "area": "94 m²",
     "furnished": null,
@@ -2470,8 +2470,8 @@ window.CRAWL_DATA = [
     "address": "Đường Phú Thuận, Phường Phú Thuận, Quận 7"
   },
   {
-    "source": "nhatot.com",
     "apartment_id": "chung-cu-the-harmona",
+    "source": "nhatot.com",
     "title": "Chung cư The Harmona Tân Bình 75m2, 2 phòng ngủ, Full nội thất .",
     "area": "75 m²",
     "furnished": null,
@@ -2485,5 +2485,243 @@ window.CRAWL_DATA = [
     "km_q1": 5.7,
     "year": 2015,
     "address": "Quận Tân Bình, TP Hồ Chí Minh"
+  },
+  {
+    "apartment_id": "star-hill",
+    "source": "mogi.vn",
+    "title": "Cần cho thuê nhanh căn hộ Star Hill, PMH, Q7 nhà đẹp, giá rẻ.",
+    "area": "94 m2",
+    "furnished": null,
+    "date": "28/05/2026",
+    "price": "21 triệu",
+    "bedrooms": null,
+    "link": "https://mogi.vn/quan-7/thue-can-ho-chung-cu/can-cho-thue-nhanh-can-ho-star-hill-pmh-q7-nha-dep-gia-re-id22731062",
+    "image": null,
+    "apartment_name": "Star Hill",
+    "district": "Q.7",
+    "km_q1": 6.8,
+    "year": 2014,
+    "address": "Đường Nguyễn Lương Bằng, Phường Tân Phú, Quận 7"
+  },
+  {
+    "apartment_id": "star-hill",
+    "source": "mogi.vn",
+    "title": "Cho thuê CH Star Hill, 95m2, 2 phòng ngủ, 20 triệu, Phú Mỹ Hưng HCMC",
+    "area": "95 m2",
+    "furnished": null,
+    "date": "28/05/2026",
+    "price": "20 triệu",
+    "bedrooms": null,
+    "link": "https://mogi.vn/quan-7/thue-can-ho-chung-cu/cho-thue-ch-star-hill-95m2-2-phong-ngu-20-trieu-phu-my-hung-hcmc-id22723234",
+    "image": null,
+    "apartment_name": "Star Hill",
+    "district": "Q.7",
+    "km_q1": 6.8,
+    "year": 2014,
+    "address": "Đường Nguyễn Lương Bằng, Phường Tân Phú, Quận 7"
+  },
+  {
+    "apartment_id": "star-hill",
+    "source": "mogi.vn",
+    "title": "Hiếm Có: Căn Hộ Star Hill 3PN, View Đẹp, Nội Thất Cao Cấp, Giá Tốt",
+    "area": "112 m2",
+    "furnished": null,
+    "date": "28/05/2026",
+    "price": "24 triệu",
+    "bedrooms": null,
+    "link": "https://mogi.vn/quan-7/thue-can-ho-chung-cu/hiem-co-can-ho-star-hill-3pn-view-dep-noi-that-cao-cap-gia-tot-id22708573",
+    "image": null,
+    "apartment_name": "Star Hill",
+    "district": "Q.7",
+    "km_q1": 6.8,
+    "year": 2014,
+    "address": "Đường Nguyễn Lương Bằng, Phường Tân Phú, Quận 7"
+  },
+  {
+    "apartment_id": "cardinal-court",
+    "source": "nhatot.com",
+    "title": "CHO THUÊ CĂN HỘ CARDINAL COURT- NHÀ ĐẸP NHƯ HÌNH. 76M2- GIÁ 25 TRIỆU",
+    "area": "76 m²",
+    "furnished": null,
+    "date": "hôm qua",
+    "price": "25 triệu/tháng",
+    "bedrooms": null,
+    "link": "https://www.nhatot.com/thue-can-ho-chung-cu-quan-7-tp-ho-chi-minh/132633746.htm",
+    "image": null,
+    "apartment_name": "Cardinal Court",
+    "district": "Q.7",
+    "km_q1": 6.7,
+    "year": 2024,
+    "address": "Đường Raymondienne, Phường Tân Phú, Quận 7"
+  },
+  {
+    "apartment_id": "cardinal-court",
+    "source": "nhatot.com",
+    "title": "Cần cho thuê gấp căn hộ cao cấp Cardinal Court, nhà đẹp lung linh",
+    "area": "80 m²",
+    "furnished": null,
+    "date": "1 tuần trước",
+    "price": "26 triệu/tháng",
+    "bedrooms": null,
+    "link": "https://www.nhatot.com/thue-can-ho-chung-cu-quan-7-tp-ho-chi-minh/131229091.htm",
+    "image": null,
+    "apartment_name": "Cardinal Court",
+    "district": "Q.7",
+    "km_q1": 6.7,
+    "year": 2024,
+    "address": "Đường Raymondienne, Phường Tân Phú, Quận 7"
+  },
+  {
+    "apartment_id": "cardinal-court",
+    "source": "nhatot.com",
+    "title": "CHO THUÊ CH CARDINAL COURT - 76M2 - VIEW HỒ BƠI - GIÁ CHỈ 25 TRIỆU/TH",
+    "area": "76 m²",
+    "furnished": null,
+    "date": "1 tuần trước",
+    "price": "25 triệu/tháng",
+    "bedrooms": null,
+    "link": "https://www.nhatot.com/thue-can-ho-chung-cu-quan-7-tp-ho-chi-minh/132461046.htm",
+    "image": null,
+    "apartment_name": "Cardinal Court",
+    "district": "Q.7",
+    "km_q1": 6.7,
+    "year": 2024,
+    "address": "Đường Raymondienne, Phường Tân Phú, Quận 7"
+  },
+  {
+    "apartment_id": "riviera-point",
+    "source": "mogi.vn",
+    "title": "Cho thuê căn hộ cao cấp Riviera Point, view thoáng, nhà mới đẹp",
+    "area": "99 m2",
+    "furnished": null,
+    "date": "21/05/2026",
+    "price": "19 triệu",
+    "bedrooms": null,
+    "link": "https://mogi.vn/quan-7/thue-can-ho-chung-cu/cho-thue-can-ho-cao-cap-riviera-point-view-thoang-nha-moi-dep-id22607432",
+    "image": null,
+    "apartment_name": "Riviera Point",
+    "district": "Q.7",
+    "km_q1": 6.5,
+    "year": 2014,
+    "address": "Đường Nguyễn Văn Tưởng, Phường Tân Phú, Quận 7"
+  },
+  {
+    "apartment_id": "riviera-point",
+    "source": "mogi.vn",
+    "title": "Cho thuê căn hộ The view Rivierapoint, nhà đẹp, trống sẳn ở ngay",
+    "area": "91 m2",
+    "furnished": null,
+    "date": "21/05/2026",
+    "price": "20 triệu",
+    "bedrooms": null,
+    "link": "https://mogi.vn/quan-7/thue-can-ho-chung-cu/cho-thue-can-ho-the-view-rivierapoint-nha-dep-trong-san-o-ngay-id22609164",
+    "image": null,
+    "apartment_name": "Riviera Point",
+    "district": "Q.7",
+    "km_q1": 6.5,
+    "year": 2014,
+    "address": "Đường Nguyễn Văn Tưởng, Phường Tân Phú, Quận 7"
+  },
+  {
+    "apartment_id": "riviera-point",
+    "source": "mogi.vn",
+    "title": "Cho thuê căn hộ The view Rivierapoint, nhà đẹp, trống sẳn ở ngay",
+    "area": "91 m2",
+    "furnished": null,
+    "date": "21/05/2026",
+    "price": "18 triệu",
+    "bedrooms": null,
+    "link": "https://mogi.vn/quan-7/thue-can-ho-chung-cu/cho-thue-can-ho-the-view-rivierapoint-nha-dep-trong-san-o-ngay-id22607390",
+    "image": null,
+    "apartment_name": "Riviera Point",
+    "district": "Q.7",
+    "km_q1": 6.5,
+    "year": 2014,
+    "address": "Đường Nguyễn Văn Tưởng, Phường Tân Phú, Quận 7"
+  },
+  {
+    "apartment_id": "riviera-point",
+    "source": "batdongsan.com.vn",
+    "title": "Giỏ hàng căn cho thuê The Infinity Q7, free PQL, full nội thất (1PN - 14tr)(2PN - 18tr)(3PN - 15tr)",
+    "area": "98 m²",
+    "furnished": null,
+    "date": "Đăng 3 ngày trước",
+    "price": "25 triệu/tháng",
+    "bedrooms": null,
+    "link": "https://batdongsan.com.vn/cho-thue-can-ho-chung-cu-duong-huynh-tan-phat-phuong-tan-phu-19-the-infiniti-riviera-point/gio-hang-100-cho-infinity-q7-free-pql-full-noi-that-1pn-14tr-2pn-18tr-3pn-15tr-pr45633786",
+    "image": null,
+    "apartment_name": "Riviera Point",
+    "district": "Q.7",
+    "km_q1": 6.5,
+    "year": 2014,
+    "address": "Đường Nguyễn Văn Tưởng, Phường Tân Phú, Quận 7"
+  },
+  {
+    "apartment_id": "kims-apartment",
+    "source": "mogi.vn",
+    "title": "C/c Kim Tâm Hải ,Trường Chinh cho thuê căn 2p ngủ giá 7,5tr",
+    "area": "57 m2",
+    "furnished": null,
+    "date": "20/05/2026",
+    "price": "7 triệu 500 nghìn",
+    "bedrooms": null,
+    "link": "https://mogi.vn/quan-12/thue-can-ho-chung-cu/c-c-kim-tam-hai-truong-chinh-cho-thue-can-2p-ngu-gia-7-5tr-id22738966",
+    "image": null,
+    "apartment_name": "Kim's Apartment",
+    "district": "Q.1",
+    "km_q1": 1.3,
+    "year": 2022,
+    "address": "Quận 1, TP Hồ Chí Minh"
+  },
+  {
+    "apartment_id": "river-panorama",
+    "source": "mogi.vn",
+    "title": "Cho thuê căn hộ River Panorama view sông đủ nội thất giá 11tr5/tháng .",
+    "area": "55 m2",
+    "furnished": null,
+    "date": "28/05/2026",
+    "price": "11 triệu 500 nghìn",
+    "bedrooms": null,
+    "link": "https://mogi.vn/quan-7/thue-can-ho-chung-cu/cho-thue-can-ho-river-panorama-view-song-du-noi-that-gia-11tr5-thang-id22707884",
+    "image": null,
+    "apartment_name": "River Panorama",
+    "district": "Q.7",
+    "km_q1": 7.5,
+    "year": 2020,
+    "address": "Đường Đào Trí, Phường Phú Thuận, Quận 7"
+  },
+  {
+    "apartment_id": "sky-garden-2",
+    "source": "nhatot.com",
+    "title": "Cho thuê nhiều căn hộ Sky Garden 2pn~3pn, giá chỉ từ 11tr-12tr/tháng",
+    "area": "71 m²",
+    "furnished": null,
+    "date": "3 tuần trước",
+    "price": "11 triệu/tháng",
+    "bedrooms": null,
+    "link": "https://www.nhatot.com/thue-can-ho-chung-cu-quan-7-tp-ho-chi-minh/123538997.htm",
+    "image": null,
+    "apartment_name": "Sky Garden 2",
+    "district": "Q.7",
+    "km_q1": 5.9,
+    "year": 2010,
+    "address": "Đường Nguyễn Văn Linh, Phường Tân Phong, Quận 7"
+  },
+  {
+    "apartment_id": "sky-garden-3",
+    "source": "nhatot.com",
+    "title": "Cho thuê căn hộ sky garden 3 phú mỹ hưng, 2pn 2wc nhà mới sạch đẹp ở n",
+    "area": "70 m²",
+    "furnished": null,
+    "date": "3 tuần trước",
+    "price": "16 triệu/tháng",
+    "bedrooms": null,
+    "link": "https://www.nhatot.com/thue-can-ho-chung-cu-quan-7-tp-ho-chi-minh/131710097.htm",
+    "image": null,
+    "apartment_name": "Sky Garden 3",
+    "district": "Q.7",
+    "km_q1": 6.1,
+    "year": 2012,
+    "address": "Đường Nguyễn Văn Linh, Phường Tân Phong, Quận 7"
   }
 ];

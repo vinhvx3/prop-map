@@ -3,232 +3,6 @@
     "filter_state": {
       "shapeType": "rectangle"
     },
-    "name": "Crawler - 1 CC (08:47)",
-    "geometry": {
-      "type": "Polygon",
-      "coordinates": [
-        [
-          [
-            106.739,
-            10.72
-          ],
-          [
-            106.739,
-            10.724
-          ],
-          [
-            106.745,
-            10.724
-          ],
-          [
-            106.745,
-            10.72
-          ],
-          [
-            106.739,
-            10.72
-          ]
-        ]
-      ]
-    },
-    "status": "idle",
-    "jobs": null,
-    "created_at": "2026-05-28T08:47:06.547668",
-    "id": "ea85184b",
-    "selected_ids": [
-      "q7-saigon-riverside"
-    ],
-    "crawl_config": {},
-    "current_job_id": null,
-    "last_crawl": "2026-05-28T09:12:04.716771",
-    "updated_at": "2026-05-28T08:47:06.547668"
-  },
-  {
-    "filter_state": {
-      "shapeType": "rectangle"
-    },
-    "name": "Crawler - 1 CC (08:47)",
-    "geometry": {
-      "type": "Polygon",
-      "coordinates": [
-        [
-          [
-            106.7315,
-            10.7475
-          ],
-          [
-            106.7315,
-            10.7495
-          ],
-          [
-            106.7345,
-            10.7495
-          ],
-          [
-            106.7345,
-            10.7475
-          ],
-          [
-            106.7315,
-            10.7475
-          ]
-        ]
-      ]
-    },
-    "status": "idle",
-    "jobs": null,
-    "created_at": "2026-05-28T08:47:37.433887",
-    "id": "e8788cb2",
-    "selected_ids": [
-      "jamona-heights"
-    ],
-    "crawl_config": {},
-    "current_job_id": null,
-    "last_crawl": "2026-05-28T09:11:48.459079",
-    "updated_at": "2026-05-28T08:47:37.433887"
-  },
-  {
-    "filter_state": {
-      "shapeType": "rectangle"
-    },
-    "name": "Crawler - 1 CC (08:56)",
-    "geometry": {
-      "type": "Polygon",
-      "coordinates": [
-        [
-          [
-            106.739,
-            10.72
-          ],
-          [
-            106.739,
-            10.724
-          ],
-          [
-            106.745,
-            10.724
-          ],
-          [
-            106.745,
-            10.72
-          ],
-          [
-            106.739,
-            10.72
-          ]
-        ]
-      ]
-    },
-    "status": "idle",
-    "jobs": null,
-    "created_at": "2026-05-28T08:56:36.635885",
-    "id": "4d61accb",
-    "selected_ids": [
-      "q7-saigon-riverside"
-    ],
-    "crawl_config": {},
-    "current_job_id": null,
-    "last_crawl": "2026-05-28T09:12:37.147696",
-    "updated_at": "2026-05-28T08:56:36.635885"
-  },
-  {
-    "filter_state": {
-      "shapeType": "rectangle"
-    },
-    "name": "Crawler - 1 CC (15:14)",
-    "geometry": {
-      "type": "Polygon",
-      "coordinates": [
-        [
-          [
-            106.641047,
-            10.731242
-          ],
-          [
-            106.641047,
-            10.734889
-          ],
-          [
-            106.644502,
-            10.734889
-          ],
-          [
-            106.644502,
-            10.731242
-          ],
-          [
-            106.641047,
-            10.731242
-          ]
-        ]
-      ]
-    },
-    "status": "idle",
-    "jobs": null,
-    "created_at": "2026-05-28T15:14:33.920209",
-    "id": "ec24fb5a",
-    "selected_ids": [
-      "green-river"
-    ],
-    "crawl_config": {},
-    "current_job_id": null,
-    "last_crawl": null,
-    "updated_at": "2026-05-28T15:14:33.920209"
-  },
-  {
-    "filter_state": {
-      "shapeType": "rectangle"
-    },
-    "name": "Crawler - 7 CC (15:19)",
-    "geometry": {
-      "type": "Polygon",
-      "coordinates": [
-        [
-          [
-            106.729517,
-            10.739232
-          ],
-          [
-            106.729517,
-            10.752155
-          ],
-          [
-            106.740396,
-            10.752155
-          ],
-          [
-            106.740396,
-            10.739232
-          ],
-          [
-            106.729517,
-            10.739232
-          ]
-        ]
-      ]
-    },
-    "status": "idle",
-    "jobs": null,
-    "created_at": "2026-05-28T15:19:09.987257",
-    "id": "0fa0cb05",
-    "selected_ids": [
-      "jamona-heights",
-      "bridgeview-ehome-5",
-      "nam-long-tran-trong-cung",
-      "chung-cu-an-hoa-3",
-      "chung-cu-jamona-heights",
-      "khu-can-ho-an-hoa",
-      "huong-hanh-phuc-can-ho-gac-lung-full-noi-that"
-    ],
-    "crawl_config": {},
-    "current_job_id": null,
-    "last_crawl": null,
-    "updated_at": "2026-05-28T15:19:09.987257"
-  },
-  {
-    "filter_state": {
-      "shapeType": "rectangle"
-    },
     "name": "Crawler - 6 CC (20:38)",
     "geometry": {
       "type": "Polygon",
@@ -270,6 +44,12 @@
         "timestamp": "2026-05-28T20:45:03.279241",
         "added_count": 0,
         "status": "cancelled"
+      },
+      {
+        "job_id": "f4d2e530",
+        "timestamp": "2026-05-28T23:02:38.976932",
+        "added_count": 0,
+        "status": "success"
       }
     ],
     "created_at": "2026-05-28T20:38:27.713890",
@@ -284,7 +64,7 @@
     ],
     "crawl_config": {},
     "current_job_id": null,
-    "last_crawl": "2026-05-28T20:39:57.610054",
+    "last_crawl": "2026-05-28T23:02:38.976840",
     "updated_at": "2026-05-28T20:38:27.713914"
   },
   {
@@ -326,6 +106,12 @@
         "timestamp": "2026-05-28T20:46:27.036093",
         "added_count": 0,
         "status": "success"
+      },
+      {
+        "job_id": "73cd597f",
+        "timestamp": "2026-05-28T23:04:53.611090",
+        "added_count": 0,
+        "status": "success"
       }
     ],
     "created_at": "2026-05-28T20:45:23.414235",
@@ -335,7 +121,7 @@
     ],
     "crawl_config": {},
     "current_job_id": null,
-    "last_crawl": "2026-05-28T20:46:27.035998",
+    "last_crawl": "2026-05-28T23:04:53.611004",
     "updated_at": "2026-05-28T20:45:23.414260"
   },
   {
@@ -397,30 +183,30 @@
     "filter_state": {
       "shapeType": "rectangle"
     },
-    "name": "Crawler Ngoai Home",
+    "name": "Crawler - 7 CC (22:45)",
     "geometry": {
       "type": "Polygon",
       "coordinates": [
         [
           [
-            106.636734,
-            10.780698
+            106.730633,
+            10.74035
           ],
           [
-            106.636734,
-            10.796211
+            106.730633,
+            10.751944
           ],
           [
-            106.6539,
-            10.796211
+            106.739774,
+            10.751944
           ],
           [
-            106.6539,
-            10.780698
+            106.739774,
+            10.74035
           ],
           [
-            106.636734,
-            10.780698
+            106.730633,
+            10.74035
           ]
         ]
       ]
@@ -428,74 +214,217 @@
     "status": "idle",
     "jobs": [
       {
-        "job_id": "b5e0e095",
-        "timestamp": "2026-05-28T21:50:18.225562",
+        "job_id": "04faf11c",
+        "timestamp": "2026-05-28T22:46:52.876729",
         "added_count": 0,
-        "status": "cancelled"
+        "status": "success"
       }
     ],
-    "created_at": "2026-05-28T21:20:15.340004",
-    "id": "ab826219",
+    "created_at": "2026-05-28T22:45:02.156138",
+    "id": "38eba203",
     "selected_ids": [
-      "chung-cu-thanh-nien-tan-binh",
-      "chung-cu-the-harmona",
-      "bay-hien-tower",
-      "chung-cu-tan-son-nhi-2",
-      "chung-cu-saigon-town",
-      "oriental-plaza",
-      "chung-cu-au-co-chung-cu-thien-hoa",
-      "can-ho-investco-babylon"
+      "jamona-heights",
+      "bridgeview-ehome-5",
+      "nam-long-tran-trong-cung",
+      "chung-cu-an-hoa-3",
+      "chung-cu-jamona-heights",
+      "khu-can-ho-an-hoa",
+      "huong-hanh-phuc-can-ho-gac-lung-full-noi-that"
     ],
     "crawl_config": {},
     "current_job_id": null,
-    "last_crawl": null,
-    "updated_at": "2026-05-28T21:59:36.215823"
+    "last_crawl": "2026-05-28T22:46:52.876664",
+    "updated_at": "2026-05-28T22:45:02.156164"
   },
   {
     "filter_state": {
-      "shapeType": null
+      "shapeType": "rectangle"
     },
-    "name": "Crawler - 5 CC (21:23)",
-    "geometry": null,
+    "name": "Crawler - 38 CC (22:48)",
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            106.720462,
+            10.721038
+          ],
+          [
+            106.720462,
+            10.743512
+          ],
+          [
+            106.731749,
+            10.743512
+          ],
+          [
+            106.731749,
+            10.721038
+          ],
+          [
+            106.720462,
+            10.721038
+          ]
+        ]
+      ]
+    },
     "status": "idle",
     "jobs": [
       {
-        "job_id": "62ac9c06",
-        "timestamp": "2026-05-28T21:24:47.773111",
+        "job_id": "5e92a060",
+        "timestamp": "2026-05-28T22:58:29.599022",
         "added_count": 0,
         "status": "success"
-      },
-      {
-        "job_id": "eb6dd3c5",
-        "timestamp": "2026-05-28T21:37:34.844361",
-        "added_count": 0,
-        "status": "success"
-      },
-      {
-        "job_id": "0070b10c",
-        "timestamp": "2026-05-28T21:47:03.166621",
-        "added_count": 0,
-        "status": "success"
-      },
-      {
-        "job_id": "681e3927",
-        "timestamp": "2026-05-28T21:48:07.594887",
-        "added_count": 0,
-        "status": "cancelled"
       }
     ],
-    "created_at": "2026-05-28T21:23:29.072613",
-    "id": "e5cf6749",
+    "created_at": "2026-05-28T22:48:21.848935",
+    "id": "d0a945f3",
     "selected_ids": [
-      "sunshine-diamond-river",
-      "jamona-city",
-      "chung-cu-ngoc-lan",
-      "chung-cu-v-star",
-      "lux-garden"
+      "grand-view-1",
+      "my-giang-2",
+      "my-hoang",
+      "cosmo-city",
+      "sunshine-city-saigon",
+      "star-hill",
+      "cardinal-court",
+      "midtown-the-peak",
+      "midtown-the-signature",
+      "midtown-the-symphony",
+      "midtown-the-grande",
+      "canh-vien-1",
+      "canh-vien-2",
+      "canh-vien-3",
+      "my-gia-1",
+      "my-gia-2",
+      "golden-king",
+      "docklands-saigon",
+      "cosmo-city-2",
+      "riviera-point",
+      "the-view-riviera-point",
+      "the-infiniti-riviera-point",
+      "the-loft-riviera-point",
+      "luxcity",
+      "the-golden-star",
+      "the-blue-star",
+      "canh-vien-block-d",
+      "canh-vien-block-a",
+      "canh-vien-block-b",
+      "canh-vien-block-c",
+      "kims-apartment",
+      "chung-cu-canh-vien-3",
+      "kdc-everrich-3",
+      "cubicity-fa-house",
+      "triton-crown-ho-ban-nguyet-phu-my-hung",
+      "chung-cu-canh-vien-1a",
+      "chung-cu-midtown-phu-my-hung-quan-7",
+      "can-ho-the-regency-ho-ban-nguyet-phu-my-hung"
     ],
     "crawl_config": {},
     "current_job_id": null,
-    "last_crawl": "2026-05-28T21:47:03.166602",
-    "updated_at": "2026-05-28T21:23:29.072627"
+    "last_crawl": "2026-05-28T22:58:29.598931",
+    "updated_at": "2026-05-28T22:48:21.848958"
+  },
+  {
+    "filter_state": {
+      "shapeType": "rectangle"
+    },
+    "name": "Crawler - 1 CC (23:06)",
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            106.742375,
+            10.714824
+          ],
+          [
+            106.742375,
+            10.715567
+          ],
+          [
+            106.743271,
+            10.715567
+          ],
+          [
+            106.743271,
+            10.714824
+          ],
+          [
+            106.742375,
+            10.714824
+          ]
+        ]
+      ]
+    },
+    "status": "idle",
+    "jobs": [
+      {
+        "job_id": "eb6bcd6f",
+        "timestamp": "2026-05-28T23:06:51.378825",
+        "added_count": 0,
+        "status": "success"
+      }
+    ],
+    "created_at": "2026-05-28T23:06:34.303912",
+    "id": "cf8e3b43",
+    "selected_ids": [
+      "an-gia-riverside"
+    ],
+    "crawl_config": {},
+    "current_job_id": null,
+    "last_crawl": "2026-05-28T23:06:51.378729",
+    "updated_at": "2026-05-28T23:06:34.303932"
+  },
+  {
+    "filter_state": {
+      "shapeType": "rectangle"
+    },
+    "name": "Crawler - 2 CC (23:19)",
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            106.705002,
+            10.729724
+          ],
+          [
+            106.705002,
+            10.731105
+          ],
+          [
+            106.707512,
+            10.731105
+          ],
+          [
+            106.707512,
+            10.729724
+          ],
+          [
+            106.705002,
+            10.729724
+          ]
+        ]
+      ]
+    },
+    "status": "idle",
+    "jobs": [
+      {
+        "job_id": "b7f6140f",
+        "timestamp": "2026-05-28T23:19:27.066159",
+        "added_count": 0,
+        "status": "success"
+      }
+    ],
+    "created_at": "2026-05-28T23:19:01.239780",
+    "id": "98e84512",
+    "selected_ids": [
+      "sky-garden-2",
+      "sky-garden-3"
+    ],
+    "crawl_config": {},
+    "current_job_id": null,
+    "last_crawl": "2026-05-28T23:19:27.066077",
+    "updated_at": "2026-05-28T23:19:01.239796"
   }
 ]

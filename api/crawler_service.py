@@ -126,18 +126,18 @@ def stop_crawl_for_session(session_id: str) -> bool:
                     job.broadcaster.publish({"type": "error", "message": f"Lỗi khi dừng tiến trình: {str(e)}"})
             stopped_any = True
             
-    # Cập nhật trạng thái session về idle trong SQLite
-    if stopped_any:
-        try:
-            from api.routers.sessions import _load_sessions, _save_sessions
-            sessions = _load_sessions()
-            idx = next((i for i, x in enumerate(sessions) if x["id"] == session_id), None)
-            if idx is not None:
-                sessions[idx]["status"] = "idle"
-                sessions[idx]["current_job_id"] = None
-                _save_sessions(sessions)
-        except Exception as e:
-            print(f"Lỗi cập nhật trạng thái session khi dừng: {str(e)}")
+    # Luôn luôn cập nhật trạng thái session về idle trong SQLite để giải phóng cưỡng bức nếu bị kẹt
+    try:
+        from api.routers.sessions import _load_sessions, _save_sessions
+        sessions = _load_sessions()
+        idx = next((i for i, x in enumerate(sessions) if x["id"] == session_id), None)
+        if idx is not None:
+            sessions[idx]["status"] = "idle"
+            sessions[idx]["current_job_id"] = None
+            _save_sessions(sessions)
+            stopped_any = True  # Luôn trả về True vì session đã được dừng thành công ở tầng DB
+    except Exception as e:
+        print(f"Lỗi cập nhật trạng thái session khi dừng: {str(e)}")
             
     return stopped_any
 

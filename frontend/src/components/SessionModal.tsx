@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import { useStore } from '../store';
 import { api } from '../api';
 import type { Session, SessionSummary } from '../api';
+import { SessionFeedModal } from './SessionFeedModal';
+import { Icons } from './Icons';
 
 interface SessionModalProps {
   sessions?: SessionSummary[];
@@ -14,6 +16,23 @@ export function SessionModal({ sessions = [], onRefresh }: SessionModalProps) {
   const [creating, setCreating] = useState(false);
   const [view, setView] = useState<'list' | 'create'>('list');
   const [deleteConfirmId, setDeleteConfirmId] = useState<string | null>(null);
+  const [feedSession, setFeedSession] = useState<SessionSummary | null>(null);
+  const [editingSessionId, setEditingSessionId] = useState<string | null>(null);
+  const [editingName, setEditingName] = useState<string>('');
+
+  const handleRename = async (id: string) => {
+    if (!editingName.trim()) return;
+    try {
+      await api.updateSession(id, { name: editingName.trim() });
+      if (currentSession?.id === id) {
+        setCurrentSession({ ...currentSession, name: editingName.trim() });
+      }
+      setEditingSessionId(null);
+      onRefresh();
+    } catch (e) {
+      console.error('Đổi tên thất bại', e);
+    }
+  };
 
   const handleLoad = async (id: string) => {
     const r = await api.getSession(id);
@@ -56,24 +75,23 @@ export function SessionModal({ sessions = [], onRefresh }: SessionModalProps) {
   const handleStartCrawl = async (e: React.MouseEvent, id: string) => {
     e.stopPropagation();
     try {
-      const r = await api.getSession(id);
-      const session = r.data;
-
-      // Trigger crawl on backend
       const crawlRes = await api.triggerCrawl(id);
       const jobId = crawlRes.data.job_id;
 
-      // Update local store state to show CrawlLogPanel instantly
-      const { setCrawlStatus, clearCrawlLogs, setCrawlProgress, setCurrentJobId } = useStore.getState();
-      setCrawlStatus('running');
-      clearCrawlLogs();
-      setCrawlProgress(null);
-      setCurrentJobId(jobId);
+      const isCurrent = currentSession?.id === id;
+      if (isCurrent) {
+        // Chỉ cập nhật trạng thái hiển thị chính của app nếu đây là crawler đang hiển thị
+        const { setCrawlStatus, clearCrawlLogs, setCrawlProgress, setCurrentJobId } = useStore.getState();
+        setCrawlStatus('running');
+        clearCrawlLogs();
+        setCrawlProgress(null);
+        setCurrentJobId(jobId);
 
-      const updatedSession = { ...session, status: 'running' as const };
-      setCurrentSession(updatedSession);
+        const r = await api.getSession(id);
+        setCurrentSession({ ...r.data, status: 'running' as const });
+        setShowSessionModal(false);
+      }
 
-      setShowSessionModal(false);
       onRefresh();
     } catch (e) {
       console.error(e);
@@ -84,9 +102,15 @@ export function SessionModal({ sessions = [], onRefresh }: SessionModalProps) {
     e.stopPropagation();
     try {
       await api.stopCrawl(id);
-      if (currentSession?.id === id) {
-        const { setCrawlStatus } = useStore.getState();
+      
+      const isCurrent = currentSession?.id === id;
+      if (isCurrent) {
+        const { setCrawlStatus, setCurrentJobId } = useStore.getState();
         setCrawlStatus('idle');
+        setCurrentJobId(null);
+
+        const r = await api.getSession(id);
+        setCurrentSession({ ...r.data, status: 'idle' as const });
       }
       onRefresh();
     } catch (e) {
@@ -107,8 +131,13 @@ export function SessionModal({ sessions = [], onRefresh }: SessionModalProps) {
         onClick={e => e.stopPropagation()}
       >
         <div className="modal-header">
-          <div className="modal-title">📂 Danh sách Crawler</div>
-          <button className="icon-btn" onClick={() => setShowSessionModal(false)}>✕</button>
+          <div className="modal-title" style={{ display: 'flex', alignItems: 'center', gap: 6 }}>
+            <Icons.Map size={16} />
+            <span>Danh sách Crawler</span>
+          </div>
+          <button className="icon-btn" onClick={() => setShowSessionModal(false)} style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+            <Icons.X size={14} />
+          </button>
         </div>
 
         <div className="modal-body">
@@ -116,7 +145,9 @@ export function SessionModal({ sessions = [], onRefresh }: SessionModalProps) {
             <>
               {sessions.length === 0 ? (
                 <div className="empty-state" style={{ padding: 24 }}>
-                  <div className="empty-state-icon">📂</div>
+                  <div className="empty-state-icon" style={{ display: 'flex', justifyContent: 'center', marginBottom: 8 }}>
+                    <Icons.Map size={32} style={{ opacity: 0.3 }} />
+                  </div>
                   <div className="empty-state-text">Chưa có Crawler nào</div>
                 </div>
               ) : (
@@ -131,43 +162,113 @@ export function SessionModal({ sessions = [], onRefresh }: SessionModalProps) {
                     onClick={() => handleLoad(s.id)}
                   >
                     <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start' }}>
-                      <div className="session-card-name">{s.name}</div>
-                      <div style={{ display: 'flex', gap: 8, alignItems: 'center' }}>
-                        {s.status === 'running' ? (
+                      {editingSessionId === s.id ? (
+                        <div style={{ display: 'flex', gap: 6, alignItems: 'center', flex: 1 }} onClick={e => e.stopPropagation()}>
+                          <input
+                            type="text"
+                            className="input"
+                            style={{
+                              padding: '2px 6px',
+                              fontSize: '13px',
+                              height: '24px',
+                              maxWidth: '180px',
+                              backgroundColor: '#0d1117',
+                              border: '1px solid var(--color-accent)',
+                              color: '#fff',
+                              borderRadius: '4px'
+                            }}
+                            value={editingName}
+                            onChange={e => setEditingName(e.target.value)}
+                            onKeyDown={async e => {
+                              if (e.key === 'Enter') await handleRename(s.id);
+                              if (e.key === 'Escape') setEditingSessionId(null);
+                            }}
+                            autoFocus
+                          />
                           <button
                             className="icon-btn"
-                            style={{ 
-                              color: '#ff4d4f', 
-                              fontSize: '11px', 
-                              backgroundColor: 'rgba(255, 77, 79, 0.1)', 
-                              padding: '2px 8px', 
-                              borderRadius: '4px',
-                              border: '1px solid rgba(255, 77, 79, 0.2)',
+                            style={{ color: 'var(--color-success)', padding: '2px 4px', display: 'flex', alignItems: 'center' }}
+                            onClick={() => handleRename(s.id)}
+                            title="Lưu"
+                          >
+                            <Icons.Check size={12} />
+                          </button>
+                          <button
+                            className="icon-btn"
+                            style={{ color: 'var(--color-text-secondary)', padding: '2px 4px', display: 'flex', alignItems: 'center' }}
+                            onClick={() => setEditingSessionId(null)}
+                            title="Hủy"
+                          >
+                            <Icons.X size={12} />
+                          </button>
+                        </div>
+                      ) : (
+                        <div style={{ display: 'flex', alignItems: 'center', gap: 8, flex: 1, minWidth: 0 }}>
+                          <div className="session-card-name" style={{ textOverflow: 'ellipsis', overflow: 'hidden', whiteSpace: 'nowrap' }}>
+                            {s.name}
+                          </div>
+                          <button
+                            className="icon-btn edit-name-btn"
+                            style={{
+                              opacity: 0.4,
+                              padding: '2px',
                               cursor: 'pointer',
-                              fontWeight: '500',
+                              background: 'none',
+                              border: 'none',
                               display: 'flex',
                               alignItems: 'center',
-                              gap: '4px'
+                            }}
+                            onClick={(e) => {
+                              e.stopPropagation();
+                              setEditingSessionId(s.id);
+                              setEditingName(s.name);
+                            }}
+                            title="Đổi tên"
+                          >
+                            <Icons.Edit size={12} />
+                          </button>
+                        </div>
+                      )}
+                      <div style={{ display: 'flex', gap: 8, alignItems: 'center' }}>
+                        {s.listing_count > 0 && (
+                          <button
+                            className="btn-action-sm"
+                            style={{
+                              color: '#10b981',
+                              backgroundColor: 'rgba(16, 185, 129, 0.1)',
+                              border: '1px solid rgba(16, 185, 129, 0.2)',
+                            }}
+                            onClick={(e) => {
+                              e.stopPropagation();
+                              setFeedSession(s);
+                            }}
+                            title="Xem tất cả bài đăng"
+                          >
+                            <Icons.FileText size={11} />
+                            <span>{s.listing_count}</span>
+                          </button>
+                        )}
+                        {s.status === 'running' ? (
+                          <button
+                            className="btn-action-sm"
+                            style={{ 
+                              color: '#ff4d4f', 
+                              backgroundColor: 'rgba(255, 77, 79, 0.1)', 
+                              border: '1px solid rgba(255, 77, 79, 0.2)',
                             }}
                             onClick={(e) => handleStopCrawl(e, s.id)}
                             title="Dừng cào dữ liệu chạy ngầm"
                           >
-                            🛑 Stop
+                            <Icons.X size={11} />
+                            <span>Stop</span>
                           </button>
                         ) : (
                           <button
-                            className="icon-btn"
+                            className="btn-action-sm"
                             style={{ 
                               color: '#3b82f6', 
-                              fontSize: '11px', 
                               backgroundColor: 'rgba(59, 130, 246, 0.1)', 
-                              padding: '2px 8px', 
-                              borderRadius: '4px',
                               border: '1px solid rgba(59, 130, 246, 0.2)',
-                              fontWeight: '500',
-                              display: 'flex',
-                              alignItems: 'center',
-                              gap: '4px',
                               opacity: s.apartment_count === 0 ? 0.5 : 1,
                               cursor: s.apartment_count === 0 ? 'not-allowed' : 'pointer'
                             }}
@@ -175,7 +276,8 @@ export function SessionModal({ sessions = [], onRefresh }: SessionModalProps) {
                             disabled={s.apartment_count === 0}
                             title={s.apartment_count === 0 ? "Chưa chọn chung cư nào để cào" : "Bắt đầu cào dữ liệu mới"}
                           >
-                            ⚡ Start
+                            <Icons.Play size={11} fill="currentColor" />
+                            <span>Start</span>
                           </button>
                         )}
                         <div className={`status-dot ${s.status}`} style={{ margin: '0 4px' }} />
@@ -184,32 +286,51 @@ export function SessionModal({ sessions = [], onRefresh }: SessionModalProps) {
                             <span style={{ fontSize: 11, color: 'var(--color-danger)' }}>Xóa?</span>
                             <button
                               className="icon-btn"
-                              style={{ color: 'var(--color-danger)' }}
+                              style={{ color: 'var(--color-danger)', display: 'flex', alignItems: 'center' }}
                               onClick={(e) => handleDelete(e, s.id)}
                               title="Xác nhận xóa"
-                            >✓</button>
+                            >
+                              <Icons.Check size={11} />
+                            </button>
                             <button
                               className="icon-btn"
+                              style={{ display: 'flex', alignItems: 'center' }}
                               onClick={(e) => {
                                 e.stopPropagation();
                                 setDeleteConfirmId(null);
                               }}
                               title="Hủy"
-                            >✕</button>
+                            >
+                              <Icons.X size={11} />
+                            </button>
                           </div>
                         ) : (
                           <button
                             className="icon-btn"
+                            style={{ display: 'flex', alignItems: 'center' }}
                             onClick={(e) => handleDelete(e, s.id)}
                             title="Xóa Crawler"
-                          >🗑</button>
+                          >
+                            <Icons.Trash size={13} />
+                          </button>
                         )}
                       </div>
                     </div>
                     <div className="session-card-meta">
-                      <span>🏢 {s.apartment_count} CC</span>
-                      <span>📋 {s.listing_count} tin</span>
-                      {s.last_crawl && <span>🕒 {s.last_crawl.slice(0, 10)}</span>}
+                      <span style={{ display: 'inline-flex', alignItems: 'center', gap: 3 }}>
+                        <Icons.Building size={11} style={{ opacity: 0.7 }} />
+                        <span>{s.apartment_count} CC</span>
+                      </span>
+                      <span style={{ display: 'inline-flex', alignItems: 'center', gap: 3 }}>
+                        <Icons.FileText size={11} style={{ opacity: 0.7 }} />
+                        <span>{s.listing_count} tin</span>
+                      </span>
+                      {s.last_crawl && (
+                        <span style={{ display: 'inline-flex', alignItems: 'center', gap: 3 }}>
+                          <Icons.Calendar size={11} style={{ opacity: 0.7 }} />
+                          <span>{s.last_crawl.slice(0, 10)}</span>
+                        </span>
+                      )}
                     </div>
                   </div>
                 ))
@@ -239,8 +360,10 @@ export function SessionModal({ sessions = [], onRefresh }: SessionModalProps) {
               className="btn accent"
               id="btn-create-session"
               onClick={() => setView('create')}
+              style={{ display: 'flex', alignItems: 'center', gap: 4 }}
             >
-              + Tạo Crawler mới
+              <Icons.X size={12} style={{ transform: 'rotate(45deg)', opacity: 0.8 }} />
+              <span>Tạo Crawler mới</span>
             </button>
           ) : (
             <>
@@ -250,13 +373,29 @@ export function SessionModal({ sessions = [], onRefresh }: SessionModalProps) {
                 id="btn-confirm-create"
                 onClick={handleCreate}
                 disabled={creating || !newName.trim()}
+                style={{ display: 'flex', alignItems: 'center', gap: 4 }}
               >
-                {creating ? 'Đang tạo...' : '✓ Tạo Crawler'}
+                {creating ? (
+                  <span>Đang tạo...</span>
+                ) : (
+                  <>
+                    <Icons.Check size={12} />
+                    <span>Tạo Crawler</span>
+                  </>
+                )}
               </button>
             </>
           )}
         </div>
       </div>
+
+      {/* Feed Modal overlay */}
+      {feedSession && (
+        <SessionFeedModal
+          session={feedSession}
+          onClose={() => setFeedSession(null)}
+        />
+      )}
     </div>
   );
 }

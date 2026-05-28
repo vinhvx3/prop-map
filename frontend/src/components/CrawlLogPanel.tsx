@@ -1,8 +1,9 @@
 import React, { useEffect, useRef } from 'react';
 import { useStore } from '../store';
+import { Icons } from './Icons';
 
 export function CrawlLogPanel() {
-  const { crawlLogs, crawlProgress, crawlStatus, setCrawlStatus, clearCrawlLogs } = useStore();
+  const { crawlLogs, crawlProgress, crawlStatus, clearCrawlLogs } = useStore();
   const scrollRef = useRef<HTMLDivElement>(null);
 
   // Auto scroll to bottom
@@ -37,8 +38,8 @@ export function CrawlLogPanel() {
   return (
     <div className="crawl-log-panel">
       <div className="crawl-log-header">
-        <div className="crawl-log-title">
-          <span>🕷</span>
+        <div className="crawl-log-title" style={{ display: 'flex', alignItems: 'center', gap: 6 }}>
+          <Icons.Activity size={13} />
           <span>Tiến trình Cào dữ liệu</span>
         </div>
         {crawlStatus !== 'running' && (
@@ -49,10 +50,14 @@ export function CrawlLogPanel() {
               border: 'none',
               color: 'var(--color-text-secondary)',
               cursor: 'pointer',
-              fontSize: '16px',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              padding: 4,
             }}
+            title="Đóng bảng log"
           >
-            ✕
+            <Icons.X size={14} />
           </button>
         )}
       </div>
@@ -83,7 +88,10 @@ export function CrawlLogPanel() {
           </div>
         ))}
         {crawlStatus === 'running' && crawlLogs.length === 0 && (
-          <div className="crawl-log-line info">⏳ Đang kết nối tới máy chủ thu thập dữ liệu...</div>
+          <div className="crawl-log-line info" style={{ display: 'flex', alignItems: 'center', gap: 6 }}>
+            <Icons.Loader size={12} />
+            <span>Đang kết nối tới máy chủ thu thập dữ liệu...</span>
+          </div>
         )}
       </div>
     </div>

@@ -1,12 +1,8 @@
 [
   {
-    "selected_ids": [
-      "q7-saigon-riverside"
-    ],
-    "id": "ea85184b",
-    "crawl_config": {},
-    "status": "idle",
-    "created_at": "2026-05-28T08:47:06.547668",
+    "filter_state": {
+      "shapeType": "rectangle"
+    },
     "name": "Crawler - 1 CC (08:47)",
     "geometry": {
       "type": "Polygon",
@@ -35,20 +31,22 @@
         ]
       ]
     },
-    "filter_state": {
-      "shapeType": "rectangle"
-    },
+    "status": "idle",
+    "jobs": null,
+    "created_at": "2026-05-28T08:47:06.547668",
+    "id": "ea85184b",
+    "selected_ids": [
+      "q7-saigon-riverside"
+    ],
+    "crawl_config": {},
+    "current_job_id": null,
     "last_crawl": "2026-05-28T09:12:04.716771",
     "updated_at": "2026-05-28T08:47:06.547668"
   },
   {
-    "selected_ids": [
-      "jamona-heights"
-    ],
-    "id": "e8788cb2",
-    "crawl_config": {},
-    "status": "idle",
-    "created_at": "2026-05-28T08:47:37.433887",
+    "filter_state": {
+      "shapeType": "rectangle"
+    },
     "name": "Crawler - 1 CC (08:47)",
     "geometry": {
       "type": "Polygon",
@@ -77,20 +75,22 @@
         ]
       ]
     },
-    "filter_state": {
-      "shapeType": "rectangle"
-    },
+    "status": "idle",
+    "jobs": null,
+    "created_at": "2026-05-28T08:47:37.433887",
+    "id": "e8788cb2",
+    "selected_ids": [
+      "jamona-heights"
+    ],
+    "crawl_config": {},
+    "current_job_id": null,
     "last_crawl": "2026-05-28T09:11:48.459079",
     "updated_at": "2026-05-28T08:47:37.433887"
   },
   {
-    "selected_ids": [
-      "q7-saigon-riverside"
-    ],
-    "id": "4d61accb",
-    "crawl_config": {},
-    "status": "idle",
-    "created_at": "2026-05-28T08:56:36.635885",
+    "filter_state": {
+      "shapeType": "rectangle"
+    },
     "name": "Crawler - 1 CC (08:56)",
     "geometry": {
       "type": "Polygon",
@@ -119,20 +119,22 @@
         ]
       ]
     },
-    "filter_state": {
-      "shapeType": "rectangle"
-    },
+    "status": "idle",
+    "jobs": null,
+    "created_at": "2026-05-28T08:56:36.635885",
+    "id": "4d61accb",
+    "selected_ids": [
+      "q7-saigon-riverside"
+    ],
+    "crawl_config": {},
+    "current_job_id": null,
     "last_crawl": "2026-05-28T09:12:37.147696",
     "updated_at": "2026-05-28T08:56:36.635885"
   },
   {
-    "selected_ids": [
-      "green-river"
-    ],
-    "id": "ec24fb5a",
-    "crawl_config": {},
-    "status": "running",
-    "created_at": "2026-05-28T15:14:33.920209",
+    "filter_state": {
+      "shapeType": "rectangle"
+    },
     "name": "Crawler - 1 CC (15:14)",
     "geometry": {
       "type": "Polygon",
@@ -161,26 +163,22 @@
         ]
       ]
     },
-    "filter_state": {
-      "shapeType": "rectangle"
-    },
+    "status": "idle",
+    "jobs": null,
+    "created_at": "2026-05-28T15:14:33.920209",
+    "id": "ec24fb5a",
+    "selected_ids": [
+      "green-river"
+    ],
+    "crawl_config": {},
+    "current_job_id": null,
     "last_crawl": null,
     "updated_at": "2026-05-28T15:14:33.920209"
   },
   {
-    "selected_ids": [
-      "jamona-heights",
-      "bridgeview-ehome-5",
-      "nam-long-tran-trong-cung",
-      "chung-cu-an-hoa-3",
-      "chung-cu-jamona-heights",
-      "khu-can-ho-an-hoa",
-      "huong-hanh-phuc-can-ho-gac-lung-full-noi-that"
-    ],
-    "id": "0fa0cb05",
-    "crawl_config": {},
-    "status": "running",
-    "created_at": "2026-05-28T15:19:09.987257",
+    "filter_state": {
+      "shapeType": "rectangle"
+    },
     "name": "Crawler - 7 CC (15:19)",
     "geometry": {
       "type": "Polygon",
@@ -209,10 +207,295 @@
         ]
       ]
     },
+    "status": "idle",
+    "jobs": null,
+    "created_at": "2026-05-28T15:19:09.987257",
+    "id": "0fa0cb05",
+    "selected_ids": [
+      "jamona-heights",
+      "bridgeview-ehome-5",
+      "nam-long-tran-trong-cung",
+      "chung-cu-an-hoa-3",
+      "chung-cu-jamona-heights",
+      "khu-can-ho-an-hoa",
+      "huong-hanh-phuc-can-ho-gac-lung-full-noi-that"
+    ],
+    "crawl_config": {},
+    "current_job_id": null,
+    "last_crawl": null,
+    "updated_at": "2026-05-28T15:19:09.987257"
+  },
+  {
     "filter_state": {
       "shapeType": "rectangle"
     },
+    "name": "Crawler - 6 CC (20:38)",
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            106.739001,
+            10.71407
+          ],
+          [
+            106.739001,
+            10.717306
+          ],
+          [
+            106.743389,
+            10.717306
+          ],
+          [
+            106.743389,
+            10.71407
+          ],
+          [
+            106.739001,
+            10.71407
+          ]
+        ]
+      ]
+    },
+    "status": "idle",
+    "jobs": [
+      {
+        "job_id": "7d87dbd3",
+        "timestamp": "2026-05-28T20:39:57.610136",
+        "added_count": 0,
+        "status": "success"
+      },
+      {
+        "job_id": "fd43df9f",
+        "timestamp": "2026-05-28T20:45:03.279241",
+        "added_count": 0,
+        "status": "cancelled"
+      }
+    ],
+    "created_at": "2026-05-28T20:38:27.713890",
+    "id": "5d956a34",
+    "selected_ids": [
+      "the-panorama-1",
+      "sky-89",
+      "an-gia-riverside",
+      "an-gia-skyline",
+      "river-panorama",
+      "chung-cu-lacasa"
+    ],
+    "crawl_config": {},
+    "current_job_id": null,
+    "last_crawl": "2026-05-28T20:39:57.610054",
+    "updated_at": "2026-05-28T20:38:27.713914"
+  },
+  {
+    "filter_state": {
+      "shapeType": "rectangle"
+    },
+    "name": "Crawler - 1 CC (20:45)",
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            106.740857,
+            10.721934
+          ],
+          [
+            106.740857,
+            10.723684
+          ],
+          [
+            106.742252,
+            10.723684
+          ],
+          [
+            106.742252,
+            10.721934
+          ],
+          [
+            106.740857,
+            10.721934
+          ]
+        ]
+      ]
+    },
+    "status": "idle",
+    "jobs": [
+      {
+        "job_id": "88790f7f",
+        "timestamp": "2026-05-28T20:46:27.036093",
+        "added_count": 0,
+        "status": "success"
+      }
+    ],
+    "created_at": "2026-05-28T20:45:23.414235",
+    "id": "dca148a7",
+    "selected_ids": [
+      "q7-saigon-riverside"
+    ],
+    "crawl_config": {},
+    "current_job_id": null,
+    "last_crawl": "2026-05-28T20:46:27.035998",
+    "updated_at": "2026-05-28T20:45:23.414260"
+  },
+  {
+    "filter_state": {
+      "shapeType": "rectangle"
+    },
+    "name": "Crawler - 5 CC (20:54)",
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            106.735611,
+            10.729977
+          ],
+          [
+            106.735611,
+            10.73879
+          ],
+          [
+            106.744795,
+            10.73879
+          ],
+          [
+            106.744795,
+            10.729977
+          ],
+          [
+            106.735611,
+            10.729977
+          ]
+        ]
+      ]
+    },
+    "status": "idle",
+    "jobs": [
+      {
+        "job_id": "9e0e621a",
+        "timestamp": "2026-05-28T20:55:12.510448",
+        "added_count": 0,
+        "status": "success"
+      }
+    ],
+    "created_at": "2026-05-28T20:54:02.514628",
+    "id": "0dff5749",
+    "selected_ids": [
+      "sunshine-diamond-river",
+      "jamona-city",
+      "chung-cu-ngoc-lan",
+      "chung-cu-v-star",
+      "lux-garden"
+    ],
+    "crawl_config": {},
+    "current_job_id": null,
+    "last_crawl": "2026-05-28T20:55:12.510322",
+    "updated_at": "2026-05-28T20:54:02.514651"
+  },
+  {
+    "filter_state": {
+      "shapeType": "rectangle"
+    },
+    "name": "Crawler Ngoai Home",
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            106.636734,
+            10.780698
+          ],
+          [
+            106.636734,
+            10.796211
+          ],
+          [
+            106.6539,
+            10.796211
+          ],
+          [
+            106.6539,
+            10.780698
+          ],
+          [
+            106.636734,
+            10.780698
+          ]
+        ]
+      ]
+    },
+    "status": "idle",
+    "jobs": [
+      {
+        "job_id": "b5e0e095",
+        "timestamp": "2026-05-28T21:50:18.225562",
+        "added_count": 0,
+        "status": "cancelled"
+      }
+    ],
+    "created_at": "2026-05-28T21:20:15.340004",
+    "id": "ab826219",
+    "selected_ids": [
+      "chung-cu-thanh-nien-tan-binh",
+      "chung-cu-the-harmona",
+      "bay-hien-tower",
+      "chung-cu-tan-son-nhi-2",
+      "chung-cu-saigon-town",
+      "oriental-plaza",
+      "chung-cu-au-co-chung-cu-thien-hoa",
+      "can-ho-investco-babylon"
+    ],
+    "crawl_config": {},
+    "current_job_id": null,
     "last_crawl": null,
-    "updated_at": "2026-05-28T15:19:09.987257"
+    "updated_at": "2026-05-28T21:59:36.215823"
+  },
+  {
+    "filter_state": {
+      "shapeType": null
+    },
+    "name": "Crawler - 5 CC (21:23)",
+    "geometry": null,
+    "status": "idle",
+    "jobs": [
+      {
+        "job_id": "62ac9c06",
+        "timestamp": "2026-05-28T21:24:47.773111",
+        "added_count": 0,
+        "status": "success"
+      },
+      {
+        "job_id": "eb6dd3c5",
+        "timestamp": "2026-05-28T21:37:34.844361",
+        "added_count": 0,
+        "status": "success"
+      },
+      {
+        "job_id": "0070b10c",
+        "timestamp": "2026-05-28T21:47:03.166621",
+        "added_count": 0,
+        "status": "success"
+      },
+      {
+        "job_id": "681e3927",
+        "timestamp": "2026-05-28T21:48:07.594887",
+        "added_count": 0,
+        "status": "cancelled"
+      }
+    ],
+    "created_at": "2026-05-28T21:23:29.072613",
+    "id": "e5cf6749",
+    "selected_ids": [
+      "sunshine-diamond-river",
+      "jamona-city",
+      "chung-cu-ngoc-lan",
+      "chung-cu-v-star",
+      "lux-garden"
+    ],
+    "crawl_config": {},
+    "current_job_id": null,
+    "last_crawl": "2026-05-28T21:47:03.166602",
+    "updated_at": "2026-05-28T21:23:29.072627"
   }
 ]

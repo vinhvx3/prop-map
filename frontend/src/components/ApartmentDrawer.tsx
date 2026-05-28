@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useStore } from '../store';
 import { api } from '../api';
 import type { Apartment, Listing } from '../api';
+import { Icons } from './Icons';
 
 function isNew(date?: string): boolean {
   if (!date) return false;
@@ -33,17 +34,24 @@ function segmentLabel(segment?: string): string {
   return segment;
 }
 
-function amenityIconLabel(amenity: string): { icon: string; label: string } {
-  const map: Record<string, { icon: string; label: string }> = {
-    ho_boi: { icon: '🏊‍♂️', label: 'Hồ bơi' },
-    gym: { icon: '🏋️‍♂️', label: 'Phòng gym' },
-    san_choi: { icon: '🛝', label: 'Sân chơi trẻ em' },
-    sieu_thi: { icon: '🛒', label: 'Siêu thị' },
-    bao_ve_24h: { icon: '🛡️', label: 'Bảo vệ 24/7' },
-    cong_vien: { icon: '🌳', label: 'Công viên' },
+function amenityIconLabel(amenity: string): { icon: React.ReactNode; label: string } {
+  const map: Record<string, { icon: React.ReactNode; label: string }> = {
+    ho_boi: { icon: <Icons.Sparkles size={11} />, label: 'Hồ bơi' },
+    gym: { icon: <Icons.Activity size={11} />, label: 'Phòng gym' },
+    san_choi: { icon: <Icons.MapPin size={11} />, label: 'Sân chơi trẻ em' },
+    sieu_thi: { icon: <Icons.Building size={11} />, label: 'Siêu thị' },
+    bao_ve_24h: { icon: <Icons.Save size={11} />, label: 'Bảo vệ 24/7' },
+    cong_vien: { icon: <Icons.Map size={11} />, label: 'Công viên' },
   };
-  return map[amenity] || { icon: '✨', label: amenity };
+  return map[amenity] || { icon: <Icons.Sparkles size={11} />, label: amenity };
 }
+
+const SOURCES = [
+  { value: '', label: 'Tất cả nguồn' },
+  { value: 'mogi.vn', label: 'Mogi.vn' },
+  { value: 'nhatot.com', label: 'NhaTot' },
+  { value: 'batdongsan.com.vn', label: 'BatDongSan' },
+];
 
 interface ListingCardProps {
   listing: Listing;
@@ -61,18 +69,28 @@ function ListingCard({ listing }: ListingCardProps) {
         <span className={sourceBadgeClass(listing.source)}>{listing.source}</span>
         {isNew(listing.date) && <span className="new-badge">Mới</span>}
         {listing.bedrooms && (
-          <span className="listing-meta-item">🛏 {listing.bedrooms}</span>
+          <span className="listing-meta-item" style={{ display: 'inline-flex', alignItems: 'center', gap: 3 }}>
+            <Icons.Bed size={12} style={{ opacity: 0.7 }} />
+            <span>{listing.bedrooms}</span>
+          </span>
         )}
         {listing.area && (
-          <span className="listing-meta-item">📐 {listing.area}</span>
+          <span className="listing-meta-item" style={{ display: 'inline-flex', alignItems: 'center', gap: 3 }}>
+            <Icons.Maximize size={11} style={{ opacity: 0.7 }} />
+            <span>{listing.area}</span>
+          </span>
         )}
         {listing.date && (
-          <span className="listing-meta-item">📅 {listing.date}</span>
+          <span className="listing-meta-item" style={{ display: 'inline-flex', alignItems: 'center', gap: 3 }}>
+            <Icons.Calendar size={12} style={{ opacity: 0.7 }} />
+            <span>{listing.date}</span>
+          </span>
         )}
       </div>
 
-      <a href={listing.link} target="_blank" rel="noopener noreferrer" className="listing-link">
-        🔗 {listing.link}
+      <a href={listing.link} target="_blank" rel="noopener noreferrer" className="listing-link" style={{ display: 'inline-flex', alignItems: 'center', gap: 4 }}>
+        <Icons.Link size={12} />
+        <span>{listing.link}</span>
       </a>
     </div>
   );
@@ -84,6 +102,7 @@ export function ApartmentDrawer() {
   const [listings, setListings] = useState<Listing[]>([]);
   const [loading, setLoading] = useState(false);
   const [sort, setSort] = useState<'newest' | 'price_asc' | 'price_desc'>('newest');
+  const [filterSource, setFilterSource] = useState<string>('');
   const [page, setPage] = useState(1);
   const [total, setTotal] = useState(0);
 
@@ -113,14 +132,14 @@ export function ApartmentDrawer() {
   useEffect(() => {
     if (!activeApartmentId) return;
     setLoading(true);
-    api.getListings(activeApartmentId, { sort, page, page_size: PAGE_SIZE })
+    api.getListings(activeApartmentId, { sort, page, page_size: PAGE_SIZE, source: filterSource || undefined })
       .then(r => {
         setListings(r.data);
         setTotal(r.meta?.total ?? 0);
       })
       .catch(console.error)
       .finally(() => setLoading(false));
-  }, [activeApartmentId, sort, page, crawlStatus]);
+  }, [activeApartmentId, sort, page, filterSource, crawlStatus]);
 
   const totalPages = Math.ceil(total / PAGE_SIZE);
 
@@ -143,7 +162,7 @@ export function ApartmentDrawer() {
                   alt={apt.name} 
                   style={{ width: '100%', height: '100%', objectFit: 'cover' }} 
                 />
-                <div style={{ 
+                <div style={{
                   position: 'absolute', 
                   bottom: 0, 
                   left: 0, 
@@ -160,17 +179,21 @@ export function ApartmentDrawer() {
             )}
 
             <div className="drawer-header">
-              <div style={{ flex: 1 }}>
+              <div style={{ flex: 1, minWidth: 0 }}>
                 {!apt.images?.length && <div className="drawer-title">{apt.name}</div>}
-                <div className="drawer-address">📍 {apt.address}</div>
+                <div className="drawer-address" style={{ display: 'flex', alignItems: 'center', gap: 4 }}>
+                  <Icons.MapPin size={12} style={{ opacity: 0.6 }} />
+                  <span style={{ textOverflow: 'ellipsis', overflow: 'hidden', whiteSpace: 'nowrap' }}>{apt.address}</span>
+                </div>
                 {apt.location?.google_maps && (
                   <a
                     href={apt.location.google_maps}
                     target="_blank"
                     rel="noopener noreferrer"
-                    style={{ fontSize: 12, color: 'var(--color-accent)', textDecoration: 'none' }}
+                    style={{ fontSize: 12, color: 'var(--color-accent)', textDecoration: 'none', display: 'inline-flex', alignItems: 'center', gap: 4, marginTop: 4 }}
                   >
-                    Xem trên Google Maps →
+                    <Icons.Link size={11} />
+                    <span>Xem trên Google Maps →</span>
                   </a>
                 )}
               </div>
@@ -178,37 +201,49 @@ export function ApartmentDrawer() {
                 className="drawer-close"
                 id="btn-close-drawer"
                 onClick={() => setActiveApartment(null)}
-              >✕</button>
+                style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}
+              >
+                <Icons.X size={14} />
+              </button>
             </div>
 
             <div className="drawer-meta">
               <div className="meta-tag">
-                <span>🏢</span>
+                <Icons.Building size={12} />
                 <span style={{ color: districtColor(apt.district), fontWeight: 600 }}>{apt.district}</span>
               </div>
               {apt.ward && (
-                <div className="meta-tag"><span>📍</span><span>P. {apt.ward}</span></div>
+                <div className="meta-tag">
+                  <Icons.MapPin size={12} />
+                  <span>P. {apt.ward}</span>
+                </div>
               )}
               {apt.year && (
-                <div className="meta-tag"><span>📅</span><span>BG {apt.year}</span></div>
+                <div className="meta-tag">
+                  <Icons.Calendar size={12} />
+                  <span>BG {apt.year}</span>
+                </div>
               )}
               {apt.km_q1 !== undefined && (
-                <div className="meta-tag"><span>📍</span><span>{apt.km_q1}km Q.1</span></div>
+                <div className="meta-tag">
+                  <Icons.MapPin size={12} />
+                  <span>{apt.km_q1}km Q.1</span>
+                </div>
               )}
               {apt.balcony !== undefined && (
                 <div className="meta-tag">
-                  <span>{apt.balcony === true ? '🌿' : apt.balcony === false ? '🚫' : '❓'}</span>
+                  <Icons.Sparkles size={12} />
                   <span>Ban công{apt.balcony === 'tuy_can' ? ' (tùy căn)' : apt.balcony ? '' : ' không có'}</span>
                 </div>
               )}
               {(apt.price_range || apt.price_furnished) && (
                 <div className="meta-tag">
-                  <span>💰</span>
+                  <Icons.Activity size={12} />
                   <span>{apt.price_furnished ?? apt.price_range}</span>
                 </div>
               )}
               <div className="meta-tag">
-                <span>📋</span>
+                <Icons.FileText size={12} />
                 <span style={{ color: apt.listing_count > 0 ? 'var(--color-success)' : 'var(--color-text-muted)' }}>
                   {apt.listing_count} tin đăng
                 </span>
@@ -220,16 +255,28 @@ export function ApartmentDrawer() {
                 Feed bài đăng
                 {total > 0 && <span style={{ color: 'var(--color-text-secondary)', fontWeight: 400 }}> ({total})</span>}
               </div>
-              <select
-                id="listing-sort"
-                className="sort-select"
-                value={sort}
-                onChange={e => { setSort(e.target.value as any); setPage(1); }}
-              >
-                <option value="newest">Mới nhất</option>
-                <option value="price_asc">Giá tăng</option>
-                <option value="price_desc">Giá giảm</option>
-              </select>
+              <div style={{ display: 'flex', gap: 6 }}>
+                <select
+                  id="listing-source"
+                  className="sort-select"
+                  value={filterSource}
+                  onChange={e => { setFilterSource(e.target.value); setPage(1); }}
+                >
+                  {SOURCES.map(s => (
+                    <option key={s.value} value={s.value}>{s.label}</option>
+                  ))}
+                </select>
+                <select
+                  id="listing-sort"
+                  className="sort-select"
+                  value={sort}
+                  onChange={e => { setSort(e.target.value as any); setPage(1); }}
+                >
+                  <option value="newest">Mới nhất</option>
+                  <option value="price_asc">Giá tăng</option>
+                  <option value="price_desc">Giá giảm</option>
+                </select>
+              </div>
             </div>
 
             <div className="listings-scroll">
@@ -245,8 +292,9 @@ export function ApartmentDrawer() {
                 flexDirection: 'column',
                 gap: 12
               }}>
-                <div style={{ fontSize: 13, fontWeight: 700, textTransform: 'uppercase', color: 'var(--color-accent-hover)', letterSpacing: 0.5 }}>
-                  🏢 Thông tin dự án
+                <div style={{ fontSize: 13, fontWeight: 700, textTransform: 'uppercase', color: 'var(--color-accent-hover)', letterSpacing: 0.5, display: 'flex', alignItems: 'center', gap: 5 }}>
+                  <Icons.Building size={14} />
+                  <span>Thông tin dự án</span>
                 </div>
                 
                 <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '8px 16px', fontSize: 12 }}>
@@ -286,8 +334,9 @@ export function ApartmentDrawer() {
 
                 {apt.amenities && apt.amenities.length > 0 && (
                   <div style={{ borderTop: '1px solid var(--color-border)', paddingTop: 12, marginTop: 4 }}>
-                    <div style={{ fontSize: 11, fontWeight: 600, color: 'var(--color-text-secondary)', textTransform: 'uppercase', marginBottom: 8, letterSpacing: 0.5 }}>
-                      ✨ Tiện ích dự án
+                    <div style={{ fontSize: 11, fontWeight: 600, color: 'var(--color-text-secondary)', textTransform: 'uppercase', marginBottom: 8, letterSpacing: 0.5, display: 'flex', alignItems: 'center', gap: 4 }}>
+                      <Icons.Sparkles size={12} />
+                      <span>Tiện ích dự án</span>
                     </div>
                     <div style={{ display: 'flex', gap: 6, flexWrap: 'wrap' }}>
                       {apt.amenities.map(am => {
@@ -303,7 +352,7 @@ export function ApartmentDrawer() {
                             alignItems: 'center',
                             gap: 4
                           }}>
-                            <span>{info.icon}</span>
+                            {info.icon}
                             <span>{info.label}</span>
                           </span>
                         );
@@ -322,7 +371,9 @@ export function ApartmentDrawer() {
                 ))
               ) : listings.length === 0 ? (
                 <div className="empty-state">
-                  <div className="empty-state-icon">📭</div>
+                  <div className="empty-state-icon" style={{ display: 'flex', justifyContent: 'center', marginBottom: 8 }}>
+                    <Icons.FileText size={32} style={{ opacity: 0.3 }} />
+                  </div>
                   <div className="empty-state-text">Chưa có tin đăng</div>
                   <div className="empty-state-sub">Crawl để lấy dữ liệu cho chung cư này</div>
                 </div>

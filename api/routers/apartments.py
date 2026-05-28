@@ -168,16 +168,17 @@ def get_listings(
     def _price_val(p: dict) -> float:
         price = p.get("price", "") or ""
         import re
-        nums = re.findall(r"[\d.,]+", price.replace(",", "."))
+        nums = re.findall(r"[\d]+(?:[.,]\d+)?", price)
         if nums:
             try:
-                return float(nums[0])
+                return float(nums[0].replace(",", "."))
             except ValueError:
                 pass
         return 0.0
 
     if sort == "newest":
-        posts.sort(key=lambda p: p.get("date", ""), reverse=True)
+        from utils import parse_to_absolute_date
+        posts.sort(key=lambda p: parse_to_absolute_date(p.get("date", "")), reverse=True)
     elif sort == "price_asc":
         posts.sort(key=_price_val)
     elif sort == "price_desc":

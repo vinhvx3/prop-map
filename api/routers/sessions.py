@@ -154,6 +154,12 @@ def create_session(body: SessionCreateRequest) -> ApiResponse:
     }
     sessions.append(new_session)
     _save_sessions(sessions)
+    
+    # Tính listing_count động
+    post_db = PostDB()
+    new_session["listing_count"] = sum(
+        len(post_db.list(apartment_id=aid)) for aid in new_session.get("selected_ids", [])
+    )
     return ApiResponse(data=new_session)
 
 @router.get("/{session_id}")
@@ -162,6 +168,12 @@ def get_session(session_id: str) -> ApiResponse:
     s = next((x for x in sessions if x["id"] == session_id), None)
     if not s:
         raise HTTPException(status_code=404, detail="Session not found")
+        
+    post_db = PostDB()
+    selected_ids = s.get("selected_ids", [])
+    s["listing_count"] = sum(
+        len(post_db.list(apartment_id=aid)) for aid in selected_ids
+    )
     return ApiResponse(data=s)
 
 
@@ -187,6 +199,11 @@ def update_session(session_id: str, body: SessionUpdateRequest) -> ApiResponse:
 
     sessions[idx] = s
     _save_sessions(sessions)
+    
+    post_db = PostDB()
+    s["listing_count"] = sum(
+        len(post_db.list(apartment_id=aid)) for aid in s.get("selected_ids", [])
+    )
     return ApiResponse(data=s)
 
 
@@ -207,30 +224,61 @@ def get_session_feed(
     page: int = 1,
     page_size: int = 20,
     sort: str = "newest",
+    source: str | None = None,
 ) -> ApiResponse:
-    """Feed tổng hợp listing từ tất cả CC đã chọn trong session."""
+    """Feed tổng hợp listing từ tất cả CC đã chọn trong session, kèm tên chung cư."""
+    from db.apartments import ApartmentDB
+    from utils import parse_to_absolute_date
+    import re
+
     sessions = _load_sessions()
     s = next((x for x in sessions if x["id"] == session_id), None)
     if not s:
         raise HTTPException(status_code=404, detail="Session not found")
 
     post_db = PostDB()
+    apt_db = ApartmentDB()
     selected_ids = s.get("selected_ids", [])
+
+    # Build lookup map: apartment_id -> {name, district}
+    apt_lookup = {}
+    for aid in selected_ids:
+        apt = apt_db.get(aid)
+        if apt:
+            apt_lookup[aid] = {"name": apt["name"], "district": apt.get("district", "")}
+        else:
+            apt_lookup[aid] = {"name": aid, "district": ""}
+
     all_posts = []
     for aid in selected_ids:
-        all_posts.extend(post_db.list(apartment_id=aid))
+        posts = post_db.list(apartment_id=aid)
+        info = apt_lookup.get(aid, {"name": aid, "district": ""})
+        for p in posts:
+            p["apartment_name"] = info["name"]
+            p["district"] = info["district"]
+        all_posts.extend(posts)
 
-    # Sort
+    # Filter by source
+    if source:
+        all_posts = [p for p in all_posts if p.get("source", "").strip() == source.strip()]
+
+    # Sort helper: extract price number from Vietnamese text
+    def _price_val(p: dict) -> float:
+        price = p.get("price", "") or ""
+        nums = re.findall(r"[\d]+(?:[.,]\d+)?", price)
+        if nums:
+            try:
+                return float(nums[0].replace(",", "."))
+            except ValueError:
+                pass
+        return 0.0
+
     if sort == "newest":
-        all_posts.sort(key=lambda p: p.get("date", ""), reverse=True)
+        all_posts.sort(key=lambda p: parse_to_absolute_date(p.get("date", "")), reverse=True)
     elif sort == "price_asc":
-        all_posts.sort(key=lambda p: float(
-            __import__("re").findall(r"[\d.]+", (p.get("price") or "0").replace(",", "."))[0]
-        ) if __import__("re").findall(r"[\d.]+", (p.get("price") or "0")) else 0)
+        all_posts.sort(key=_price_val)
     elif sort == "price_desc":
-        all_posts.sort(key=lambda p: float(
-            __import__("re").findall(r"[\d.]+", (p.get("price") or "0").replace(",", "."))[0]
-        ) if __import__("re").findall(r"[\d.]+", (p.get("price") or "0")) else 0, reverse=True)
+        all_posts.sort(key=_price_val, reverse=True)
 
     total = len(all_posts)
     start = (page - 1) * page_size

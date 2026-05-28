@@ -10,6 +10,8 @@ import { Toast } from './components/Toast';
 import { useStore } from './store';
 import { api } from './api';
 import type { SessionSummary } from './api';
+import { SessionFeedModal } from './components/SessionFeedModal';
+import { Icons } from './components/Icons';
 
 export default function App() {
   const {
@@ -26,6 +28,7 @@ export default function App() {
   } = useStore();
 
   const [clearTrigger, setClearTrigger] = useState(0);
+  const [activeFeedSession, setActiveFeedSession] = useState<SessionSummary | null>(null);
 
   // When polygon changes, search apartments
   const searchApartments = useCallback(async (polygon: any, autoSelectAll = false) => {
@@ -164,10 +167,13 @@ export default function App() {
     }
   }, [currentPolygon, currentSession, searchApartments]);
 
-  const handlePolygonDrawn = useCallback((geoJson: any) => {
+  const handlePolygonDrawn = useCallback((geoJson: any, isUserAction = false) => {
     setCurrentPolygon(geoJson);
     searchApartments(geoJson, true);
-  }, [searchApartments, setCurrentPolygon]);
+    if (isUserAction && useStore.getState().currentSession) {
+      setCurrentSession(null);
+    }
+  }, [searchApartments, setCurrentPolygon, setCurrentSession]);
 
   const handleClearPolygon = useCallback(() => {
     setClearTrigger((n: number) => n + 1);
@@ -202,6 +208,15 @@ export default function App() {
         onNewSession={handleNewSession}
         onSaveSession={handleSaveSession}
         onCrawlDone={() => searchApartments(currentPolygon)}
+        onOpenFeed={() => currentSession && setActiveFeedSession({
+          id: currentSession.id,
+          name: currentSession.name,
+          status: currentSession.status,
+          apartment_count: currentSession.selected_ids?.length ?? 0,
+          listing_count: currentSession.listing_count ?? 0,
+          last_crawl: currentSession.last_crawl,
+          created_at: currentSession.created_at,
+        })}
       />
 
       <div className="app-body">
@@ -213,8 +228,9 @@ export default function App() {
           />
 
           {/* Map toolbar hint */}
-          <div className="map-hint">
-            ✏️ Dùng công cụ Draw (góc trái bản đồ) để vẽ vùng tìm kiếm
+          <div className="map-hint" style={{ display: 'inline-flex', alignItems: 'center', gap: 6 }}>
+            <Icons.Edit size={12} />
+            <span>Dùng công cụ Draw (góc trái bản đồ) để vẽ vùng tìm kiếm</span>
           </div>
 
           {/* Crawl dynamic logs panel */}
@@ -238,6 +254,14 @@ export default function App() {
 
       {/* Toast notifications */}
       <Toast />
+
+      {/* Main Feed Modal */}
+      {activeFeedSession && (
+        <SessionFeedModal
+          session={activeFeedSession}
+          onClose={() => setActiveFeedSession(null)}
+        />
+      )}
     </div>
   );
 }

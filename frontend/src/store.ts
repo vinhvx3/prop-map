@@ -8,6 +8,7 @@ interface Filters {
   yearMax: number;
   kmMax: number;
   balcony: 'all' | 'yes' | 'no';
+  searchQuery?: string;  // Tìm kiếm chung cư theo tên
 }
 
 interface AppState {
@@ -75,6 +76,7 @@ const DEFAULT_FILTERS: Filters = {
   yearMax: 2025,
   kmMax: 12,
   balcony: 'all',
+  searchQuery: '',
 };
 
 export const useStore = create<AppState>((set) => ({
@@ -177,12 +179,31 @@ export const useStore = create<AppState>((set) => ({
 // Derived: filtered apartments
 export function useFilteredApartments() {
   const { apartments, filters } = useStore();
+  const query = (filters.searchQuery || '').trim().toLowerCase();
+
+  // Hàm phụ chuẩn hóa tiếng Việt không dấu để tìm kiếm thông minh hơn
+  const removeAccents = (str: string) => {
+    return str
+      .normalize('NFD')
+      .replace(/[\u0300-\u036f]/g, '')
+      .replace(/đ/g, 'd')
+      .replace(/Đ/g, 'D');
+  };
+
+  const normalizedQuery = removeAccents(query);
+
   return apartments.filter(apt => {
     if (filters.districts.length > 0 && !filters.districts.includes(apt.district)) return false;
     if (apt.year && (apt.year < filters.yearMin || apt.year > filters.yearMax)) return false;
     if (apt.km_q1 && apt.km_q1 > filters.kmMax) return false;
     if (filters.balcony === 'yes' && apt.balcony !== true) return false;
     if (filters.balcony === 'no' && apt.balcony === true) return false;
+
+    if (normalizedQuery) {
+      const nameLower = removeAccents((apt.name || '').toLowerCase());
+      if (!nameLower.includes(normalizedQuery)) return false;
+    }
+
     return true;
   });
 }

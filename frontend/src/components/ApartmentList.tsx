@@ -1,6 +1,7 @@
 import React from 'react';
 import { useStore, useFilteredApartments } from '../store';
 import type { Apartment } from '../api';
+import { Icons } from './Icons';
 
 function districtBadgeClass(d: string) {
   if (d === 'Q.7') return 'district-badge q7';
@@ -44,8 +45,9 @@ function ApartmentCard({ apt }: ApartmentCardProps) {
           }
         }}
         title={isSelected ? 'Bỏ chọn' : 'Chọn'}
+        style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}
       >
-        {isSelected && <span style={{ color: 'white', fontSize: 10, lineHeight: 1 }}>✓</span>}
+        {isSelected && <Icons.Check size={10} color="white" />}
       </div>
 
       <div className="apt-card-info">
@@ -53,7 +55,10 @@ function ApartmentCard({ apt }: ApartmentCardProps) {
         <div className="apt-card-sub">
           <span className={districtBadgeClass(apt.district)}>{apt.district}</span>
           <span>{apt.year ?? '—'}</span>
-          <span>📍 {apt.km_q1}km</span>
+          <span style={{ display: 'inline-flex', alignItems: 'center', gap: 3 }}>
+            <Icons.MapPin size={11} style={{ opacity: 0.6 }} />
+            <span>{apt.km_q1}km</span>
+          </span>
         </div>
       </div>
 
@@ -68,7 +73,7 @@ function ApartmentCard({ apt }: ApartmentCardProps) {
 }
 
 export function ApartmentList() {
-  const { selectAll, deselectAll, selectedIds } = useStore();
+  const { selectAll, deselectAll, filters, setFilters } = useStore();
   const filtered = useFilteredApartments();
 
   return (
@@ -84,22 +89,77 @@ export function ApartmentList() {
             id="btn-select-all"
             onClick={selectAll}
             title="Chọn tất cả"
-          >✓</button>
+            style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}
+          >
+            <Icons.Check size={12} />
+          </button>
           <button
             className="icon-btn"
             id="btn-deselect-all"
             onClick={deselectAll}
             title="Bỏ chọn tất cả"
-          >✕</button>
+            style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}
+          >
+            <Icons.X size={12} />
+          </button>
+        </div>
+      </div>
+
+      <div className="apt-search-container" style={{ padding: '0 12px 12px 12px' }}>
+        <div style={{ position: 'relative', display: 'flex', alignItems: 'center' }}>
+          <span style={{ position: 'absolute', left: 10, color: '#8c959f', display: 'flex', alignItems: 'center' }}>
+            <Icons.Search size={12} />
+          </span>
+          <input
+            type="text"
+            className="input"
+            placeholder="Tìm theo tên (Sunrise, Happy...)"
+            style={{
+              padding: '6px 12px 6px 30px',
+              fontSize: '12px',
+              width: '100%',
+              height: '32px',
+              borderRadius: '6px',
+              backgroundColor: '#0d1117',
+              border: '1px solid var(--color-border)',
+              color: '#fff',
+              outline: 'none',
+              transition: 'border-color 0.2s',
+            }}
+            value={filters.searchQuery || ''}
+            onChange={(e) => setFilters({ searchQuery: e.target.value })}
+          />
+          {(filters.searchQuery || '') && (
+            <button
+              className="icon-btn"
+              style={{
+                position: 'absolute',
+                right: 8,
+                color: '#8c959f',
+                background: 'none',
+                border: 'none',
+                cursor: 'pointer',
+                padding: 4,
+                display: 'flex',
+                alignItems: 'center',
+              }}
+              onClick={() => setFilters({ searchQuery: '' })}
+              title="Xóa tìm kiếm"
+            >
+              <Icons.X size={11} />
+            </button>
+          )}
         </div>
       </div>
 
       <div className="apt-list-scroll">
         {filtered.length === 0 ? (
           <div className="empty-state">
-            <div className="empty-state-icon">🗺</div>
-            <div className="empty-state-text">Vẽ polygon trên bản đồ</div>
-            <div className="empty-state-sub">để tìm chung cư trong vùng</div>
+            <div className="empty-state-icon" style={{ marginBottom: 8, display: 'flex', justifyContent: 'center' }}>
+              <Icons.Map size={32} style={{ opacity: 0.3 }} />
+            </div>
+            <div className="empty-state-text">Không tìm thấy chung cư nào</div>
+            <div className="empty-state-sub">Vẽ vùng mới hoặc xóa bộ lọc để thử lại</div>
           </div>
         ) : (
           filtered.map(apt => <ApartmentCard key={apt.id} apt={apt} />)

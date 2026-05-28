@@ -156,7 +156,7 @@ function createAptIcon(name: string, district: string, segment: string, isSelect
 }
 
 interface MapViewProps {
-  onPolygonDrawn: (geoJson: any) => void;
+  onPolygonDrawn: (geoJson: any, isUserAction?: boolean) => void;
   clearTrigger: number;
 }
 
@@ -183,9 +183,9 @@ export function MapView({ onPolygonDrawn, clearTrigger }: MapViewProps) {
   const { setActiveApartment, activeApartmentId, selectedIds, setIsDrawing, currentPolygon } = useStore();
   const filtered = useFilteredApartments();
   const skipNextPolygonSyncRef = useRef(false);
-  const updatePolygonFromMap = useCallback((geom: any) => {
+  const updatePolygonFromMap = useCallback((geom: any, isUserAction = false) => {
     skipNextPolygonSyncRef.current = true;
-    onPolygonDrawn(geom);
+    onPolygonDrawn(geom, isUserAction);
   }, [onPolygonDrawn]);
 
   // Generate coordinates for an inscribed ellipse inside bounding box
@@ -374,7 +374,7 @@ export function MapView({ onPolygonDrawn, clearTrigger }: MapViewProps) {
         (layer as any).editing.enable();
       }
 
-      updatePolygonFromMap(layer.toGeoJSON().geometry);
+      updatePolygonFromMap(layer.toGeoJSON().geometry, true);
     };
 
     const handleMouseUp = () => {
@@ -382,7 +382,7 @@ export function MapView({ onPolygonDrawn, clearTrigger }: MapViewProps) {
         isDragging = false;
         startLatLng = null;
         map.dragging.enable();
-        updatePolygonFromMap(layer.toGeoJSON().geometry);
+        updatePolygonFromMap(layer.toGeoJSON().geometry, true);
       }
     };
 
@@ -391,15 +391,15 @@ export function MapView({ onPolygonDrawn, clearTrigger }: MapViewProps) {
     layer.on('mouseup', handleMouseUp);
 
     layer.on('edit', () => {
-      updatePolygonFromMap(layer.toGeoJSON().geometry);
+      updatePolygonFromMap(layer.toGeoJSON().geometry, true);
     });
     layer.on('editdrag', () => {
-      updatePolygonFromMap(layer.toGeoJSON().geometry);
+      updatePolygonFromMap(layer.toGeoJSON().geometry, true);
     });
 
     const onEditVertex = (event: any) => {
       if (event.poly === layer) {
-        updatePolygonFromMap(layer.toGeoJSON().geometry);
+        updatePolygonFromMap(layer.toGeoJSON().geometry, true);
       }
     };
     map.on(L.Draw.Event.EDITVERTEX, onEditVertex);
@@ -436,9 +436,9 @@ export function MapView({ onPolygonDrawn, clearTrigger }: MapViewProps) {
 
     renderHandles(initialBounds, (newBounds) => {
       updateShape(newBounds);
-      updatePolygonFromMap(shapeLayer.toGeoJSON().geometry);
+      updatePolygonFromMap(shapeLayer.toGeoJSON().geometry, true);
     }, () => {
-      updatePolygonFromMap(shapeLayer.toGeoJSON().geometry);
+      updatePolygonFromMap(shapeLayer.toGeoJSON().geometry, true);
     });
 
     let isDragging = false;
@@ -474,7 +474,7 @@ export function MapView({ onPolygonDrawn, clearTrigger }: MapViewProps) {
       );
 
       updateShape(newBounds);
-      updatePolygonFromMap(shapeLayer.toGeoJSON().geometry);
+      updatePolygonFromMap(shapeLayer.toGeoJSON().geometry, true);
     };
 
     const endDrag = () => {
@@ -482,7 +482,7 @@ export function MapView({ onPolygonDrawn, clearTrigger }: MapViewProps) {
         isDragging = false;
         startMouseLatLng = null;
         mapRef.current?.dragging.enable();
-        updatePolygonFromMap(shapeLayer.toGeoJSON().geometry);
+        updatePolygonFromMap(shapeLayer.toGeoJSON().geometry, true);
       }
     };
 
@@ -539,7 +539,7 @@ export function MapView({ onPolygonDrawn, clearTrigger }: MapViewProps) {
       drawnLayersRef.current.clearLayers();
     }
     useStore.getState().setCurrentShapeType(null);
-    updatePolygonFromMap(null);
+    updatePolygonFromMap(null, true);
     setActiveTool(null);
     polygonHandlerRef.current?.disable();
   };
@@ -696,12 +696,12 @@ export function MapView({ onPolygonDrawn, clearTrigger }: MapViewProps) {
       useStore.getState().setCurrentShapeType('polygon');
       setupPolygonDrag(layer);
 
-      updatePolygonFromMap(layer.toGeoJSON().geometry);
+      updatePolygonFromMap(layer.toGeoJSON().geometry, true);
     });
 
     map.on(L.Draw.Event.DELETED, () => {
       useStore.getState().setCurrentShapeType(null);
-      updatePolygonFromMap(null);
+      updatePolygonFromMap(null, true);
     });
 
     map.on('zoomend', () => {

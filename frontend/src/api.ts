@@ -56,6 +56,7 @@ export interface Session {
   crawl_config: Record<string, any>;
   status: 'idle' | 'running' | 'error';
   last_crawl?: string;
+  listing_count?: number;
   created_at: string;
   updated_at?: string;
 }
@@ -125,4 +126,16 @@ export const api = {
 
   stopCrawl: (sessionId: string) =>
     req<{ success: boolean; session_id: string }>('POST', `/sessions/${sessionId}/crawl/stop`),
+
+  getSessionFeed: (sessionId: string, params: { page?: number; page_size?: number; sort?: string; source?: string } = {}) => {
+    const qs = new URLSearchParams(
+      Object.entries(params).filter(([, v]) => v != null).map(([k, v]) => [k, String(v)])
+    ).toString();
+    return req<FeedListing[]>('GET', `/sessions/${sessionId}/feed${qs ? '?' + qs : ''}`);
+  },
 };
+
+export interface FeedListing extends Listing {
+  apartment_name: string;
+  district: string;
+}

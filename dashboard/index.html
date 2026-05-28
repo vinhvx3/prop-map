@@ -1,0 +1,748 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thuê Căn Hộ 2PN - Dashboard</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --bg-gradient: radial-gradient(circle at top right, #1e1e38 0%, #0d0d15 100%);
+            --panel-bg: rgba(22, 22, 37, 0.7);
+            --panel-border: rgba(255, 255, 255, 0.08);
+            --text-primary: #f3f4f6;
+            --text-secondary: #9ca3af;
+            --accent-cyan: #00f2fe;
+            --accent-purple: #9d4edd;
+            --accent-blue: #3b82f6;
+            --hover-bg: rgba(255, 255, 255, 0.04);
+            --card-glow: rgba(0, 242, 254, 0.15);
+            --mogi-color: #ff9f43;
+            --nhatot-color: #2ecc71;
+            --bds-color: #3498db;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            scrollbar-width: thin;
+            scrollbar-color: rgba(255, 255, 255, 0.2) transparent;
+        }
+
+        body {
+            font-family: 'Outfit', sans-serif;
+            background: var(--bg-gradient);
+            color: var(--text-primary);
+            min-height: 100vh;
+            padding: 2rem;
+            line-height: 1.5;
+            overflow-x: hidden;
+        }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+            height: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: transparent;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: rgba(255, 255, 255, 0.2);
+        }
+
+        /* Glassmorphism Containers */
+        .glass-panel {
+            background: var(--panel-bg);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid var(--panel-border);
+            border-radius: 16px;
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.4);
+            padding: 1.5rem;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        header {
+            margin-bottom: 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .brand h1 {
+            font-size: 2.2rem;
+            font-weight: 700;
+            background: linear-gradient(135deg, var(--accent-cyan) 0%, var(--accent-purple) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            letter-spacing: -0.5px;
+        }
+
+        .brand p {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+            margin-top: 0.25rem;
+        }
+
+        /* KPI Dashboard Grid */
+        .kpi-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 1.25rem;
+            margin-bottom: 2rem;
+        }
+
+        .kpi-card {
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .kpi-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 4px;
+            height: 100%;
+            background: linear-gradient(to bottom, var(--accent-cyan), var(--accent-purple));
+        }
+
+        .kpi-card.mogi::before { background: var(--mogi-color); }
+        .kpi-card.nhatot::before { background: var(--nhatot-color); }
+        .kpi-card.bds::before { background: var(--bds-color); }
+
+        .kpi-title {
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--text-secondary);
+            font-weight: 600;
+        }
+
+        .kpi-value {
+            font-size: 1.8rem;
+            font-weight: 700;
+            margin: 0.5rem 0;
+            color: var(--text-primary);
+        }
+
+        .kpi-subtitle {
+            font-size: 0.8rem;
+            color: var(--text-secondary);
+        }
+
+        /* Filter Controls */
+        .filter-panel {
+            margin-bottom: 2rem;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.25rem;
+        }
+
+        .filter-group {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+
+        .filter-group label {
+            font-size: 0.85rem;
+            font-weight: 500;
+            color: var(--text-secondary);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .input-control {
+            background: rgba(0, 0, 0, 0.3);
+            border: 1px solid var(--panel-border);
+            border-radius: 8px;
+            color: var(--text-primary);
+            padding: 0.75rem 1rem;
+            font-family: inherit;
+            font-size: 0.95rem;
+            outline: none;
+            transition: all 0.2s ease;
+        }
+
+        .input-control:focus {
+            border-color: var(--accent-cyan);
+            box-shadow: 0 0 0 2px var(--card-glow);
+        }
+
+        .range-inputs {
+            display: flex;
+            gap: 0.5rem;
+            align-items: center;
+        }
+
+        .range-inputs span {
+            color: var(--text-secondary);
+        }
+
+        /* Main Data Table Panel */
+        .table-container {
+            overflow-x: auto;
+            border-radius: 12px;
+            border: 1px solid var(--panel-border);
+            background: rgba(0, 0, 0, 0.15);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            text-align: left;
+            font-size: 0.95rem;
+        }
+
+        th {
+            background: rgba(15, 15, 27, 0.85);
+            padding: 1rem 1.25rem;
+            font-weight: 600;
+            color: var(--text-primary);
+            border-bottom: 1px solid var(--panel-border);
+            cursor: pointer;
+            user-select: none;
+            transition: background-color 0.2s;
+            white-space: nowrap;
+        }
+
+        th:hover {
+            background: rgba(255, 255, 255, 0.05);
+        }
+
+        th .sort-icon {
+            display: inline-block;
+            margin-left: 0.5rem;
+            font-size: 0.8rem;
+            color: var(--text-secondary);
+            transition: transform 0.2s;
+        }
+
+        th.sorted-asc .sort-icon {
+            transform: rotate(180deg);
+            color: var(--accent-cyan);
+        }
+
+        th.sorted-desc .sort-icon {
+            color: var(--accent-cyan);
+        }
+
+        td {
+            padding: 1rem 1.25rem;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.03);
+            color: var(--text-primary);
+            vertical-align: middle;
+        }
+
+        tr:last-child td {
+            border-bottom: none;
+        }
+
+        tr {
+            transition: background-color 0.2s ease;
+        }
+
+        tr:hover {
+            background-color: var(--hover-bg);
+        }
+
+        /* Badges styling */
+        .badge {
+            display: inline-block;
+            padding: 0.25rem 0.6rem;
+            border-radius: 6px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            white-space: nowrap;
+        }
+
+        .badge-source {
+            color: #fff;
+        }
+        .badge-mogi { background-color: var(--mogi-color); }
+        .badge-nhatot { background-color: var(--nhatot-color); }
+        .badge-bds { background-color: var(--bds-color); }
+
+        .badge-apartment {
+            background-color: rgba(157, 78, 221, 0.15);
+            color: #d78cfc;
+            border: 1px solid rgba(157, 78, 221, 0.3);
+        }
+
+        /* Link buttons */
+        .btn-link {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, var(--accent-cyan) 0%, var(--accent-blue) 100%);
+            color: #0b0b14;
+            border: none;
+            padding: 0.4rem 0.8rem;
+            border-radius: 6px;
+            font-weight: 600;
+            font-size: 0.8rem;
+            text-decoration: none;
+            transition: all 0.2s ease;
+            box-shadow: 0 2px 8px rgba(0, 242, 254, 0.3);
+        }
+
+        .btn-link:hover {
+            transform: translateY(-1px);
+            box-shadow: 0 4px 12px rgba(0, 242, 254, 0.5);
+            filter: brightness(1.1);
+        }
+
+        .title-text {
+            font-weight: 500;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            max-width: 400px;
+        }
+
+        .author-text {
+            color: var(--text-secondary);
+            font-size: 0.85rem;
+            white-space: pre-line;
+        }
+
+        /* Status & Results Counter */
+        .results-meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 1rem;
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+        }
+
+        /* Empty state */
+        .empty-state {
+            padding: 3rem;
+            text-align: center;
+            color: var(--text-secondary);
+            font-size: 1.1rem;
+        }
+
+        .empty-state svg {
+            width: 48px;
+            height: 48px;
+            margin-bottom: 1rem;
+            stroke: var(--text-secondary);
+        }
+
+        /* Responsive breakpoints */
+        @media (max-width: 768px) {
+            body {
+                padding: 1rem;
+            }
+            .brand h1 {
+                font-size: 1.8rem;
+            }
+            td, th {
+                padding: 0.75rem 0.85rem;
+                font-size: 0.85rem;
+            }
+            .title-text {
+                max-width: 200px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="glass-panel">
+        <div class="brand">
+            <h1>Căn Hộ Thuê 2PN</h1>
+            <p>Dashboard lọc, so sánh và sắp xếp dữ liệu căn hộ thực tế tại TP.HCM</p>
+        </div>
+        <div>
+            <span id="update-time" class="badge badge-apartment" style="font-size: 0.85rem; padding: 0.5rem 0.8rem;">Cập nhật: Đang tải...</span>
+        </div>
+    </header>
+
+    <!-- KPI Dashboard Stats -->
+    <div class="kpi-grid">
+        <div class="glass-panel kpi-card">
+            <span class="kpi-title">Tổng tin đăng sạch</span>
+            <span class="kpi-value" id="kpi-total">0</span>
+            <span class="kpi-subtitle">Đã loại trùng & tin rác</span>
+        </div>
+        <div class="glass-panel kpi-card mogi">
+            <span class="kpi-title">Tin từ Mogi</span>
+            <span class="kpi-value" id="kpi-mogi">0</span>
+            <span class="kpi-subtitle">Nguồn Mogi.vn</span>
+        </div>
+        <div class="glass-panel kpi-card nhatot">
+            <span class="kpi-title">Tin từ Nhà Tốt</span>
+            <span class="kpi-value" id="kpi-nhatot">0</span>
+            <span class="kpi-subtitle">Nguồn Nhatot.com</span>
+        </div>
+        <div class="glass-panel kpi-card bds">
+            <span class="kpi-title">Tin Batdongsan</span>
+            <span class="kpi-value" id="kpi-bds">0</span>
+            <span class="kpi-subtitle">Nguồn Batdongsan.com.vn</span>
+        </div>
+    </div>
+
+    <!-- Filter Controls Panel -->
+    <div class="glass-panel filter-panel">
+        <div class="filter-group">
+            <label for="filter-search">Tìm kiếm nhanh</label>
+            <input type="text" id="filter-search" class="input-control" placeholder="Tìm theo tiêu đề, tác giả...">
+        </div>
+        <div class="filter-group">
+            <label for="filter-apartment">Chung cư / Dự án</label>
+            <select id="filter-apartment" class="input-control">
+                <option value="ALL">Tất cả chung cư</option>
+            </select>
+        </div>
+        <div class="filter-group">
+            <label for="filter-source">Nguồn tin</label>
+            <select id="filter-source" class="input-control">
+                <option value="ALL">Tất cả các nguồn</option>
+                <option value="mogi.vn">Mogi</option>
+                <option value="nhatot.com">Nhà Tốt</option>
+                <option value="batdongsan.com.vn">Batdongsan</option>
+            </select>
+        </div>
+        <div class="filter-group">
+            <label>Khoảng giá (Triệu/tháng)</label>
+            <div class="range-inputs">
+                <input type="number" id="filter-price-min" class="input-control" placeholder="Min" min="0" step="0.5">
+                <span>-</span>
+                <input type="number" id="filter-price-max" class="input-control" placeholder="Max" min="0" step="0.5">
+            </div>
+        </div>
+        <div class="filter-group">
+            <label>Diện tích (m²)</label>
+            <div class="range-inputs">
+                <input type="number" id="filter-area-min" class="input-control" placeholder="Min" min="0">
+                <span>-</span>
+                <input type="number" id="filter-area-max" class="input-control" placeholder="Max" min="0">
+            </div>
+        </div>
+    </div>
+
+    <!-- Data Table Panel -->
+    <div class="glass-panel">
+        <div class="table-container">
+            <table id="listings-table">
+                <thead>
+                    <tr>
+                        <th style="width: 50px;">STT</th>
+                        <th data-field="apartment_name">Chung cư <span class="sort-icon">⇅</span></th>
+                        <th style="max-width: 400px;">Tiêu đề tin đăng</th>
+                        <th data-field="price">Giá thuê <span class="sort-icon">⇅</span></th>
+                        <th data-field="area">Diện tích <span class="sort-icon">⇅</span></th>
+                        <th data-field="date">Ngày đăng <span class="sort-icon">⇅</span></th>
+                        <th>Thông tin liên hệ</th>
+                        <th>Nguồn</th>
+                        <th style="width: 80px; text-align: center;">Liên kết</th>
+                    </tr>
+                </thead>
+                <tbody id="listings-body">
+                    <!-- Dòng dữ liệu được render tự động qua JS -->
+                </tbody>
+            </table>
+            <div id="table-empty" class="empty-state" style="display: none;">
+                <svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m9-.75a9 9 0 11-18 0 9 9 0 0118 0zm-9 3.75h.008v.008H12v-.008z"></path>
+                </svg>
+                <p>Không tìm thấy tin đăng nào thỏa mãn bộ lọc hiện tại.</p>
+            </div>
+        </div>
+        
+        <div class="results-meta">
+            <div id="results-count">Đang tính toán kết quả...</div>
+            <div>Nhấn vào tiêu đề cột để sắp xếp dữ liệu</div>
+        </div>
+    </div>
+
+    <!-- Dữ liệu JS được export động qua file data.js cục bộ -->
+    <script src="data.js"></script>
+
+    <script>
+        // Khởi tạo danh sách mặc định nếu data.js lỗi hoặc thiếu
+        const rawData = window.CRAWL_DATA || [];
+        
+        // Trạng thái sort hiện tại
+        let currentSort = {
+            field: 'date',
+            asc: false // Mặc định sắp xếp ngày đăng mới nhất trước
+        };
+
+        // Hàm chuẩn hóa tiếng Việt không dấu phục vụ tìm kiếm nhanh
+        function removeVietnameseTones(str) {
+            if (!str) return '';
+            str = str.replace(/à|á|ạ|ả|ã|â|ầ|ấ|ậ|ẩ|ẫ|ă|ằ|ắ|ặ|ẳ|ẵ/g, "a");
+            str = str.replace(/è|é|ẹ|ẻ|ẽ|ê|ề|ế|ệ|ể|ễ/g, "e");
+            str = str.replace(/ì|í|ị|ỉ|ĩ/g, "i");
+            str = str.replace(/ò|ó|ọ|ỏ|õ|ô|ồ|ố|ộ|ổ|ỗ|ơ|ờ|ớ|ợ|ở|ỡ/g, "o");
+            str = str.replace(/ù|ú|ụ|ủ|ũ|ư|ừ|ứ|ự|ử|ữ/g, "u");
+            str = str.replace(/ỳ|ý|ỵ|ỷ|ỹ/g, "y");
+            str = str.replace(/đ/g, "d");
+            str = str.replace(/À|Á|Ạ|Ả|Ã|Â|Ầ|Ấ|Ậ|Ẩ|Ẫ|Ă|Ằ|Ắ|Ặ|Ẳ|Ẵ/g, "A");
+            str = str.replace(/È|É|Ẹ|Ẻ|E|Ê|Ề|Ế|Ệ|Ể|Ễ/g, "E");
+            str = str.replace(/Ì|Í|Ị|Ỉ|Ĩ/g, "I");
+            str = str.replace(/Ò|Ó|Ọ|Ỏ|Õ|Ô|Ồ|Ố|Ộ|Ổ|Ỗ|Ơ|Ờ|Ớ|Ợ|Ở|Ỡ/g, "O");
+            str = str.replace(/Ù|Ú|Ụ|Ủ|Ũ|Ư|Ừ|Ứ|Ự|Ử|Ữ/g, "U");
+            str = str.replace(/Ỳ|Ý|Y|Ỷ|Ỹ/g, "Y");
+            str = str.replace(/Đ/g, "D");
+            str = str.replace(/\u0300|\u0301|\u0303|\u0309|\u0323/g, ""); 
+            str = str.replace(/\u02C6|\u0306|\u031B/g, ""); 
+            str = str.replace(/ + /g, " ");
+            return str.trim().toLowerCase();
+        }
+
+        // Phân tích giá thành số (Triệu VNĐ/tháng)
+        function parsePrice(priceStr) {
+            if (!priceStr) return 0;
+            let val = priceStr.toLowerCase().replace(/,/g, '.');
+            let match = val.match(/([\d.]+)\s*(triệu|tỷ)/);
+            if (match) {
+                let num = parseFloat(match[1]);
+                if (match[2] === 'tỷ') num *= 1000;
+                return num;
+            }
+            match = val.match(/([\d.]+)/);
+            if (match) {
+                let num = parseFloat(match[1]);
+                if (num >= 1000000) return num / 1000000;
+                if (num >= 1000) return num / 1000;
+                return num;
+            }
+            return 0;
+        }
+
+        // Phân tích diện tích thành số m2
+        function parseArea(areaStr) {
+            if (!areaStr) return 0;
+            let match = areaStr.match(/([\d.,]+)/);
+            if (match) {
+                return parseFloat(match[1].replace(/,/g, '.'));
+            }
+            return 0;
+        }
+
+        // Bổ sung các trường số để filter và sort nhanh
+        const parsedData = rawData.map(item => ({
+            ...item,
+            parsedPrice: parsePrice(item.price),
+            parsedArea: parseArea(item.area),
+            searchIndex: removeVietnameseTones(item.title + ' ' + (item.apartment_name || '') + ' ' + (item.author || ''))
+        }));
+
+        // Khởi tạo giao diện khi tải trang
+        document.addEventListener('DOMContentLoaded', () => {
+            initKPIs();
+            populateApartments();
+            renderTable();
+            setupEventListeners();
+            
+            // Cập nhật nhãn thời gian
+            const updateTimeSpan = document.getElementById('update-time');
+            if (parsedData.length > 0) {
+                // Lấy ngày đăng mới nhất của các tin làm mốc thời gian cập nhật
+                const dates = parsedData.map(x => x.date).filter(Boolean).sort();
+                if (dates.length > 0) {
+                    updateTimeSpan.innerText = `Tin mới nhất: ${dates[dates.length - 1]}`;
+                } else {
+                    updateTimeSpan.innerText = `Dữ liệu tĩnh`;
+                }
+            } else {
+                updateTimeSpan.innerText = `Không có dữ liệu`;
+            }
+        });
+
+        // Tính toán số liệu thống kê nhanh
+        function initKPIs() {
+            document.getElementById('kpi-total').innerText = parsedData.length;
+            document.getElementById('kpi-mogi').innerText = parsedData.filter(x => x.source === 'mogi.vn').length;
+            document.getElementById('kpi-nhatot').innerText = parsedData.filter(x => x.source === 'nhatot.com').length;
+            document.getElementById('kpi-bds').innerText = parsedData.filter(x => x.source === 'batdongsan.com.vn').length;
+        }
+
+        // Tự động điền danh sách dự án vào Dropdown
+        function populateApartments() {
+            const aptSelect = document.getElementById('filter-apartment');
+            const apartments = [...new Set(parsedData.map(x => x.apartment_name))].filter(Boolean).sort();
+            
+            apartments.forEach(apt => {
+                const opt = document.createElement('option');
+                opt.value = apt;
+                opt.innerText = apt;
+                aptSelect.appendChild(opt);
+            });
+        }
+
+        // Lấy lớp CSS tương ứng cho Badge nguồn
+        function getSourceBadgeClass(source) {
+            const src = source.toLowerCase();
+            if (src.includes('mogi')) return 'badge-mogi';
+            if (src.includes('nhà tốt') || src.includes('nhatot')) return 'badge-nhatot';
+            if (src.includes('batdongsan') || src.includes('bds')) return 'badge-bds';
+            return '';
+        }
+
+        // Thực hiện render dữ liệu ra bảng
+        function renderTable() {
+            const listingsBody = document.getElementById('listings-body');
+            const emptyState = document.getElementById('table-empty');
+            
+            // Lấy các giá trị filter hiện tại
+            const searchText = removeVietnameseTones(document.getElementById('filter-search').value);
+            const aptFilter = document.getElementById('filter-apartment').value;
+            const sourceFilter = document.getElementById('filter-source').value;
+            
+            const priceMin = parseFloat(document.getElementById('filter-price-min').value) || 0;
+            const priceMax = parseFloat(document.getElementById('filter-price-max').value) || Infinity;
+            
+            const areaMin = parseFloat(document.getElementById('filter-area-min').value) || 0;
+            const areaMax = parseFloat(document.getElementById('filter-area-max').value) || Infinity;
+
+            // Lọc dữ liệu theo điều kiện
+            let filtered = parsedData.filter(item => {
+                // Search Text
+                if (searchText && !item.searchIndex.includes(searchText)) return false;
+                
+                // Apartment
+                if (aptFilter !== 'ALL' && item.apartment_name !== aptFilter) return false;
+                
+                // Source
+                if (sourceFilter !== 'ALL' && item.source !== sourceFilter) return false;
+                
+                // Price
+                if (item.parsedPrice < priceMin || item.parsedPrice > priceMax) return false;
+                
+                // Area
+                if (item.parsedArea < areaMin || item.parsedArea > areaMax) return false;
+                
+                return true;
+            });
+
+            // Sắp xếp dữ liệu theo trường hiện tại
+            filtered.sort((a, b) => {
+                let valA, valB;
+                
+                if (currentSort.field === 'price') {
+                    valA = a.parsedPrice;
+                    valB = b.parsedPrice;
+                } else if (currentSort.field === 'area') {
+                    valA = a.parsedArea;
+                    valB = b.parsedArea;
+                } else if (currentSort.field === 'apartment_name') {
+                    valA = a.apartment_name || '';
+                    valB = b.apartment_name || '';
+                } else { // default is date
+                    valA = a.date || '';
+                    valB = b.date || '';
+                }
+
+                if (valA < valB) return currentSort.asc ? -1 : 1;
+                if (valA > valB) return currentSort.asc ? 1 : -1;
+                return 0;
+            });
+
+            // Render DOM
+            listingsBody.innerHTML = '';
+            
+            if (filtered.length === 0) {
+                emptyState.style.display = 'block';
+                document.getElementById('results-count').innerText = `Tìm thấy 0 / ${parsedData.length} tin đăng`;
+                return;
+            }
+            
+            emptyState.style.display = 'none';
+            document.getElementById('results-count').innerText = `Đang hiển thị ${filtered.length} / ${parsedData.length} tin đăng`;
+
+            filtered.forEach((item, index) => {
+                const tr = document.createElement('tr');
+                
+                tr.innerHTML = `
+                    <td>${index + 1}</td>
+                    <td><span class="badge badge-apartment">${item.apartment_name || 'N/A'}</span></td>
+                    <td>
+                        <div class="title-text" title="${item.title}">${item.title}</div>
+                    </td>
+                    <td style="font-weight: 600; color: #fff;">${item.price}</td>
+                    <td style="font-weight: 500;">${item.area}</td>
+                    <td style="color: var(--text-secondary);">${item.date || 'N/A'}</td>
+                    <td>
+                        <div class="author-text">${item.author || 'Không có thông tin'}</div>
+                    </td>
+                    <td>
+                        <span class="badge badge-source ${getSourceBadgeClass(item.source)}">${item.source}</span>
+                    </td>
+                    <td style="text-align: center;">
+                        <a href="${item.link}" target="_blank" class="btn-link">Chi tiết</a>
+                    </td>
+                `;
+                listingsBody.appendChild(tr);
+            });
+        }
+
+        // Cập nhật UI hiển thị trạng thái cột đang sort
+        function updateSortUI() {
+            document.querySelectorAll('th[data-field]').forEach(th => {
+                const field = th.getAttribute('data-field');
+                th.classList.remove('sorted-asc', 'sorted-desc');
+                
+                if (field === currentSort.field) {
+                    th.classList.add(currentSort.asc ? 'sorted-asc' : 'sorted-desc');
+                }
+            });
+        }
+
+        // Lắng nghe sự thay đổi của các bộ lọc và hành động click sort
+        function setupEventListeners() {
+            // Lọc tức thời khi gõ phím hoặc đổi lựa chọn
+            document.getElementById('filter-search').addEventListener('input', renderTable);
+            document.getElementById('filter-apartment').addEventListener('change', renderTable);
+            document.getElementById('filter-source').addEventListener('change', renderTable);
+            document.getElementById('filter-price-min').addEventListener('input', renderTable);
+            document.getElementById('filter-price-max').addEventListener('input', renderTable);
+            document.getElementById('filter-area-min').addEventListener('input', renderTable);
+            document.getElementById('filter-area-max').addEventListener('input', renderTable);
+
+            // Xử lý sự kiện click cột để sort dữ liệu
+            document.querySelectorAll('th[data-field]').forEach(th => {
+                th.addEventListener('click', () => {
+                    const field = th.getAttribute('data-field');
+                    if (currentSort.field === field) {
+                        currentSort.asc = !currentSort.asc;
+                    } else {
+                        currentSort.field = field;
+                        currentSort.asc = true;
+                    }
+                    updateSortUI();
+                    renderTable();
+                });
+            });
+
+            // Khởi tạo mũi tên sắp xếp ngày mặc định trên UI
+            updateSortUI();
+        }
+    </script>
+</body>
+</html>

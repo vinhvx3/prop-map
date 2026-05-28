@@ -1,0 +1,218 @@
+[
+  {
+    "selected_ids": [
+      "q7-saigon-riverside"
+    ],
+    "id": "ea85184b",
+    "crawl_config": {},
+    "status": "idle",
+    "created_at": "2026-05-28T08:47:06.547668",
+    "name": "Crawler - 1 CC (08:47)",
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            106.739,
+            10.72
+          ],
+          [
+            106.739,
+            10.724
+          ],
+          [
+            106.745,
+            10.724
+          ],
+          [
+            106.745,
+            10.72
+          ],
+          [
+            106.739,
+            10.72
+          ]
+        ]
+      ]
+    },
+    "filter_state": {
+      "shapeType": "rectangle"
+    },
+    "last_crawl": "2026-05-28T09:12:04.716771",
+    "updated_at": "2026-05-28T08:47:06.547668"
+  },
+  {
+    "selected_ids": [
+      "jamona-heights"
+    ],
+    "id": "e8788cb2",
+    "crawl_config": {},
+    "status": "idle",
+    "created_at": "2026-05-28T08:47:37.433887",
+    "name": "Crawler - 1 CC (08:47)",
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            106.7315,
+            10.7475
+          ],
+          [
+            106.7315,
+            10.7495
+          ],
+          [
+            106.7345,
+            10.7495
+          ],
+          [
+            106.7345,
+            10.7475
+          ],
+          [
+            106.7315,
+            10.7475
+          ]
+        ]
+      ]
+    },
+    "filter_state": {
+      "shapeType": "rectangle"
+    },
+    "last_crawl": "2026-05-28T09:11:48.459079",
+    "updated_at": "2026-05-28T08:47:37.433887"
+  },
+  {
+    "selected_ids": [
+      "q7-saigon-riverside"
+    ],
+    "id": "4d61accb",
+    "crawl_config": {},
+    "status": "idle",
+    "created_at": "2026-05-28T08:56:36.635885",
+    "name": "Crawler - 1 CC (08:56)",
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            106.739,
+            10.72
+          ],
+          [
+            106.739,
+            10.724
+          ],
+          [
+            106.745,
+            10.724
+          ],
+          [
+            106.745,
+            10.72
+          ],
+          [
+            106.739,
+            10.72
+          ]
+        ]
+      ]
+    },
+    "filter_state": {
+      "shapeType": "rectangle"
+    },
+    "last_crawl": "2026-05-28T09:12:37.147696",
+    "updated_at": "2026-05-28T08:56:36.635885"
+  },
+  {
+    "selected_ids": [
+      "green-river"
+    ],
+    "id": "ec24fb5a",
+    "crawl_config": {},
+    "status": "running",
+    "created_at": "2026-05-28T15:14:33.920209",
+    "name": "Crawler - 1 CC (15:14)",
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            106.641047,
+            10.731242
+          ],
+          [
+            106.641047,
+            10.734889
+          ],
+          [
+            106.644502,
+            10.734889
+          ],
+          [
+            106.644502,
+            10.731242
+          ],
+          [
+            106.641047,
+            10.731242
+          ]
+        ]
+      ]
+    },
+    "filter_state": {
+      "shapeType": "rectangle"
+    },
+    "last_crawl": null,
+    "updated_at": "2026-05-28T15:14:33.920209"
+  },
+  {
+    "selected_ids": [
+      "jamona-heights",
+      "bridgeview-ehome-5",
+      "nam-long-tran-trong-cung",
+      "chung-cu-an-hoa-3",
+      "chung-cu-jamona-heights",
+      "khu-can-ho-an-hoa",
+      "huong-hanh-phuc-can-ho-gac-lung-full-noi-that"
+    ],
+    "id": "0fa0cb05",
+    "crawl_config": {},
+    "status": "running",
+    "created_at": "2026-05-28T15:19:09.987257",
+    "name": "Crawler - 7 CC (15:19)",
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            106.729517,
+            10.739232
+          ],
+          [
+            106.729517,
+            10.752155
+          ],
+          [
+            106.740396,
+            10.752155
+          ],
+          [
+            106.740396,
+            10.739232
+          ],
+          [
+            106.729517,
+            10.739232
+          ]
+        ]
+      ]
+    },
+    "filter_state": {
+      "shapeType": "rectangle"
+    },
+    "last_crawl": null,
+    "updated_at": "2026-05-28T15:19:09.987257"
+  }
+]

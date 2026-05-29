@@ -223,7 +223,6 @@ export function SessionFeedModal({ session, onClose }: SessionFeedModalProps) {
                       target="_blank"
                       rel="noopener noreferrer"
                       className="listing-link"
-                      style={{ display: 'inline-flex', alignItems: 'center', gap: 4 }}
                     >
                       <Icons.Link size={12} />
                       <span>{listing.link}</span>

@@ -1,9 +1,8 @@
 """
-Export dữ liệu ra các format khác nhau.
+Export dữ liệu căn hộ và bài đăng ra file báo cáo Excel.
 
 Usage:
-  python export.py             # Export data.js cho dashboard
-  python export.py --excel     # Export file Excel
+  python export.py             # Xuất báo cáo Excel
 """
 import sys
 import io
@@ -14,42 +13,8 @@ import os
 sys.stdout.reconfigure(encoding='utf-8', errors='replace')
 sys.stderr.reconfigure(encoding='utf-8', errors='replace')
 
-from config import DATA_JS_PATH, EXCEL_PATH, DASHBOARD_DIR
+from config import EXCEL_PATH
 from db import ApartmentDB, PostDB
-
-
-def export_data_js():
-    """Export dữ liệu join apartment + posts thành file data.js cho dashboard."""
-    apt_db = ApartmentDB()
-    post_db = PostDB()
-
-    # Join apartment metadata vào từng post
-    enriched = []
-    for post in post_db.data:
-        apt = apt_db.get(post.get("apartment_id", ""))
-        entry = {**post}
-        if apt:
-            entry["apartment_name"] = apt["name"]
-            entry["district"] = apt.get("district", "")
-            entry["km_q1"] = apt.get("km_q1", 0)
-            entry["year"] = apt.get("year", 0)
-            entry["address"] = apt.get("address", "")
-        else:
-            entry["apartment_name"] = post.get("apartment_id", "N/A")
-        enriched.append(entry)
-
-    os.makedirs(DASHBOARD_DIR, exist_ok=True)
-    with open(DATA_JS_PATH, "w", encoding="utf-8") as f:
-        f.write(f"window.CRAWL_DATA = {json.dumps(enriched, ensure_ascii=False, indent=2)};\n")
-
-    # Export thêm danh sách chung cư cho dashboard
-    apt_js = json.dumps(apt_db.list(), ensure_ascii=False, indent=2)
-    apt_js_path = os.path.join(DASHBOARD_DIR, "apartments.js")
-    with open(apt_js_path, "w", encoding="utf-8") as f:
-        f.write(f"window.APARTMENTS_DATA = {apt_js};\n")
-
-    print(f"Đã export {len(enriched)} tin đăng → {DATA_JS_PATH}")
-    print(f"Đã export {apt_db.count} chung cư → {apt_js_path}")
 
 
 def export_excel():
@@ -149,14 +114,7 @@ def _auto_width(ws):
 
 
 def main():
-    parser = argparse.ArgumentParser(description="Export dữ liệu cho thuê")
-    parser.add_argument("--excel", action="store_true", help="Export file Excel")
-    args = parser.parse_args()
-
-    export_data_js()
-
-    if args.excel:
-        export_excel()
+    export_excel()
 
 
 if __name__ == "__main__":

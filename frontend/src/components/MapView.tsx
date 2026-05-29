@@ -105,15 +105,12 @@ function createAptIcon(name: string, district: string, segment: string, isSelect
           border: ${border};
           transition: all 0.15s;
         ">
-          <span style="
-            transform:rotate(45deg); 
-            font-size:${size * 0.35}px; 
-            color:white; 
-            line-height:1; 
-            font-weight:800;
-            font-family: 'Inter', sans-serif;
-            letter-spacing: -0.5px;
-          ">${labelText}</span>
+          <div style="
+            width: ${size * 0.3}px;
+            height: ${size * 0.3}px;
+            background: white;
+            border-radius: 50%;
+          "></div>
         </div>
       ` : `
         <div style="

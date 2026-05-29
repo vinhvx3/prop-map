@@ -88,7 +88,7 @@ function ListingCard({ listing }: ListingCardProps) {
         )}
       </div>
 
-      <a href={listing.link} target="_blank" rel="noopener noreferrer" className="listing-link" style={{ display: 'inline-flex', alignItems: 'center', gap: 4 }}>
+      <a href={listing.link} target="_blank" rel="noopener noreferrer" className="listing-link">
         <Icons.Link size={12} />
         <span>{listing.link}</span>
       </a>
@@ -97,7 +97,7 @@ function ListingCard({ listing }: ListingCardProps) {
 }
 
 export function ApartmentDrawer() {
-  const { activeApartmentId, setActiveApartment, apartments, crawlStatus } = useStore();
+  const { activeApartmentId, setActiveApartment, apartments, crawlStatus, loadSessions, showToast } = useStore();
   const [apt, setApt] = useState<Apartment | null>(null);
   const [listings, setListings] = useState<Listing[]>([]);
   const [loading, setLoading] = useState(false);
@@ -105,6 +105,47 @@ export function ApartmentDrawer() {
   const [filterSource, setFilterSource] = useState<string>('');
   const [page, setPage] = useState(1);
   const [total, setTotal] = useState(0);
+  const [crawlingThis, setCrawlingThis] = useState(false);
+
+  const handleCrawlApartment = async () => {
+    if (!apt || crawlStatus === 'running' || crawlingThis) return;
+    
+    setCrawlingThis(true);
+    showToast(`Đang chuẩn bị tiến trình cào cho "${apt.name}"...`, 'info');
+    
+    try {
+      // 1. Tạo session tạm thời cho chung cư này
+      const sessionName = `Crawl ${apt.name}`;
+      const createRes = await api.createSession({
+        name: sessionName,
+        selected_ids: [apt.id],
+        filter_state: { shapeType: null }
+      });
+      
+      const newSession = createRes.data;
+      
+      // 2. Kích hoạt cào cho session mới
+      const crawlRes = await api.triggerCrawl(newSession.id);
+      const jobId = crawlRes.data.job_id;
+      
+      // 3. Đồng bộ danh sách session
+      await loadSessions();
+      
+      // 4. Set currentSession và currentJobId để App.tsx tự động kích hoạt SSE Log streaming
+      useStore.setState({
+        currentSession: { ...newSession, status: 'running' },
+        currentJobId: jobId,
+        crawlStatus: 'running'
+      });
+      
+      showToast(`Bắt đầu cào dữ liệu cho "${apt.name}"! Xem tiến trình góc phải bản đồ.`, 'success');
+    } catch (err: any) {
+      console.error(err);
+      showToast(err.message || 'Không thể bắt đầu cào', 'error');
+    } finally {
+      setCrawlingThis(false);
+    }
+  };
 
   const PAGE_SIZE = 20;
   const isOpen = !!activeApartmentId;
@@ -248,6 +289,35 @@ export function ApartmentDrawer() {
                   {apt.listing_count} tin đăng
                 </span>
               </div>
+            </div>
+
+            <div style={{ padding: '0 20px', marginBottom: 12, flexShrink: 0 }}>
+              <button
+                className={`btn accent ${crawlStatus === 'running' ? 'disabled' : ''}`}
+                id="btn-crawl-apt"
+                onClick={handleCrawlApartment}
+                disabled={crawlStatus === 'running' || crawlingThis}
+                style={{
+                  width: '100%',
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  gap: 6,
+                  padding: '10px 16px',
+                  fontWeight: 600,
+                  fontSize: 13,
+                  boxSizing: 'border-box'
+                }}
+              >
+                {crawlingThis ? (
+                  <Icons.Loader size={14} />
+                ) : (
+                  <Icons.Activity size={14} />
+                )}
+                <span>
+                  {crawlingThis ? 'Đang chuẩn bị...' : crawlStatus === 'running' ? 'Đang có tiến trình cào...' : 'Crawl dữ liệu mới cho CC này'}
+                </span>
+              </button>
             </div>
 
             <div className="drawer-listings-header">

@@ -750,6 +750,8 @@ body {
   line-height: 1.4;
   flex: 1;
   margin-right: var(--space-3);
+  word-break: break-word;
+  overflow-wrap: anywhere;
 }
 
 .listing-price {
@@ -808,14 +810,27 @@ body {
 }
 
 .listing-link {
-  display: block;
+  display: inline-flex !important;
+  align-items: center;
+  gap: var(--space-1);
   margin-top: var(--space-2);
   font-size: 11px;
   color: var(--color-accent);
   text-decoration: none;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.listing-link svg {
+  flex-shrink: 0;
+}
+
+.listing-link span {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  flex: 1;
+  min-width: 0;
 }
 
 .listing-link:hover {
@@ -1562,6 +1577,8 @@ body {
   line-height: 1.4;
   flex: 1;
   min-width: 0;
+  word-break: break-word;
+  overflow-wrap: anywhere;
 }
 
 .feed-listing-price {

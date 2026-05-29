@@ -104,9 +104,7 @@ def search_apartments(body: ApartmentSearchRequest) -> ApiResponse:
     Query CC trong GeoJSON polygon + apply filters.
     Nếu không có geometry thì trả toàn bộ danh sách.
     """
-    apt_db.load()  # reload để lấy data mới nhất
     all_apts = apt_db.list()
-
     # Point-in-polygon bằng shapely
     if body.geometry:
         try:
@@ -140,7 +138,6 @@ def search_apartments(body: ApartmentSearchRequest) -> ApiResponse:
 @router.get("/{apartment_id}")
 def get_apartment(apartment_id: str) -> ApiResponse:
     """Chi tiết một chung cư."""
-    apt_db.load()
     apt = apt_db.get(apartment_id)
     if not apt:
         raise HTTPException(status_code=404, detail="Apartment not found")
@@ -157,7 +154,6 @@ def get_listings(
     bedrooms: str | None = Query(None),
 ) -> ApiResponse:
     """Feed listing của 1 chung cư, có phân trang + sort + filter."""
-    post_db.load()
     posts = post_db.list(apartment_id=apartment_id, source=source)
 
     # Filter bedrooms

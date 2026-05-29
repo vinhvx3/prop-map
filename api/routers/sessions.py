@@ -16,11 +16,8 @@ from api.models import (
     SessionCreateRequest, SessionUpdateRequest,
     SessionSummary, ApiResponse, Meta
 )
-from config import DATA_DIR
 
 router = APIRouter(prefix="/api/v1/sessions", tags=["sessions"])
-
-SESSIONS_PATH = os.path.join(DATA_DIR, "sessions.json")
 
 
 # ── Helpers ──────────────────────────────────────────────────
@@ -31,38 +28,6 @@ from db.models import SessionTable
 
 def _load_sessions() -> list[dict]:
     init_db()
-    
-    # 1. Di chuyển dữ liệu từ JSON sang SQLite nếu SQLite trống
-    with SQLSession(engine) as session:
-        count = len(session.exec(select(SessionTable.id)).all())
-        
-    if count == 0 and os.path.exists(SESSIONS_PATH):
-        try:
-            with open(SESSIONS_PATH, "r", encoding="utf-8") as f:
-                json_data = json.load(f)
-                
-            with SQLSession(engine) as session:
-                for s in json_data:
-                    s_obj = SessionTable(
-                        id=s["id"],
-                        name=s["name"],
-                        geometry=s.get("geometry"),
-                        selected_ids=s.get("selected_ids", []),
-                        filter_state=s.get("filter_state", {}),
-                        crawl_config=s.get("crawl_config", {}),
-                        status=s.get("status", "idle"),
-                        current_job_id=s.get("current_job_id"),
-                        jobs=s.get("jobs", []),
-                        last_crawl=s.get("last_crawl"),
-                        created_at=s.get("created_at", datetime.now().isoformat()),
-                        updated_at=s.get("updated_at", datetime.now().isoformat())
-                    )
-                    session.add(s_obj)
-                session.commit()
-        except Exception as e:
-            print(f"[SessionDB] Lỗi di chuyển dữ liệu: {e}")
-
-    # 2. Đọc từ SQLite
     with SQLSession(engine) as session:
         db_sessions = session.exec(select(SessionTable)).all()
         return [s.model_dump() for s in db_sessions]
@@ -95,18 +60,6 @@ def _save_sessions(sessions_list: list[dict]):
             )
             session.merge(s_obj)
         session.commit()
-        
-    # Đồng bộ ngược ra JSON tĩnh
-    with SQLSession(engine) as session:
-        db_sessions = session.exec(select(SessionTable)).all()
-        json_data = [s.model_dump() for s in db_sessions]
-        
-    try:
-        os.makedirs(os.path.dirname(SESSIONS_PATH), exist_ok=True)
-        with open(SESSIONS_PATH, "w", encoding="utf-8") as f:
-            json.dump(json_data, f, ensure_ascii=False, indent=2)
-    except Exception as e:
-        print(f"[SessionDB] Lỗi ghi file JSON: {e}")
 
 
 def _session_to_summary(s: dict) -> SessionSummary:

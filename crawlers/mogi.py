@@ -1,13 +1,23 @@
 """
 Crawler cho nguồn Mogi.vn
+
+Cải tiến so với bản cũ:
+- Build URL search trực tiếp thay vì fill form UI (dễ vỡ khi Mogi đổi UI)
+- Pagination: Loop qua tất cả pages (?cp=1, ?cp=2...)
+- 2PN detection: Dùng regex chuẩn từ utils.is_2pn()
+- Bỏ mở tab chi tiết lấy author (tốn thời gian, dễ bị rate limit)
+- Không dừng sớm khi gặp tin trùng
+- Log mọi exception
 """
 from datetime import datetime
 from crawlers.base import BaseCrawler
-from utils import is_recent_date, text_matches_keyword
+from utils import is_recent_date, text_matches_keyword, is_2pn, extract_price
 
 
 class MogiCrawler(BaseCrawler):
     SOURCE_NAME = "mogi.vn"
+
+    MAX_PAGES = 5  # Tối đa 5 pages per chung cư
 
     def __init__(self, post_db):
         self.post_db = post_db
@@ -19,132 +29,143 @@ class MogiCrawler(BaseCrawler):
 
         page = await context.new_page()
         await page.add_init_script("Object.defineProperty(navigator, 'webdriver', {get: () => undefined})")
-        print(f"  [Mogi] Đang truy cập Mogi...")
+        self.log_info(f"Bắt đầu crawl '{name}'")
+
+        all_results = []
 
         try:
-            await page.goto("https://mogi.vn/thue-can-ho-chung-cu", wait_until="domcontentloaded", timeout=25000)
-            await page.wait_for_timeout(1500)
-
-            search_input = await page.query_selector("input[placeholder*='Từ khóa']")
-            if not search_input:
-                print("  [Mogi] Không tìm thấy ô search")
-                await page.close()
-                return []
-
-            print(f"  [Mogi] Tìm kiếm '{kw}'...")
-            await search_input.fill(kw)
-            await page.wait_for_timeout(800)
-            await page.keyboard.press("Enter")
-            await page.wait_for_timeout(4500)
-
-            current_url = page.url
-            if current_url.strip("/").endswith("thue-can-ho-chung-cu"):
-                print("  [Mogi] Không redirect được, bỏ qua.")
-                await page.close()
-                return []
-
-            await self.scroll_to_bottom(page, 4)
-            items = await page.query_selector_all("ul.props > li")
-            print(f"  [Mogi] Tìm thấy {len(items)} items")
-
-            results = []
-            count = 0
-
-            for i, item in enumerate(items):
-                if count >= needed:
+            for page_num in range(1, self.MAX_PAGES + 1):
+                if len(all_results) >= needed:
                     break
-                try:
-                    # Kiểm tra 2PN
-                    attrs = await item.query_selector_all(".prop-attr li")
-                    is_2pn = False
-                    area = ""
-                    for attr in attrs:
-                        txt = (await attr.inner_text()).strip()
-                        if "m" in txt.lower():
-                            area = txt
-                        if "PN" in txt and "2" in txt:
-                            is_2pn = True
 
-                    if not is_2pn:
-                        continue
+                # Build URL trực tiếp — không fill form, không phụ thuộc UI
+                url = f"https://mogi.vn/thue-can-ho-chung-cu?kw={kw.replace(' ', '+')}&cp={page_num}"
+                self.log_info(f"Trang {page_num}: {url}")
 
-                    # Lấy link
-                    link_el = await item.query_selector("a.link-overlay")
-                    if not link_el:
-                        continue
-                    href = await link_el.get_attribute("href")
-                    if not href:
-                        continue
-                    if not href.startswith("http"):
-                        href = f"https://mogi.vn{href}"
+                # Navigate với retry
+                if not await self.goto_with_retry(page, url, timeout=25000):
+                    self.log_error(f"Không thể truy cập trang {page_num}, dừng pagination.")
+                    break
 
-                    if self.post_db.has_link(href):
-                        if i >= 3:
-                            print(f"    [Mogi] Gặp tin trùng tại vị trí {i+1}, dừng.")
-                            break
-                        continue
+                await page.wait_for_timeout(2000)
+                await self.scroll_to_bottom(page, 4)
 
-                    # Lấy thông tin card
-                    title_el = await item.query_selector(".prop-title, h2")
-                    title = (await title_el.inner_text()).strip() if title_el else ""
+                items = await page.query_selector_all("ul.props > li")
+                self.log_info(f"Trang {page_num}: {len(items)} items")
 
-                    price_el = await item.query_selector(".price")
-                    price = (await price_el.inner_text()).strip() if price_el else ""
+                if not items:
+                    self.log_info(f"Trang {page_num} trống, dừng pagination.")
+                    break
 
-                    date_el = await item.query_selector(".prop-created")
-                    date_text = (await date_el.inner_text()).strip() if date_el else ""
+                page_results = await self._parse_items(items, apt_id, name, kw, needed - len(all_results))
+                all_results.extend(page_results)
 
-                    if not is_recent_date(date_text):
-                        continue
+                # Nếu trang này ít items hơn 10 → có thể đã hết
+                if len(items) < 10:
+                    self.log_info(f"Trang {page_num} chỉ có {len(items)} items, có vẻ đã hết.")
+                    break
 
-                    if date_text == "Hôm nay":
-                        date_text = datetime.now().strftime("%d/%m/%Y")
-
-                    # Lấy tên người đăng từ trang chi tiết
-                    author = ""
-                    try:
-                        detail = await page.context.new_page()
-                        await detail.goto(href, wait_until="domcontentloaded", timeout=20000)
-                        await detail.wait_for_timeout(1500)
-
-                        for sel in [".agent-name", ".info-name a", ".info-name",
-                                    "[class*='contact'] .name", ".agent-info .name", ".poster-name"]:
-                            a_el = await detail.query_selector(sel)
-                            if a_el:
-                                author = (await a_el.inner_text()).strip()
-                                if author:
-                                    break
-                        await detail.close()
-                    except Exception:
-                        try:
-                            await detail.close()
-                        except Exception:
-                            pass
-
-                    results.append({
-                        "apartment_id": apt_id,
-                        "title": title,
-                        "price": price,
-                        "area": area,
-                        "link": href,
-                        "date": date_text,
-                        "author": author or "(xem trang chi tiết)",
-                        "source": self.SOURCE_NAME,
-                    })
-                    count += 1
-                    print(f"    [Mogi] [{count}] {title[:40]}... | {price}")
-                    await self.random_delay(1.0, 2.0)
-
-                except Exception:
-                    continue
-
-            await page.close()
-            return results
+                await self.random_delay(1.5, 3.0)
 
         except Exception as e:
-            print(f"  [Mogi] Lỗi crawl {name}: {e}")
+            self.log_error(f"Lỗi crawl {name}: {e}")
+        finally:
+            await self.safe_close_page(page)
+
+        all_results = self.validate_results(all_results, name)
+        self.log_info(f"Kết quả {name}: {len(all_results)} bài đăng hợp lệ")
+        return all_results
+
+    async def _parse_items(self, items, apt_id: str, name: str, kw: str, needed: int) -> list[dict]:
+        """Parse danh sách items từ Mogi."""
+        results = []
+        skipped_dup = 0
+        skipped_not_2pn = 0
+        skipped_keyword = 0
+        skipped_date = 0
+
+        for i, item in enumerate(items):
+            if len(results) >= needed:
+                break
             try:
-                await page.close()
-            except Exception:
-                pass
-            return []
+                # Check 2PN từ attributes
+                attrs_text = ""
+                attrs = await item.query_selector_all(".prop-attr li")
+                area = ""
+                for attr in attrs:
+                    txt = (await attr.inner_text()).strip()
+                    attrs_text += " " + txt
+                    if "m" in txt.lower() and "²" in txt:
+                        area = txt
+
+                # Dùng regex chuẩn thay vì check "PN" + "2" riêng lẻ
+                if not is_2pn(attrs_text):
+                    skipped_not_2pn += 1
+                    continue
+
+                # Lấy link
+                link_el = await item.query_selector("a.link-overlay")
+                if not link_el:
+                    continue
+                href = await link_el.get_attribute("href")
+                if not href:
+                    continue
+                if not href.startswith("http"):
+                    href = f"https://mogi.vn{href}"
+
+                # Check trùng — chỉ skip, không break
+                if self.post_db.has_link(href):
+                    skipped_dup += 1
+                    continue
+
+                # Lấy thông tin card
+                title_el = await item.query_selector(".prop-title, h2")
+                title = (await title_el.inner_text()).strip() if title_el else ""
+
+                # Check keyword match
+                if not text_matches_keyword(title + " " + href.replace("-", " "), kw):
+                    skipped_keyword += 1
+                    continue
+
+                price_el = await item.query_selector(".price")
+                price = (await price_el.inner_text()).strip() if price_el else ""
+
+                date_el = await item.query_selector(".prop-created")
+                date_text = (await date_el.inner_text()).strip() if date_el else ""
+
+                if not is_recent_date(date_text):
+                    skipped_date += 1
+                    continue
+
+                if date_text == "Hôm nay":
+                    date_text = datetime.now().strftime("%d/%m/%Y")
+
+                # Author: lấy từ card nếu có, không mở tab chi tiết
+                author = ""
+                author_el = await item.query_selector(".agent-name, .poster-name, .prop-agent-name")
+                if author_el:
+                    author = (await author_el.inner_text()).strip()
+
+                results.append({
+                    "apartment_id": apt_id,
+                    "title": title,
+                    "price": price,
+                    "area": area,
+                    "link": href,
+                    "date": date_text,
+                    "author": author or "(xem trang chi tiết)",
+                    "source": self.SOURCE_NAME,
+                })
+                self.log_info(f"[{len(results)}] {title[:50]}... | {price}")
+
+            except Exception as e:
+                self.log_card_error(i, e)
+                continue
+
+        if skipped_dup or skipped_not_2pn or skipped_keyword or skipped_date:
+            self.log_info(
+                f"Skipped: {skipped_dup} trùng, {skipped_not_2pn} không 2PN, "
+                f"{skipped_keyword} sai keyword, {skipped_date} quá cũ"
+            )
+
+        return results

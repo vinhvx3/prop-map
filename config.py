@@ -6,14 +6,9 @@ import os
 # Đường dẫn gốc
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 DATA_DIR = os.path.join(BASE_DIR, "data")
-DASHBOARD_DIR = os.path.join(BASE_DIR, "dashboard")
 
-# Database paths
-APARTMENTS_DB_PATH = os.path.join(DATA_DIR, "apartments.json")
-POSTS_DB_PATH = os.path.join(DATA_DIR, "posts.json")
 
 # Export paths
-DATA_JS_PATH = os.path.join(DASHBOARD_DIR, "data.js")
 EXCEL_PATH = os.path.join(DATA_DIR, "report.xlsx")
 
 # Crawl settings

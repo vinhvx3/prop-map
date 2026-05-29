@@ -1,7 +1,6 @@
 __pycache__/
 *.pyc
 .pytest_cache/
-.gemini/
 scratch/
 test_out.txt
 *.pyc

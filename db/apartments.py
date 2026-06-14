@@ -50,6 +50,7 @@ class ApartmentDB:
                     "name": apt.name,
                     "keyword": crawl["keyword"],
                     "district_slug": crawl.get("district_slug", ""),
+                    "district": apt.district,
                 })
         return configs
 

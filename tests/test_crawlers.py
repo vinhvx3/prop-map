@@ -7,9 +7,10 @@ mà không cần mở browser. Đảm bảo nếu selector thay đổi → test 
 import pytest
 import sys
 import os
+import time
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
-from utils import is_2pn, extract_price, extract_bedroom_count, is_recent_date
+from utils import is_2pn, extract_price, extract_bedroom_count, is_recent_date, parse_to_absolute_date
 
 
 # ══════════════════════════════════════════════════════════════
@@ -52,6 +53,39 @@ class TestBatdongsanParseLogic:
         price = extract_price(card_text)
         assert "8" in price
         assert "triệu" in price
+
+    def test_bds_price_and_area_extraction_avoids_title(self):
+        """Verify that when title contains price and area, they are not mis-extracted as title."""
+        card_title = "Duy nhất căn Sky 89 - 69m2, 2PN, 2WC nội thất cơ bản, rèm, máy lạnh, máy nước nóng giá 12,5 triệu"
+        card_text = f"""{card_title}
+        12,5 triệu/tháng
+        ·
+        69 m²
+        ·
+        2
+        ·
+        2
+        P. Phú Thuận
+        Đăng hôm qua
+        """
+        
+        clean_text_lines = []
+        for line in card_text.split("\n"):
+            l_str = line.strip()
+            if not l_str or l_str.lower() in card_title.lower() or card_title.lower() in l_str.lower():
+                continue
+            clean_text_lines.append(l_str)
+        clean_text = "\n".join(clean_text_lines)
+
+        price = extract_price(clean_text)
+        assert price == "12,5 triệu/tháng"
+
+        area = ""
+        for line in clean_text_lines:
+            if "m²" in line or "m2" in line:
+                area = line
+                break
+        assert area == "69 m²"
 
     def test_no_early_break_on_duplicate(self):
         """
@@ -143,6 +177,30 @@ class TestNhaTotParseLogic:
                 date_text = line
                 break
         assert date_text == "Hôm nay"
+
+    def test_api_unix_timestamp_seconds(self):
+        """API trả date dạng Unix timestamp (giây) → is_recent_date phải nhận."""
+        # Timestamp "bây giờ" → chắc chắn recent
+        now_ts = str(int(time.time()))
+        assert is_recent_date(now_ts) is True
+
+    def test_api_unix_timestamp_milliseconds(self):
+        """API trả list_time dạng milliseconds → is_recent_date phải nhận."""
+        now_ms = str(int(time.time() * 1000))
+        assert is_recent_date(now_ms) is True
+
+    def test_api_old_unix_timestamp(self):
+        """Timestamp quá cũ (> 32 ngày) → reject."""
+        old_ts = str(int(time.time()) - 60 * 86400)  # 60 ngày trước
+        assert is_recent_date(old_ts) is False
+
+    def test_parse_to_absolute_date_unix(self):
+        """parse_to_absolute_date phải convert Unix timestamp thành YYYY-MM-DD."""
+        from datetime import datetime
+        now_ts = str(int(time.time()))
+        result = parse_to_absolute_date(now_ts)
+        expected = datetime.now().strftime("%Y-%m-%d")
+        assert result == expected
 
 
 # ══════════════════════════════════════════════════════════════

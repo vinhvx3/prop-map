@@ -11,7 +11,7 @@ Cải tiến so với bản cũ:
 """
 from datetime import datetime
 from crawlers.base import BaseCrawler
-from utils import is_recent_date, text_matches_keyword, is_2pn, extract_price
+from utils import is_recent_date, text_matches_keyword, is_2pn, extract_price, extract_district_number
 
 
 class MogiCrawler(BaseCrawler):
@@ -26,6 +26,7 @@ class MogiCrawler(BaseCrawler):
         apt_id = apt_config["apartment_id"]
         name = apt_config["name"]
         kw = apt_config["keyword"]
+        dist_num = extract_district_number(apt_config.get("district") or apt_config.get("district_slug"))
 
         page = await context.new_page()
         await page.add_init_script("Object.defineProperty(navigator, 'webdriver', {get: () => undefined})")
@@ -57,7 +58,7 @@ class MogiCrawler(BaseCrawler):
                     self.log_info(f"Trang {page_num} trống, dừng pagination.")
                     break
 
-                page_results = await self._parse_items(items, apt_id, name, kw, needed - len(all_results))
+                page_results = await self._parse_items(items, apt_id, name, kw, needed - len(all_results), dist_num)
                 all_results.extend(page_results)
 
                 # Nếu trang này ít items hơn 10 → có thể đã hết
@@ -76,7 +77,7 @@ class MogiCrawler(BaseCrawler):
         self.log_info(f"Kết quả {name}: {len(all_results)} bài đăng hợp lệ")
         return all_results
 
-    async def _parse_items(self, items, apt_id: str, name: str, kw: str, needed: int) -> list[dict]:
+    async def _parse_items(self, items, apt_id: str, name: str, kw: str, needed: int, district_number: str = None) -> list[dict]:
         """Parse danh sách items từ Mogi."""
         results = []
         skipped_dup = 0
@@ -123,7 +124,7 @@ class MogiCrawler(BaseCrawler):
                 title = (await title_el.inner_text()).strip() if title_el else ""
 
                 # Check keyword match
-                if not text_matches_keyword(title + " " + href.replace("-", " "), kw):
+                if not text_matches_keyword(title + " " + href.replace("-", " "), kw, district_number=district_number):
                     skipped_keyword += 1
                     continue
 
@@ -151,6 +152,7 @@ class MogiCrawler(BaseCrawler):
                     "title": title,
                     "price": price,
                     "area": area,
+                    "bedrooms": "2 PN",
                     "link": href,
                     "date": date_text,
                     "author": author or "(xem trang chi tiết)",

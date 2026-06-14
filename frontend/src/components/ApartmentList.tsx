@@ -7,6 +7,8 @@ function districtBadgeClass(d: string) {
   if (d === 'Q.7') return 'district-badge q7';
   if (d === 'Q.8') return 'district-badge q8';
   if (d === 'Q.6') return 'district-badge q6';
+  if (d === 'H. Nhà Bè') return 'district-badge nhabe';
+  if (d === 'H. Bình Chánh') return 'district-badge binhchanh';
   return 'district-badge';
 }
 

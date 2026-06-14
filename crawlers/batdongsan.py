@@ -10,7 +10,7 @@ Cải tiến so với bản cũ:
 - Cloudflare bypass cải tiến
 """
 from crawlers.base import BaseCrawler
-from utils import is_recent_date, text_matches_keyword, is_2pn, extract_price
+from utils import is_recent_date, text_matches_keyword, is_2pn, extract_price, extract_bedroom_count, extract_district_number
 
 
 class BatdongsanCrawler(BaseCrawler):
@@ -26,6 +26,7 @@ class BatdongsanCrawler(BaseCrawler):
         name = apt_config["name"]
         kw = apt_config["keyword"]
         district = apt_config.get("district_slug", "quan-8")
+        dist_num = extract_district_number(apt_config.get("district") or apt_config.get("district_slug"))
 
         page = await context.new_page()
         await page.add_init_script("Object.defineProperty(navigator, 'webdriver', {get: () => undefined})")
@@ -71,7 +72,7 @@ class BatdongsanCrawler(BaseCrawler):
                 if not cards:
                     break
 
-                page_results = await self._parse_cards(cards, apt_id, name, kw, needed - len(all_results))
+                page_results = await self._parse_cards(cards, apt_id, name, kw, needed - len(all_results), dist_num)
                 all_results.extend(page_results)
 
                 # Nếu trang này ít card hơn 10 → có thể đã hết
@@ -92,7 +93,7 @@ class BatdongsanCrawler(BaseCrawler):
         self.log_info(f"Kết quả {name}: {len(all_results)} bài đăng hợp lệ")
         return all_results
 
-    async def _parse_cards(self, cards, apt_id: str, name: str, kw: str, needed: int) -> list[dict]:
+    async def _parse_cards(self, cards, apt_id: str, name: str, kw: str, needed: int, district_number: str = None) -> list[dict]:
         """Parse danh sách cards thành posts. Không break sớm khi gặp trùng."""
         results = []
         skipped_dup = 0
@@ -127,7 +128,7 @@ class BatdongsanCrawler(BaseCrawler):
                 card_title = (await link_el.inner_text()).strip()
 
                 # Check keyword match
-                if not text_matches_keyword(card_title + " " + href.replace("-", " "), kw):
+                if not text_matches_keyword(card_title + " " + href.replace("-", " "), kw, district_number=district_number):
                     skipped_keyword += 1
                     continue
 
@@ -136,19 +137,48 @@ class BatdongsanCrawler(BaseCrawler):
                     skipped_not_2pn += 1
                     continue
 
-                # Giá
-                price = extract_price(text)
+                # Tránh lấy nhầm tiêu đề làm giá/diện tích
+                clean_text_lines = []
+                for line in text.split("\n"):
+                    l_str = line.strip()
+                    if not l_str or l_str.lower() in card_title.lower() or card_title.lower() in l_str.lower():
+                        continue
+                    clean_text_lines.append(l_str)
+                clean_text = "\n".join(clean_text_lines)
 
-                # Diện tích
-                area = ""
-                lines = [l.strip() for l in text.split("\n") if l.strip()]
-                for line in lines:
-                    if "m²" in line or "m2" in line:
-                        area = line
-                        break
+                # Giá: ưu tiên selector CSS
+                price_el = await card.query_selector(".re__card-config-price, .re__card-price, .product-price")
+                if price_el:
+                    price = (await price_el.inner_text()).strip()
+                else:
+                    price = extract_price(clean_text)
+
+                # Diện tích: ưu tiên selector CSS
+                area_el = await card.query_selector(".re__card-config-area, .re__card-area, .product-area")
+                if area_el:
+                    area = (await area_el.inner_text()).strip()
+                else:
+                    area = ""
+                    for line in clean_text_lines:
+                        if "m²" in line or "m2" in line:
+                            area = line
+                            break
+
+                # Bedrooms: ưu tiên selector CSS
+                bedrooms = None
+                bedroom_el = await card.query_selector(".re__card-config-bedroom span, .re__card-config-bedroom")
+                if bedroom_el:
+                    bedrooms = (await bedroom_el.inner_text()).strip()
+                    if bedrooms and not bedrooms.lower().endswith("pn") and not bedrooms.lower().endswith("phòng ngủ"):
+                        bedrooms = f"{bedrooms} PN"
+                if not bedrooms:
+                    count = extract_bedroom_count(text)
+                    if count:
+                        bedrooms = f"{count} PN"
 
                 # Title: ưu tiên attribute "title", fallback inner text
                 real_title = await link_el.get_attribute("title")
+                lines = [l.strip() for l in text.split("\n") if l.strip()]
                 if not real_title:
                     real_title = card_title
                     if real_title.isdigit() and len(lines) > 1:
@@ -164,7 +194,7 @@ class BatdongsanCrawler(BaseCrawler):
                 author = ""
                 
                 # Thử lấy tên người đăng qua selector CSS để tránh dính honeypot text
-                author_el = await card.query_selector(".re__card-contact-name, .re__card-contact, .product-contact-name, .contact-name")
+                author_el = await card.query_selector(".re__card-contact-name, .re__card-contact, .product-contact-name, .contact-name, .agent-name")
                 if author_el:
                     author = (await author_el.inner_text()).strip()
                     if author:
@@ -191,6 +221,7 @@ class BatdongsanCrawler(BaseCrawler):
                     "title": real_title[:120],
                     "price": price,
                     "area": area,
+                    "bedrooms": bedrooms or "2 PN",
                     "link": href,
                     "date": date_text,
                     "author": author or "BDS Agent",

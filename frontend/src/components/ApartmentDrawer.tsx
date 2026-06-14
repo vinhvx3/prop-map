@@ -58,8 +58,17 @@ interface ListingCardProps {
 }
 
 function ListingCard({ listing }: ListingCardProps) {
+  const { viewedLinks, addViewedLink } = useStore();
+  const isViewed = viewedLinks.has(listing.link);
+
   return (
-    <div className="listing-card slide-in">
+    <a 
+      href={listing.link}
+      target="_blank"
+      rel="noopener noreferrer"
+      className={`listing-card slide-in ${isViewed ? 'viewed' : ''}`}
+      onClick={() => addViewedLink(listing.link)}
+    >
       <div className="listing-card-top">
         <div className="listing-title">{listing.title}</div>
         {listing.price && <div className="listing-price">{listing.price}</div>}
@@ -88,11 +97,11 @@ function ListingCard({ listing }: ListingCardProps) {
         )}
       </div>
 
-      <a href={listing.link} target="_blank" rel="noopener noreferrer" className="listing-link">
+      <div className="listing-link">
         <Icons.Link size={12} />
         <span>{listing.link}</span>
-      </a>
-    </div>
+      </div>
+    </a>
   );
 }
 

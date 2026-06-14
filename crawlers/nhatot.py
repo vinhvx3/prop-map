@@ -10,7 +10,7 @@ Cải tiến so với bản cũ:
 """
 import json
 from crawlers.base import BaseCrawler
-from utils import is_recent_date, text_matches_keyword, is_2pn, extract_price
+from utils import is_recent_date, text_matches_keyword, is_2pn, extract_price, parse_to_absolute_date, extract_district_number
 
 
 class NhaTotCrawler(BaseCrawler):
@@ -51,6 +51,7 @@ class NhaTotCrawler(BaseCrawler):
         """
         apt_id = apt_config["apartment_id"]
         kw = apt_config["keyword"]
+        dist_num = extract_district_number(apt_config.get("district") or apt_config.get("district_slug"))
 
         page = await context.new_page()
         all_results = []
@@ -98,11 +99,28 @@ class NhaTotCrawler(BaseCrawler):
 
                     # Filter keyword
                     subject = ad.get("subject", "")
-                    if not text_matches_keyword(subject + " " + ad.get("body", ""), kw):
+                    body_text = ad.get("body", "")
+                    full_text = subject + " " + body_text
+                    if not text_matches_keyword(full_text, kw, district_number=dist_num):
                         continue
 
-                    # Date check
+                    # Filter 2PN — API param beds=2 không luôn chính xác
+                    if not is_2pn(full_text):
+                        rooms = ad.get("rooms")
+                        if rooms != 2:
+                            continue
+
+                    # Date check — API có thể trả date dạng text hoặc list_time dạng Unix timestamp
                     date_text = ad.get("date", "")
+                    if not date_text or not is_recent_date(date_text):
+                        # Fallback: dùng list_time (Unix timestamp, giây hoặc mili-giây)
+                        list_time = ad.get("list_time")
+                        if list_time:
+                            try:
+                                date_text = str(int(list_time))
+                            except (ValueError, TypeError):
+                                pass
+
                     if date_text and not is_recent_date(date_text):
                         continue
 
@@ -125,8 +143,9 @@ class NhaTotCrawler(BaseCrawler):
                         "title": subject[:120],
                         "price": price_str,
                         "area": area_str,
+                        "bedrooms": "2 PN",
                         "link": link,
-                        "date": date_text,
+                        "date": parse_to_absolute_date(date_text),
                         "author": ad.get("account_name", "Nha Tot User"),
                         "source": self.SOURCE_NAME,
                     })
@@ -154,6 +173,7 @@ class NhaTotCrawler(BaseCrawler):
         apt_id = apt_config["apartment_id"]
         name = apt_config["name"]
         kw = apt_config["keyword"]
+        dist_num = extract_district_number(apt_config.get("district") or apt_config.get("district_slug"))
 
         page = await context.new_page()
         await page.add_init_script("Object.defineProperty(navigator, 'webdriver', {get: () => undefined})")
@@ -185,7 +205,7 @@ class NhaTotCrawler(BaseCrawler):
                 if not cards:
                     break
 
-                page_results = await self._parse_html_cards(cards, apt_id, kw, needed - len(all_results))
+                page_results = await self._parse_html_cards(cards, apt_id, kw, needed - len(all_results), district_number=dist_num)
                 all_results.extend(page_results)
 
                 if len(cards) < 10:
@@ -200,7 +220,7 @@ class NhaTotCrawler(BaseCrawler):
 
         return all_results
 
-    async def _parse_html_cards(self, cards, apt_id: str, kw: str, needed: int) -> list[dict]:
+    async def _parse_html_cards(self, cards, apt_id: str, kw: str, needed: int, district_number: str = None) -> list[dict]:
         """Parse cards HTML (fallback method)."""
         results = []
 
@@ -229,20 +249,24 @@ class NhaTotCrawler(BaseCrawler):
                 # Title: tìm dòng dài nhất có keyword
                 title = ""
                 for line in lines:
-                    if text_matches_keyword(line + " " + href.replace("-", " "), kw):
+                    if text_matches_keyword(line + " " + href.replace("-", " "), kw, district_number=district_number):
                         title = line
                         break
                 if not title:
                     title = lines[0] if lines else ""
 
-                if not text_matches_keyword(title + " " + href.replace("-", " "), kw):
+                if not text_matches_keyword(title + " " + href.replace("-", " "), kw, district_number=district_number):
                     continue
 
+                # Tránh lấy nhầm tiêu đề làm giá/diện tích
+                clean_lines = [l for l in lines if l.lower() not in title.lower() and title.lower() not in l.lower()]
+                clean_text = "\n".join(clean_lines)
+
                 # Giá và diện tích
-                price = extract_price(text)
+                price = extract_price(clean_text)
                 area = ""
-                for line in lines:
-                    if "m²" in line:
+                for line in clean_lines:
+                    if "m²" in line or "m2" in line:
                         area = line
                         break
 
@@ -269,6 +293,7 @@ class NhaTotCrawler(BaseCrawler):
                     "title": title[:120],
                     "price": price,
                     "area": area,
+                    "bedrooms": "2 PN",
                     "link": href,
                     "date": date_text,
                     "author": author or "Nha Tot User",

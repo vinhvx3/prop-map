@@ -5,7 +5,7 @@ export function FilterPanel() {
   const { filters, setFilters } = useStore();
   const filtered = useFilteredApartments();
 
-  const districts = ['Q.7', 'Q.8', 'Q.6'];
+  const districts = ['Q.7', 'Q.8', 'Q.6', 'H. Nhà Bè', 'H. Bình Chánh'];
 
   const toggleDistrict = (d: string) => {
     const next = filters.districts.includes(d)
@@ -15,7 +15,7 @@ export function FilterPanel() {
   };
 
   const districtClass = (d: string) => {
-    const base = d === 'Q.7' ? 'q7' : d === 'Q.8' ? 'q8' : 'q6';
+    const base = d === 'Q.7' ? 'q7' : d === 'Q.8' ? 'q8' : d === 'Q.6' ? 'q6' : d === 'H. Nhà Bè' ? 'nhabe' : 'binhchanh';
     return `chip ${base} ${filters.districts.includes(d) ? 'active' : ''}`;
   };
 
@@ -72,7 +72,7 @@ export function FilterPanel() {
             id="filter-km-max"
             type="range"
             className="range-input"
-            min={1} max={15} step={0.5}
+            min={1} max={30} step={0.5}
             value={filters.kmMax}
             onChange={e => setFilters({ kmMax: Number(e.target.value) })}
           />

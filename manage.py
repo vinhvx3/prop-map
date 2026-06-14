@@ -162,7 +162,7 @@ def run_clean():
     from db import PostDB, ApartmentDB
     from datetime import datetime, timedelta
     from config import CRAWL_MAX_STALE_DAYS
-    from utils import text_matches_keyword
+    from utils import text_matches_keyword, extract_district_number
 
     post_db = PostDB()
     apt_db = ApartmentDB()
@@ -199,8 +199,9 @@ def run_clean():
             to_delete_links.append(post["link"])
             continue
             
+        dist_num = extract_district_number(apt.get("district"))
         title_href = post["title"] + " " + post["link"].replace("-", " ")
-        if not text_matches_keyword(title_href, kw):
+        if not text_matches_keyword(title_href, kw, district_number=dist_num):
             to_delete_links.append(post["link"])
             
     removed_mismatched = 0

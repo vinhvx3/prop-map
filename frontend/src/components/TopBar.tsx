@@ -139,6 +139,7 @@ export function TopBar({ onNewSession, onSaveSession, onCrawlDone, onOpenFeed }:
             border: '1px solid var(--color-accent)',
             fontSize: '13px',
             minWidth: '220px',
+            position: 'relative',
           }}
         >
           <span className="stat-chip-dot" style={{ background: 'var(--color-success)', marginRight: 0 }} />
@@ -223,6 +224,20 @@ export function TopBar({ onNewSession, onSaveSession, onCrawlDone, onOpenFeed }:
           >
             <Icons.ChevronDown size={11} />
           </span>
+          {matchedSessionSummary?.apartment_names && matchedSessionSummary.apartment_names.length > 0 && (
+            <div className="topbar-session-tooltip">
+              <ul style={{ margin: 0, paddingLeft: 12, listStyleType: 'disc', color: 'var(--color-text-secondary)' }}>
+                {matchedSessionSummary.apartment_names.slice(0, 8).map((name, idx) => (
+                  <li key={idx} className="tooltip-item">{name}</li>
+                ))}
+                {matchedSessionSummary.apartment_names.length > 8 && (
+                  <li style={{ listStyleType: 'none', marginLeft: -12, opacity: 0.5, fontStyle: 'italic', marginTop: 2 }}>
+                    ... và {matchedSessionSummary.apartment_names.length - 8} chung cư khác
+                  </li>
+                )}
+              </ul>
+            </div>
+          )}
         </div>
       ) : (
         <button

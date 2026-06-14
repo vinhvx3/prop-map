@@ -68,13 +68,16 @@ interface AppState {
   sessions: SessionSummary[];
   setSessions: (sessions: SessionSummary[]) => void;
   loadSessions: () => Promise<void>;
+
+  viewedLinks: Set<string>;
+  addViewedLink: (link: string) => void;
 }
 
 const DEFAULT_FILTERS: Filters = {
   districts: [],
   yearMin: 2010,
   yearMax: 2025,
-  kmMax: 12,
+  kmMax: 25,
   balcony: 'all',
   searchQuery: '',
 };
@@ -174,6 +177,14 @@ export const useStore = create<AppState>((set) => ({
       console.error('Failed to load sessions', e);
     }
   },
+
+  viewedLinks: new Set<string>(JSON.parse(localStorage.getItem('viewedLinks') || '[]')),
+  addViewedLink: (link) => set((s) => {
+    const next = new Set(s.viewedLinks);
+    next.add(link);
+    localStorage.setItem('viewedLinks', JSON.stringify(Array.from(next)));
+    return { viewedLinks: next };
+  }),
 }));
 
 // Derived: filtered apartments

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import { useStore } from '../store';
 import { api } from '../api';
 import type { Session, SessionSummary } from '../api';
@@ -19,6 +19,12 @@ export function SessionModal({ sessions = [], onRefresh }: SessionModalProps) {
   const [feedSession, setFeedSession] = useState<SessionSummary | null>(null);
   const [editingSessionId, setEditingSessionId] = useState<string | null>(null);
   const [editingName, setEditingName] = useState<string>('');
+  const modalRef = useRef<HTMLDivElement>(null);
+  const [hoveredSession, setHoveredSession] = useState<{
+    names: string[];
+    top: number;
+    left: number;
+  } | null>(null);
 
   const handleRename = async (id: string) => {
     if (!editingName.trim()) return;
@@ -121,12 +127,14 @@ export function SessionModal({ sessions = [], onRefresh }: SessionModalProps) {
   return (
     <div className="modal-overlay" onClick={() => setShowSessionModal(false)}>
       <div 
+        ref={modalRef}
         className="modal" 
         id="session-modal" 
         style={{ 
           backgroundColor: '#161b22', 
           border: '1px solid rgba(255, 255, 255, 0.08)',
-          boxShadow: '0 8px 32px rgba(0,0,0,0.6)'
+          boxShadow: '0 8px 32px rgba(0,0,0,0.6)',
+          position: 'relative'
         }}
         onClick={e => e.stopPropagation()}
       >
@@ -140,7 +148,7 @@ export function SessionModal({ sessions = [], onRefresh }: SessionModalProps) {
           </button>
         </div>
 
-        <div className="modal-body">
+        <div className="modal-body" onScroll={() => setHoveredSession(null)}>
           {view === 'list' ? (
             <>
               {sessions.length === 0 ? (
@@ -160,6 +168,21 @@ export function SessionModal({ sessions = [], onRefresh }: SessionModalProps) {
                       backgroundColor: currentSession?.id === s.id ? 'rgba(59, 130, 246, 0.15)' : '#1c2128' 
                     }}
                     onClick={() => handleLoad(s.id)}
+                    onMouseEnter={(e) => {
+                      if (!s.apartment_names || s.apartment_names.length === 0) return;
+                      const cardRect = e.currentTarget.getBoundingClientRect();
+                      const modalRect = modalRef.current?.getBoundingClientRect();
+                      if (modalRect) {
+                        setHoveredSession({
+                          names: s.apartment_names,
+                          top: cardRect.bottom - modalRect.top + 4,
+                          left: cardRect.left - modalRect.left,
+                        });
+                      }
+                    }}
+                    onMouseLeave={() => {
+                      setHoveredSession(null);
+                    }}
                   >
                     <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start' }}>
                       {editingSessionId === s.id ? (
@@ -387,6 +410,28 @@ export function SessionModal({ sessions = [], onRefresh }: SessionModalProps) {
             </>
           )}
         </div>
+        {hoveredSession && (
+          <div 
+            className="session-card-tooltip"
+            style={{
+              display: 'block',
+              position: 'absolute',
+              top: hoveredSession.top,
+              left: hoveredSession.left,
+            }}
+          >
+            <ul style={{ margin: 0, paddingLeft: 12, listStyleType: 'disc' }}>
+              {hoveredSession.names.slice(0, 8).map((name, idx) => (
+                <li key={idx} className="tooltip-item">{name}</li>
+              ))}
+              {hoveredSession.names.length > 8 && (
+                <li style={{ listStyleType: 'none', marginLeft: -12, opacity: 0.5, fontStyle: 'italic', marginTop: 2 }}>
+                  ... và {hoveredSession.names.length - 8} chung cư khác
+                </li>
+              )}
+            </ul>
+          </div>
+        )}
       </div>
 
       {/* Feed Modal overlay */}

@@ -2,6 +2,7 @@ import React, { useEffect, useState, useRef, useCallback } from 'react';
 import { api } from '../api';
 import type { FeedListing, SessionSummary } from '../api';
 import { Icons } from './Icons';
+import { useStore } from '../store';
 
 interface SessionFeedModalProps {
   session: SessionSummary;
@@ -35,6 +36,8 @@ export function SessionFeedModal({ session, onClose }: SessionFeedModalProps) {
 
   const PAGE_SIZE = 30;
   const totalPages = Math.ceil(total / PAGE_SIZE);
+
+  const { viewedLinks, addViewedLink } = useStore();
 
   const fetchFeed = useCallback(async () => {
     setLoading(true);
@@ -187,48 +190,53 @@ export function SessionFeedModal({ session, onClose }: SessionFeedModalProps) {
                   <span className="feed-apt-group-name">{aptName}</span>
                   <span className="feed-apt-group-count">{posts.length} tin</span>
                 </div>
-                {posts.map((listing, i) => (
-                  <div key={i} className="feed-listing-card slide-in">
-                    <div className="feed-listing-top">
-                      <div className="feed-listing-title">{listing.title}</div>
-                      {listing.price && (
-                        <div className="feed-listing-price">{listing.price}</div>
-                      )}
-                    </div>
-
-                    <div className="listing-meta">
-                      <span className={sourceBadgeClass(listing.source)}>{listing.source}</span>
-                      {listing.bedrooms && (
-                        <span className="listing-meta-item" style={{ display: 'inline-flex', alignItems: 'center', gap: 3 }}>
-                          <Icons.Bed size={12} style={{ opacity: 0.7 }} />
-                          <span>{listing.bedrooms}</span>
-                        </span>
-                      )}
-                      {listing.area && (
-                        <span className="listing-meta-item" style={{ display: 'inline-flex', alignItems: 'center', gap: 3 }}>
-                          <Icons.Maximize size={11} style={{ opacity: 0.7 }} />
-                          <span>{listing.area}</span>
-                        </span>
-                      )}
-                      {listing.date && (
-                        <span className="listing-meta-item" style={{ display: 'inline-flex', alignItems: 'center', gap: 3 }}>
-                          <Icons.Calendar size={12} style={{ opacity: 0.7 }} />
-                          <span>{listing.date}</span>
-                        </span>
-                      )}
-                    </div>
-
-                    <a
+                {posts.map((listing, i) => {
+                  const isViewed = viewedLinks.has(listing.link);
+                  return (
+                    <a 
+                      key={i} 
                       href={listing.link}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="listing-link"
+                      className={`feed-listing-card slide-in ${isViewed ? 'viewed' : ''}`}
+                      onClick={() => addViewedLink(listing.link)}
                     >
-                      <Icons.Link size={12} />
-                      <span>{listing.link}</span>
+                      <div className="feed-listing-top">
+                        <div className="feed-listing-title">{listing.title}</div>
+                        {listing.price && (
+                          <div className="feed-listing-price">{listing.price}</div>
+                        )}
+                      </div>
+
+                      <div className="listing-meta">
+                        <span className={sourceBadgeClass(listing.source)}>{listing.source}</span>
+                        {listing.bedrooms && (
+                          <span className="listing-meta-item" style={{ display: 'inline-flex', alignItems: 'center', gap: 3 }}>
+                            <Icons.Bed size={12} style={{ opacity: 0.7 }} />
+                            <span>{listing.bedrooms}</span>
+                          </span>
+                        )}
+                        {listing.area && (
+                          <span className="listing-meta-item" style={{ display: 'inline-flex', alignItems: 'center', gap: 3 }}>
+                            <Icons.Maximize size={11} style={{ opacity: 0.7 }} />
+                            <span>{listing.area}</span>
+                          </span>
+                        )}
+                        {listing.date && (
+                          <span className="listing-meta-item" style={{ display: 'inline-flex', alignItems: 'center', gap: 3 }}>
+                            <Icons.Calendar size={12} style={{ opacity: 0.7 }} />
+                            <span>{listing.date}</span>
+                          </span>
+                        )}
+                      </div>
+
+                      <div className="listing-link">
+                        <Icons.Link size={12} />
+                        <span>{listing.link}</span>
+                      </div>
                     </a>
-                  </div>
-                ))}
+                  );
+                })}
               </div>
             ))
           )}

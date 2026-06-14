@@ -114,3 +114,4 @@ class SessionSummary(BaseModel):
     last_crawl: Optional[str] = None
     status: str = "idle"  # idle | running | error
     created_at: str
+    apartment_names: list[str] = []

@@ -231,9 +231,33 @@ class TestTextMatchesKeyword:
         """Các từ xuất hiện đầy đủ nhưng có từ dính stop prefix → phải loại bỏ."""
         assert text_matches_keyword("Cho thuê gần chung cư An Gia, Riverside Q7", "An Gia Riverside") is False
 
-    def test_split_match_with_stop_words_and_numbers(self):
-        """Lọc bỏ các từ chung chung và số để match linh hoạt."""
-        assert text_matches_keyword("Cho thuê căn hộ Green River giá rẻ", "Green River quan 8") is True
+    def test_split_match_with_stop_words_only(self):
+        """Khi keyword chỉ còn stop words sau lọc, fallback dùng toàn bộ words."""
+        assert text_matches_keyword("Cho thuê căn hộ quận 8 giá rẻ", "quan 8") is True
+
+    def test_sky89_rejects_sky_garden(self):
+        """Sky 89 KHÔNG match Sky Garden — số '89' là từ phân biệt quan trọng."""
+        assert text_matches_keyword("Cho thuê căn hộ Sky Garden giá tốt", "Sky 89") is False
+
+    def test_sky89_rejects_sky_center(self):
+        """Sky 89 KHÔNG match Sky Center."""
+        assert text_matches_keyword("Cho thuê Sky Center 2PN Tân Bình", "Sky 89") is False
+
+    def test_sky89_accepts_correct(self):
+        """Sky 89 match đúng tin Sky 89."""
+        assert text_matches_keyword("Cho thuê 2PN Sky 89 Hoàng Quốc Việt Q7", "Sky 89") is True
+
+    def test_an_hoa_3_rejects_common_vietnamese_phrases(self):
+        """Chung cư An Hoà 3 không khớp với các tin đăng chứa từ ghép thông dụng như 'dự án', 'an ninh', 'hài hoà'."""
+        assert text_matches_keyword("Cho thuê Chung cư phố đông", "Chung cư An Hoà 3") is False
+        assert text_matches_keyword("Căn hộ chung cư Millennium, 65m2, 2pn full nt đẹp. Dự án thiết kế hài hoà", "Chung cư An Hoà 3") is False
+        assert text_matches_keyword("Chung Cư Mini 1PN/2PN Bancol Mới Ngay Etown Cộng Hoà - Tân Bình", "Chung cư An Hoà 3") is False
+        assert text_matches_keyword("Cho thuê chung cư Summer đầy đủ nội thất, 2 phòng ngủ. Vùng an ninh.", "Chung cư An Hoà 3") is False
+
+    def test_pegasuite_mismatch_phases(self):
+        """Pegasuite không được khớp với Pegasuite 2 nếu không cùng phase."""
+        assert text_matches_keyword("DUPLEX 2PN, 2WC, 85m2 tại The Pegasuite 2", "Pegasuite") is False
+        assert text_matches_keyword("DUPLEX 2PN, 2WC, 85m2 tại The Pegasuite 2", "Pegasuite 2") is True
 
 
 # ══════════════════════════════════════════════════════════════

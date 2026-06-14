@@ -69,6 +69,7 @@ export interface SessionSummary {
   last_crawl?: string;
   status: 'idle' | 'running' | 'error';
   created_at: string;
+  apartment_names?: string[];
 }
 
 export interface ApiResponse<T> {

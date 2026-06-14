@@ -63,11 +63,23 @@ def _save_sessions(sessions_list: list[dict]):
 
 
 def _session_to_summary(s: dict) -> SessionSummary:
+    from db.apartments import ApartmentDB
     post_db = PostDB()
+    apt_db = ApartmentDB()
     selected_ids = s.get("selected_ids", [])
     listing_count = sum(
         len(post_db.list(apartment_id=aid)) for aid in selected_ids
     )
+    
+    # Lấy tên các chung cư
+    apartment_names = []
+    for aid in selected_ids:
+        apt = apt_db.get(aid)
+        if apt:
+            apartment_names.append(apt["name"])
+        else:
+            apartment_names.append(aid)
+
     return SessionSummary(
         id=s["id"],
         name=s["name"],
@@ -76,6 +88,7 @@ def _session_to_summary(s: dict) -> SessionSummary:
         last_crawl=s.get("last_crawl"),
         status=s.get("status", "idle"),
         created_at=s["created_at"],
+        apartment_names=apartment_names,
     )
 
 
